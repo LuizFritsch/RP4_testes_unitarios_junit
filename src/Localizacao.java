@@ -1,5 +1,3 @@
-package teste;
-
 
 public class Localizacao
 {
