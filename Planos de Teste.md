@@ -1,5 +1,5 @@
 **Propósito**  
-Criar um roteiro de especificações a serem cumpridas no qual levará o projeto de software  de simulação do habitat natural de lobos guará e ovelhas, a conformidade com os seus requisitos.
+Criar um roteiro de especificações a serem cumpridas no qual levará o projeto de software  de simulação do habitat   natural de lobos guará e ovelhas, a conformidade com os seus requisitos.  
 **Identificador**     
 01  
 **Introdução**  
