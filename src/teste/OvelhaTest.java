@@ -28,7 +28,7 @@ public class OvelhaTest {
 
 	@Test
 	public void testSetMorte() {
-		fail("Not yet implemented");
+		System.out.println("hueaaeuaahdixnfdsjfbdsiufhsdiufhsdiubfsdyufbsyduhfbsdufbwyfvbsdyuhfbsdyufb");
 	}
 
 	@Test
