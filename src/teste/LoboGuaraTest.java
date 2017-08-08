@@ -4,25 +4,25 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class SimuladorTelaTest {
+public class LoboGuaraTest {
 
 	@Test
-	public void testSimuladorTela() {
+	public void testLoboGuara() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testSetCor() {
+	public void testCaca() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testMostraStatus() {
+	public void testEstaVivo() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testEhViavel() {
+	public void testGetLocalizacao() {
 		fail("Not yet implemented");
 	}
 
