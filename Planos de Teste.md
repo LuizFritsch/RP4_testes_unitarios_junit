@@ -11,9 +11,17 @@ Simular População de Lobos Guará e Ovelhas
     -Longa duração  
     -Por etapa  
 **Abordagem**  
-   -Atividades: execução dos casos de teste.  
-   -Técnicas: partições de equivalência, error guessing e casos de teste.  
-   -Ferramentas: JUnit, Eclipse e bitbucket.  
+   1.Atividades   
+       a.testes;  
+       b.debug.  
+   2.Técnicas  
+      a.partições de equivalência;  
+      b.error guessing;  
+      c.casos de teste.  
+   3.Ferramentas  
+      a.JUnit;  
+      b.Eclipse;  
+      c.bitbucket.    
 **Critérios de aceite**  
 **Suspensão**  
 **Produtos**  
