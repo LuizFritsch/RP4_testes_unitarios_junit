@@ -18,7 +18,7 @@ Simular População de Lobos Guará e Ovelhas
 **Suspensão**  
 **Produtos**  
 **Tarefas de teste**  
- CT01                                                                                                      
+| CT01                   |                                                                                 |                                                                                                    
 |------------------------|---------------------------------------------------------------------------------|  
 | Execução               | Incrementar a idade da ovelha até passar a idade máxima                         |  
 | Resultado esperado     | Ovelha morrer                                                                   |  
