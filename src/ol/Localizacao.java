@@ -1,3 +1,4 @@
+package ol;
 
 public class Localizacao
 {

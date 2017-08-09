@@ -1,3 +1,4 @@
+package ol;
 import java.util.Random;
 
 public class Randomizador
