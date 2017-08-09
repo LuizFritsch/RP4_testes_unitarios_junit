@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import ol.Campo;
+import ol.Localizacao;
 import ol.Simulador;
 
 
@@ -16,19 +17,126 @@ public class CampoTest {
 		fail("Not yet implemented");
 	}
 
+	
+	
+	//Esperar exceptions se campo for pequeno.
 	@Test
-	public void testLimpa() {		
-		Simulador s = new Simulador(5,5);	  
+	public void testLimpa() {	
 		
-		assertNotEquals(null,false);
+		Simulador s = new Simulador(5,5); 
+	    Localizacao l =  s.getListLobo().get(0).getLocalizacao();
+	    s.getCampo().limpa();		
+		assertNull(s.getCampo().getObjectAt(l));
+	  
+		
+
+		
+			
+		
+	}
+	
+	@Test
+	public void testLimpa2() {	
+		
+		Simulador s = new Simulador(5,5); 
+	    Localizacao l2 = s.getListLobo().get(s.getListLobo().size()-1).getLocalizacao();
+		s.getCampo().limpa();		
+	    assertNull(s.getCampo().getObjectAt(l2));
+		
+
+		
 			
 		
 	}
 
 	@Test
-	public void testLimpaLocalizacao() {
-		fail("Not yet implemented");
+	public void testLimpaLocalizacao() {		
+
+		Simulador s = new Simulador(5,5); 
+	    Localizacao l2 = s.getListLobo().get(s.getListLobo().size()-1).getLocalizacao();
+		s.getCampo().limpa(l2);		
+	    assertNull(s.getCampo().getObjectAt(l2));
+		
+	    
 	}
+	
+	
+	@Test
+	public void testLimpaLocalizacao2() {		
+
+		Simulador s = new Simulador(5,5); 
+	    Localizacao l = s.getListLobo().get(0).getLocalizacao();
+		s.getCampo().limpa(l);		
+	    assertNull(s.getCampo().getObjectAt(l));
+		
+	    
+	}
+	
+	
+	@Test (expected = IndexOutOfBoundsException.class )
+	public void testLimpaLocalizacao3() {		
+
+		Simulador s = new Simulador(5,5); 
+	    Localizacao l = new Localizacao(-1, 0);
+		s.getCampo().limpa(l);		
+	   
+		
+	    
+	}
+
+	@Test (expected = IndexOutOfBoundsException.class )
+	public void testLimpaLocalizacao4() {		
+
+		Simulador s = new Simulador(3,3); 
+	    Localizacao l = new Localizacao(3, 0);
+		s.getCampo().limpa(l);		
+	   
+		
+	    
+	}
+	
+
+	@Test (expected = IndexOutOfBoundsException.class )
+	public void testLimpaLocalizacao5() {		
+
+		Simulador s = new Simulador(3,3); 
+	    Localizacao l = new Localizacao(3,2);
+		s.getCampo().limpa(l);		
+	   
+		
+	    
+	}
+	
+	
+
+	@Test (expected = IndexOutOfBoundsException.class )
+	public void testLimpaLocalizacao6() {		
+
+		Simulador s = new Simulador(3,3); 
+	    Localizacao l = new Localizacao(0,3);
+		s.getCampo().limpa(l);		
+	   
+		
+	    
+	}
+	
+	@Test (expected = IndexOutOfBoundsException.class )
+	public void testLimpaLocalizacao7() {		
+
+		Simulador s = new Simulador(5,5); 
+	    Localizacao l = new Localizacao(3,-1);
+		s.getCampo().limpa(l);		
+	   
+		
+	    
+	}
+	
+
+
+	
+	
+	
+	
 
 	@Test
 	public void testLugarObjectIntInt() {

@@ -110,4 +110,23 @@ public class Simulador
             }
         }
     }
+    
+    
+    
+    
+    //Metodos adcionados para melhorar os testes possivéis.
+    
+    
+    public Campo getCampo() {
+    	
+    	return campo;
+    	
+    }
+    public List<LoboGuara> getListLobo(){
+    	return lobos;
+    }
+    
+    public List<Ovelha> getListOvelha(){
+    	return ovelhas;
+    }
 }
