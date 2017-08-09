@@ -8,8 +8,8 @@ entre predador (lobo guará) e presa (ovelha), tentar prever os efeitos da ativi
 **Itens**  
 **Funcionalidades**   
 Simular População de Lobos Guará e Ovelhas   
-    -Longa duração
-    -Por etapa
+    -Longa duração  
+    -Por etapa  
 **Abordagem**  
    -Atividades: execução dos casos de teste.
    -Técnicas: partições de equivalência, error guessing e casos de teste.
