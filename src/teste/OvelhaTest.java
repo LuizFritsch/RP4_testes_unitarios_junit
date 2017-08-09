@@ -16,19 +16,25 @@ public class OvelhaTest {
 	
 	@Test
 	public void testCorre() {
-		
 	}
 
 	@Test
 	public void testEstaViva() {
+		assertTrue(o.estaViva());
+	}
 	
+	@Test
+	public void testEstaVivaEstandoMorta() {
+		o.setMorte();
+		assertFalse(o.estaViva());
 	}
 
 	@Test
 	public void testSetMorte() {
-	
+		o.setMorte();
+		assertFalse(o.estaViva());;
 	}
-
+	
 	@Test
 	public void testGetLocalizacao() {
 	
