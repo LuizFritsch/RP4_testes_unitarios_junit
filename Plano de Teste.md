@@ -69,7 +69,29 @@
 | Abordagem             | Devem ser usadas entradas para idade da ovelha validas e invalidas| 
 | Critério de aceitação             | O sistema deve lançar um tratamento para entradas invalidas e seguir o seu funcionamento para idade valida | 
  
- 
+ #Casos de teste
+
+**CT01: testGetLargura**
+**Descrição: ** O teste deve verificar se em uma execução de simulação, o metodo GetLargura esta funcionando corretamente. Para isso deve-se criar uma simulação com parâmetros validos e inválidos.
+**Precondições: ** --
+
+| **procedimento**                                    |  Verificação                               |Resultado      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Criar um simulador com profundidade 5 e largura 31  | É esperado que o teste não encontre erros  |  Teste passou |
+| Criar um simulador com profundidade 5 e largura 0   | É esperado que o teste lance a exceção illergalArgumentException  |  Teste falhou, o teste lançou um ArithmeticException |
+
+
+**CT02: testGetProfundidade**
+**Descrição: ** O teste deve verificar se em uma execução de simulação, o metodo GetProfundidade esta funcionando corretamente. Para isso deve-se criar uma simulação com parâmetros validos e inválidos.
+**Precondições: ** --
+
+| **procedimento**                                    |  Verificação                               |Resultado      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Criar um simulador com profundidade 31 e largura 5  | É esperado que o teste não encontre erros  |  Teste passou |
+| Criar um simulador com profundidade 0 e largura 5   | É esperado que o teste lance a exceção illergalArgumentException  |  Teste falhou, o teste lançou um ArithmeticException |
+
+
+
 
  
 
