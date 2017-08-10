@@ -1,17 +1,17 @@
-| **Plano de Teste**                  ||  
+| Plano de Teste                  ||  
 |-------------------------------|--------------------------------------------------------- ------------------|  
-| Nome do projeto              | Simulador de habitat de lobo guará e ovelha                         | 
-| Pessoas Envolvidas / Responsabilidade |  Guilherme Souza Santos - Implementação das classes de teste (JUnit) |  
-| |Luiz Guilherme Fritsch - Implementação das classes de teste (JUnit)  |
-| |Vitor Hugo Maciel dos Santos - Análise e correção das classes  |
-| |Iderli Pereira Souza Filho - Draft Plano de Teste IEEE  |
-| Funcionalidades ou Módulos | Simular População de Lobos Guará e Ovelha. Simulação de Longa duração e  simulação por etapa                                              |
-| Equipamentos/Softwares  | --                     |
-| Cronograma  | Data de Início e Fim do Projeto: 01/08/2009 – 01/10/2010  |
-| |Data de Início e Fim do Teste: 01/02/2010 a 01/10/2010  |
-| Local dos Testes | O sistema não possui um local especifico para testes. Os mesmos serão executados nas maquinas das pessoas envolvidas em locais aleatórios |
-| Critérios para considerar o teste finalizado | -- |
-| Observações | O relatório de incidente será enviado para todos os desenvolvedores por e-mail assim que alguma alteração tenha sido feita. Serão criados os casos de testes, os relatórios de incidentes e o relatório resumo de teste |
+ **Nome do projeto: **  Simulador de habitat de lobo guará e ovelha                          
+ **Pessoas Envolvidas / Responsabilidade:** Guilherme Souza Santos - Implementação das classes de teste (JUnit)    
+ Luiz Guilherme Fritsch - Implementação das classes de teste (JUnit)  
+ Vitor Hugo Maciel dos Santos - Análise e correção das classes  
+ Iderli Pereira Souza Filho - Draft Plano de Teste IEEE  
+ **Funcionalidades ou Módulos:**  Simular População de Lobos Guará e Ovelha. Simulação de Longa duração e  simulação por etapa                                              
+ **Equipamentos/Softwares:**  --   
+ **Cronograma:** Data de Início e Fim do Projeto: 01/08/2009 – 01/10/2010  
+ Data de Início e Fim do Teste: 01/02/2010 a 01/10/2010   
+ **Local dos Testes:** O sistema não possui um local especifico para testes. Os mesmos serão executados nas maquinas das  pessoas envolvidas em locais aleatórios  
+ **Critérios para considerar o teste finalizado:** --
+**Observações:** O relatório de incidente será enviado para todos os desenvolvedores por e-mail assim que alguma alteração tenha sido feita. Serão criados os casos de testes, os relatórios de incidentes e o relatório resumo de teste 
 
 
 
@@ -41,7 +41,8 @@
 | Abordagem             |Devem ser usadas entradas validas e invalidas | 
 | Critério de aceitação             | O sistema deve lançar um tratamento para localizações invalidas e mudar para null localizações validas |  
 
-// pode ter modificações
+// pode ter modificações  
+
 | **Obj 05**                  | Teste método Limpa |  
 |-------------------------------|--------------------------------------------------------- ------------------|  
 | Condição do teste             | Simulação existente | 
