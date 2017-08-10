@@ -36,6 +36,50 @@ public class CampoTest {
 	}
 	
 	@Test
+	public void testLimpa1() {	
+		
+		Simulador s = new Simulador(100,100); 
+	    Localizacao l =  s.getListLobo().get(0).getLocalizacao();
+	    Campo c = new Campo(50,50);
+	    LoboGuara lobo = new LoboGuara(true, c, l);
+	    s.getCampo().limpa();		
+		assertNotSame(lobo, s.getCampo().getObjectAt(l));		
+
+			
+		
+	}
+	
+	@Test
+	public void testLimpa3() {	
+		
+		Simulador s = new Simulador(100,100); 
+	    Localizacao l =  s.getListLobo().get(0).getLocalizacao();
+	    Campo c = new Campo(50,50);
+	    Ovelha ove = new Ovelha(true, c, l);
+	    s.getCampo().limpa();		
+		assertNotSame(ove,s.getCampo().getObjectAt(l));		
+			
+		
+	}
+	
+	
+	@Test
+	public void testLimpa4() {	
+		
+		Simulador s = new Simulador(100,100); 
+	    Localizacao l =  s.getListLobo().get(0).getLocalizacao();
+	    
+	    s.getCampo().limpa();		
+		assertSame(null, s.getCampo().getObjectAt(l));		
+
+		
+			
+		
+	}
+	
+	
+	
+	@Test
 	public void testLimpa2() {	
 		
 		Simulador s = new Simulador(5,5); 
@@ -134,11 +178,21 @@ public class CampoTest {
 	
 //-------------------------------------------------------------------------------------------------------------------------------------	
 
-	@Test
+	@Test (expected = IllegalArgumentException.class)
 	public void testLugarObject() {
 		
-		
+	
+	Campo c = new Campo(10,10);
+	Simulador s = new Simulador(100,100);		
+	Localizacao l = new Localizacao(50, 50);
+	LoboGuara lobo = new LoboGuara(true, s.getCampo(), l);
+	s.getCampo().lugar(c, l);
+			
+			
+			
 	}
+		
+
 	
 	//-------------------------------------------------------------------------------------------
 
