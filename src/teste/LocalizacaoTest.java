@@ -4,11 +4,14 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import ol.*;
+
 public class LocalizacaoTest {
 
 	@Test
 	public void testHashCode() {
-		fail("Not yet implemented");
+		Localizacao obj = new Localizacao(10, 10);
+		System.err.println(obj.hashCode());
 	}
 
 	@Test
@@ -18,7 +21,9 @@ public class LocalizacaoTest {
 
 	@Test
 	public void testEqualsObject() {
-		fail("Not yet implemented");
+		Localizacao obj = new Localizacao(10, 10);
+		Localizacao ob1 = new Localizacao(10, 10);
+		assertTrue(obj.equals(ob1));
 	}
 
 	@Test
