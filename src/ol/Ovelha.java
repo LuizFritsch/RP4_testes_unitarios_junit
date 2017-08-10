@@ -53,12 +53,12 @@ public class Ovelha {
 		}
 	}
 	
-	public int getIdade() {
-		return idade;
-	}
-
 	public Localizacao getLocalizacao() {
 		return localizacao;
+	}
+	
+	public int getIdade() {
+		return idade;
 	}
 	
 	private void setLocalizacao(Localizacao newLocalizacao) {

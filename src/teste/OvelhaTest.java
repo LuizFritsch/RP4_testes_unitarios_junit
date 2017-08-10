@@ -19,15 +19,9 @@ public class OvelhaTest {
 		Localizacao oasss = new Localizacao(20, 19);
 		Campo camp = new Campo(50, 50);
 		Ovelha abe = new Ovelha(false, camp, oasss);
-		int i = 0;
-		while (i < 60) {
-			abe.corre(teste);
-			System.out.println((i + 1) + " - " + abe.estaViva());
-			i++;
-		}
-		assertFalse(abe.estaViva());
+		abe.corre(teste);
+		assertTrue(abe.estaViva());
 		//Foi visto que a partir do momento que é chamado o método corre, a ovelha morria.
-		//Na comparação da nova posicao, deve ser 
 	}
 
 	@Test
@@ -36,6 +30,12 @@ public class OvelhaTest {
 		Localizacao local = new Localizacao(2, 2);
 		Ovelha o = new Ovelha(false, camp, local);
 		assertTrue(o.estaViva());
+	}
+	
+	@Test
+	public void testIdade() {
+		int i = 0;
+		
 	}
 
 	@Test
