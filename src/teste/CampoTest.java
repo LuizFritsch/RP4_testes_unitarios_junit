@@ -5,7 +5,9 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import ol.Campo;
+import ol.LoboGuara;
 import ol.Localizacao;
+import ol.Ovelha;
 import ol.Simulador;
 
 
@@ -26,9 +28,7 @@ public class CampoTest {
 		Simulador s = new Simulador(5,5); 
 	    Localizacao l =  s.getListLobo().get(0).getLocalizacao();
 	    s.getCampo().limpa();		
-		assertNull(s.getCampo().getObjectAt(l));
-	  
-		
+		assertNull(s.getCampo().getObjectAt(l));		
 
 		
 			
@@ -48,6 +48,7 @@ public class CampoTest {
 			
 		
 	}
+	//--------------------------------------------------------------------------------------------------------------------------------
 
 	@Test
 	public void testLimpaLocalizacao() {		
@@ -106,8 +107,7 @@ public class CampoTest {
 		
 	    
 	}
-	
-	
+		
 
 	@Test (expected = IndexOutOfBoundsException.class )
 	public void testLimpaLocalizacao6() {		
@@ -131,12 +131,8 @@ public class CampoTest {
 	    
 	}
 	
-
-
 	
-	
-	
-	
+//-------------------------------------------------------------------------------------------------------------------------------------	
 
 	@Test
 	public void testLugarObjectIntInt() {
@@ -150,13 +146,70 @@ public class CampoTest {
 
 	@Test
 	public void testGetObjectAtLocalizacao() {
-		fail("Not yet implemented");
+		
 	}
 
+	//---------------------------------------------------------------------------------------------------------------------------------
 	@Test
-	public void testGetObjectAtIntInt() {
-		fail("Not yet implemented");
+	public void testGetObjectAt() {
+		Simulador s = new Simulador(100,100); 
+	    Localizacao l = s.getListLobo().get(0).getLocalizacao();    
+		    
+	    LoboGuara lobo = new LoboGuara(true, s.getCampo(), l);
+	    assertEquals(lobo,s.getCampo().getObjectAt(l.getLinha(), l.getColuna()));			
+	
 	}
+	
+	
+	
+	@Test
+	public void testGetObjectAt1() {
+		Simulador s = new Simulador(100,100); 
+	    Localizacao l = s.getListOvelha().get(0).getLocalizacao(); 
+	    
+	    
+		Ovelha ove = new Ovelha(true, s.getCampo(), l);
+	    
+	    assertEquals(ove,s.getCampo().getObjectAt(l.getLinha(), l.getColuna()));			
+	
+	}
+	
+	
+	@Test
+	public void testGetObjectAt2() {
+		Simulador s = new Simulador(100,100); 
+	    Localizacao l = s.getListOvelha().get(0).getLocalizacao(); 
+	    
+	    
+	    s.getCampo().limpa(l);
+	    
+	    assertEquals(null,s.getCampo().getObjectAt(l.getLinha(), l.getColuna()));			
+	
+	}
+	
+	@Test
+	public void testGetObjectAt3() {
+		Simulador s = new Simulador(100,100); 
+	    Localizacao l = s.getListLobo().get(0).getLocalizacao();    
+		    
+	    Ovelha ove = new Ovelha(true, s.getCampo(), l);
+	    assertEquals(ove,s.getCampo().getObjectAt(l.getLinha(), l.getColuna()));			
+	 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//----------------------------------------------------------------------------------------------------------------------------------
 
 	@Test
 	public void testLocalizacaoAdjacenteRandomica() {
@@ -178,14 +231,83 @@ public class CampoTest {
 		fail("Not yet implemented");
 	}
 
+	
+	
+	//-----------------------------------------------------------------------------------------------------------------------------------
 	@Test
 	public void testGetProfundidade() {
-		fail("Not yet implemented");
+		int n = 5;
+		Simulador s = new Simulador(5,5); 
+		assertEquals(n ,s.getCampo().getProfundidade());
+		
 	}
+	@Test (expected = ArithmeticException.class)
+	public void testGetProfundidade1() {
+		int n = 5;
+		Simulador s = new Simulador(5,0); 
+		assertEquals(n ,s.getCampo().getProfundidade());
+		
+	}
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testGetProfundidade2() {
+		int n = 0;
+		Simulador s = new Simulador(0,5); 
+		assertEquals(n ,s.getCampo().getProfundidade());
+		
+	}
+	
+	@Test
+	public void testGetProfundidade3() {
+		int n = 510;
+		Simulador s = new Simulador(510,1000); 
+		assertEquals(n ,s.getCampo().getProfundidade());
+		
+	}
+	@Test
+	public void testGetProfundidade4() {
+		int n = 5;
+		Simulador s = new Simulador(50,50); 
+		assertNotEquals(n ,s.getCampo().getProfundidade());
+		
+	}
+	
+	//--------------------------------------------------------------------------------------------------------------------------------
 
 	@Test
 	public void testGetLargura() {
-		fail("Not yet implemented");
+		int n = 31;
+		Simulador s = new Simulador(5,31); 
+		assertEquals(n ,s.getCampo().getLargura());
 	}
+	
+	@Test (expected = ArithmeticException.class)
+	public void testGetLargura1() {
+		int n = 0;
+		Simulador s = new Simulador(5,0); 
+		assertEquals(n ,s.getCampo().getLargura());
+	}
+	@Test
+	public void testGetLargura3() {
+		int n = 5;
+		Simulador s = new Simulador(5,5101); 
+		assertNotEquals(n ,s.getCampo().getLargura());
+	}
+	@Test 
+	public void testGetLargura4() {
+		int n = 50;
+		Simulador s = new Simulador(-10,-10); 
+		assertEquals(n ,s.getCampo().getLargura());
+		//Erro, se informa entradas erradas, deveria retornar excption
+		
+	}
+	@Test
+	public void testGetLargura5() {
+		int n = 2;
+		Simulador s = new Simulador(5,2^65); 
+		assertEquals(n ,s.getCampo().getLargura());
+	}
+	
+	
 
 }
