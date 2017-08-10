@@ -81,7 +81,7 @@
 
 #Relatório resumo de teste
 
-| **Relatório Resumo de Teste**                  ||  
+| **Relatório**                  ||  
 |-------------------------------|--------------------------------------------------------- ------------------|  
 | Nome do projeto              | Simulador de habitat de lobo guará e ovelha                         | 
 | Data inicio teste    |   08/08/2017                                   |
