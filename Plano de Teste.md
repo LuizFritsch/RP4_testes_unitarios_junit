@@ -79,7 +79,7 @@
    2. Técnicas: partições de equivalência, error guessing e casos de teste.  
    3. Ferramentas: JUnit, Eclipse e .    
 
-#Relatório final de teste
+#Relatório resumo de teste
 
 | **Relatório Resumo de Teste**                  ||  
 |-------------------------------|--------------------------------------------------------- ------------------|  
