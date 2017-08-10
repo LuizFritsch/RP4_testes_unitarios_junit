@@ -8,15 +8,10 @@ import ol.*;
 
 public class LocalizacaoTest {
 
-	@Test
-	public void testHashCode() {
-		Localizacao obj = new Localizacao(10, 10);
-		System.err.println(obj.hashCode());
-	}
 
 	@Test
 	public void testLocalizacao() {
-		fail("Not yet implemented");
+		
 	}
 
 	@Test
@@ -27,18 +22,31 @@ public class LocalizacaoTest {
 	}
 
 	@Test
-	public void testToString() {
-		fail("Not yet implemented");
-	}
-
-	@Test
 	public void testGetLinha() {
-		fail("Not yet implemented");
+		Localizacao obj = new Localizacao(10, 15);
+		assertEquals(10, obj.getLinha());
 	}
 
 	@Test
 	public void testGetColuna() {
-		fail("Not yet implemented");
+		Localizacao obj = new Localizacao(10, 15);
+		assertEquals(15, obj.getColuna());
 	}
-
+	
+	@Test
+	public void testHashCode1() {
+		Localizacao obj1 = new Localizacao(10, 15);
+		Localizacao obj2 = new Localizacao(10, 15);
+		assertEquals(obj1, obj2);
+	}
+	
+	@Test
+	public void testHashCode2() {
+		Localizacao obj1 = new Localizacao(10, 15);
+		Localizacao obj2 = new Localizacao(10, 16);
+		assertNotEquals(obj1, obj2);;
+	}
+	
+	
+	
 }
