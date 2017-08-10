@@ -19,9 +19,27 @@
 
 | **Obj 01**                  | Teste metodo GetLargura |  
 |-------------------------------|--------------------------------------------------------- ------------------|  
-| Condição do teste             | Retorna a largura de uma simulação                         | 
+| Condição do teste             | Somente largura existente na simulação                          | 
 | Abordagem             |Devem ser usadas entradas validas e invalidas | 
-| Critério de aceitação             | O simulador deve lançar um erro para entradas invalidas e retornar a largura para entradas validas                         |  
+| Critério de aceitação             | O sistema deve lançar um erro para entradas invalidas e retornar a largura para entradas validas                         |  
+ 
+| **Obj 02**                  | Teste metodo GetProfundidade |  
+|-------------------------------|--------------------------------------------------------- ------------------|  
+| Condição do teste             | Somente profundidade existente na simulação                        | 
+| Abordagem             |Devem ser usadas entradas validas e invalidas | 
+| Critério de aceitação             | O sistema deve lançar um erro para entradas invalidas e retornar a profundidade para entradas validas                         |  
+
+| **Obj 03**                  | Teste método GetObject |  
+|-------------------------------|--------------------------------------------------------- ------------------|  
+| Condição do teste             | Somente campos existentes na simulação      | 
+| Abordagem             |Devem ser usadas entradas validas e invalidas | 
+| Critério de aceitação             | O sistema deve lançar um erro para entradas invalida, retornar um lobo guará para localização que esteja preenchida por lobo guará, ovelha para localização com ovelha e null para campos vazios |  
+
+| **Obj 04**                  | Teste método LimpaLocalizacao |  
+|-------------------------------|--------------------------------------------------------- ------------------|  
+| Condição do teste             | Somente localizações existentes na simulação    | 
+| Abordagem             |Devem ser usadas entradas validas e invalidas | 
+| Critério de aceitação             | O sistema deve lançar um erro para localizações invalidas e mudar para null localizações validas |  
  
  
 
