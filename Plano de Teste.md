@@ -71,9 +71,10 @@
  
  #Casos de teste
 
-**CT01: testGetLargura**
-**Descrição: ** O teste deve verificar se em uma execução de simulação, o metodo GetLargura esta funcionando corretamente. Para isso deve-se criar uma simulação com parâmetros validos e inválidos.
-**Precondições: ** --
+**CT01: testGetLargura**  
+**Descrição: ** O teste deve verificar se em uma execução de simulação, o metodo GetLargura esta funcionando corretamente. Para isso deve-se criar uma simulação com parâmetros validos e inválidos.  
+
+**Precondições: ** --  
 
 | **procedimento**                                    |  Verificação                               |Resultado      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -81,9 +82,10 @@
 | Criar um simulador com profundidade 5 e largura 0   | É esperado que o teste lance a exceção illergalArgumentException  |  Teste falhou, o teste lançou um ArithmeticException |
 
 
-**CT02: testGetProfundidade**
-**Descrição: ** O teste deve verificar se em uma execução de simulação, o metodo GetProfundidade esta funcionando corretamente. Para isso deve-se criar uma simulação com parâmetros validos e inválidos.
-**Precondições: ** --
+**CT02: testGetProfundidade**  
+**Descrição: ** O teste deve verificar se em uma execução de simulação, o metodo GetProfundidade esta funcionando corretamente. Para isso deve-se criar uma simulação com parâmetros validos e inválidos. 
+ 
+**Precondições: ** --  
 
 | **procedimento**                                    |  Verificação                               |Resultado      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
