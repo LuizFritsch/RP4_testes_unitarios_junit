@@ -32,7 +32,7 @@ public class Ovelha {
 		if (vivo) {
 			daALuz(novasOvelhas);
 			Localizacao newLocalizacao = campo.localizacaoAdjacenteLivre(localizacao);
-			if (newLocalizacao == null) {
+			if (newLocalizacao != null) {
 				setLocalizacao(newLocalizacao);
 			} else {
 				setMorte();
