@@ -22,11 +22,11 @@ Simular População de Lobos Guará e Ovelhas
 
 | **Relatório Resumo de Teste**                  ||  
 |-------------------------------|--------------------------------------------------------- ------------------|  
-| Nome do projeto              | Incrementar a idade da ovelha até passar a idade máxima                         | 
-| Data inicio teste    | Ovelha morrer                                                                   |
-| Data fim teste    | Ovelha morrer                                                                   |
-| Descrição teste   | Ovelha morrer                                                                   |
-| Pessoas envolvidas    | Ovelha morrer                                                                   |
+| Nome do projeto              | Simulador de habitat de lobo guará e ovelha                         | 
+| Data inicio teste    | --                                     |
+| Data fim teste    | --                                                                   |
+| Descrição teste   | --                                                               |
+| Pessoas envolvidas    | --                                                                  |
 | **Números do teste** ||
 | casos de teste criados antes do teste    |   --                                                     |
 | casos de teste criados durante o teste    |   --                                                     |
