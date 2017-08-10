@@ -13,20 +13,27 @@ public class OvelhaTest {
 	Localizacao od = new Localizacao(50, 50);
 	Ovelha o = new Ovelha(false, c, oa);
 	Ovelha a = new Ovelha(false, c, oa);
-	
-	
+
 	@Test
 	public void testCriarOvelhaLocalizacaoInvalida() {
-		Campo c = new Campo(20, 20);
-		Ovelha dolly = new Ovelha(false, c, od);
+		// Campo c = new Campo(20, 20);
+		// Ovelha dolly = new Ovelha(false, c, od);
 	}
-
-	ArrayList<Ovelha> teste = new ArrayList<Ovelha>();
-
+	
+	
 	@Test
 	public void testCorre() {
-		Simulador s = new Simulador();
-
+		ArrayList<Ovelha> teste = new ArrayList<Ovelha>();
+		Localizacao oasss = new Localizacao(49, 49);
+		Campo camp = new Campo(50, 50);
+		Ovelha abe = new Ovelha(false, camp, oasss);
+		teste.add(abe);
+		int i = 0;
+		while (i < 41) {
+			abe.corre(teste);
+			i++;
+		}
+		assertFalse(a.estaViva());
 	}
 
 	@Test
@@ -49,7 +56,6 @@ public class OvelhaTest {
 	public void testSetMorte() {
 		o.setMorte();
 		assertFalse(o.estaViva());
-		;
 	}
 
 	@Test

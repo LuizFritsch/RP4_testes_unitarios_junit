@@ -25,6 +25,7 @@ public class Ovelha {
 		}
 	}
 
+	// Deveria ter um for each para incrementar a idade
 	public void corre(List<Ovelha> novasOvelhas) {
 		incrementaIdade();
 		if (vivo) {
@@ -49,6 +50,10 @@ public class Ovelha {
 			localizacao = null;
 			campo = null;
 		}
+	}
+	
+	public int getIdade() {
+		return idade;
 	}
 
 	public Localizacao getLocalizacao() {
