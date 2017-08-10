@@ -73,7 +73,7 @@ public class Ovelha {
 	private void incrementaIdade() {
 		idade++;
 		if (idade > IDADE_MAXIMA) {
-			idade--;
+			setMorte();
 		}
 	}
 
