@@ -2,6 +2,9 @@ package teste;
 
 import static org.junit.Assert.*;
 
+import java.util.List;
+import java.util.LinkedList;
+
 import org.junit.Test;
 
 import ol.Campo;
@@ -16,8 +19,62 @@ public class CampoTest {
 
 	@Test
 	public void testCampo() {
-		fail("Not yet implemented");
+		
+		Campo c = new Campo(100,100);
+		assertEquals(c, null);
+		
+		
 	}
+	
+	
+	@Test
+	public void testCampo1() {
+		
+		Campo c = new Campo(100,100);
+		assertEquals(100, c.getLargura());
+		assertEquals(100, c.getProfundidade());
+				
+	}
+	
+	
+	@Test
+	public void testCampo2() {
+		
+		Campo c = new Campo(100,100);
+		assertNotEquals(101, c.getLargura());
+		assertNotEquals(101, c.getProfundidade());
+				
+	}
+	
+	
+	
+	
+	@Test
+	public void testCampo3() {
+		
+		Campo c = new Campo(100,100);
+		assertSame(null, c.getObjectAt(61, 21));
+	}
+	
+	
+	
+	@Test(expected = IndexOutOfBoundsException.class)
+	public void testCampo4() {
+		
+		Campo c = new Campo(100,100);
+		assertSame(null, c.getObjectAt(100, 2100));
+	}
+	
+	
+	@Test(expected = IndexOutOfBoundsException.class)
+	public void testCampo5() {
+		
+		Campo c = new Campo(100,100);
+		assertSame(null, c.getObjectAt(-100, -2100));
+	}
+	
+	
+	//-------------------------------------------------------------------------------------------
 
 	
 	
@@ -238,8 +295,58 @@ public class CampoTest {
    //--------------------------------------------------------------------------------------------
 	@Test
 	public void testGetObjectAtLocalizacao() {
+		Simulador s = new Simulador(100,100); 
+	    Localizacao l = s.getListLobo().get(0).getLocalizacao();    
+		    
+	    LoboGuara lobo = new LoboGuara(true, new Campo(100,100), l);
+	    assertTrue(s.getCampo().getObjectAt(l) instanceof LoboGuara);			
+	
+					
+	}
+	
+	
+	
+	@Test
+	public void testGetObjectAtLocalizacao2() {
+		Simulador s = new Simulador(100,100); 
+	    Localizacao l = s.getListOvelha().get(0).getLocalizacao();    
+		    
+	    Ovelha ove = new Ovelha(true, new Campo(100,100), l);
+	    assertTrue(s.getCampo().getObjectAt(l) instanceof Ovelha);
+	   		
 		
 	}
+	
+	
+	@Test
+	public void testGetObjectAtLocalizacao3() {
+		Simulador s = new Simulador(100,100); 
+	    Localizacao l = s.getListLobo().get(0).getLocalizacao(); 
+	    
+	    s.getCampo().limpa();
+		    
+	    
+	    assertNull(s.getCampo().getObjectAt(l));			
+						
+	}
+	
+	
+	@Test
+	public void testGetObjectAtLocalizaca4() {
+		Simulador s = new Simulador(100,100); 
+	    Localizacao l = s.getListLobo().get(0).getLocalizacao(); 
+	    
+	    s.getCampo().limpa(l);
+		    
+	    
+	    assertNull(s.getCampo().getObjectAt(l));			
+						
+	}
+	
+	
+	
+	
+	
 
 	//---------------------------------------------------------------------------------------------------------------------------------
 	@Test
@@ -279,39 +386,8 @@ public class CampoTest {
 	
 	}
 	
-	@Test
-	public void testGetObjectAt3() {
-		Simulador s = new Simulador(100,100); 
-	    Localizacao l = s.getListLobo().get(0).getLocalizacao(); 
-	    Localizacao loc = new Localizacao(0, 0);
-		    
-	    Ovelha ove = new Ovelha(true, s.getCampo(), loc);
-	    assertNotEquals(ove.getClass().getName(),s.getCampo().getObjectAt(l.getLinha(), l.getColuna()).getClass().getName());			
-	   
-	}
 	
-	@Test
-	public void testGetObjectAt4() {
 		
-		Simulador s = new Simulador(100,100); 
-	    Localizacao l = s.getListOvelha().get(0).getLocalizacao(); 
-	    Localizacao loc = new Localizacao(0, 0);
-	    
-			    
-	    Ovelha ove = new Ovelha(true, s.getCampo(), loc);
-	    assertSame(ove, s.getListOvelha().get(0));
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	//----------------------------------------------------------------------------------------------------------------------------------
 
@@ -332,8 +408,96 @@ public class CampoTest {
 
 	@Test
 	public void testLocalizacoesAdjacentes() {
-		fail("Not yet implemented");
+		
+		Campo c = new Campo(2,1);
+		Localizacao l = new Localizacao(0,0);
+		
+		List<Localizacao> lo = new LinkedList<Localizacao>();
+		lo = c.localizacoesAdjacentes(l);
+		
+		assertEquals(1, lo.size());	
+		
+		
+		
 	}
+	
+	@Test
+	public void testLocalizacoesAdjacentes2() {
+		
+		Campo c = new Campo(2,2);
+		Localizacao l = new Localizacao(0,0);
+		
+		List<Localizacao> lo = new LinkedList<Localizacao>();
+		lo = c.localizacoesAdjacentes(l);
+		
+		assertEquals(3, lo.size());	
+		
+		
+		
+	}
+	
+	@Test
+	public void testLocalizacoesAdjacentes3() {
+		
+		Campo c = new Campo(4,4);
+		Localizacao l = new Localizacao(1,1);
+		
+		List<Localizacao> lo = new LinkedList<Localizacao>();
+		lo = c.localizacoesAdjacentes(l);
+		
+		assertEquals(8, lo.size());		
+		
+		
+	}
+	
+	
+	@Test
+	public void testLocalizacoesAdjacentes4() {
+		
+		Campo c = new Campo(4,4);
+		Localizacao l = new Localizacao(0,3);
+		
+		List<Localizacao> lo = new LinkedList<Localizacao>();
+		lo = c.localizacoesAdjacentes(l);
+		
+		assertEquals(3, lo.size());		
+		
+		
+	}
+	
+	
+	
+	@Test
+	public void testLocalizacoesAdjacentes5() {
+		
+		Campo c = new Campo(4,4);
+		Localizacao l = new Localizacao(3,3);
+		
+		List<Localizacao> lo = new LinkedList<Localizacao>();
+		lo = c.localizacoesAdjacentes(l);
+		
+		assertEquals(3, lo.size());		
+		
+		
+	}
+	
+	@Test (expected = IndexOutOfBoundsException.class)
+	public void testLocalizacoesAdjacentes6() {
+		
+		Campo c = new Campo(4,4);
+		Localizacao l = new Localizacao(-1,0);
+		
+		List<Localizacao> lo = new LinkedList<Localizacao>();
+		lo = c.localizacoesAdjacentes(l);
+		
+				
+		
+		
+	}
+	
+	
+	
+	
 
 	
 	
@@ -351,9 +515,7 @@ public class CampoTest {
 		int n = 5;
 		Simulador s = new Simulador(5,0); 
 		assertEquals(n ,s.getCampo().getProfundidade());
-		
-		
-		
+			
 	}
 	
 	@Test 
