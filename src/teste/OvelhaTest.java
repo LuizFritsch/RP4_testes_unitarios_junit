@@ -19,8 +19,6 @@ public class OvelhaTest {
 		// Campo c = new Campo(20, 20);
 		// Ovelha dolly = new Ovelha(false, c, od);
 	}
-
-	
 	
 	@Test
 	public void testCorre() {
