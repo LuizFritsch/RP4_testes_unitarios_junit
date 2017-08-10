@@ -10,10 +10,6 @@ import ol.*;
 public class OvelhaTest {
 
 	@Test
-	public void testCriarOvelhaLocalizacaoInvalida() {
-	}
-
-	@Test
 	public void testCorre() {
 		ArrayList<Ovelha> teste = new ArrayList<Ovelha>();
 		Localizacao oasss = new Localizacao(20, 19);
@@ -22,6 +18,22 @@ public class OvelhaTest {
 		abe.corre(teste);
 		assertTrue(abe.estaViva());
 		//Foi visto que a partir do momento que é chamado o método corre, a ovelha morria.
+	}
+	
+
+	@Test
+	public void testCorre2() {
+		ArrayList<Ovelha> teste = new ArrayList<Ovelha>();
+		Localizacao oasss = new Localizacao(20, 19);
+		Campo camp = new Campo(50, 50);
+		Ovelha abe = new Ovelha(false, camp, oasss);
+		int i = 0;
+		while (i<42) {
+			abe.corre(teste);
+			i++;
+		}
+		assertFalse(abe.estaViva());
+		//Foi visto que a ovelha não morre ao chegar na idade máxima
 	}
 	
 	
