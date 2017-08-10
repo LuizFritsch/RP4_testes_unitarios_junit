@@ -21,26 +21,55 @@
 |-------------------------------|--------------------------------------------------------- ------------------|  
 | Condição do teste             | Somente largura existente na simulação                          | 
 | Abordagem             |Devem ser usadas entradas validas e invalidas | 
-| Critério de aceitação             | O sistema deve lançar um erro para entradas invalidas e retornar a largura para entradas validas                         |  
+| Critério de aceitação             | O sistema deve lançar um tratamento para entradas invalidas e retornar a largura para entradas validas                         |  
  
 | **Obj 02**                  | Teste metodo GetProfundidade |  
 |-------------------------------|--------------------------------------------------------- ------------------|  
 | Condição do teste             | Somente profundidade existente na simulação                        | 
 | Abordagem             |Devem ser usadas entradas validas e invalidas | 
-| Critério de aceitação             | O sistema deve lançar um erro para entradas invalidas e retornar a profundidade para entradas validas                         |  
+| Critério de aceitação             | O sistema deve lançar um tratamento para entradas invalidas e retornar a profundidade para entradas validas                         |  
 
 | **Obj 03**                  | Teste método GetObject |  
 |-------------------------------|--------------------------------------------------------- ------------------|  
 | Condição do teste             | Somente campos existentes na simulação      | 
 | Abordagem             |Devem ser usadas entradas validas e invalidas | 
-| Critério de aceitação             | O sistema deve lançar um erro para entradas invalida, retornar um lobo guará para localização que esteja preenchida por lobo guará, ovelha para localização com ovelha e null para campos vazios |  
+| Critério de aceitação             | O sistema deve lançar um tratamento para entradas invalida, retornar um lobo guará para localização que esteja preenchida por lobo guará, ovelha para localização com ovelha e null para campos vazios |  
 
 | **Obj 04**                  | Teste método LimpaLocalizacao |  
 |-------------------------------|--------------------------------------------------------- ------------------|  
 | Condição do teste             | Somente localizações existentes na simulação    | 
 | Abordagem             |Devem ser usadas entradas validas e invalidas | 
-| Critério de aceitação             | O sistema deve lançar um erro para localizações invalidas e mudar para null localizações validas |  
+| Critério de aceitação             | O sistema deve lançar um tratamento para localizações invalidas e mudar para null localizações validas |  
+
+// pode ter modificações
+| **Obj 05**                  | Teste método Limpa |  
+|-------------------------------|--------------------------------------------------------- ------------------|  
+| Condição do teste             | Simulação existente | 
+| Abordagem             | Devem ser usadas entradas validas e invalidas | 
+| Critério de aceitação             | O sistema deve lançar um tratamento para localizações invalidas e mudar para null localizações validas |  
+
+| **Obj 06**                  | Teste método Lugar(object animal, Localizacao localizacao) |  
+|-------------------------------|--------------------------------------------------------- ------------------|  
+| Condição do teste             | Objeto deve ser um animal e a Localização deve ser existente na simulação| 
+| Abordagem             | Devem ser usadas entradas validas e invalidas | 
+| Critério de aceitação             | O sistema deve lançar um tratamento para entradas invalidas e mudar a localização para lobo guará ou ovelha em entradas validas |  
+
+
+| **Obj 07**                  | Teste método Lugar(object animal, int linha, int coluna) |  
+|-------------------------------|--------------------------------------------------------- ------------------|  
+| Condição do teste             | Objeto deve ser um animal e a linha e coluna devem ser validas| 
+| Abordagem             | Devem ser usadas entradas validas e invalidas | 
+| Critério de aceitação             | O sistema deve lançar um tratamento para entradas invalidas e mudar a localização da linha e coluna para lobo guará ou ovelha em entradas validas  | 
+
+
+| **Obj 08**                  | Teste método corre |  
+|-------------------------------|--------------------------------------------------------- ------------------|  
+| Condição do teste             | A simulação deve ser iniciada | 
+| Abordagem             | Devem ser usadas entradas para idade da ovelha validas e invalidas| 
+| Critério de aceitação             | O sistema deve lançar um tratamento para entradas invalidas e seguir o seu funcionamento para idade valida | 
  
+ 
+
  
 
 
