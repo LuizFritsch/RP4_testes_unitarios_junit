@@ -26,6 +26,8 @@ public class OvelhaTest {
 			i++;
 		}
 		assertFalse(abe.estaViva());
+		//Foi visto que a partir do momento que é chamado o método corre, a ovelha morria.
+		//Na comparação da nova posicao, deve ser 
 	}
 
 	@Test
