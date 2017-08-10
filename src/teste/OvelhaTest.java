@@ -23,6 +23,8 @@ public class OvelhaTest {
 		assertTrue(abe.estaViva());
 		//Foi visto que a partir do momento que é chamado o método corre, a ovelha morria.
 	}
+	
+	
 
 	@Test
 	public void testEstaViva() {
