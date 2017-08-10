@@ -1,4 +1,5 @@
 package ol;
+
 import java.util.List;
 import java.util.Random;
 
@@ -62,6 +63,7 @@ public class Ovelha {
 		campo.lugar(this, newLocalizacao);
 	}
 
+	// Deveria morrer quando chega na idade máxima
 	private void incrementaIdade() {
 		idade++;
 		if (idade > IDADE_MAXIMA) {
