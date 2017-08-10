@@ -13,8 +13,6 @@ public class OvelhaTest {
 	Localizacao od = new Localizacao(50, 50);
 	Ovelha o = new Ovelha(false, c, oa);
 	Ovelha a = new Ovelha(false, c, oa);
-
-	
 	
 	@Test
 	public void testCriarOvelhaLocalizacaoInvalida() {
