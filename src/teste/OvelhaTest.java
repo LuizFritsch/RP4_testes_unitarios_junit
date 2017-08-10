@@ -14,6 +14,8 @@ public class OvelhaTest {
 	Ovelha o = new Ovelha(false, c, oa);
 	Ovelha a = new Ovelha(false, c, oa);
 
+	
+	
 	@Test
 	public void testCriarOvelhaLocalizacaoInvalida() {
 		Campo c = new Campo(20, 20);
