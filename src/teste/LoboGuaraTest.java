@@ -42,8 +42,8 @@ public class LoboGuaraTest {
 		x.add(l1);
 		int y=0;
 		while(y < 300) {
-			for (int i = 0; i < 4; i++) {
-				if(z.get(i).equals(l1.getLocalizacao())) {
+			for (int i = 0; i < 3; i++) {
+				if(z.get(i).equals(l1.getLocalizacao()) && campo.getObjectAt(z.get(i))==null) {
 					
 				}else {
 					Ovelha o = new Ovelha(true, campo, z.get(i));
