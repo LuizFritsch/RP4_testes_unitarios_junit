@@ -135,15 +135,53 @@ public class CampoTest {
 //-------------------------------------------------------------------------------------------------------------------------------------	
 
 	@Test
-	public void testLugarObjectIntInt() {
-		fail("Not yet implemented");
+	public void testLugarObject() {
+		
+		
 	}
+	
+	//-------------------------------------------------------------------------------------------
 
 	@Test
 	public void testLugarObjectLocalizacao() {
-		fail("Not yet implemented");
+		Simulador s = new Simulador(100,100);
+		
+		Localizacao l = new Localizacao(50, 50);
+		LoboGuara lobo = new LoboGuara(true, s.getCampo(), l);
+		s.getCampo().lugar(lobo, l);
+		
+		assertSame(lobo, s.getCampo().getObjectAt(l));
+		
 	}
-
+	
+	
+	@Test
+	public void testLugarObjectLocalizacao2() {
+		
+		Simulador s = new Simulador(100,100);		
+		Localizacao l = new Localizacao(50, 50);
+		LoboGuara lobo = new LoboGuara(true, s.getCampo(), l);
+		s.getCampo().lugar(null, l);
+		
+		assertNotSame(lobo, s.getCampo().getObjectAt(l));
+		
+	}
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testLugarObjectLocalizacao3() {
+		
+		Campo c = new Campo(10,10);
+		Simulador s = new Simulador(100,100);		
+		Localizacao l = new Localizacao(50, 50);
+		LoboGuara lobo = new LoboGuara(true, s.getCampo(), l);
+		s.getCampo().lugar(c, l);
+		
+		
+		
+	}
+	
+	
+   //--------------------------------------------------------------------------------------------
 	@Test
 	public void testGetObjectAtLocalizacao() {
 		
@@ -165,12 +203,12 @@ public class CampoTest {
 	@Test
 	public void testGetObjectAt1() {
 		Simulador s = new Simulador(100,100); 
-	    Localizacao l = s.getListOvelha().get(0).getLocalizacao(); 
+	    Localizacao l = s.getListLobo().get(0).getLocalizacao(); 
 	    
 	    
-		Ovelha ove = new Ovelha(true, s.getCampo(), l);
+		s.getCampo().limpa();
 	    
-	    assertEquals(ove,s.getCampo().getObjectAt(l.getLinha(), l.getColuna()));			
+	    assertEquals(null, s.getCampo().getObjectAt(l.getLinha(), l.getColuna()));			
 	
 	}
 	
@@ -190,13 +228,25 @@ public class CampoTest {
 	@Test
 	public void testGetObjectAt3() {
 		Simulador s = new Simulador(100,100); 
-	    Localizacao l = s.getListLobo().get(0).getLocalizacao();    
+	    Localizacao l = s.getListLobo().get(0).getLocalizacao(); 
+	    Localizacao loc = new Localizacao(0, 0);
 		    
-	    Ovelha ove = new Ovelha(true, s.getCampo(), l);
-	    assertEquals(ove,s.getCampo().getObjectAt(l.getLinha(), l.getColuna()));			
-	 
+	    Ovelha ove = new Ovelha(true, s.getCampo(), loc);
+	    assertNotEquals(ove.getClass().getName(),s.getCampo().getObjectAt(l.getLinha(), l.getColuna()).getClass().getName());			
+	   
 	}
 	
+	@Test
+	public void testGetObjectAt4() {
+		
+		Simulador s = new Simulador(100,100); 
+	    Localizacao l = s.getListOvelha().get(0).getLocalizacao(); 
+	    Localizacao loc = new Localizacao(0, 0);
+	    
+			    
+	    Ovelha ove = new Ovelha(true, s.getCampo(), loc);
+	    assertSame(ove, s.getListOvelha().get(0));
+	}
 	
 	
 	
@@ -241,18 +291,30 @@ public class CampoTest {
 		assertEquals(n ,s.getCampo().getProfundidade());
 		
 	}
-	@Test (expected = ArithmeticException.class)
+	
+	@Test (expected = IllegalArgumentException.class)
 	public void testGetProfundidade1() {
 		int n = 5;
 		Simulador s = new Simulador(5,0); 
 		assertEquals(n ,s.getCampo().getProfundidade());
 		
+		
+		
 	}
+	
+	@Test 
+	public void testGetProfundidade2A() {
+		int n = 0;
+		Simulador s = new Simulador(0,0); 
+		assertNotEquals(n ,s.getCampo().getProfundidade());
+		
+	}
+	
 	
 	@Test (expected = IllegalArgumentException.class)
 	public void testGetProfundidade2() {
 		int n = 0;
-		Simulador s = new Simulador(0,5); 
+		Simulador s = new Simulador(0,0); 
 		assertEquals(n ,s.getCampo().getProfundidade());
 		
 	}
@@ -293,6 +355,7 @@ public class CampoTest {
 		Simulador s = new Simulador(5,5101); 
 		assertNotEquals(n ,s.getCampo().getLargura());
 	}
+	
 	@Test 
 	public void testGetLargura4() {
 		int n = 50;
@@ -301,9 +364,10 @@ public class CampoTest {
 		//Erro, se informa entradas erradas, deveria retornar excption
 		
 	}
+	
 	@Test
 	public void testGetLargura5() {
-		int n = 2;
+		int n = 2^65;
 		Simulador s = new Simulador(5,2^65); 
 		assertEquals(n ,s.getCampo().getLargura());
 	}
