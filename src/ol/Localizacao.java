@@ -5,8 +5,11 @@ public class Localizacao {
 	private int coluna;
 
 	public Localizacao(int linha, int coluna) {
-		this.linha = linha;
-		this.coluna = coluna;
+
+		if(linha>=0 && coluna>=0) {
+			this.linha = linha;
+			this.coluna = coluna;
+		}
 	}
 
 	public boolean equals(Object obj) {
