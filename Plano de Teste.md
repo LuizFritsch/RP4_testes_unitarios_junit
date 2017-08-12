@@ -68,6 +68,18 @@
 | Condição do teste             | A simulação deve ser iniciada | 
 | Abordagem             | Devem ser usadas entradas para idade da ovelha validas e invalidas| 
 | Critério de aceitação             | O sistema deve lançar um tratamento para entradas invalidas e seguir o seu funcionamento para idade valida | 
+
+| **Obj 09**                  | Teste método estaViva |  
+|-------------------------------|--------------------------------------------------------- ------------------|  
+| Condição do teste             | O método deve retornar se a ovelha esta viva ou morta | 
+| Abordagem             | Devem ser testados ovelhas vivas e ovelhas mortas| 
+| Critério de aceitação             | o sistema deve retornar true para ovelhas vivas e false para ovelhas mortas | 
+
+| **Obj 10**                  | Teste método GetLocalizacao |  
+|-------------------------------|--------------------------------------------------------- ------------------|  
+| Condição do teste             | Uma ovelha deve ser criada | 
+| Abordagem             | Devem ser testadas ovelhas validas e invalidas | 
+| Critério de aceitação             |O sistema deve retornar uma mensagem de erro para entradas invalidas e a localização da ovelha para entradas validas |
  
  #Casos de teste
 
