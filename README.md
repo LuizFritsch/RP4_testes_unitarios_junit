@@ -1,4 +1,3 @@
-Grupo 4
-hur dur
-#Integrantes:#
-##Iderli S., Guilherme S., Luiz G., Vitor H.##
+#Grupo 4#
+##Integrantes:##
+###Iderli S., Guilherme S., Luiz G., Vitor H.###
