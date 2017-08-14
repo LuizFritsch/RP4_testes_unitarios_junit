@@ -6,7 +6,7 @@ import java.util.Random;
 public class Ovelha {
 	private static final int IDADE_PROCRIACAO = 5;
 	private static final int IDADE_MAXIMA = 40;
-	private static final double PROBABILIDADE_PROCRIACAO = 1;
+	private static final double PROBABILIDADE_PROCRIACAO = 0.15;
 	private static final int TAMANHO_MAXIMO_NINHADA = 4;
 	private static final Random rand = Randomizador.getRandom();
 
@@ -94,6 +94,7 @@ public class Ovelha {
 		int nascimentos = 0;
 		if (podeProcriar() && rand.nextDouble() <= PROBABILIDADE_PROCRIACAO) {
 			nascimentos = rand.nextInt(TAMANHO_MAXIMO_NINHADA) + 1;
+			System.out.println(nascimentos);
 		}
 		return nascimentos;
 	}

@@ -12,9 +12,7 @@ public class OvelhaTest {
 	@Test
 	public void testCorre() {
 		ArrayList<Ovelha> teste = new ArrayList<Ovelha>();
-		Localizacao oasss = new Localizacao(20, 19);
-		Campo camp = new Campo(50, 50);
-		Ovelha abe = new Ovelha(false, camp, oasss);
+		Ovelha abe = new Ovelha(false, new Campo(50, 50), new Localizacao(20, 19));
 		abe.corre(teste);
 		assertTrue(abe.estaViva());
 		// Foi visto que a partir do momento que é chamado o método corre, a ovelha
@@ -24,10 +22,9 @@ public class OvelhaTest {
 	@Test
 	public void testCorre2() {
 		ArrayList<Ovelha> teste = new ArrayList<Ovelha>();
-		Localizacao oasss = new Localizacao(20, 19);
-		Campo camp = new Campo(50, 50);
-		Ovelha abe = new Ovelha(false, camp, oasss);
+		Ovelha abe = new Ovelha(false, new Campo(100, 100), new Localizacao(3, 3));
 		int i = 0;
+		teste.add(abe);
 		while (i < 42) {
 			abe.corre(teste);
 			i++;
@@ -38,17 +35,13 @@ public class OvelhaTest {
 
 	@Test
 	public void testEstaViva() {
-		Campo camp = new Campo(20, 20);
-		Localizacao local = new Localizacao(2, 2);
-		Ovelha o = new Ovelha(false, camp, local);
+		Ovelha o = new Ovelha(false, new Campo(20, 20), new Localizacao(2, 2));
 		assertTrue(o.estaViva());
 	}
 
 	@Test
 	public void testEstaVivaEstandoMorta() {
-		Campo camp = new Campo(20, 20);
-		Localizacao local = new Localizacao(2, 2);
-		Ovelha o = new Ovelha(false, camp, local);
+		Ovelha o = new Ovelha(false, new Campo(20, 20), new Localizacao(2, 2));
 		o.setMorte();
 		assertFalse(o.estaViva());
 	}
@@ -64,24 +57,11 @@ public class OvelhaTest {
 
 	@Test
 	public void testGetLocalizacao() {
-		Campo camp = new Campo(50, 50);
-		Localizacao local = new Localizacao(49, 49);
-		Ovelha o = new Ovelha(false, camp, local);
+		Ovelha o = new Ovelha(false, new Campo(50, 50), new Localizacao(49, 49));
 		Localizacao loc = new Localizacao(49, 49);
-		if (o.getLocalizacao().getLinha() == loc.getLinha() && o.getLocalizacao().getColuna() == loc.getColuna()) {
-			assertTrue(true);
-		} else {
-			assertTrue(false);
-		}
-
+		assertTrue(o.getLocalizacao().getLinha() == loc.getLinha() && o.getLocalizacao().getColuna() == loc.getColuna());
 	}
 
-	/*
-	 * Neste teste, crio um campo 4x4 e crio uma ovelha, faço com que a ovelha 
-	 * tenha 5 anos que é a idade minima para uma ovelha procriar, e chamo o metodo corre, que chama o metodo procria.
-	 * Necessariamente deverá haver mais de um objeto no campo. Importante notar que alterei a probabilidade de uma 
-	 * ovelha procriar para 1, para o teste ser mais objetivo.
-	 */
 	@Test
 	public void testProcria() {
 		ArrayList<Ovelha> ov = new ArrayList<Ovelha>();
@@ -91,7 +71,7 @@ public class OvelhaTest {
 		Ovelha ovelha = new Ovelha(false, c, l);
 		ov.add(ovelha);
 		int ite = 0;
-		while (ite < 6) {
+		while (ite < 7) {
 			ovelha.corre(ov);
 			ite++;
 		}
@@ -101,10 +81,15 @@ public class OvelhaTest {
 				if (c.getObjectAt(i, j) != null) {
 					contr++;
 				}
-				
+
 			}
 		}
+		System.out.println("=====================");
+		System.out.println(contr);
+		System.out.println("=====================");
 	
+		assertTrue(contr>1);
+
 	}
 
 }
