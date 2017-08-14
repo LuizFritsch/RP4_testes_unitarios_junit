@@ -112,8 +112,8 @@ public class LoboGuara {
 	}
 
 	/*
-	 * Método refatorado
-	 * Substituido '>' por '>=' para possibilitar que um lobo na idade correta já posso procriar
+	 * Mï¿½todo refatorado
+	 * Substituido '>' por '>=' para possibilitar que um lobo na idade correta jï¿½ posso procriar
 	 */
 	private boolean podeProcriar() {
 		return idade >= IDADE_PROCRIACAO;
@@ -128,4 +128,5 @@ public class LoboGuara {
 			campo = null;
 		}
 	}
+	
 }
