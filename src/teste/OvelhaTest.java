@@ -84,10 +84,7 @@ public class OvelhaTest {
 
 			}
 		}
-		System.out.println("=====================");
-		System.out.println(contr);
-		System.out.println("=====================");
-	
+
 		assertTrue(contr>1);
 
 	}
