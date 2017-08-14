@@ -100,17 +100,28 @@ public class LoboGuara {
 		}
 	}
 
+	/*
+	 * No if ao invez de '<' deveria ser '<=' para atender a probabilidade certa
+	 */
 	private int procria() {
 		int nascimentos = 0;
-		if (podeProcriar() && rand.nextDouble() < PROBABILIDADE_PROCRIACAO) {
+		if (podeProcriar() && rand.nextDouble() <= PROBABILIDADE_PROCRIACAO) {
 			nascimentos = rand.nextInt(TAMANHO_MAXIMO_NINHADA) + 1;
 		}
 		return nascimentos;
 	}
+<<<<<<< HEAD
 	
 	//Privado
+=======
+
+	/*
+	 * Método refatorado
+	 * Substituido '>' por '>=' para possibilitar que um lobo na idade correta já posso procriar
+	 */
+>>>>>>> bdc986100f227b4a1cb689966450f1015031369a
 	private boolean podeProcriar() {
-		return idade > IDADE_PROCRIACAO;
+		return idade >= IDADE_PROCRIACAO;
 	}
 	
 	//Privado
