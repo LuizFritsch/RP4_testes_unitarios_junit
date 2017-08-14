@@ -22,9 +22,8 @@ public class OvelhaTest {
 	@Test
 	public void testCorre2() {
 		ArrayList<Ovelha> teste = new ArrayList<Ovelha>();
-		Ovelha abe = new Ovelha(false, new Campo(100, 100), new Localizacao(3, 3));
-		int i = 0;
-		teste.add(abe);
+		Ovelha abe = new Ovelha(false, new Campo(100, 100), new Localizacao(3,3));
+		int i = 1;
 		while (i < 42) {
 			abe.corre(teste);
 			i++;

@@ -58,16 +58,21 @@ public class LoboGuaraTest {
 		 
 	}
 	
-	@Ignore
 	@Test
 	public void testEstaVivo() {
-		fail("Not yet implemented");
+		LoboGuara loboGuara = new LoboGuara(false , new Campo(3, 3), new Localizacao(0,0));
+		assertTrue(loboGuara.estaVivo());
 	}
-
-	@Ignore
+	
 	@Test
-	public void testGetLocalizacao() {
-		fail("Not yet implemented");
+	public void testEstaVivoEstandoMorto() {
+		LoboGuara loboGuara = new LoboGuara(false , new Campo(3, 3), new Localizacao(0,0));
+		//setMorte está privado\\
+		loboGuara.setMorte();
+		assertFalse(loboGuara.estaVivo());
 	}
+	
+	
+	
 
 }
