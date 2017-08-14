@@ -12,7 +12,7 @@ import ol.Campo;
 import ol.LoboGuara;
 import ol.Localizacao;
 import ol.Ovelha;
-import ol.Simulador;
+
 
 
 
@@ -229,10 +229,9 @@ public class CampoTest {
 		
 	
 	Campo c = new Campo(10,10);
-	Simulador s = new Simulador(100,100);		
 	Localizacao l = new Localizacao(50, 50);
-	LoboGuara lobo = new LoboGuara(true, s.getCampo(), l);
-	s.getCampo().lugar(c, l);
+	LoboGuara lobo = new LoboGuara(true, c, l);
+	c.lugar(c, l);
 			
 			
 			
@@ -371,14 +370,99 @@ public class CampoTest {
 		
 	
 	//----------------------------------------------------------------------------------------------------------------------------------
-	 //Corigir o rand para criar os testes:
+
 	@Test
 	public void testLocalizacaoAdjacenteRandomica() {
+
+		Campo c = new Campo(100,100);
+		Localizacao l = new Localizacao(-1,0);
 		
-		
-		Campo c = new Campo(10,10);
-		
+	    Localizacao lo = c.localizacaoAdjacenteRandomica(l);
+		assertNotEquals(lo, null);
+				
 	}
+	
+	@Test
+	public void testLocalizacaoAdjacenteRandomica1() {
+
+		Campo c = new Campo(100,100);
+		Localizacao l = new Localizacao(-1,0);
+		Localizacao l2 = new Localizacao(0,0);
+		Localizacao l3 = new Localizacao(1,0);
+		
+		
+	    Localizacao lo = c.localizacaoAdjacenteRandomica(l);
+		assertEquals(lo,l2);
+				
+	}
+	
+	@Test
+	public void testLocalizacaoAdjacenteRandomica2() {
+
+		Campo c = new Campo(100,100);
+		Localizacao l = new Localizacao(-1,0);
+		Localizacao l2 = new Localizacao(0,0);
+		Localizacao l3 = new Localizacao(1,0);
+		
+		
+	    Localizacao lo = c.localizacaoAdjacenteRandomica(l);
+		assertEquals(lo,l2);
+				
+	}
+	
+	@Test
+	public void testLocalizacaoAdjacenteRandomica4() {
+
+		Campo c = new Campo(100,100);
+		Localizacao l = new Localizacao(-1,0);
+		Localizacao l2 = new Localizacao(0,0);
+		Localizacao l3 = new Localizacao(1,0);
+		
+		
+	    Localizacao lo = c.localizacaoAdjacenteRandomica(l);
+		assertEquals(lo,l2);
+				
+	}
+	@Test
+	public void testLocalizacaoAdjacenteRandomica5() {
+
+		Campo c = new Campo(100,100);
+		Localizacao l = new Localizacao(-1,0);
+		Localizacao l2 = new Localizacao(0,0);
+		Localizacao l3 = new Localizacao(1,0);
+		
+		
+	    Localizacao lo = c.localizacaoAdjacenteRandomica(l);
+		assertEquals(lo,l2);
+				
+	}
+	@Test
+	public void testLocalizacaoAdjacenteRandomica6() {
+
+		Campo c = new Campo(100,100);
+		Localizacao l = new Localizacao(-1,0);
+		Localizacao l2 = new Localizacao(0,0);
+		Localizacao l3 = new Localizacao(1,0);
+		
+		
+	    Localizacao lo = c.localizacaoAdjacenteRandomica(l);
+		assertEquals(lo,l2);
+				
+	}
+	@Test
+	public void testLocalizacaoAdjacenteRandomica3() {
+
+		Campo c = new Campo(100,100);
+		Localizacao l = new Localizacao(-1,0);
+		Localizacao l2 = new Localizacao(0,0);
+		Localizacao l3 = new Localizacao(1,0);
+		
+		
+	    Localizacao lo = c.localizacaoAdjacenteRandomica(l);
+		assertEquals(lo,l2);
+				
+	}
+	
 
 	
 	
@@ -481,7 +565,7 @@ public class CampoTest {
 	
 	
 
-//-----------------------------------------------------------------------------------------------
+   //-----------------------------------------------------------------------------------------------
 
 	
 	@Test

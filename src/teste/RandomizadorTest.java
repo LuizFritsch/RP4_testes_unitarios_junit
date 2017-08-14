@@ -5,12 +5,15 @@ import static org.junit.Assert.*;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import ol.Randomizador;
+
 public class RandomizadorTest {
 
 	@Ignore
 	@Test
 	public void testGetRandom() {
-		fail("Not yet implemented");
+		Randomizador r = new Randomizador();
+		
 	}
 
 	@Ignore

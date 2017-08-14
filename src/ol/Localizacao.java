@@ -2,7 +2,7 @@ package ol;
 
 public class Localizacao {
 	private int linha;
-	private int coluna;
+	private int coluna = 1;
 
 	public Localizacao(int linha, int coluna) {
 
