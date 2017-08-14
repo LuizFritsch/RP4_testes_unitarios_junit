@@ -17,9 +17,9 @@ public class OvelhaTest {
 		Ovelha abe = new Ovelha(false, camp, oasss);
 		abe.corre(teste);
 		assertTrue(abe.estaViva());
-		//Foi visto que a partir do momento que é chamado o método corre, a ovelha morria.
+		// Foi visto que a partir do momento que é chamado o método corre, a ovelha
+		// morria.
 	}
-	
 
 	@Test
 	public void testCorre2() {
@@ -28,15 +28,13 @@ public class OvelhaTest {
 		Campo camp = new Campo(50, 50);
 		Ovelha abe = new Ovelha(false, camp, oasss);
 		int i = 0;
-		while (i<42) {
+		while (i < 42) {
 			abe.corre(teste);
 			i++;
 		}
 		assertFalse(abe.estaViva());
-		//Foi visto que a ovelha não morre ao chegar na idade máxima
+		// Foi visto que a ovelha não morre ao chegar na idade máxima
 	}
-	
-	
 
 	@Test
 	public void testEstaViva() {
@@ -44,17 +42,6 @@ public class OvelhaTest {
 		Localizacao local = new Localizacao(2, 2);
 		Ovelha o = new Ovelha(false, camp, local);
 		assertTrue(o.estaViva());
-	}
-	
-	@Test
-	public void testIdade() {
-		int i = 0;
-		
-	}
-
-	@Test
-	public void testEstaVivaa() {
-		// assertTrue(dolly.estaViva());
 	}
 
 	@Test
@@ -88,4 +75,36 @@ public class OvelhaTest {
 		}
 
 	}
+
+	/*
+	 * Neste teste, crio um campo 4x4 e crio uma ovelha, faço com que a ovelha 
+	 * tenha 5 anos que é a idade minima para uma ovelha procriar, e chamo o metodo corre, que chama o metodo procria.
+	 * Necessariamente deverá haver mais de um objeto no campo. Importante notar que alterei a probabilidade de uma 
+	 * ovelha procriar para 1, para o teste ser mais objetivo.
+	 */
+	@Test
+	public void testProcria() {
+		ArrayList<Ovelha> ov = new ArrayList<Ovelha>();
+
+		Campo c = new Campo(4, 4);
+		Localizacao l = new Localizacao(0, 0);
+		Ovelha ovelha = new Ovelha(false, c, l);
+		ov.add(ovelha);
+		int ite = 0;
+		while (ite < 6) {
+			ovelha.corre(ov);
+			ite++;
+		}
+		int contr = 0;
+		for (int i = 0; i < c.getLargura(); i++) {
+			for (int j = 0; j < c.getProfundidade(); j++) {
+				if (c.getObjectAt(i, j) != null) {
+					contr++;
+				}
+				
+			}
+		}
+	
+	}
+
 }
