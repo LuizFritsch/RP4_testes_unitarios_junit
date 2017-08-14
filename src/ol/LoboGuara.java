@@ -110,16 +110,11 @@ public class LoboGuara {
 		}
 		return nascimentos;
 	}
-<<<<<<< HEAD
-	
-	//Privado
-=======
 
 	/*
 	 * Método refatorado
 	 * Substituido '>' por '>=' para possibilitar que um lobo na idade correta já posso procriar
 	 */
->>>>>>> bdc986100f227b4a1cb689966450f1015031369a
 	private boolean podeProcriar() {
 		return idade >= IDADE_PROCRIACAO;
 	}
