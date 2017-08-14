@@ -90,6 +90,7 @@ public class Ovelha {
 		}
 	}
 
+	
 	private int procria() {
 		int nascimentos = 0;
 		if (podeProcriar() && rand.nextDouble() <= PROBABILIDADE_PROCRIACAO) {
