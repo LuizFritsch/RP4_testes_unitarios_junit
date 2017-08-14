@@ -69,7 +69,7 @@ public class LoboGuara {
 		}
 	}
 
-	private void incrementaFome() {
+	private void decrementaFome() {
 		nivelFome--;
 		if (nivelFome == 0) {
 			setMorte();
@@ -107,12 +107,14 @@ public class LoboGuara {
 		}
 		return nascimentos;
 	}
-
+	
+	//Privado
 	private boolean podeProcriar() {
 		return idade > IDADE_PROCRIACAO;
 	}
-
-	private void setMorte() {
+	
+	//Privado
+	public void setMorte() {
 		vivo = false;
 		if (localizacao != null) {
 			campo.limpa(localizacao);
