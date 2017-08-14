@@ -1,18 +1,18 @@
 | Plano de Teste                  ||  
 |-------------------------------|--------------------------------------------------------- ------------------|  
- **Nome do projeto: **  Simulador de habitat de lobo guará e ovelha                          
- **Pessoas Envolvidas / Responsabilidade:** Guilherme Souza Santos - Implementação das classes de teste (JUnit)    
- Luiz Guilherme Fritsch - Implementação das classes de teste (JUnit)  
- Vitor Hugo Maciel dos Santos - Análise e correção das classes  
- Iderli Pereira Souza Filho - Draft Plano de Teste IEEE  
- **Funcionalidades ou Módulos:**  Simular População de Lobos Guará e Ovelha. Simulação de Longa duração e  simulação por etapa                                              
- **Equipamentos/Softwares:**  --   
- **Cronograma:** Data de Início e Fim do Projeto: 01/08/2009 – 01/10/2010  
- Data de Início e Fim do Teste: 01/02/2010 a 01/10/2010   
- **Local dos Testes:** O sistema não possui um local especifico para testes. Os mesmos serão executados nas maquinas das  pessoas envolvidas em locais aleatórios  
- **Critérios para considerar o teste finalizado:** --
-**Observações:** O relatório de incidente será enviado para todos os desenvolvedores por e-mail assim que alguma alteração tenha sido feita. Serão criados os casos de testes, os relatórios de incidentes e o relatório resumo de teste 
-
+ **Identificador do plano de teste: **  01                          
+ **Referências:**  MD.050 APPLICATION EXTENSIONS FUNCTIONAL DESIGN.  
+ **Introdução:** Este documento consiste numa modelagem detalhada do fluxo de trabalho durante o processo de teste do simulador de lobos guará e ovelha. Sistema que envolve monitoramento de populações de lobos guará e ovelhas dentro de uma área demarcada. A simulação tem por objetivo avaliar o resultado entre predador (lobo guará) e presa (ovelha).  
+ **Itens de teste:** Métodos, padrões de projeto, arquitetura e consistência entre projeto e documentação.  
+ **Problemas de Risco de Software: ** 1.Erro na interface de simulação pode acarretar em danos aos animais do habitat em questão.  2.Os módulos de documentação existentes no projeto são pouco detalhados.  
+ **Recursos a serem Testados:** O teste deve preencher todas as etapas da simulação do habitat.  
+ **Características a serem testadas:** --  
+**Abordagem: **  
+   1. Atividades: testes JUnit, debug e revisões conjuntas.  
+   2. Técnicas: partições de equivalência, error guessing e casos de teste.  
+   3. Ferramentas: JUnit, Eclipse e bitbucket. Nenhuma ferramenta necessita de treinamento especial.  
+   4. O gerenciamento de configuração deve ser feito pelos membros da equipe de teste.   
+   5. 
 
 
 #**Objetivos do teste**
