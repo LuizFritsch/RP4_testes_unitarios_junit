@@ -50,4 +50,4 @@ C. Vitor Hugo Maciel dos Santos - Análise e correção das classes
 D. Iderli Pereira Souza Filho - Documentação **
 **8.2. Necessidades de contratação: ** Nenhuma  
 **8.3. necessidades de treinamento: ** Nenhuma  
-**9. Cronograma: **
+**9. Cronograma: **  Não ah um cronograma previsto.
