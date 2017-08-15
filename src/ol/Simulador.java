@@ -11,6 +11,7 @@ import java.awt.Color;
  * Inspeção de software inicial finalizada em 14 de agosto de 2017 as 23:50
  * 
  * Iniciando Refatoração do código em 14 de agosto de 2017 as 23:50
+ * Refatoração finalizada em 15 de agosto de 2017 as 00:03
  */
 
 public class Simulador {
