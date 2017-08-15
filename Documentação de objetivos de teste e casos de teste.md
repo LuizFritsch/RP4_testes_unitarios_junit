@@ -64,6 +64,12 @@
 | Abordagem             | Devem ser testadas ovelhas validas e invalidas | 
 | Critério de aceitação             |O sistema deve retornar uma mensagem de erro para entradas invalidas e a localização da ovelha para entradas validas |
 
+| **Obj 11**                  | Teste método GetPopulationDetails |  
+|-------------------------------|--------------------------------------------------------- ------------------|  
+| Condição do teste             | Um campo deve ser criado e animais devem ser atribuídos a localizações | 
+| Abordagem             | Devem ser testados entradas validos e inválidos | 
+| Critério de aceitação             |O sistema deve retornar uma mensagem de erro para entradas invalidas e uma contagem das da população para entradas validas |  
+
  
  #Casos de teste
 
@@ -86,37 +92,16 @@
 | **procedimento**                                    |  Verificação                               |Resultado      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Criar um simulador com profundidade 31 e largura 5  | É esperado que o teste não encontre erros  |  Teste passou |
-| Criar um simulador com profundidade 0 e largura 5   | É esperado que o teste lance a exceção illergalArgumentException  |  Teste falhou, o teste lançou um ArithmeticException |
+| Criar um simulador com profundidade 0 e largura 5   | É esperado que o teste lance a exceção illegalArgumentException  |  Teste falhou, o teste lançou um ArithmeticException |
 
 
 
-
+**CT03: testGetPopulationDetails**  
+**Descrição: ** O teste deve verificar se é retornado os detalhes da população em uma simulação. 
  
+**Precondições: ** --  
 
-
-**Abordagem**  
-   1. Atividades: testes JUnit, debug e revisões conjuntas.  
-   2. Técnicas: partições de equivalência, error guessing e casos de teste.  
-   3. Ferramentas: JUnit, Eclipse e .    
-
-#Relatório resumo de teste
-
-| **Relatório**                  ||  
-|-------------------------------|--------------------------------------------------------- ------------------|  
-| Nome do projeto              | Simulador de habitat de lobo guará e ovelha                         | 
-| Data inicio teste    |   08/08/2017                                   |
-| Data fim teste    | --                                                                   |
-| Descrição teste   | --                                                               |
-| Pessoas envolvidas    | --                                                                  |
-| **Números do teste** ||
-| casos de teste criados antes do teste    |   --                                                     |
-| casos de teste criados durante o teste    |   --                                                     |
-| casos de teste executados    |   --                                                     |
-| casos de teste com sucesso    |   --                                                     |
-| casos de teste com erro    |   --                                                     |
-| casos de teste enviados para correção    |   --                                                     |
-| **Percentual**    |  |
-| casos de teste executados    |   --                                                     |
-| casos de teste executados com sucesso    |   --                                                     |
-| casos de teste executados com incidência de erro   |   --                                                     |
-| casos de teste corrigidos    |   --                                                     |
+| **procedimento**                                    |  Verificação                               |Resultado      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| criar um campo 3x3 e 3 ovelhas com parâmetros (0,0)(0,1)(0,2) | É esperado que o teste retorne null  |  Teste passou |
+| criar um campo 100x100 e 3 ovelhas com parâmetros (0,0)(0,1)(0,2) | "" |  ""|
