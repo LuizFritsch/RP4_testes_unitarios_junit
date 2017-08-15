@@ -20,7 +20,7 @@ A. Stakeholders: pessoas interessadas no sistema.
 **3.5. Stakeholders: ** Biólogos, Ambientalistas e professores.   
 **4. Comunicação: ** 
 A. Quando ocorrer um erro ele deve ser reportado por e-mail e comunicado aos demais membros da equipe.  
-B. O teste pode começar a qualquer hora pelo testador.]
+B. O teste pode começar a qualquer hora pelo testador.
 **5. Registros de risco: **
 **5.1. Riscos do produto: ** Se ocorrer algum erro com o produto no ambiente de execução pode acarretar em danos no habitat dos animais em questão.  
 **5.2. Riscos do projeto: ** --  
