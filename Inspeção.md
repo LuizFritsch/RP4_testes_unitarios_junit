@@ -1,5 +1,20 @@
-**Correções da inspeção**  
+|**Status**                              |**Sim**  |**Não**  |**Indiferente**  | 
+|----------------------------------------|---------|---------|-----------------|   
+|Todas as constantes foram denominadas?  |     X   |   --    |       --        |  
+|O limite superior de vetores deve ser igual ao tamanho do vetor ou tamanho -1?|   X   |   --    |    --    |
+|Para cada declaração condicional, a condição está correta?|  --   |    X    |    --    |
+|Cada loop está terminando corretamente? |  --   |    X    |    --    |
+|As declarações compostas estão corretamente delimitadas entre parênteses? |   X   |   --    |    --    |
+|Todas as variáveis de entrada são usadas? |   X   |   --    |    --    |
+|Nenhuma  das entradas inesperadas podem fazer com que os dados sejam corrompidos?|  --   |    X    |    --    |
+|Todas as condições possíveis de erro foram consideradas? |  --   |   --    |     X    |
+|Toda as chamadas de funções e de métodos tem o número correto de parâmetros? |   X   |   --    |    --    |
+|Os parâmetros estão na ordem correta? |   X   |   --    |    --    |
+|Toda as chamadas de funções e de métodos tem o número correto de parâmetros? |   X   |   --    |    --    |
+|As variáveis são de fácil entendimento? |   X   |   --    |    --    |
 
+
+**Correções da inspeção**  
 Correção 1    
 1.1 Classe: ‘LoboGuara’  
 1.2 Método: ‘procria()’  
