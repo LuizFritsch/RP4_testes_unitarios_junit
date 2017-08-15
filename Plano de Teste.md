@@ -28,7 +28,8 @@ B. O teste pode começar a qualquer hora pelo testador.]
 **6.1. Subprocessos de teste: ** --    
 **6.2. Entregas de teste: ** Os testes devem ser entregues no repositório e colocados para documentação.    
 **6.3. Técnicas de design de teste: ** --  
-**6.4. Critérios de conclusão do teste: ** O plano de teste será finalizado ao final da execução dos casos de teste e correções, derivadas dos testes, no projeto.  
+**6.4. Critérios de conclusão do teste: ** 
+A. Os testes devem ser finalizados apenas quando não encontrem erros, caso o erro seja encontrado o testador deve aguardar a correção e refazer o teste.  
 **6.5. Métricas a serem coletadas: ** --  
 **6.6. Requisitos de dados de teste: ** O teste deve fornecer o motivo do teste, entrada, saída esperada e saída real.  
 **6.7. Requisitos de ambiente de teste: ** Os testes serão realizados nos computadores pessoais dos testadores, sem nenhum requisito prévio. 
