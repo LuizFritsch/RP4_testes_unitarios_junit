@@ -26,7 +26,7 @@ B. O teste pode começar a qualquer hora pelo testador.]
 **5.2. Riscos do projeto: ** --  
 **6. Estrategia de teste** 
 **6.1. Submissão de processos: ** Todos os processos do teste devem ser documentados.  
-**6.2. Produtos de teste: ** --    
+**6.2. Entregas de teste: ** Os testes devem ser entregues no repositório e colocados para documentação.    
 **6.3. Técnicas de design de teste: ** --  
 **6.4. Critérios de conclusão do teste: ** O plano de teste será finalizado ao final da execução dos casos de teste e correções, derivadas dos testes, no projeto.  
 **6.5. Métricas a serem coletadas: ** --  
