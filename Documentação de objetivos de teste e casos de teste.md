@@ -63,6 +63,7 @@
 | Condição do teste             | Uma ovelha deve ser criada | 
 | Abordagem             | Devem ser testadas ovelhas validas e invalidas | 
 | Critério de aceitação             |O sistema deve retornar uma mensagem de erro para entradas invalidas e a localização da ovelha para entradas validas |
+
  
  #Casos de teste
 
