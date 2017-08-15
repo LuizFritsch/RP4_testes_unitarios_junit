@@ -14,7 +14,12 @@
 |As variáveis são de fácil entendimento? |   X   |   --    |    --    |
 
 
-**Correções da inspeção**  
+
+
+
+**Correções da inspeção**   
+
+
 Correção 1    
 1.1 Classe: ‘LoboGuara’  
 1.2 Método: ‘procria()’  
