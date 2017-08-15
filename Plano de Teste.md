@@ -9,7 +9,8 @@
  **2. Introdução**
  **2.1. Escopo: ** Sistema que envolve monitoramento de populações de lobos guará e ovelhas dentro de uma área demarcada. A simulação tem por objetivo avaliar o resultado entre predador (lobo guará) e presa (ovelha).  
  **2.2. Referências:**  MD.050 APPLICATION EXTENSIONS FUNCTIONAL DESIGN.  
-**2.3.Glossário: ** --
+**2.3.Glossário: **
+A. Stakeholders: pessoas interessadas no sistema.  
 **3. Contexto do teste**
 **3.1. Subprocesso de projeto/ teste: ** Inspeção. 
  **3.2. Itens de teste:** Métodos, padrões de projeto, arquitetura e consistência entre projeto e documentação.  
