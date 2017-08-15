@@ -10,7 +10,10 @@ public class CampoEstatistica
     public CampoEstatistica()
     {
         contadores = new HashMap<Class, Contador>();
-        contadoresValidos = true;
+        contadoresValidos = false;
+        /*Estava true. Mas metodo getPopulationsDetalis não encontrava nada. Ou seta false,
+        *ou inverte dentro do metodo citado.
+        */
     }
 
     public String getPopulationDetails(Campo campo)
@@ -28,6 +31,7 @@ public class CampoEstatistica
         }
         return buffer.toString();
     }
+    
     
     public void redefine()
     {
@@ -80,5 +84,16 @@ public class CampoEstatistica
             }
         }
         contadoresValidos = true;
+    }
+    
+    
+    
+    
+    public HashMap<Class, Contador> getHash(){
+    	return contadores;
+    }
+    
+    public boolean getContadoresValidos() {
+    	return contadoresValidos;
     }
 }

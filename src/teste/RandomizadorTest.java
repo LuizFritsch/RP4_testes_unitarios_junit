@@ -12,7 +12,7 @@ public class RandomizadorTest {
 	@Ignore
 	@Test
 	public void testGetRandom() {
-		Randomizador r = new Randomizador();
+		
 		
 	}
 
