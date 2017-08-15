@@ -85,15 +85,5 @@ public class CampoEstatistica
         }
         contadoresValidos = true;
     }
-    
-    
-    
-    
-    public HashMap<Class, Contador> getHash(){
-    	return contadores;
-    }
-    
-    public boolean getContadoresValidos() {
-    	return contadoresValidos;
-    }
+
 }

@@ -2,6 +2,8 @@ package teste;
 
 import static org.junit.Assert.*;
 
+import javax.xml.transform.SourceLocator;
+
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -13,10 +15,13 @@ import ol.Ovelha;
 
 public class CampoEstatisticaTest {
 	
-	@Ignore
+	
+	
+	
 	@Test
 	public void testCampoEstatistica() {
-		fail("Not yet implemented");
+		CampoEstatistica campoe = new CampoEstatistica();
+		assertNotEquals(campoe, null);
 	}
 
 	
@@ -59,7 +64,7 @@ public class CampoEstatisticaTest {
 	 */
 	@Test
 	public void testGetPopulationDetails3() {
-		Campo c = new Campo(3,3);
+		Campo c = new Campo(100,100);
 		Ovelha ove = new Ovelha(true, c, new Localizacao(0,0));
 		Ovelha ove1 = new Ovelha(true, c, new Localizacao(0,1));
 		Ovelha ove2 = new Ovelha(true, c, new Localizacao(0,2));
@@ -88,12 +93,42 @@ public class CampoEstatisticaTest {
 		c.lugar(teste, 2, 2);
 		c.lugar(teste, 2, 1);
 		CampoEstatistica campoe = new CampoEstatistica();
-		assertEquals( campoe.getPopulationDetails(c) ,"ol.Ovelha: 3 ol.LoboGuara: 3 ol.Campo: 3 ");	
+		assertEquals( campoe.getPopulationDetails(c) ,"ol.LoboGuara: 3 ol.Ovelha: 3 ol.Campo: 3 ");	
 		
 		
 	}
 	
+	@Test
+	public void testGetPopulationDetails5() {
+		Campo c = new Campo(300,10);
+		CampoEstatistica campoe = new CampoEstatistica();
+		assertEquals("", campoe.getPopulationDetails(c));
+		}
 	
+	
+	@Test
+	public void testGetPopulationDetails6() {
+		Campo c = new Campo(10000,2);
+		
+		Ovelha ove = new Ovelha(true, c, new Localizacao(0,0));
+		for(int i =0; i<10000;i++) {
+			
+			c.lugar(ove, i, 0);			
+			
+		}
+		LoboGuara lobo = new LoboGuara(true, c, new Localizacao(0, 1));
+        for(int i =0; i<10000;i++) {
+			
+			c.lugar(lobo, i, 1);			
+			
+		}
+		
+		
+		CampoEstatistica campoe = new CampoEstatistica();
+		assertEquals( campoe.getPopulationDetails(c) , "ol.Ovelha: 10000 ol.LoboGuara: 10000");	
+		
+		
+	}
     //-----------------------------------------------------------------------------------------------------------------------------------
 	
 	@Test
@@ -108,9 +143,10 @@ public class CampoEstatisticaTest {
 	   	campoe.incrementaContador(ove.getClass());
 	   
 	   	campoe.redefine();
+	   	campoe.contadorFinalizado();
 		
 	   	
-		assertEquals(campoe.getPopulationDetails(c),"");
+		assertEquals(campoe.getPopulationDetails(c),"ol.Ovelha: 0 ");
 		
 	}
 	
@@ -196,10 +232,59 @@ public class CampoEstatisticaTest {
 	}
 
 	//----------------------------------------------------------------------------------------------------------------------------------
-	@Ignore
+
 	@Test
 	public void testEhViavel() {
-		fail("Not yet implemented");
+		Campo c = new Campo(100,100);
+		Ovelha ove = new Ovelha(true, c, new Localizacao(0,0));
+		Ovelha ove1 = new Ovelha(true, c, new Localizacao(0,1));
+		Ovelha ove2 = new Ovelha(true, c, new Localizacao(0,2));
+		CampoEstatistica campoe = new CampoEstatistica();
+		assertFalse(campoe.ehViavel(c));
+		
+		
 	}
 
+	
+	@Test
+	public void testEhViavel2() {
+		Campo c = new Campo(100,100);
+		Ovelha ove = new Ovelha(true, c, new Localizacao(0,0));
+		Ovelha ove1 = new Ovelha(true, c, new Localizacao(0,1));
+		Ovelha ove2 = new Ovelha(true, c, new Localizacao(0,2));
+		LoboGuara lobo = new LoboGuara(true, c, new Localizacao(1, 0));
+		CampoEstatistica campoe = new CampoEstatistica();
+		assertTrue(campoe.ehViavel(c));		
+		
+	}
+	
+	
+	@Test
+	public void testEhViavel3() {
+		Campo c = new Campo(100,100);
+		Ovelha ove = new Ovelha(true, c, new Localizacao(0,0));
+		LoboGuara lobo = new LoboGuara(true, c, new Localizacao(1, 0));
+		CampoEstatistica campoe = new CampoEstatistica();
+		assertTrue(campoe.ehViavel(c));		
+		
+	}
+	
+	
+
+	/*
+	 * Erro: Se tiver Object que não seja ovelha ou lobo, o metodo retorna true, e uma nova etapa de simulação pode ocorrer:
+	 */
+	@Test
+	public void testEhViavel4() {
+		Campo c = new Campo(100,100);
+		Campo teste = new Campo(1,1);
+		Ovelha ove = new Ovelha(true, c, new Localizacao(0,0));
+		LoboGuara lobo = new LoboGuara(true, c, new Localizacao(1, 0));
+		c.lugar(teste, 0, 1);
+		CampoEstatistica campoe = new CampoEstatistica();
+		assertFalse(campoe.ehViavel(c));		    
+		
+		
+	}
+	
 }
