@@ -3,7 +3,7 @@
 **1. Informações especificas:**
 **1.1. Visão Geral: ** Este documento consiste numa modelagem detalhada do fluxo de trabalho durante o processo de teste do simulador de lobos guará e ovelha.
 **1.2. Identificador único do documento: **  001           
-**1.3. Organização emissora: ** -- 
+**1.3. Organização emissora: ** Unipampa   
 **1.4. Autoridade de aprovação: ** Elder de Macedo Rodrigues e Maicon Bernardino da Silveira  
 **1.5. Histórico de mudanças: ** --  
  **2. Introdução**
@@ -16,18 +16,18 @@ A. Stakeholders: pessoas interessadas no sistema.
  **3.2. Itens de teste:** Métodos, padrões de projeto, arquitetura e consistência entre projeto e documentação.  
  **Problemas de Risco de Software: ** 1.Erro na interface de simulação pode acarretar em danos aos animais do habitat em questão.  2.Os módulos de documentação existentes no projeto são pouco detalhados.  
 **3.3. Escopo de teste: ** Os testes deveram ser aplicados dos métodos de todas as classes do projeto, documentando seus resultados e caso encontrem erros, reportando-os.  
-**3.4. Restrições: ** -- 
-**3.5. Stakeholders: ** -- 
+**3.4. Premissas e restrições: ** Os testes não devem mudar o código fonte do sistema.  
+**3.5. Stakeholders: ** Biólogos, Ambientalistas e professores.   
 **4. Comunicação: ** 
-A. Quando ocorrer um erro ele deve ser reportado por email e comunicado aos demais membros da equipe.  
+A. Quando ocorrer um erro ele deve ser reportado por e-mail e comunicado aos demais membros da equipe.  
 B. O teste pode começar a qualquer hora pelo testador.]
 **5. Registros de risco: **
 **5.1. Riscos do produto: ** Se ocorrer algum erro com o produto no ambiente de execução pode acarretar em danos no habitat dos animais em questão.  
 **5.2. Riscos do projeto: ** --  
 **6. Estrategia de teste** 
 **6.1. Submissão de processos: ** Todos os processos do teste devem ser documentados.  
-**6.2. Produtos de teste: ** --
-**6.3. Técnicas de design de teste: ** --
+**6.2. Produtos de teste: ** --    
+**6.3. Técnicas de design de teste: ** --  
 **6.4. Critérios de conclusão do teste: ** O plano de teste será finalizado ao final da execução dos casos de teste e correções, derivadas dos testes, no projeto.  
 **6.5. Métricas a serem coletadas: ** --  
 **6.6. Requisitos de dados de teste: ** O teste deve fornecer o motivo do teste, entrada, saída esperada e saída real.  
@@ -47,6 +47,6 @@ A. Guilherme Souza Santos - Implementação das classes de teste (JUnit)
 B. Luiz Guilherme Fritsch - Implementação das classes de teste (JUnit)  
 C. Vitor Hugo Maciel dos Santos - Análise e correção das classes  
 D. Iderli Pereira Souza Filho - Documentação **
-**8.2. Necessidades de contratação**
-**8.3. necessidades de treinamento**
+**8.2. Necessidades de contratação: ** Nenhuma  
+**8.3. necessidades de treinamento: ** Nenhuma  
 **9. Cronograma: **
