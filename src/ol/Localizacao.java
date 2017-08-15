@@ -1,5 +1,13 @@
 package ol;
 
+/*
+ * Iniciando inspeção de software 14 de agosto de 2017 as 23:00
+ * Inspeção de software inicial finalizada em 14 de agosto de 2017 as 23:50
+ * 
+ * Iniciando Refatoração do código em 14 de agosto de 2017 as 23:50
+ * Refatoração finalizada em 15 de agosto de 2017 as 00:03
+ */
+
 public class Localizacao {
 	private int linha;
 	private int coluna = 1;

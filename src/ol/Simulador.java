@@ -6,6 +6,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.awt.Color;
 
+/*
+ * Iniciando inspeção de software 14 de agosto de 2017 as 23:00
+ * Inspeção de software inicial finalizada em 14 de agosto de 2017 as 23:50
+ * 
+ * Iniciando Refatoração do código em 14 de agosto de 2017 as 23:50
+ */
+
 public class Simulador {
 	private static final int LARGURA_PADRAO = 50;
 	private static final int PROFUNDIDADE_PADRAO = 50;
@@ -15,7 +22,7 @@ public class Simulador {
 	private List<Ovelha> ovelhas;
 	private List<LoboGuara> lobos;
 	private Campo campo;
-	private int etapa;
+	private int etapa; 
 	private SimuladorTela tela;
 
 	public Simulador() {
@@ -23,7 +30,7 @@ public class Simulador {
 	}
 
 	public Simulador(int profundidade, int largura) {
-		if (largura < 0 || profundidade < 0) {
+		if (largura <= 0 || profundidade <= 0) {
 			System.out.println("As dimensÃµes devem ser maior do que zero.");
 			System.out.println("Usando valores padrÃµes.");
 			profundidade = PROFUNDIDADE_PADRAO;
@@ -56,16 +63,16 @@ public class Simulador {
 		for (Iterator<Ovelha> it = ovelhas.iterator(); it.hasNext();) {
 			Ovelha ovelha = it.next();
 			ovelha.corre(novasOvelhas);
-			if (ovelha.estaViva()) {
+			if (!ovelha.estaViva()) {
 				it.remove();
 			}
 		}
 
 		List<LoboGuara> novosLobos = new ArrayList<LoboGuara>();
 		for (Iterator<LoboGuara> it = lobos.iterator(); it.hasNext();) {
-			LoboGuara loboGuara = it.next();
+			LoboGuara loboGuara = it.next();//Verificar pode ser um erro(Discutir e fazer pesquisas)
 			loboGuara.caca(novosLobos);
-			if (loboGuara.estaVivo()) {
+			if (!loboGuara.estaVivo()) {
 				it.remove();
 			}
 		}
@@ -88,7 +95,7 @@ public class Simulador {
 	private void povoa() {
 		Random rand = Randomizador.getRandom();
 		campo.limpa();
-		for (int linha = 0; linha < campo.getProfundidade(); linha++) {
+		for (int linha = 0; linha < campo.getProfundidade(); linha++) {//Verificar se vai ser '<' ou '<='
 			for (int coluna = 0; coluna < campo.getLargura(); coluna++) {
 				if (rand.nextDouble() < PROBABILIDADE_CRIACAO_OVELHA) {
 					Localizacao localizacao = new Localizacao(linha, coluna);
