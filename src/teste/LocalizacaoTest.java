@@ -2,13 +2,14 @@ package teste;
 
 import static org.junit.Assert.*;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import ol.*;
 
 public class LocalizacaoTest {
 
-
+	@Ignore
 	@Test
 	public void testLocalizacao() {
 		
@@ -81,14 +82,13 @@ public class LocalizacaoTest {
 		assertNotEquals(10, obj.getColuna());
 	}
 	
-	@Test 
+	@Test (expected= Exception.class)
 	public void testGetColuna3() {
 		Localizacao obj = new Localizacao(0, -100);
-		assertEquals(0, obj.getColuna());
 		System.out.println(obj.getColuna());
 	}
 	
-	@Test 
+	@Test (expected= Exception.class)
 	public void testGetColuna5() {
 		Localizacao obj = new Localizacao(0, -100);
 		assertEquals(null, obj.getColuna());

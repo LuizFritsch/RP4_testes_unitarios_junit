@@ -28,16 +28,16 @@ public class Ovelha {
 	public void corre(List<Ovelha> novasOvelhas) {
 		incrementaIdade();
 		
-//		if (vivo) {
-//			
-//			daALuz(novasOvelhas);
-//			Localizacao newLocalizacao = campo.localizacaoAdjacenteLivre(localizacao);
-//			if (newLocalizacao != null) {
-//				setLocalizacao(newLocalizacao);
-//			} else {
-//				setMorte();
-//			}
-//		}
+		if (vivo) {
+			
+			daALuz(novasOvelhas);
+			Localizacao newLocalizacao = campo.localizacaoAdjacenteLivre(localizacao);// Se ela não tiver campos livres ela morre?
+			if (newLocalizacao != null) {
+				setLocalizacao(newLocalizacao);
+			} else {
+				setMorte();
+			}
+		}
 	}
 
 	public boolean estaViva() {
