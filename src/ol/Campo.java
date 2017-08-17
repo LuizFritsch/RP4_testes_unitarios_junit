@@ -48,7 +48,10 @@ public class Campo {
 
 	public Localizacao localizacaoAdjacenteRandomica(Localizacao localizacao) {
 		List<Localizacao> adjacent = localizacoesAdjacentes(localizacao);
-		return adjacent.get(0);
+		if(adjacent.size()>0) {
+			return adjacent.get(0);
+		}
+		return null;
 	}
 
 	public List<Localizacao> localizacoesAdjacentesLivres(Localizacao localizacao) {
@@ -71,7 +74,7 @@ public class Campo {
 		}
 	}
 
-	public List<Localizacao> localizacoesAdjacentes(Localizacao localizacao) {
+	public List<Localizacao> localizacoesAdjacentes(Localizacao localizacao) {//Pode dar IndexOutOfBoundsException Preciso de testes para Provar isso
 		assert localizacao != null : "Null localizacao passed to adjacentLocalizacoes";
 		List<Localizacao> localizacoes = new LinkedList<Localizacao>();
 		if (localizacao != null) {
