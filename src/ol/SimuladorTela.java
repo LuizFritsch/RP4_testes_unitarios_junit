@@ -117,7 +117,7 @@ public class SimuladorTela extends JFrame {
 			}
 		}
 
-		public void drawMark(int x, int y, Color color) {
+		public void drawMark(int x, int y, Color color) { //Não entendi como funciona vou analisar novamente
 			g.setColor(color);
 			g.fillRect(x * xScale, y * yScale, xScale - 1, yScale - 1);
 		}
