@@ -536,6 +536,18 @@ public class CampoTest {
 	}
 	
 	
+	
+	@Test  //teste feito com o (0,0) e retorna 3 como espetrado
+	public void testLocalizacaoAdjacenteLivre0() {
+		
+		Campo c = new Campo(100,100);
+		Localizacao l = new Localizacao(0, 0);
+		assertNotEquals(3,c.localizacaoAdjacenteLivre(l));	
+		
+		
+	}
+	
+	
 	@Test  (expected= IllegalArgumentException.class)
 	public void testLocalizacaoAdjacenteLivre1() {
 		
