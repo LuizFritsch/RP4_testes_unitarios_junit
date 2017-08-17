@@ -78,6 +78,7 @@ public class CampoEstatisticaTest {
 	
 	/*
 	 * Erro, o campo (ja reportado antes, aceita qualquer Object,  detecta e gera a string com esses objectos )
+	 * Nota: de Tempos em tempo, o retorno do metodo permuta a ordem da saida: Por que?  R: ?
 	 */
 	@Test
 	public void testGetPopulationDetails4() {
