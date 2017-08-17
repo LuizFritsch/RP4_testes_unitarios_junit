@@ -183,7 +183,7 @@ public class CampoTest {
 	}
 	
 	
-	@Test (expected = IndexOutOfBoundsException.class )
+	@Test (expected = IllegalArgumentException.class )
 	public void testLimpaLocalizacao3() {		
 
 		Campo c = new Campo(100, 100);
@@ -224,7 +224,7 @@ public class CampoTest {
 	
 //-------------------------------------------------------------------------------------------------------------------------------------	
 
-	@Test (expected = IllegalArgumentException.class)
+	@Test (expected = IllegalArgumentException.class)// Estou com bastante dúvida sobre esse erro(Discutir em grupo depois)
 	public void testLugarObject() {
 		
 	
@@ -371,7 +371,7 @@ public class CampoTest {
 	
 	//----------------------------------------------------------------------------------------------------------------------------------
 
-	@Test
+	@Test (expected= IllegalArgumentException.class)
 	public void testLocalizacaoAdjacenteRandomica() {
 
 		Campo c = new Campo(100,100);
@@ -382,7 +382,7 @@ public class CampoTest {
 				
 	}
 	
-	@Test
+	@Test (expected= IllegalArgumentException.class)
 	public void testLocalizacaoAdjacenteRandomica1() {
 
 		Campo c = new Campo(100,100);
@@ -396,7 +396,7 @@ public class CampoTest {
 				
 	}
 	
-	@Test
+	@Test (expected= IllegalArgumentException.class)
 	public void testLocalizacaoAdjacenteRandomica2() {
 
 		Campo c = new Campo(100,100);
@@ -410,7 +410,7 @@ public class CampoTest {
 				
 	}
 	
-	@Test
+	@Test (expected= IllegalArgumentException.class)
 	public void testLocalizacaoAdjacenteRandomica4() {
 
 		Campo c = new Campo(100,100);
@@ -423,7 +423,7 @@ public class CampoTest {
 		assertEquals(lo,l2);
 				
 	}
-	@Test
+	@Test (expected= IllegalArgumentException.class)
 	public void testLocalizacaoAdjacenteRandomica5() {
 
 		Campo c = new Campo(100,100);
@@ -436,7 +436,7 @@ public class CampoTest {
 		assertEquals(lo,l2);
 				
 	}
-	@Test
+	@Test (expected= IllegalArgumentException.class)
 	public void testLocalizacaoAdjacenteRandomica6() {
 
 		Campo c = new Campo(100,100);
@@ -449,7 +449,7 @@ public class CampoTest {
 		assertEquals(lo,l2);
 				
 	}
-	@Test
+	@Test (expected= IllegalArgumentException.class)
 	public void testLocalizacaoAdjacenteRandomica3() {
 
 		Campo c = new Campo(100,100);
@@ -536,7 +536,7 @@ public class CampoTest {
 	}
 	
 	
-	@Test
+	@Test  (expected= IllegalArgumentException.class)
 	public void testLocalizacaoAdjacenteLivre1() {
 		
 		Campo c = new Campo(100,100);
@@ -643,7 +643,7 @@ public class CampoTest {
 		
 	}
 	
-	@Test (expected = Exception.class)
+	@Test (expected = IllegalArgumentException.class)
 	public void testLocalizacoesAdjacentes6() {
 		
 		Campo c = new Campo(4,4);

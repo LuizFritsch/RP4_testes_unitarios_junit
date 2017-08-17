@@ -75,20 +75,25 @@ public class Campo {
 		assert localizacao != null : "Null localizacao passed to adjacentLocalizacoes";
 		List<Localizacao> localizacoes = new LinkedList<Localizacao>();
 		if (localizacao != null) {
-			int linha = localizacao.getLinha();
-			int coluna = localizacao.getColuna();
-			for (int roffset = -1; roffset <= 1; roffset++) {
-				int proximaLinha = linha + roffset;
-				if (proximaLinha >= 0 && proximaLinha < profundidade) {
-					for (int coffset = -1; coffset <= 1; coffset++) {
-						int proximaColuna = coluna + coffset;
-						if (proximaColuna >= 0 && proximaColuna < largura && (roffset != 0 || coffset != 0)) {
-							localizacoes.add(new Localizacao(proximaLinha, proximaColuna));
+			if(localizacao.getColuna() < this.largura && localizacao.getLinha() < this.profundidade) {
+				int linha = localizacao.getLinha();
+				int coluna = localizacao.getColuna();
+				for (int roffset = -1; roffset <= 1; roffset++) {
+					int proximaLinha = linha + roffset;
+					if (proximaLinha >= 0 && proximaLinha < profundidade) {
+						for (int coffset = -1; coffset <= 1; coffset++) {
+							int proximaColuna = coluna + coffset;
+							if (proximaColuna >= 0 && proximaColuna < largura && (roffset != 0 || coffset != 0)) {
+								localizacoes.add(new Localizacao(proximaLinha, proximaColuna));
+							}
 						}
 					}
 				}
+				Collections.shuffle(localizacoes, rand);
+			}else {
+				throw new IllegalArgumentException();
 			}
-			Collections.shuffle(localizacoes, rand);
+			
 		}
 		return localizacoes;
 	}
