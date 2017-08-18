@@ -1,46 +1,27 @@
 package teste;
 
-import static org.junit.Assert.*;
-
-import org.junit.Ignore;
 import org.junit.Test;
+import ol.Simulador;
 
 public class SimuladorTest {
 
-	@Ignore
-	@Test
+	
+	@Test(expected= IllegalArgumentException.class)
+	/*
+	 * Ao criar um simulador, as dimensoes nao podem ser 0,
+	 *  mas ele está aceitando e não está tratando
+	 */
 	public void testSimulador() {
-		fail("Not yet implemented");
-	}
-
-	@Ignore
-	@Test
-	public void testSimuladorIntInt() {
-		fail("Not yet implemented");
-	}
-
-	@Ignore
-	@Test
-	public void testExecutaLongaSimulacao() {
-		fail("Not yet implemented");
-	}
-
-	@Ignore
-	@Test
-	public void testSimulacao() {
-		fail("Not yet implemented");
-	}
-
-	@Ignore
-	@Test
+		Simulador simulador = new Simulador(0,0);
+	}	
+	
+	@Test(expected = ClassCastException.class)
+	/*
+	 *Ao fazer cast, nenhuma exceção é tratada
+	 */
 	public void testSimulacaoUmaEtapa() {
-		fail("Not yet implemented");
-	}
-
-	@Ignore
-	@Test
-	public void testRedefine() {
-		fail("Not yet implemented");
+		Simulador simulador = new Simulador();
+		simulador.executaLongaSimulacao();
 	}
 
 }
