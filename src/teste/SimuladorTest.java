@@ -23,7 +23,7 @@ public class SimuladorTest {
 		Simulador simulador = new Simulador(-1,-1);
 	}	
 	
-	@Test(expected = ClassCastException.class)
+	@Test(expected = Exception.class)
 	/*
 	 *Ao fazer cast, nenhuma exceção é tratada
 	 */
