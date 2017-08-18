@@ -12,6 +12,8 @@
 | profundidade 5 e largura 31  | É esperado que o teste não encontre erros  |  Teste passou |
 | profundidade 5 e largura 0   | É esperado que o teste lance a exceção illergalArgumentException  |  Teste falhou, o teste lançou um ArithmeticException |
 
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
+
 
 | Identificador:     |        CT02   testGetProfundidade classe CampoTest      |
 |------------------------------|----------------------|  
@@ -25,6 +27,7 @@
 | profundidade 31 e largura 5  | É esperado que o teste não encontre erros  |  Teste passou |
 | profundidade 0 e largura 5   | É esperado que o teste lance a exceção illegalArgumentException  |  Teste falhou, o teste lançou um ArithmeticException |
 
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
 
 | Identificador:     |        CT03   testGetPopulationDetails   classe CampoEstatisticaTest    |
 |------------------------------|----------------------|  
@@ -37,6 +40,7 @@
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | criar um campo 3x3 e 3 ovelhas com parâmetros (0,0)(0,1)(0,2) | É esperado que o teste retorne null  |  Teste passou |
 | criar um campo 100x100 e 3 ovelhas com parâmetros (0,0)(0,1)(0,2) | "" |  ""|
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
 
 
 | Identificador:     |        CT04   testCorre classe OvelhaTest      |
@@ -51,6 +55,8 @@
 | ""|""  |  "" |
 | ""| "" |  ""|
 
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
+
 | Identificador:     |        CT05   testEqualsObject classe LocalizacaoTest      |
 |------------------------------|----------------------|  
 | Objetivo:                    | O teste deve verificar o uso do metodo equals. Deve-se criar uma localizacao com parâmetros validos e inválidos   |
@@ -62,6 +68,8 @@
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | localizacao(10,10)|""  |  teste passou |
 | localizacao(,)| "" |  teste passou |
+
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
 
 | Identificador:     |        CT06   testGetLinha classe LocalizacaoTest      |
 |------------------------------|----------------------|  
@@ -76,6 +84,8 @@
 | localizacao(0,100)| "" |  teste passou |
 | localizacao(0,-100)| Erro |  teste retornou um IllegalArgumentException |
 
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
+
 | Identificador:     |        CT07   testGetColuna classe LocalizacaoTest      |
 |------------------------------|----------------------|  
 | Objetivo:                    | O teste deve criar uma localizacao com parametros validos e invalidos e verificar o uso do metodo getColuna |
@@ -88,6 +98,8 @@
 | localizacao(10,15)|""  |  teste passou |
 | localizacao(0,100)| "" |  teste passou |
 | localizacao(-100,0)| Erro |  teste retornou um IllegalArgumentException |
+
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
 
 | Identificador:     |        CT08   testHashCode classe LocalizacaoTest      |
 |------------------------------|----------------------|  
@@ -102,6 +114,8 @@
 | localizacao(-1,-1)| Erro |  teste retornou um IllegalArgumentException |
 | localizacao(-110, 15)| Erro |  teste retornou um IllegalArgumentException |
 
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
+
 | Identificador:     |        CT09   testGetName classe ContadorTest     |
 |------------------------------|----------------------|  
 | Objetivo:                    | O teste deve criar um contador com parâmetros validos e inválidos, e testar a execução do método getName  |
@@ -115,6 +129,7 @@
 | Contador ("")| tratamento de exceção |  teste passou |
 | Contador ("Ovelha")|  O teste não retornar nenhum erro |  teste passou  |
 
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
 
 | Identificador:     |        CT10   testGetCount classe ContadorTest     |
 |------------------------------|----------------------|  
@@ -128,7 +143,7 @@
 | Contador ("")| tratamento de exceção |  teste passou |
 | Contador ("Ovelha")|  O teste não retornar nenhum erro |  teste passou  |
 
-
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
 
 | Identificador:     |        CT11   testIncrement classe ContadorTest     |
 |------------------------------|----------------------|  
@@ -141,6 +156,9 @@
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | incrementar 1000 vezes a ovelha| tratamento de exceção |  teste passou |
 
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
+
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
 
 | Identificador:     |        CT12   testReset classe ContadorTest     |
 |------------------------------|----------------------|  
@@ -153,6 +171,7 @@
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | chamar o método reset| teste retornar 0 |  teste passou |
 
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
 
 | Identificador:     |        CT13   testGetLargura classe CampoTest    |
 |------------------------------|----------------------|  
@@ -164,6 +183,8 @@
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | chamar o método reset| teste retornar 0 |  teste passou |
+
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
 
 | Identificador:     |        CT14   testGetPopulationDetails classe CampoEstatisticaTest    |
 |------------------------------|----------------------|  
@@ -180,6 +201,8 @@
 |Criar 3 ovelhas com entradas validas, criar 3 lobos guará com entradas validas e criar 3 campos com entradas validas | O método deve retornar a String na ordem "ol.LoboGuara: 3 ol.Ovelha: 3 ol.Campo: 3" | teste falhou, o método não tem uma ordem especifica para retornar as Strings, os Objetos podem variar de posição em qualquer execução do método |
 |Deixar o campo vazio |O método deve informar que o campo se encontra vazio | teste falhou, o método ão retorna nenhuma informação |
 
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
+
 | Identificador:     |        CT15   testRedefine classe CampoEstatisticaTest    |
 |------------------------------|----------------------|  
 | Objetivo:                    | O método verifica se após a execução do método Redefine o campo terá 0 objetos |
@@ -192,6 +215,7 @@
 | Deve ser criado 3 ovelhas e chamar o método Redefine | teste deve mostrar que não tem objetos no campo |  teste passou, retornou 0 |
 | Deve ser criado 3 ovelha, chamar o método Redefine e incrementar o campo | O teste só deve contar os objetos que foram incrementados após redefinir o campo |  teste passou |
 
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
 
 | Identificador:     |        CT16   testContadorFinalizado classe CampoEstatisticaTest    |
 |------------------------------|----------------------|  
@@ -204,6 +228,7 @@
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Deve ser criado 3 ovelhas e chamar o método contadorFinalizado | Saida esperada: " " |  teste passou |
 
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/3827357323-Screenshot_1.png)
 
 | Identificador:     |        CT17   testEhViavel classe CampoEstatisticaTest    |
 |------------------------------|----------------------|  
