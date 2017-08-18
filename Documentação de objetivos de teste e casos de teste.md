@@ -164,3 +164,56 @@
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | chamar o método reset| teste retornar 0 |  teste passou |
+
+| Identificador:     |        CT14   testGetPopulationDetails classe CampoEstatisticaTest    |
+|------------------------------|----------------------|  
+| Objetivo:                    | O teste verifica se o metodo GetPopulation retorna uma String informando corretamente os dados do campo |
+| Prioridade:                  |Alta |  
+| Rastreabilidade:             |                      | 
+| Condições prévias:           |Nenhuma|
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+|Criar 3 ovelhas com entradas (0,0)(0,1)(0,2) | O método não deve retornar null | teste passou |
+|Criar 3 ovelhas com entradas (0,0)(0,1)(0,2) | O método deve retornar uma String | teste passou |
+|Criar 3 ovelhas com entradas (0,0)(0,1)(0,2) | O método deve retornar a String "Ovelha:3" | teste falhou, o pacote da classe é descrito na String, exemplo: ol.Ovelha: 3 |
+|Criar 3 ovelhas com entradas validas, criar 3 lobos guará com entradas validas e criar 3 campos com entradas validas | O método deve retornar a String na ordem "ol.LoboGuara: 3 ol.Ovelha: 3 ol.Campo: 3" | teste falhou, o método não tem uma ordem especifica para retornar as Strings, os Objetos podem variar de posição em qualquer execução do método |
+|Deixar o campo vazio |O método deve informar que o campo se encontra vazio | teste falhou, o método ão retorna nenhuma informação |
+
+| Identificador:     |        CT15   testRedefine classe CampoEstatisticaTest    |
+|------------------------------|----------------------|  
+| Objetivo:                    | O método verifica se após a execução do método Redefine o campo terá 0 objetos |
+| Prioridade:                  | baixa |  
+| Rastreabilidade:             |                      | 
+| Condições prévias:           |O método GetPopulationDetails da mesma classe, deve estar implementado corretamente |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Deve ser criado 3 ovelhas e chamar o método Redefine | teste deve mostrar que não tem objetos no campo |  teste passou, retornou 0 |
+| Deve ser criado 3 ovelha, chamar o método Redefine e incrementar o campo | O teste só deve contar os objetos que foram incrementados após redefinir o campo |  teste passou |
+
+
+| Identificador:     |        CT16   testContadorFinalizado classe CampoEstatisticaTest    |
+|------------------------------|----------------------|  
+| Objetivo:                    | O método verifica a execução do método contadorFinalizado|
+| Prioridade:                  | baixa |  
+| Rastreabilidade:             |                      | 
+| Condições prévias:           |O método GetPopulationDetails da mesma classe, deve estar implementado corretamente |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Deve ser criado 3 ovelhas e chamar o método contadorFinalizado | Saida esperada: " " |  teste passou |
+
+
+| Identificador:     |        CT17   testEhViavel classe CampoEstatisticaTest    |
+|------------------------------|----------------------|  
+| Objetivo:                    | O método verifica se há um lobo e uma ovelha para fazer a simulação|
+| Prioridade:                  | baixa |  
+| Rastreabilidade:             |                      | 
+| Condições prévias:           | Nenhuma |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria 3 ovelhas  | False |  teste passou |
+| O método cria 3 ovelhas e um lobo guará  | True |  teste passou |
+| O método cria 1 e um campo  | false |  teste falhou |
