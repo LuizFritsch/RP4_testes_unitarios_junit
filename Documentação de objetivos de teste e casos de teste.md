@@ -101,3 +101,66 @@
 | localizacao(10,15)|""  |  teste passou |
 | localizacao(-1,-1)| Erro |  teste retornou um IllegalArgumentException |
 | localizacao(-110, 15)| Erro |  teste retornou um IllegalArgumentException |
+
+| Identificador:     |        CT09   testGetName classe ContadorTest     |
+|------------------------------|----------------------|  
+| Objetivo:                    | O teste deve criar um contador com parâmetros validos e inválidos, e testar a execução do método getName  |
+| Prioridade:                  |baixa |  
+| Rastreabilidade:             |                      | 
+| Condições prévias:           |Nenhuma|
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Contador ("lobo")|O teste não retornar nenhum erro |  teste passou |
+| Contador ("")| tratamento de exceção |  teste passou |
+| Contador ("Ovelha")|  O teste não retornar nenhum erro |  teste passou  |
+
+
+| Identificador:     |        CT10   testGetCount classe ContadorTest     |
+|------------------------------|----------------------|  
+| Objetivo:                    | O teste deve criar um contador com parâmetros validos e inválidos, e testar a execução do método getCount  |
+| Prioridade:                  |baixa |  
+| Rastreabilidade:             |                      | 
+| Condições prévias:           |Nenhuma|
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Contador ("")| tratamento de exceção |  teste passou |
+| Contador ("Ovelha")|  O teste não retornar nenhum erro |  teste passou  |
+
+
+
+| Identificador:     |        CT11   testIncrement classe ContadorTest     |
+|------------------------------|----------------------|  
+| Objetivo:                    | O teste deve criar um contador com parâmetros validos, e testar a execução do método increment  |
+| Prioridade:                  |Media |  
+| Rastreabilidade:             |                      | 
+| Condições prévias:           |Nenhuma|
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| incrementar 1000 vezes a ovelha| tratamento de exceção |  teste passou |
+
+
+| Identificador:     |        CT12   testReset classe ContadorTest     |
+|------------------------------|----------------------|  
+| Objetivo:                    | O teste deve criar um contador com parâmetros validos e inválidos, e testar a execução do método Reset  |
+| Prioridade:                  |baixa |  
+| Rastreabilidade:             |                      | 
+| Condições prévias:           |Nenhuma|
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| chamar o método reset| teste retornar 0 |  teste passou |
+
+
+| Identificador:     |        CT13   testGetLargura classe CampoTest    |
+|------------------------------|----------------------|  
+| Objetivo:                    |  |
+| Prioridade:                  |baixa |  
+| Rastreabilidade:             |                      | 
+| Condições prévias:           |Nenhuma|
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| chamar o método reset| teste retornar 0 |  teste passou |
