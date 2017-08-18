@@ -16,14 +16,40 @@ public class SimuladorTela extends JFrame {
 
 	private Map<Class, Color> cores;
 	private CampoEstatistica estatisticas;
+	
+	
+	//------------------------------------------------------------------------------------------------
+	
+	/*
+	 * metodo para teste:
+	 */
+	
+	public Map<Class, Color> getCores(){
+		return cores;
+	}
+	
+	public JLabel getRotuloEtapa() {
+		
+		return rotuloEtapa;
+	}
+	
+    public JLabel getPapulaco() {
+		
+		return populacao;
+	}
 
+    
+    
+    //------------------------------------------------------------------------------------------------
 	public SimuladorTela(int height, int width) {
 		estatisticas = new CampoEstatistica();
 		cores = new LinkedHashMap<Class, Color>();
 
-		setTitle("Simulacao Ovelhas and Lobos Guara");
+		setTitle("Simulacao Ovelhas and Lobos Guara"); //Erro: "And", no meio do testo em PT-BR
 		rotuloEtapa = new JLabel(PREFIXO_ETAPA, JLabel.CENTER);
 		populacao = new JLabel(PREFIXO_POPULACAO, JLabel.CENTER);
+		
+	
 
 		setLocation(100, 50);
 
