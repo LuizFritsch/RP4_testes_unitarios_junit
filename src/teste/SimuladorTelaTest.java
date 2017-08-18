@@ -96,10 +96,9 @@ public class SimuladorTelaTest {
 
 	@Test
 	public void testMostraStatus() {
-		SimuladorTela s = new SimuladorTela(1, 1);
+		SimuladorTela s = new SimuladorTela(100, 100);
 	     Campo c = new Campo(100, 100);
-	   System.out.println(s.getComponents().getClass());
-	     
+	     s.mostraStatus(0, c);
 	}
 
 	
@@ -109,8 +108,7 @@ public class SimuladorTelaTest {
 	public void testEhViavel() {
      SimuladorTela s = new SimuladorTela(1, 1);
      Campo c = new Campo(100, 100);
-     System.out.println(s.ehViavel(c));
-     assertTrue(s.ehViavel(c));
+     assertFalse(s.ehViavel(c));
 		
 	}
 	
@@ -126,7 +124,6 @@ public class SimuladorTelaTest {
      Localizacao l1 = new Localizacao(0, 1);
      c.lugar(new LoboGuara(true, c, l), l);
      c.lugar(new Ovelha(true, c, l1), l1);
-     System.out.println(s.ehViavel(c));
      assertTrue(s.ehViavel(c));
 		
 	}
