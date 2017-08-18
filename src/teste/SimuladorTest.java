@@ -15,6 +15,14 @@ public class SimuladorTest {
 		Simulador simulador = new Simulador(0,0);
 	}	
 	
+	@Test(expected = Exception.class)
+	/*
+	 * Ao criar um simulador, as dimensoes nao podem ser < 0,
+	 */
+	public void testSimuladorNegativo() {
+		Simulador simulador = new Simulador(-1,-1);
+	}	
+	
 	@Test(expected = ClassCastException.class)
 	/*
 	 *Ao fazer cast, nenhuma exceção é tratada
