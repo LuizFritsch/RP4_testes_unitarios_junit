@@ -111,6 +111,7 @@ Correção 6
 1.4 Erro: O método aceita uma Localizacao com linha/coluna maior que a profundidade/largura do campo  
 1.5 Solução: Adição de uma condição ‘if’ na linha 78 que exige que a linha/coluna da localização seja menor que a profundidade/largura do campo.  
 
+
 2. Erro encontrado por meio do Junit  
 2.1 Classe: ‘Localizacao’  
 2.2 Método: Construtor  
@@ -118,6 +119,7 @@ Correção 6
 2.4 Erro: Não lançava exceção quando recebia dados inválidos  
 2.5 Solução: Refatoração do ‘if’ de ‘(linha>=0 && coluna>=0)’ para ‘(linha<0 || coluna<0)’ e quando satisfeita a condição fazer com que lance uma exceção ‘IllegalArgumentException’ além da mudança do código que antes estava   
 2.6 dentro do ‘if’ para dentro do ‘else’   
+
 
 3. Correção   
 3.1 Classe: ‘Campo’  
