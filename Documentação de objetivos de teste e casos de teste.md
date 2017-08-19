@@ -337,3 +337,58 @@ modelo de software
 | O método cria 3 ovelhas  | False |  teste passou |
 | O método cria 3 ovelhas e um lobo guará  | True |  teste passou |
 | O método cria 1 e um campo  | false |  teste falhou |
+
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+
+**Identificador:**        CT18   testEstaViva classe OvelhaTest    
+
+ **Objetivo:**                    O metodo testEstaViva verifica se o método estaViva retorna true para ovelhas vivas e false para ovelhas mortas.
+ **Prioridade:**                   Baixa   
+
+ **Condições prévias:**            Para o uso do segundo teste o método setMorte deve esta corretamente implementado.   
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT17       |      X       |      X         |       --        |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria uma ovelha  | true |  teste passou |
+| O método cria uma ovelha e executa o setMorte | false |  teste passou |
+
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
+
+**Identificador:**        CT19   testSetMorte classe OvelhaTest    
+
+ **Objetivo:**  Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta.  
+
+ **Prioridade:**                   Baixa   
+
+ **Condições prévias:**  O método estaViva deve estar funcionando corretamente.  
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT17       |      X       |      X         |       --        |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Executa o metodo setMorte para uma ovelha e chama o método estaViva | false |  teste passou |
+
+
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
+
+**Identificador:**        CT19   testSetMorte classe OvelhaTest    
+
+ **Objetivo:**  Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta.  
+
+ **Prioridade:**                   Baixa   
+
+ **Condições prévias:**  O método estaViva deve estar funcionando corretamente.  
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT17       |      X       |      X         |       --        |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Executa o metodo setMorte para uma ovelha e chama o método estaViva | false |  teste passou |
