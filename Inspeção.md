@@ -61,3 +61,66 @@ Correção 6
 6.3 Linha: ‘74’  
 6.4 Erro: Remove todos os lobos guará que estão vivos ao invés dos que morreram  
 6.5 Solução: Mudança do if de ‘if (loboGuara.estaVivo())’ para ‘if (!loboGuara.estaVivo())’
+
+
+#Check List para inspeção das classes “Ovelha”, “Campo”
+
+|**Status**                              |**Sim**  |**Não**  |**Indiferente**  | 
+|----------------------------------------|---------|---------|-----------------|   
+|Todas as constantes foram denominadas?  |     X   |   --    |       --        |  
+|O limite superior de vetores deve ser igual ao tamanho do vetor ou tamanho -1?|   --   |   X    |    --    |
+|Para cada declaração condicional, a condição está correta?|  X   |    --    |    --    |
+|Cada loop está terminando corretamente? |  X   |   --    |    --    |
+|As declarações compostas estão corretamente delimitadas entre parênteses? |   X   |   --    |    --    |
+|Todas as variáveis de entrada são usadas? |   X   |   --    |    --    |
+|Nenhuma  das entradas inesperadas podem fazer com que os dados sejam corrompidos?|  --   |   --    |    X    |
+|Todas as condições possíveis de erro foram consideradas? |  X   |   --    |    --    |
+|Toda as chamadas de funções e de métodos tem o número correto de parâmetros? |   X   |   --    |    --    |
+|Os parâmetros estão na ordem correta? |   X   |   --    |    --    |
+|Toda as chamadas de funções e de métodos tem o número correto de parâmetros? |   --  |   X    |    --    |
+|As variáveis são de fácil entendimento? |   --   |   X    |    --    |
+
+
+
+#Check List para inspeção das classes “SimuladorTela”, “CampoEstatistica”
+
+|**Status**                              |**Sim**  |**Não**  |**Indiferente**  | 
+|----------------------------------------|---------|---------|-----------------|   
+|Todas as constantes foram denominadas?  |     X   |   --    |       --        |  
+|O limite superior de vetores deve ser igual ao tamanho do vetor ou tamanho -1?|   X   |   --    |    --    |
+|Para cada declaração condicional, a condição está correta?|  --   |    X    |    --    |
+|Cada loop está terminando corretamente? |  X   |   --    |    --    |
+|As declarações compostas estão corretamente delimitadas entre parênteses? |   X   |   --    |    --    |
+|Todas as variáveis de entrada são usadas? |   X   |   --    |    --    |
+|Nenhuma  das entradas inesperadas podem fazer com que os dados sejam corrompidos?|  X   |   --    |   --    |
+|Todas as condições possíveis de erro foram consideradas? |  --   |   --    |    --    |
+|Toda as chamadas de funções e de métodos tem o número correto de parâmetros? |   X   |   --    |    --    |
+|Os parâmetros estão na ordem correta? |   X   |   --    |    --    |
+|Toda as chamadas de funções e de métodos tem o número correto de parâmetros? |   --  |   --    |    --    |
+|As variáveis são de fácil entendimento? |   X   |   --    |    --    |
+
+
+
+#Correções da inspeção das classes “SimuladorTela”, “Ovelha”, “Campo”, “CampoEstatistica”
+
+1.Erro encontrado por meio do Junit
+1.1 Classe: ‘Campo’
+1.2 Método: ‘localizacoesAdjacentes(Localizacao localizacao)’
+1.3 Linha: 78
+1.4 Erro: O método aceita uma Localizacao com linha/coluna maior que a profundidade/largura do campo
+1.5 Solução: Adição de uma condição ‘if’ na linha 78 que exige que a linha/coluna da localização seja menor que a 1.6 profundidade/largura do campo.
+
+2. Erro encontrado por meio do Junit
+2.1 Classe: ‘Localizacao’
+2.2 Método: Construtor
+2.3 Linha: 20
+2.4 Erro: Não lançava exceção quando recebia dados inválidos
+2.5 Solução: Refatoração do ‘if’ de ‘(linha>=0 && coluna>=0)’ para ‘(linha<0 || coluna<0)’ e quando satisfeita a condição fazer com que lance uma exceção ‘IllegalArgumentException’ além da mudança do código que antes estava 
+2.6 dentro do ‘if’ para dentro do ‘else’ 
+
+3. Correção 
+3.1 Classe: ‘Campo’
+3.2 Método: ‘localizacaoAdjacenteRandomica(Localizacao localizacao)’
+3.3 Linha: 51
+3.4 Erro: Caso a lista usada no método esteja vazia o sistema retornará uma exceção ‘IndexOutOfBoundsException’
+3.5 Solução: Adição de cláusula ‘if’ para verificar o tamanho da ‘List’ e adição de um ‘return null;’ fora da cláusula.
