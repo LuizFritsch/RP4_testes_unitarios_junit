@@ -19,6 +19,14 @@ public class RandomizadorTest {
 		assertTrue(random>0 && random<1);
 	}
 	
+	
+	@Test
+	public void testGetInt() {
+		Random rand = Randomizador.getRandom();
+		double random = rand.nextInt(100);
+		assertTrue(random>=0 && random<100);
+	}
+	
 	@Test
 	public void testGetRandom() {
 		Random rand = Randomizador.getRandom();

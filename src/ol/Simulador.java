@@ -29,7 +29,7 @@ public class Simulador {
 	public Simulador() {
 		this(PROFUNDIDADE_PADRAO, LARGURA_PADRAO);
 	}
-
+	
 	public Simulador(int profundidade, int largura) {
 		if (largura <= 0 || profundidade <= 0) {
 			System.out.println("As dimensÃµes devem ser maior do que zero.");
@@ -112,12 +112,10 @@ public class Simulador {
 	}
 
 	// Metodos adcionados para melhorar os testes possivéis.
-
 	public Campo getCampo() {
-
 		return campo;
-
 	}
+	
 
 	public List<LoboGuara> getListLobo() {
 		return lobos;
