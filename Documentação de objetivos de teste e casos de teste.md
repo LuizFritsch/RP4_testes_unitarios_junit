@@ -392,3 +392,22 @@ modelo de software
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Executa o metodo setMorte para uma ovelha e chama o método estaViva | false |  teste passou |
+
+
+![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
+
+**Identificador:**        CT20   testProcria classe OvelhaTest    
+
+ **Objetivo:** Verifica se uma ovelha está procriando.
+
+ **Prioridade:**                  Alta   
+
+ **Condições prévias:** Mudar probabilidade de procriar para 1, e os métodos corre, getProfundidade, getLargura e getObjectAt, funcionando corretamente. 
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |    RE04  |
+|---------------------|--------------|-----------------|----------------|----------|  
+|          CT17       |      X       |      --         |       --       |    --    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Deve chamar o método ovelha 7 vezes, após isso deve ser testado se há outro objeto na mesma localização | true |  teste passou |
