@@ -450,3 +450,21 @@ modelo de software
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | criar uma simulação longa | Tratamento de exceção |  teste falhou |
+
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
+
+**Identificador:**        CT23   testGetRandom classe RandomizadorTest      
+
+ **Objetivo:** O objetivo do teste é verificar o funcionamento do método getRandom.
+
+ **Prioridade:**                  Baixa   
+
+ **Condições prévias:** Nenhum 
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |    RE04  |
+|---------------------|--------------|-----------------|----------------|----------|  
+|          CT23       |       X      |      --         |        X       |     X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Randomizar com parâmetro 1 | 0 |  teste passou |
