@@ -12,6 +12,9 @@ import ol.Randomizador;
 
 public class RandomizadorTest {
 	
+	/*
+	 * Testar se ele está gerando Double na faixa de valor pretendida
+	 */
 	@Test
 	public void testGetDouble() {
 		Random rand = Randomizador.getRandom();
@@ -19,7 +22,9 @@ public class RandomizadorTest {
 		assertTrue(random>0 && random<1);
 	}
 	
-	
+	/*
+	 * Testar se ele está gerando inteiros na faixa de valor pretendida
+	 */
 	@Test
 	public void testGetInt() {
 		Random rand = Randomizador.getRandom();
@@ -27,6 +32,9 @@ public class RandomizadorTest {
 		assertTrue(random>=0 && random<100);
 	}
 	
+	/*
+	 * Teste de gerar inteiro de 1 nmr só, que deve gerar obrigatoriamente 0
+	 */
 	@Test
 	public void testGetRandom() {
 		Random rand = Randomizador.getRandom();
