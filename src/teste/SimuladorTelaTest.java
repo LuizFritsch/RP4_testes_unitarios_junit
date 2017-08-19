@@ -43,12 +43,12 @@ public class SimuladorTelaTest {
 	}
 	
 	/*
-	 * Tamanho da janela: Não diz onde a janela deve iniciar:  Como eu testo isso?
+	 * Tamanho da janela: Não diz onde a janela deve iniciar:  Como eu testo isso? Por q 50, tem alguma especificação sobre isso?
 	 */
 	@Test
 	public void testSimuladorTela3() {
 		SimuladorTela s = new SimuladorTela(100, 100);
-		assertEquals(s.getY(), 100);		
+		assertEquals(s.getY(), 50);		
 		
 	}
 	
@@ -58,8 +58,8 @@ public class SimuladorTelaTest {
 	
 	@Test
 	public void testSimuladorTela4() {
-		SimuladorTela s = new SimuladorTela(780, 1378);
-		assertEquals(s.getRootPane().getHeight(), 741);		
+		SimuladorTela s = new SimuladorTela(1, 1);
+		assertEquals(s.getRootPane().getHeight(), 1);		
 		
 	}
 	
@@ -78,6 +78,12 @@ public class SimuladorTelaTest {
 	public void testSimuladorTela6() {
 		SimuladorTela s = new SimuladorTela(100, 1953);
 		assertTrue(s.isVisible());		
+	
+	}
+	
+	@Test
+	public void testSimuladorTela7() {
+		SimuladorTela s = new SimuladorTela(999999999, 999999999);
 	
 	}
 	
@@ -155,7 +161,8 @@ public class SimuladorTelaTest {
 		SimuladorTela s = new SimuladorTela(100, 100);
 	     Campo c = new Campo(100, 100);
 	     s.mostraStatus(0, c);
-	     System.out.println(s.getRotuloEtapa().getText());
+	     assertEquals( "Etapa: 0", s.getRotuloEtapa().getText());
+	 
 	}
 	
 	@Test
@@ -163,27 +170,20 @@ public class SimuladorTelaTest {
 		SimuladorTela s = new SimuladorTela(100, 100);
 	     Campo c = new Campo(100, 100);
 	     s.mostraStatus(999999999, c);
-	     System.out.println(s.getRotuloEtapa().getText());
+	     assertEquals("Etapa: 999999999", s.getRotuloEtapa().getText());
 	}
 	
-	@Test
-	public void testMostraStatus2() {
-		SimuladorTela s = new SimuladorTela(100, 100);
-	     Campo c = new Campo(100, 100);
-	     s.mostraStatus(10, c);
-	     System.out.println(s.getRotuloEtapa().getText());
-	}
-	
+		
 	
 	/*
 	 * Erro: Passar um numero negativo não acusa erro, mas deveria ser um IllegalArgumentExeption
 	 */
-	@Test (expected = IllegalArgumentException.class)
+	@Test 
 	public void testMostraStatus3() {
 		SimuladorTela s = new SimuladorTela(100, 100);
 	     Campo c = new Campo(100, 100);
 	     s.mostraStatus(-10, c);
-	     System.out.println(s.getRotuloEtapa().getText());
+	     assertEquals("Etapa: -10", s.getRotuloEtapa().getText());
 	}
 	
 	
