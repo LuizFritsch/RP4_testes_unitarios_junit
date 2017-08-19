@@ -411,3 +411,42 @@ modelo de software
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Deve chamar o método ovelha 7 vezes, após isso deve ser testado se há outro objeto na mesma localização | true |  teste passou |
+
+
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
+
+**Identificador:**        CT21   testSimulador classe SimuladorTest    
+
+ **Objetivo:** O objetivo do teste é verificar o funcionamento do construtor da classe Simulador.  
+
+ **Prioridade:**                  Média   
+
+ **Condições prévias:** Nenhum 
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |    RE04  |
+|---------------------|--------------|-----------------|----------------|----------|  
+|          CT21       |       X      |      --         |        X       |     x    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| (0,0) | Tratamento de exceção |  teste falhou |
+| (1,1) | Teste passar |  teste passou |
+| (-1,-1) | Tratamento de exceção |  teste falhou |
+
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
+
+**Identificador:**        CT22   testSimulador classe SimuladorTest    
+
+ **Objetivo:** O objetivo do teste é verificar o funcionamento de uma simulação.  
+
+ **Prioridade:**                  Alta   
+
+ **Condições prévias:** Nenhum 
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |    RE04  |
+|---------------------|--------------|-----------------|----------------|----------|  
+|          CT22       |       X      |      --         |        X       |     X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| criar uma simulação longa | Tratamento de exceção |  teste falhou |
