@@ -103,24 +103,24 @@ Correção 6
 
 #Correções da inspeção das classes “SimuladorTela”, “Ovelha”, “Campo”, “CampoEstatistica”
 
-1.Erro encontrado por meio do Junit
-1.1 Classe: ‘Campo’
-1.2 Método: ‘localizacoesAdjacentes(Localizacao localizacao)’
-1.3 Linha: 78
-1.4 Erro: O método aceita uma Localizacao com linha/coluna maior que a profundidade/largura do campo
-1.5 Solução: Adição de uma condição ‘if’ na linha 78 que exige que a linha/coluna da localização seja menor que a 1.6 profundidade/largura do campo.
+1.Erro encontrado por meio do Junit  
+1.1 Classe: ‘Campo’  
+1.2 Método: ‘localizacoesAdjacentes(Localizacao localizacao)’  
+1.3 Linha: 78  
+1.4 Erro: O método aceita uma Localizacao com linha/coluna maior que a profundidade/largura do campo  
+1.5 Solução: Adição de uma condição ‘if’ na linha 78 que exige que a linha/coluna da localização seja menor que a profundidade/largura do campo.  
 
-2. Erro encontrado por meio do Junit
-2.1 Classe: ‘Localizacao’
-2.2 Método: Construtor
-2.3 Linha: 20
-2.4 Erro: Não lançava exceção quando recebia dados inválidos
-2.5 Solução: Refatoração do ‘if’ de ‘(linha>=0 && coluna>=0)’ para ‘(linha<0 || coluna<0)’ e quando satisfeita a condição fazer com que lance uma exceção ‘IllegalArgumentException’ além da mudança do código que antes estava 
-2.6 dentro do ‘if’ para dentro do ‘else’ 
+2. Erro encontrado por meio do Junit  
+2.1 Classe: ‘Localizacao’  
+2.2 Método: Construtor  
+2.3 Linha: 20  
+2.4 Erro: Não lançava exceção quando recebia dados inválidos  
+2.5 Solução: Refatoração do ‘if’ de ‘(linha>=0 && coluna>=0)’ para ‘(linha<0 || coluna<0)’ e quando satisfeita a condição fazer com que lance uma exceção ‘IllegalArgumentException’ além da mudança do código que antes estava   
+2.6 dentro do ‘if’ para dentro do ‘else’   
 
-3. Correção 
-3.1 Classe: ‘Campo’
-3.2 Método: ‘localizacaoAdjacenteRandomica(Localizacao localizacao)’
-3.3 Linha: 51
-3.4 Erro: Caso a lista usada no método esteja vazia o sistema retornará uma exceção ‘IndexOutOfBoundsException’
-3.5 Solução: Adição de cláusula ‘if’ para verificar o tamanho da ‘List’ e adição de um ‘return null;’ fora da cláusula.
+3. Correção   
+3.1 Classe: ‘Campo’  
+3.2 Método: ‘localizacaoAdjacenteRandomica(Localizacao localizacao)’  
+3.3 Linha: 51  
+3.4 Erro: Caso a lista usada no método esteja vazia o sistema retornará uma exceção ‘IndexOutOfBoundsException’  
+3.5 Solução: Adição de cláusula ‘if’ para verificar o tamanho da ‘List’ e adição de um ‘return null;’ fora da  cláusula.
