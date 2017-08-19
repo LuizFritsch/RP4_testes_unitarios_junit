@@ -58,6 +58,9 @@ public class LoboGuara {
 		if (localizacao != null) {
 			campo.limpa(localizacao);
 		}
+		if(newLocalizacao.getLinha()> campo.getProfundidade() || newLocalizacao.getColuna() > campo.getLargura()) {
+			throw new IllegalArgumentException();
+		}
 		localizacao = newLocalizacao;
 		campo.lugar(this, newLocalizacao);
 	}

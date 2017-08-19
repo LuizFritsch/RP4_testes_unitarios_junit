@@ -195,7 +195,7 @@ public class CampoTest {
 	    
 	}
 
-	@Test (expected = IndexOutOfBoundsException.class )
+	@Test (expected = IllegalArgumentException.class )
 	public void testLimpaLocalizacao4() {		
 
 
