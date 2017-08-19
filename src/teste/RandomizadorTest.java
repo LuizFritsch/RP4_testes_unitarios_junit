@@ -11,7 +11,13 @@ import org.junit.Test;
 import ol.Randomizador;
 
 public class RandomizadorTest {
-
+	
+	@Test
+	public void testGetDouble() {
+		Random rand = Randomizador.getRandom();
+		double random = rand.nextDouble();
+		assertTrue(random>0 && random<1);
+	}
 	
 	@Test
 	public void testGetRandom() {
@@ -33,14 +39,15 @@ public class RandomizadorTest {
 			i++;
 		}
 		int j = 0;
+		Random rando = Randomizador.getRandom();
 		while (j < 11) {
-			segundo.add(rand.nextInt(100));
+			segundo.add(rando.nextInt(100));
 			j++;
 		}
 		int eIgual = 0;
 		for (int k = 0; k < 11; k++) {
-			System.out.println("em "+ k + " da primeira lista" + primeiro.get(k));
-			System.out.println("em "+ k + " da segunda lista" + segundo.get(k));
+			System.out.println("em "+ k + " da primeira lista " + primeiro.get(k));
+			System.out.println("em "+ k + " da segunda lista " + segundo.get(k));
 			if (primeiro.get(k) == segundo.get(k)) {
 				eIgual++;
 			}
