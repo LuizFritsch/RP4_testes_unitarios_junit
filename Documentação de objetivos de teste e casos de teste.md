@@ -28,7 +28,7 @@ modelo de software
 | profundidade 5 e largura 0   | É esperado que o teste lance a exceção illergalArgumentException  |  Teste falhou, o teste lançou um ArithmeticException |
 
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**            CT02   testGetProfundidade classe CampoTest      
 
@@ -48,7 +48,7 @@ modelo de software
 | profundidade 31 e largura 5  | É esperado que o teste não encontre erros  |  Teste passou |
 | profundidade 0 e largura 5   | É esperado que o teste lance a exceção illegalArgumentException  |  Teste falhou, o teste lançou um ArithmeticException |
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**             CT03   testGetPopulationDetails   classe CampoEstatisticaTest    
  
@@ -67,7 +67,7 @@ modelo de software
 | criar um campo 3x3 e 3 ovelhas com parâmetros (0,0)(0,1)(0,2) | É esperado que o teste retorne null  |  Teste passou |
 | criar um campo 100x100 e 3 ovelhas com parâmetros (0,0)(0,1)(0,2) | "" |  ""|
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 
 **Identificador:**             CT04   testCorre classe OvelhaTest      
@@ -89,7 +89,7 @@ modelo de software
 |Incrementar a idade da ovelha até o máximo +1 e chamar o metodo estaViva  | return false  |  teste falhou, a ovelha continua viva após a idade máxima |
 
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**            CT05   testEqualsObject classe LocalizacaoTest      
 
@@ -108,7 +108,7 @@ modelo de software
 | localizacao(10,10)|""  |  teste passou |
 | localizacao(,)| "" |  teste passou |
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**            CT06   testGetLinha classe LocalizacaoTest      
  
@@ -128,7 +128,7 @@ modelo de software
 | localizacao(0,100)| "" |  teste passou |
 | localizacao(0,-100)| Erro |  teste retornou um IllegalArgumentException |
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**        CT07   testGetColuna classe LocalizacaoTest      
 
@@ -146,7 +146,7 @@ modelo de software
 | localizacao(0,100)| teste falhar |  teste passou |
 | localizacao(-100,0)| teste falhar |  teste retornou um IllegalArgumentException |
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**       CT08   testHashCode classe LocalizacaoTest      
 
@@ -166,7 +166,7 @@ modelo de software
 | localizacao(-1,-1)| Erro |  teste retornou um IllegalArgumentException |
 | localizacao(-110, 15)| Erro |  teste retornou um IllegalArgumentException |
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
  **Identificador:**             CT09   testGetName classe ContadorTest     
 
@@ -186,7 +186,7 @@ modelo de software
 | Contador ("")| tratamento de exceção |  teste passou |
 | Contador ("Ovelha")|  O teste não retornar nenhum erro |  teste passou  |
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**        CT10   testGetCount classe ContadorTest     
 
@@ -205,7 +205,7 @@ modelo de software
 | Contador ("")| tratamento de exceção |  teste passou |
 | Contador ("Ovelha")|  O teste não retornar nenhum erro |  teste passou  |
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**        CT11   testIncrement classe ContadorTest     
 
@@ -224,7 +224,7 @@ modelo de software
 | incrementar 1000 vezes a ovelha| tratamento de exceção |  teste passou |
 
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**       CT12   testReset classe ContadorTest     
  
@@ -242,7 +242,7 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | chamar o método reset| teste retornar 0 |  teste passou |
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**        CT13   testGetLargura classe CampoTest    |
 
@@ -260,7 +260,7 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | chamar o método reset| teste retornar 0 |  teste passou |
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**       CT14   testGetPopulationDetails classe CampoEstatisticaTest    
  
@@ -282,7 +282,7 @@ modelo de software
 |Criar 3 ovelhas com entradas validas, criar 3 lobos guará com entradas validas e criar 3 campos com entradas validas | O método deve retornar a String na ordem "ol.LoboGuara: 3 ol.Ovelha: 3 ol.Campo: 3" | teste falhou, o método não tem uma ordem especifica para retornar as Strings, os Objetos podem variar de posição em qualquer execução do método |
 |Deixar o campo vazio |O método deve informar que o campo se encontra vazio | teste falhou, o método ão retorna nenhuma informação |
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**        CT15   testRedefine classe CampoEstatisticaTest    
 
@@ -301,7 +301,7 @@ modelo de software
 | Deve ser criado 3 ovelhas e chamar o método Redefine | teste deve mostrar que não tem objetos no campo |  teste passou, retornou 0 |
 | Deve ser criado 3 ovelha, chamar o método Redefine e incrementar o campo | O teste só deve contar os objetos que foram incrementados após redefinir o campo |  teste passou |
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**      CT16   testContadorFinalizado classe CampoEstatisticaTest    
  **Objetivo:**                     O método verifica a execução do método contadorFinalizado  
@@ -318,7 +318,7 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Deve ser criado 3 ovelhas e chamar o método contadorFinalizado | Saida esperada: " " |  teste passou |
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**        CT17   testEhViavel classe CampoEstatisticaTest    
 
@@ -338,7 +338,7 @@ modelo de software
 | O método cria 3 ovelhas e um lobo guará  | True |  teste passou |
 | O método cria 1 e um campo  | false |  teste falhou |
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
 **Identificador:**        CT18   testEstaViva classe OvelhaTest    
 
@@ -349,14 +349,14 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT17       |      X       |      X         |       --        |    X    |
+|          CT18       |      X       |      X         |       --        |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | O método cria uma ovelha  | true |  teste passou |
 | O método cria uma ovelha e executa o setMorte | false |  teste passou |
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
 
 **Identificador:**        CT19   testSetMorte classe OvelhaTest    
 
@@ -368,14 +368,14 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT17       |      X       |      X         |       --        |    X    |
+|          CT19       |      X       |      X         |       --        |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Executa o metodo setMorte para uma ovelha e chama o método estaViva | false |  teste passou |
 
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
 
 **Identificador:**        CT19   testSetMorte classe OvelhaTest    
 
@@ -387,14 +387,14 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT17       |      X       |      X         |       --        |    X    |
+|          CT19       |      X       |      X         |       --        |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Executa o metodo setMorte para uma ovelha e chama o método estaViva | false |  teste passou |
 
 
-![Screenshot_1.png](https://bitbucket.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
 
 **Identificador:**        CT20   testProcria classe OvelhaTest    
 
@@ -406,7 +406,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |    RE04  |
 |---------------------|--------------|-----------------|----------------|----------|  
-|          CT17       |      X       |      --         |       --       |    --    |
+|          CT20       |      X       |      --         |       --       |    --    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
