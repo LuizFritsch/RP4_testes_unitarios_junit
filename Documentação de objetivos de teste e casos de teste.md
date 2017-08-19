@@ -124,9 +124,9 @@ modelo de software
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
-| localizacao(10,15)|""  |  teste passou |
-| localizacao(0,100)| "" |  teste passou |
-| localizacao(0,-100)| Erro |  teste retornou um IllegalArgumentException |
+| localizacao(10,15)| teste passar |  teste passou |
+| localizacao(0,100)| tratamento de exceção |  teste passou |
+| localizacao(0,-100)| tratamento de exceção |  teste retornou um IllegalArgumentException |
 
 ![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
@@ -163,8 +163,8 @@ modelo de software
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | localizacao(10,15)|teste passar  |  teste passou |
-| localizacao(-1,-1)| Erro |  teste retornou um IllegalArgumentException |
-| localizacao(-110, 15)| Erro |  teste retornou um IllegalArgumentException |
+| localizacao(-1,-1)| tratamento de exceção |  teste retornou um IllegalArgumentException |
+| localizacao(-110, 15)| tratamento de exceção |  teste retornou um IllegalArgumentException |
 
 ![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
