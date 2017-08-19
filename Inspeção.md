@@ -101,7 +101,8 @@ Correção 6
 
 
 
-#Correções da inspeção das classes “SimuladorTela”, “Ovelha”, “Campo”, “CampoEstatistica”
+#Correções da inspeção das classes “SimuladorTela”, “Ovelha”, “Campo”, “CampoEstatistica”  
+
 
 1.Erro encontrado por meio do Junit  
 1.1 Classe: ‘Campo’  
