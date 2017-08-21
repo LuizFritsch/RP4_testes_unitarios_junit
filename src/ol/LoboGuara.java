@@ -93,6 +93,7 @@ public class LoboGuara {
 		return null;
 	}
 
+	
 	private void daALuz(List<LoboGuara> novosLobos) {
 		List<Localizacao> livre = campo.localizacoesAdjacentesLivres(localizacao);
 		int nascimentos = procria();
