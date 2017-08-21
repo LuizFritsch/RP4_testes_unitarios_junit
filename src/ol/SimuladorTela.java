@@ -91,7 +91,7 @@ public class SimuladorTela extends JFrame {
 				Object animal = campo.getObjectAt(row, col);
 				if (animal != null) {
 					estatisticas.incrementaContador(animal.getClass());
-					visaoCampo.drawMark(col, row, getCor(animal.getClass()));
+					//visaoCampo.drawMark(col, row, getCor(animal.getClass()));
 				} else {
 					visaoCampo.drawMark(col, row, COR_VAZIA);
 				}
