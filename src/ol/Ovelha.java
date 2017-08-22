@@ -3,7 +3,7 @@ package ol;
 import java.util.List;
 import java.util.Random;
 
-public class Ovelha {
+public class Ovelha extends Animal{
 	private static final int IDADE_PROCRIACAO = 5;
 	private static final int IDADE_MAXIMA = 40;
 	private static final double PROBABILIDADE_PROCRIACAO = 1;
@@ -16,10 +16,7 @@ public class Ovelha {
 	private Campo campo;
 
 	public Ovelha(boolean randomAge, Campo campo, Localizacao localizacao) {
-		idade = 0;
-		vivo = true;
-		this.campo = campo;
-		setLocalizacao(localizacao);
+		super(campo, localizacao);
 		if (randomAge) {
 			idade = rand.nextInt(IDADE_MAXIMA);
 		}
@@ -39,35 +36,11 @@ public class Ovelha {
 			}
 		}
 	}
-
-	public boolean estaViva() {
-		return vivo;
-	}
-
-	public void setMorte() {
-		vivo = false;
-		if (localizacao != null) {
-			campo.limpa(localizacao);
-			localizacao = null;
-			campo = null;
-		}
-	}
-	
-	public Localizacao getLocalizacao() {
-		return localizacao;
-	}
 	
 	public int getIdade() {
 		return idade;
 	}
 	
-	private void setLocalizacao(Localizacao newLocalizacao) {
-		if (localizacao != null) {
-			campo.limpa(localizacao);
-		}
-		localizacao = newLocalizacao;
-		campo.lugar(this, newLocalizacao);
-	}
 
 	// Deveria morrer quando chega na idade máxima
 	/*

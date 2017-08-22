@@ -7,11 +7,11 @@ import java.util.Iterator;
 import java.awt.Color;
 
 /*
- * Iniciando inspeção de software 14 de agosto de 2017 as 23:00
- * Inspeção de software inicial finalizada em 14 de agosto de 2017 as 23:50
+ * Iniciando inspeï¿½ï¿½o de software 14 de agosto de 2017 as 23:00
+ * Inspeï¿½ï¿½o de software inicial finalizada em 14 de agosto de 2017 as 23:50
  * 
- * Iniciando Refatoração do código em 14 de agosto de 2017 as 23:50
- * Refatoração finalizada em 15 de agosto de 2017 as 00:03
+ * Iniciando Refatoraï¿½ï¿½o do cï¿½digo em 14 de agosto de 2017 as 23:50
+ * Refatoraï¿½ï¿½o finalizada em 15 de agosto de 2017 as 00:03
  */
 
 public class Simulador {
@@ -64,7 +64,7 @@ public class Simulador {
 		for (Iterator<Ovelha> it = ovelhas.iterator(); it.hasNext();) {
 			Ovelha ovelha = it.next();
 			ovelha.corre(novasOvelhas);
-			if (!ovelha.estaViva()) {
+			if (!ovelha.estaVivo()) {
 				it.remove();
 			}
 		}
@@ -111,7 +111,7 @@ public class Simulador {
 		}
 	}
 
-	// Metodos adcionados para melhorar os testes possivéis.
+	// Metodos adcionados para melhorar os testes possivï¿½is.
 	public Campo getCampo() {
 		return campo;
 	}

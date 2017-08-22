@@ -14,7 +14,7 @@ public class OvelhaTest {
 		ArrayList<Ovelha> teste = new ArrayList<Ovelha>();
 		Ovelha abe = new Ovelha(false, new Campo(50, 50), new Localizacao(20, 19));
 		abe.corre(teste);
-		assertTrue(abe.estaViva());
+		assertTrue(abe.estaVivo());
 		// Foi visto que a partir do momento que é chamado o método corre, a ovelha
 		// morria.
 	}
@@ -28,21 +28,21 @@ public class OvelhaTest {
 			abe.corre(teste);
 			i++;
 		}
-		assertFalse(abe.estaViva());
+		assertFalse(abe.estaVivo());
 		// Foi visto que a ovelha não morre ao chegar na idade máxima
 	}
 
 	@Test
 	public void testEstaViva() {
 		Ovelha o = new Ovelha(false, new Campo(20, 20), new Localizacao(2, 2));
-		assertTrue(o.estaViva());
+		assertTrue(o.estaVivo());
 	}
 
 	@Test
 	public void testEstaVivaEstandoMorta() {
 		Ovelha o = new Ovelha(false, new Campo(20, 20), new Localizacao(2, 2));
 		o.setMorte();
-		assertFalse(o.estaViva());
+		assertFalse(o.estaVivo());
 	}
 
 	@Test
@@ -51,7 +51,7 @@ public class OvelhaTest {
 		Localizacao local = new Localizacao(2, 2);
 		Ovelha o = new Ovelha(false, camp, local);
 		o.setMorte();
-		assertFalse(o.estaViva());
+		assertFalse(o.estaVivo());
 	}
 
 	@Test

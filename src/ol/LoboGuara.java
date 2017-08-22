@@ -3,7 +3,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
-public class LoboGuara {
+public class LoboGuara extends Animal{
 	private static final int IDADE_PROCRIACAO = 10;
 	private static final int IDADE_MAXIMA = 150;
 	private static final double PROBABILIDADE_PROCRIACAO = 0.75;
@@ -18,10 +18,7 @@ public class LoboGuara {
 	private int nivelFome;
 
 	public LoboGuara(boolean idadeRandomica, Campo campo, Localizacao localizacao) {
-		idade = 0;
-		vivo = true;
-		this.campo = campo;
-		setLocalizacao(localizacao);
+		super(campo, localizacao);
 		if (idadeRandomica) {
 			idade = rand.nextInt(IDADE_MAXIMA);
 			nivelFome = rand.nextInt(VALOR_FOME_OVELHA);
@@ -44,25 +41,6 @@ public class LoboGuara {
 				setMorte();
 			}
 		}
-	}
-
-	public boolean estaVivo() {
-		return vivo;
-	}
-
-	public Localizacao getLocalizacao() {
-		return localizacao;
-	}
-
-	private void setLocalizacao(Localizacao newLocalizacao) {
-		if (localizacao != null) {
-			campo.limpa(localizacao);
-		}
-		if(newLocalizacao.getLinha()> campo.getProfundidade() || newLocalizacao.getColuna() > campo.getLargura()) {
-			throw new IllegalArgumentException();
-		}
-		localizacao = newLocalizacao;
-		campo.lugar(this, newLocalizacao);
 	}
 
 	private void incrementaIdade() {
@@ -123,14 +101,5 @@ public class LoboGuara {
 		return idade >= IDADE_PROCRIACAO;
 	}
 	
-	//Privado
-	public void setMorte() {
-		vivo = false;
-		if (localizacao != null) {
-			campo.limpa(localizacao);
-			localizacao = null;
-			campo = null;
-		}
-	}
 	
 }
