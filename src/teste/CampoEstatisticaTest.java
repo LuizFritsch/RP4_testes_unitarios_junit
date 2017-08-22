@@ -94,7 +94,7 @@ public class CampoEstatisticaTest {
 		c.lugar(teste, 2, 2);
 		c.lugar(teste, 2, 1);
 		CampoEstatistica campoe = new CampoEstatistica();
-		assertEquals( campoe.getPopulationDetails(c) ,"ol.LoboGuara: 3 ol.Ovelha: 3 ol.Campo: 3 ");	
+		assertEquals( campoe.getPopulationDetails(c) ,"ol.Ovelha: 3 ol.LoboGuara: 3 ol.Campo: 3 ");	
 		
 		
 	}
@@ -126,7 +126,8 @@ public class CampoEstatisticaTest {
 		
 		
 		CampoEstatistica campoe = new CampoEstatistica();
-		assertEquals( campoe.getPopulationDetails(c) , "ol.Ovelha: 10000 ol.LoboGuara: 10000");	
+		System.err.println(campoe.getPopulationDetails(c));
+		assertEquals( campoe.getPopulationDetails(c) , "ol.Ovelha: 10000 ol.LoboGuara: 10000 ");	
 		
 		
 	}
@@ -274,6 +275,7 @@ public class CampoEstatisticaTest {
 
 	/*
 	 * Erro: Se tiver Object que não seja ovelha ou lobo, o metodo retorna true, e uma nova etapa de simulação pode ocorrer:
+	 * Não entendi pq tipo era para retornar true mesmo esse método
 	 */
 	@Test
 	public void testEhViavel4() {

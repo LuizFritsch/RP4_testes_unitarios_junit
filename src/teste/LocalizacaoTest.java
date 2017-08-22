@@ -33,11 +33,10 @@ public class LocalizacaoTest {
 	}
 	
 	
-	@Test 
+	@Test (expected= IllegalArgumentException.class)
 	public void testEqualsObject2() {
 		Localizacao obj = new Localizacao(-1, -1);
 		Localizacao ob1 = new Localizacao(-1, -1);
-		assertTrue(obj.equals(ob1));
 	}
 	
 	
@@ -59,7 +58,7 @@ public class LocalizacaoTest {
 	}
 	
 	
-	@Test 
+	@Test (expected= IllegalArgumentException.class)
 	public void testGetLinha3() {
 		Localizacao obj = new Localizacao(0, -100);
 		assertEquals(0, obj.getLinha());
@@ -132,18 +131,16 @@ public class LocalizacaoTest {
 	
 	
 
-	@Test
+	@Test (expected= IllegalArgumentException.class)
 	public void testHashCode4() {
 		Localizacao obj1 = new Localizacao(-110, 15);
 		Localizacao obj2 = new Localizacao(-110, 15);
-		assertEquals(obj1.hashCode(), obj2.hashCode());
 	}
 	
 	
-	@Test
+	@Test (expected= IllegalArgumentException.class)
 	public void testHashCode5() {
 		Localizacao obj1 = new Localizacao(-1, -1);
-		assertNotEquals(obj1.hashCode(),null);
 	}
 	
 	
