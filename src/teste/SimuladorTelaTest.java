@@ -11,6 +11,8 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import javax.swing.JLabel;
+
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -111,13 +113,13 @@ public class SimuladorTelaTest {
 		s.setCor(ove.getClass(), Color.ORANGE);
 		Field f = SimuladorTela.class.getDeclaredField("cores");
 		f.setAccessible(true);
-		Map<Class, Color> cor = (LinkedHashMap<Class, Color>) f.get(s);
+		Map<Class, Color> cor = (Map<Class, Color>) f.get(s);
 		assertEquals(f.get(ove.getClass()), Color.ORANGE);
 
 	}
 
 	@Test
-	public void testSetCor2() {
+	public void testSetCor2() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
 		SimuladorTela s = new SimuladorTela(10, 10);
 		Campo c = new Campo(1000, 1000);
 		Ovelha ove = new Ovelha(true, c, new Localizacao(0, 0));
@@ -125,7 +127,12 @@ public class SimuladorTelaTest {
 
 		s.setCor(c.getObjectAt(0, 0).getClass(), Color.ORANGE);
 		s.setCor(c.getObjectAt(100, 100).getClass(), Color.BLUE);
-		assertEquals(s.getCores().get(lobo.getClass()), Color.BLUE);
+		Field f = SimuladorTela.class.getDeclaredField("cores");
+		f.setAccessible(true);
+		Map<Class, Color> cor = (Map<Class, Color>) f.get(s);
+		assertEquals(f.get(ove.getClass()), Color.ORANGE);
+		assertEquals(f.get(lobo.getClass()), Color.BLUE);
+		
 
 	}
 
@@ -135,7 +142,7 @@ public class SimuladorTelaTest {
 	 * setCor().
 	 */
 	@Test
-	public void testSetCor3() {
+	public void testSetCor3() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
 		SimuladorTela s = new SimuladorTela(10, 10);
 		Campo c = new Campo(1000, 1000);
 		Ovelha ove = new Ovelha(true, c, new Localizacao(0, 0));
@@ -145,9 +152,14 @@ public class SimuladorTelaTest {
 		s.setCor(c.getObjectAt(0, 0).getClass(), Color.ORANGE);
 		s.setCor(c.getObjectAt(170, 199).getClass(), Color.BLUE);
 		s.setCor(c.getObjectAt(100, 100).getClass(), Color.BLUE);
-		assertEquals(s.getCores().get(ove1.getClass()), Color.BLUE);
-		assertEquals(s.getCores().get(ove.getClass()), Color.BLUE);
 
+
+		Field f = SimuladorTela.class.getDeclaredField("cores");
+		f.setAccessible(true);
+		Map<Class, Color> cor = (Map<Class, Color>) f.get(s);
+		assertEquals(f.get(ove.getClass()), Color.BLUE);
+		assertEquals(f.get(lobo.getClass()), Color.BLUE);
+		
 	}
 
 	// ----------------------------------------------------------------------------------------------------------------------------------
@@ -208,11 +220,16 @@ public class SimuladorTelaTest {
 	// ----------------------------------------------------------------------------------------------------------------------------------
 
 	@Test
-	public void testMostraStatus() {
+	public void testMostraStatus() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
 		SimuladorTela s = new SimuladorTela(100, 100);
 		Campo c = new Campo(100, 100);
 		s.mostraStatus(0, c);
-		assertEquals("Etapa: 0", s.getRotuloEtapa().getText());
+		Field f = SimuladorTela.class.getDeclaredField("rotuloEtapa");
+		f.setAccessible(true);
+		
+		JLabel jl = (JLabel) f.get(s);
+		
+		assertEquals("Etapa: 0", jl.getText());
 
 	}
 

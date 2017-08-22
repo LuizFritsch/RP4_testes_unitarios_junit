@@ -24,6 +24,10 @@ public class Animal {
 		return localizacao;
 	}
 	
+	
+	/*
+	 * Localizações com valores negativos ainda me parece problema para esse metodo. VERIFICAR ISSO!!
+	 */
 	protected void setLocalizacao(Localizacao newLocalizacao) {
 		if (localizacao != null) {
 			campo.limpa(localizacao);
