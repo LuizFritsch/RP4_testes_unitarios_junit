@@ -50,8 +50,8 @@ public class SimuladorTelaTest {
 	}
 
 	/*
-	 * Tamanho da janela: Não diz onde a janela deve iniciar: Como eu testo isso?
-	 * Por q 50, tem alguma especificação sobre isso?
+	 * Tamanho da janela: Nï¿½o diz onde a janela deve iniciar: Como eu testo isso?
+	 * Por q 50, tem alguma especificaï¿½ï¿½o sobre isso?
 	 */
 	@Test
 	public void testSimuladorTela3() {
@@ -61,7 +61,7 @@ public class SimuladorTelaTest {
 	}
 
 	/*
-	 * Testar as dimeções da tela
+	 * Testar as dimeï¿½ï¿½es da tela
 	 */
 
 	@Test
@@ -72,7 +72,7 @@ public class SimuladorTelaTest {
 	}
 
 	/*
-	 * Testar as dimeções da tela
+	 * Testar as dimeï¿½ï¿½es da tela
 	 */
 
 	@Test
@@ -114,7 +114,7 @@ public class SimuladorTelaTest {
 		Field f = SimuladorTela.class.getDeclaredField("cores");
 		f.setAccessible(true);
 		Map<Class, Color> cor = (Map<Class, Color>) f.get(s);
-		assertEquals(f.get(ove.getClass()), Color.ORANGE);
+		assertEquals(cor.get(ove.getClass()), Color.ORANGE);
 
 	}
 
@@ -130,14 +130,14 @@ public class SimuladorTelaTest {
 		Field f = SimuladorTela.class.getDeclaredField("cores");
 		f.setAccessible(true);
 		Map<Class, Color> cor = (Map<Class, Color>) f.get(s);
-		assertEquals(f.get(ove.getClass()), Color.ORANGE);
-		assertEquals(f.get(lobo.getClass()), Color.BLUE);
+		assertEquals(cor.get(ove.getClass()), Color.ORANGE);
+		assertEquals(cor.get(lobo.getClass()), Color.BLUE);
 		
 
 	}
 
 	/*
-	 * Erro: Passar uma cor diferente da cor salva para este animal, o metodo não
+	 * Erro: Passar uma cor diferente da cor salva para este animal, o metodo nï¿½o
 	 * valida a cor salva, ele atualiza todos para a ultima cor passada pelo
 	 * setCor().
 	 */
@@ -157,8 +157,8 @@ public class SimuladorTelaTest {
 		Field f = SimuladorTela.class.getDeclaredField("cores");
 		f.setAccessible(true);
 		Map<Class, Color> cor = (Map<Class, Color>) f.get(s);
-		assertEquals(f.get(ove.getClass()), Color.BLUE);
-		assertEquals(f.get(lobo.getClass()), Color.BLUE);
+		assertEquals(cor.get(ove.getClass()), Color.BLUE);
+		assertEquals(cor.get(lobo.getClass()), Color.BLUE);
 		
 	}
 
@@ -183,7 +183,7 @@ public class SimuladorTelaTest {
 	 */
 	
 	/*
-	 * O map está vazio, então deve retornar a cor Gray ou R = 128, G = 128, B=128;
+	 * O map estï¿½ vazio, entï¿½o deve retornar a cor Gray ou R = 128, G = 128, B=128;
 	 */
 	@Test
 	public void getCor1() throws NoSuchMethodException, SecurityException, ClassNotFoundException,
@@ -234,31 +234,44 @@ public class SimuladorTelaTest {
 	}
 
 	@Test
-	public void testMostraStatus1() {
+	public void testMostraStatus1() throws IllegalArgumentException, IllegalAccessException, NoSuchFieldException, SecurityException {
 		SimuladorTela s = new SimuladorTela(100, 100);
 		Campo c = new Campo(100, 100);
 		s.mostraStatus(999999999, c);
-		assertEquals("Etapa: 999999999", s.getRotuloEtapa().getText());
+		Field f = SimuladorTela.class.getDeclaredField("rotuloEtapa");
+		f.setAccessible(true);
+		
+		JLabel jl = (JLabel) f.get(s);
+		assertEquals("Etapa: 999999999", jl.getText());
 	}
 
 	/*
-	 * Erro: Passar um numero negativo não acusa erro, mas deveria ser um
+	 * Erro: Passar um numero negativo nï¿½o acusa erro, mas deveria ser um
 	 * IllegalArgumentExeption
 	 */
 	@Test
-	public void testMostraStatus3() {
+	public void testMostraStatus3() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
 		SimuladorTela s = new SimuladorTela(100, 100);
 		Campo c = new Campo(100, 100);
 		s.mostraStatus(-10, c);
-		assertEquals("Etapa: -10", s.getRotuloEtapa().getText());
+		
+		Field f = SimuladorTela.class.getDeclaredField("rotuloEtapa");
+		f.setAccessible(true);
+		
+		JLabel jl = (JLabel) f.get(s);
+		assertEquals("Etapa: -10", jl.getText());
 	}
 
 	@Test
-	public void testMostraStatus4() {
+	public void testMostraStatus4() throws IllegalArgumentException, IllegalAccessException, NoSuchFieldException, SecurityException {
 		SimuladorTela s = new SimuladorTela(100, 100);
 		Campo c = new Campo(100, 100);
 		s.mostraStatus(1000, c);
-		assertEquals(s.getPapulaco().getText(), "Populacao: ");
+		Field f = SimuladorTela.class.getDeclaredField("populacao");
+		f.setAccessible(true);
+		
+		JLabel jl = (JLabel) f.get(s);
+		assertEquals(jl.getText(), "Populacao: ");
 	}
 
 	// ----------------------------------------------------------------------------------------------------------------------------------
@@ -272,8 +285,8 @@ public class SimuladorTelaTest {
 	}
 
 	/*
-	 * Erro: A classe SimuladorTela, tem obrigação de testar o tamnho do campo, se é
-	 * maior ou menor q o tamnho da simulação da janela?
+	 * Erro: A classe SimuladorTela, tem obrigaï¿½ï¿½o de testar o tamnho do campo, se ï¿½
+	 * maior ou menor q o tamnho da simulaï¿½ï¿½o da janela?
 	 */
 	@Test
 	public void testEhViavel1() {
@@ -286,5 +299,100 @@ public class SimuladorTelaTest {
 		assertTrue(s.ehViavel(c));
 
 	}
+	
+	
+	//---------------------------------------------------------------------------------------------------------------------------------
+	
+	
+	@Test
+	public void testVisaoCampo() throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
+		
+		/*
+		 * Inicio
+		 */
+		SimuladorTela s = new SimuladorTela(1000, 1000);
+		Class<?> visaoCampo = Class.forName("ol.SimuladorTela$VisaoCampo");
+	
+		Constructor<?> cons = visaoCampo.getConstructor(SimuladorTela.class, int.class, int.class);
+		cons.setAccessible(true);
+		
+		
+		Class<?> vCampo = cons.newInstance(s, 1000,1000).getClass();
+		/*
+		 * Parte padrão do teste:  Agora muda apenas field e metodos:
+		 * 
+		 */
+		Field largura = vCampo.getDeclaredField("gridWidth");
+		largura.setAccessible(true);
+		
+		assertEquals(1000, largura.get(cons.newInstance(s, 900,1000)));
+	}
+	
+	
+
+	@Test
+	public void testVisaoCampo1() throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
+		
+		SimuladorTela s = new SimuladorTela(1000, 1000);
+		Class<?> visaoCampo = Class.forName("ol.SimuladorTela$VisaoCampo");
+	
+		Constructor<?> cons = visaoCampo.getConstructor(SimuladorTela.class, int.class, int.class);
+		cons.setAccessible(true);
+		
+		
+		Class<?> vCampo = cons.newInstance(s, 1000,1000).getClass();
+		Field altura = vCampo.getDeclaredField("gridHeight");
+		altura.setAccessible(true);
+		
+		assertEquals(1000, altura.get(cons.newInstance(s, 1000,900)));
+	}
+	
+	
+	@Test
+	public void testVisaoCampo2() throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
+		
+		SimuladorTela s = new SimuladorTela(1000, 1000);
+		Class<?> visaoCampo = Class.forName("ol.SimuladorTela$VisaoCampo");
+	
+		Constructor<?> cons = visaoCampo.getConstructor(SimuladorTela.class, int.class, int.class);
+		cons.setAccessible(true);
+		
+		
+		Class<?> vCampo = cons.newInstance(s, 0,0).getClass();
+		Field altura = vCampo.getDeclaredField("gridHeight");
+		altura.setAccessible(true);
+		
+		Field largura = vCampo.getDeclaredField("gridWidth");
+		largura.setAccessible(true);
+		
+		assertEquals(0, largura.get(cons.newInstance(s, 900,0)));		
+		assertEquals(0, altura.get(cons.newInstance(s, 0,900)));
+	}
+	
+	
+
+	@Test
+	public void testVisaoCampo3() throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
+		
+		SimuladorTela s = new SimuladorTela(1000, 1000);
+		Class<?> visaoCampo = Class.forName("ol.SimuladorTela$VisaoCampo");
+	
+		Constructor<?> cons = visaoCampo.getConstructor(SimuladorTela.class, int.class, int.class);
+		cons.setAccessible(true);
+		
+		
+		Class<?> vCampo = cons.newInstance(s, -100,-100).getClass();
+		Field altura = vCampo.getDeclaredField("gridHeight");
+		altura.setAccessible(true);
+		
+		Field largura = vCampo.getDeclaredField("gridWidth");
+		largura.setAccessible(true);
+		
+		assertEquals(-100, largura.get(cons.newInstance(s, -100,-100)));		
+		assertEquals(-100, altura.get(cons.newInstance(s, -100,-100)));
+	}
+	
+	
+	
 
 }

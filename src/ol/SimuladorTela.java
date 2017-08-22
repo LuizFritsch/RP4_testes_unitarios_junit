@@ -15,7 +15,7 @@ public class SimuladorTela extends JFrame {
 	private VisaoCampo visaoCampo;
 
 	private Map<Class, Color> cores;
-	private CampoEstatistica estatisticas;
+	private CampoEstatistica estatisticas; 
 	
 	
 	//------------------------------------------------------------------------------------------------
