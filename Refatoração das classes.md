@@ -1,3 +1,5 @@
+#“LoboGuara” e “Ovelha”
+
 **1. Problema:**   
 1.1 As classes “LoboGuara” e “Ovelha” possuem métodos exatamente iguais ou seja, as classes possuem replicação de código sem motivo.  
 1.2 As classes “LoboGuara” e “Ovelha” também possuem atributos com mesma função.  
