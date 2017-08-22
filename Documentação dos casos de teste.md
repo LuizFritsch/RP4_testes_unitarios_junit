@@ -537,3 +537,19 @@ modelo de software
 |Criar um rótulo com etapa "0"| O teste deve passar. O rótulo deve ser criado com sucesso | teste passou |
 |Criar um rótulo com etapa "999999999"|O teste não deve passar | teste passou |
 |Criar um rótulo com etapa "-10"|O teste não deve passar | teste passou |
+
+**Identificador:**        CT29   testEhViavel classe SimuladorTelaTest  
+
+ **Objetivo:**                   Verificar o tamanho do campo para criar uma tela.
+
+ **Prioridade:**                   Baixa   
+
+ **Condições prévias:**           nenhum. 
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT29       |      X       |       --        |       --        |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| SimuladorTela (1,1) e campo (100,100) | teste deve apresentar uma mensagem de erro | teste passou |
