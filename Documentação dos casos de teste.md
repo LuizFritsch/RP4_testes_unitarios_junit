@@ -468,3 +468,53 @@ modelo de software
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Randomizar com parâmetro 1 | 0 |  teste passou |
+
+
+![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+
+**Identificador:**        CT24   testEstaVivO classe loboGuaraTest  
+
+ **Objetivo:**                    O metodo testEstaViva verifica se o método estaVivo retorna true para lobos vivos e false para lobos mortos.
+ **Prioridade:**                   Baixa   
+
+ **Condições prévias:**            Para o uso do segundo teste o método setMorte deve esta corretamente implementado.   
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT18       |      X       |      X         |       --        |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria um lobo guará  | true |  teste passou |
+| O método cria um lobo guará e executa o setMorte | false |  teste passou |
+
+**Identificador:**        CT25   testSimuladorTela classe SimuladorTelaTest  
+
+ **Objetivo:**                    O metodo cria uma  tela para simulação.
+ **Prioridade:**                   Baixa   
+
+ **Condições prévias:**            nenhuma.
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT18       |      X       |       --        |       --        |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+|Instancia um simuladorTela| a tela deve apresentar a seguinte mensagem "Simulacao Ovelhas and Lobos Guara"|passou |
+
+
+**Identificador:**        CT25   testSimuladorTela classe SimuladorTelaTest  
+
+ **Objetivo:**                    O metodo cria uma  tela para simulação.
+ **Prioridade:**                   Baixa   
+
+ **Condições prévias:**            nenhuma.
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT18       |      X       |       --        |       --        |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+|Instancia um simuladorTela| a tela deve apresentar o seguinte titulo "Simulacao Ovelhas and Lobos Guara"|passou |
