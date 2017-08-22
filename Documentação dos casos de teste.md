@@ -377,7 +377,7 @@ modelo de software
 
 ![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
 
-**Identificador:**        CT19   testSetMorte classe OvelhaTest    
+**Identificador:**        CT20   testSetMorte classe OvelhaTest    
 
  **Objetivo:**  Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta.  
 
@@ -387,7 +387,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT19       |      X       |      X         |       --        |    X    |
+|          CT20       |      X       |      X         |       --        |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -396,7 +396,7 @@ modelo de software
 
 ![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
 
-**Identificador:**        CT20   testProcria classe OvelhaTest    
+**Identificador:**        CT21   testProcria classe OvelhaTest    
 
  **Objetivo:** Verifica se uma ovelha está procriando.
 
@@ -406,7 +406,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |    RE04  |
 |---------------------|--------------|-----------------|----------------|----------|  
-|          CT20       |      X       |      --         |       --       |    --    |
+|          CT21       |      X       |      --         |       --       |    --    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -415,7 +415,7 @@ modelo de software
 
 ![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
 
-**Identificador:**        CT21   testSimulador classe SimuladorTest    
+**Identificador:**        CT22   testSimulador classe SimuladorTest    
 
  **Objetivo:** O objetivo do teste é verificar o funcionamento do construtor da classe Simulador.  
 
@@ -425,7 +425,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |    RE04  |
 |---------------------|--------------|-----------------|----------------|----------|  
-|          CT21       |       X      |      --         |        X       |     x    |
+|          CT22       |       X      |      --         |        X       |     x    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -435,7 +435,7 @@ modelo de software
 
 ![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
 
-**Identificador:**        CT22   testSimulador classe SimuladorTest    
+**Identificador:**        CT23   testSimulador classe SimuladorTest    
 
  **Objetivo:** O objetivo do teste é verificar o funcionamento de uma simulação.  
 
@@ -445,7 +445,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |    RE04  |
 |---------------------|--------------|-----------------|----------------|----------|  
-|          CT22       |       X      |      --         |        X       |     X    |
+|          CT23       |       X      |      --         |        X       |     X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -453,7 +453,7 @@ modelo de software
 
 ![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
 
-**Identificador:**        CT23   testGetRandom classe RandomizadorTest      
+**Identificador:**        CT24   testGetRandom classe RandomizadorTest      
 
  **Objetivo:** O objetivo do teste é verificar o funcionamento do método getRandom.
 
@@ -463,7 +463,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |    RE04  |
 |---------------------|--------------|-----------------|----------------|----------|  
-|          CT23       |       X      |      --         |        X       |     X    |
+|          CT24       |       X      |      --         |        X       |     X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -472,7 +472,7 @@ modelo de software
 
 ![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
-**Identificador:**        CT24   testEstaVivO classe loboGuaraTest  
+**Identificador:**        CT25   testEstaVivO classe loboGuaraTest  
 
  **Objetivo:**                    O metodo testEstaViva verifica se o método estaVivo retorna true para lobos vivos e false para lobos mortos.
  **Prioridade:**                   Baixa   
@@ -481,14 +481,14 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT18       |      X       |      X         |       --        |    X    |
+|          CT25       |      X       |      X         |       --        |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | O método cria um lobo guará  | true |  teste passou |
 | O método cria um lobo guará e executa o setMorte | false |  teste passou |
 
-**Identificador:**        CT25   testSimuladorTela classe SimuladorTelaTest  
+**Identificador:**        CT26   testSimuladorTela classe SimuladorTelaTest  
 
  **Objetivo:**                    O metodo cria uma  tela para simulação.
  **Prioridade:**                   Baixa   
@@ -497,24 +497,43 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT18       |      X       |       --        |       --        |    X    |
+|          CT26       |      X       |       --        |       --        |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 |Instancia um simuladorTela| a tela deve apresentar a seguinte mensagem "Simulacao Ovelhas and Lobos Guara"|passou |
 
 
-**Identificador:**        CT25   testSimuladorTela classe SimuladorTelaTest  
+**Identificador:**        CT27   testSimuladorTela classe SimuladorTelaTest  
 
  **Objetivo:**                    O metodo cria uma  tela para simulação.
+
  **Prioridade:**                   Baixa   
 
  **Condições prévias:**            nenhuma.
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT18       |      X       |       --        |       --        |    X    |
+|          CT27       |      X       |       --        |       --        |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 |Instancia um simuladorTela| a tela deve apresentar o seguinte titulo "Simulacao Ovelhas and Lobos Guara"|passou |
+
+
+**Identificador:**        CT28   testMostrarStatus classe SimuladorTelaTest  
+
+ **Objetivo:**                    Checar se é possível criar um rótulo de etapa com informações validas e invalidas.
+ **Prioridade:**                   Baixa   
+
+ **Condições prévias:**            O método deve tratar com thrwos as seguintes exceções: NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException.
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT28       |      X       |       --        |       --        |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+|Criar um rótulo com etapa "0"| O teste deve passar. O rótulo deve ser criado com sucesso | teste passou |
+|Criar um rótulo com etapa "999999999"|O teste não deve passar | teste passou |
+|Criar um rótulo com etapa "-10"|O teste não deve passar | teste passou |
