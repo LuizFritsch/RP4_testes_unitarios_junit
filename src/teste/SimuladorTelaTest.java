@@ -4,14 +4,14 @@ import static org.junit.Assert.*;
 import java.lang.reflect.*;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.lang.invoke.MethodType;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 import javax.swing.JLabel;
+import javax.xml.transform.SourceLocator;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -370,6 +370,10 @@ public class SimuladorTelaTest {
 	}
 	
 	
+	
+	/*
+	 * Erro:? O cosntrutor aceita valores negativos... Embora campo, e alguns outros não devam aceitar... verificar os documentos.
+	 */
 
 	@Test
 	public void testVisaoCampo3() throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
@@ -393,6 +397,113 @@ public class SimuladorTelaTest {
 	}
 	
 	
+	@Test
+	public void testVisaoCampo4() throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
+		
+		SimuladorTela s = new SimuladorTela(1000, 1000);
+		Class<?> visaoCampo = Class.forName("ol.SimuladorTela$VisaoCampo");
 	
+		Constructor<?> cons = visaoCampo.getConstructor(SimuladorTela.class, int.class, int.class);
+		cons.setAccessible(true);
+		
+		
+		Class<?> vCampo = cons.newInstance(s, 0,0).getClass();
+		Field altura = vCampo.getDeclaredField("gridHeight");
+		altura.setAccessible(true);
+		
+		Field largura = vCampo.getDeclaredField("gridWidth");
+		largura.setAccessible(true);
+		
+		assertEquals(0, largura.get(cons.newInstance(s, 900,0)));		
+		assertEquals(0, altura.get(cons.newInstance(s, 0,900)));
+	}
+	
+	
+	
+	
+	@Test
+	public void testVisaoCampo5() throws ClassNotFoundException, NoSuchMethodException, 
+	SecurityException, InstantiationException, IllegalAccessException, 
+	IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
+		
+		SimuladorTela s = new SimuladorTela(100, 100);
+		Class<?> visaoCampo = Class.forName("ol.SimuladorTela$VisaoCampo");
+	
+		Constructor<?> cons = visaoCampo.getConstructor(SimuladorTela.class, int.class, int.class);
+		cons.setAccessible(true);
+		
+		
+		Class<?> vCampo = cons.newInstance(s,100,100).getClass();
+		Method m = vCampo.getMethod("preparePaint");
+		Field xScale = vCampo.getDeclaredField("xScale");
+		xScale.setAccessible(true);
+		
+		Field size = vCampo.getDeclaredField("size");
+		size.setAccessible(true);
+		
+		int scala = (Integer) xScale.get(cons.newInstance(s,100,100));
+		Dimension sizeteste = (Dimension) size.get(cons.newInstance(s,100,100));
+				
+		assertEquals(scala, 0);
+		
+	}
+	
+	
+	@Test
+	public void testVisaoCampo6() throws ClassNotFoundException, NoSuchMethodException, 
+	SecurityException, InstantiationException, IllegalAccessException, 
+	IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
+		
+		SimuladorTela s = new SimuladorTela(10, 100);
+		Class<?> visaoCampo = Class.forName("ol.SimuladorTela$VisaoCampo");
+	
+		Constructor<?> cons = visaoCampo.getConstructor(SimuladorTela.class, int.class, int.class);
+		cons.setAccessible(true);
+		
+		
+		Class<?> vCampo = cons.newInstance(s,10,100).getClass();
+		Method m = vCampo.getDeclaredMethod("getPreferredSize");
+		m.setAccessible(true);
+		Object obj = m.invoke(cons.newInstance(s,1,100));			
+		
+	  //  System.out.println(obj);
+	    /*
+	     * Falta fazer um cast do objeto obj para Dimension.. :(
+	     * 
+	     */
+	}	
 
+	
+	@Test
+	public void testVisaoCampo7() throws ClassNotFoundException, NoSuchMethodException, 
+	SecurityException, InstantiationException, IllegalAccessException, 
+	IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
+		
+		SimuladorTela s = new SimuladorTela(10, 100);
+		Class<?> visaoCampo = Class.forName("ol.SimuladorTela$VisaoCampo");
+	
+		Constructor<?> cons = visaoCampo.getConstructor(SimuladorTela.class, int.class, int.class);
+		cons.setAccessible(true);
+		
+		
+		Class<?> vCampo = cons.newInstance(s,10,100).getClass();
+		Method m = vCampo.getDeclaredMethod("preparePaint");
+		m.setAccessible(true);
+		Object obj = m.invoke(cons.newInstance(s,1,100));	
+		
+		
+		Field xScala = vCampo.getDeclaredField("xScale");
+		xScala.setAccessible(true);
+		
+		int sx = (Integer) xScala.get(cons.newInstance(s,10,100));
+		
+		System.out.println(sx);
+		
+	    System.out.println(obj);
+	    /*
+	     * Falta fazer um cast do objeto obj para Dimension.. :(
+	     * 
+	     */
+	}	
+	
 }

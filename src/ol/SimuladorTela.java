@@ -132,7 +132,7 @@ public class SimuladorTela extends JFrame {
 				fieldImage = visaoCampo.createImage(size.width, size.height);
 				g = fieldImage.getGraphics();
 
-				xScale = size.width / gridWidth;
+				xScale = size.width/ gridWidth;
 				if (xScale < 1) {
 					xScale = GRID_VIEW_SCALING_FACTOR;
 				}
