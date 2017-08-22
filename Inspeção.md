@@ -126,4 +126,42 @@ Correção 6
 3.2 Método: ‘localizacaoAdjacenteRandomica(Localizacao localizacao)’  
 3.3 Linha: 51  
 3.4 Erro: Caso a lista usada no método esteja vazia o sistema retornará uma exceção ‘IndexOutOfBoundsException’  
-3.5 Solução: Adição de cláusula ‘if’ para verificar o tamanho da ‘List’ e adição de um ‘return null;’ fora da  cláusula.
+3.5 Solução: Adição de cláusula ‘if’ para verificar o tamanho da ‘List’ e adição de um ‘return null;’ fora da  cláusula.  
+
+
+#Check List para inspeção da classe “LoboGuara”
+
+
+|**Status**                              |**Sim**  |**Não**  |**Indiferente**  | 
+|----------------------------------------|---------|---------|-----------------|   
+|Todas as constantes foram denominadas?  |     X   |   --    |       --        |  
+|O limite superior de vetores deve ser igual ao tamanho do vetor ou tamanho -1?|   --  |    X   |    --    |
+|Para cada declaração condicional, a condição está correta?|  --   |    X    |    --    |
+|Cada loop está terminando corretamente? |  --   |    X    |    --    |
+|As declarações compostas estão corretamente delimitadas entre parênteses? |   X   |   --    |    --    |
+|Todas as variáveis de entrada são usadas? |   X   |   --    |    --    |
+|Nenhuma  das entradas inesperadas podem fazer com que os dados sejam corrompidos?|  --   |    X    |    --    |
+|Todas as condições possíveis de erro foram consideradas? |  --   |   X   |    --    |
+|Toda as chamadas de funções e de métodos tem o número correto de parâmetros? |   X   |   --    |    --    |
+|Os parâmetros estão na ordem correta? |   X   |   --    |    --    |
+|Toda as chamadas de funções e de métodos tem o número correto de parâmetros? |   X   |   --    |    --    |
+|As variáveis são de fácil entendimento? |   --   |    X    |    --    |
+
+
+
+#Correções da inspeção das classes “LoboGuara”  
+
+1.Classe: ‘LoboGuara’  
+1.1 Método: ‘daALuz(List<LoboGuara> novosLobos)’  
+1.2 Linha: 97  
+1.3 Erro: Quando o método é chamado ele não compara se tem a quantidade correta de localizações livres para 
+introduzir os filhotes de lobo guará.  
+1.4 Solução:  
+
+
+
+2.Classe: ‘LoboGuara’  
+2.1 Método: ‘procuraComida(Localizacao localizacao)’  
+2.2 Linha: 82  
+2.3 Erro:  Não verifica se o animal encontrado é uma ovelha  
+2.4 Solução:
