@@ -1,8 +1,7 @@
 package teste;
-
+import java.lang.reflect.*;
 import org.junit.Test;
 import ol.Simulador;
-import static org.junit.Assert.*;
 public class SimuladorTest {
 
 	
@@ -31,6 +30,17 @@ public class SimuladorTest {
 	public void testSimulacaoUmaEtapa() {
 		Simulador simulador = new Simulador();
 		simulador.executaLongaSimulacao();
+	}
+	
+	@Test
+	public void testPovoa() {
+		Class c = Class.forName("src/ol/Simulador");
+		Simulador s = (Simulador) c.newInstance();
+		
+		Method m = c.getDeclaredMethod("povoa", null);
+		m.setAccessible(true);
+		m.invoke(s, null);
+		
 	}
 	
 	
