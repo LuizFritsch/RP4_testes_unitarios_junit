@@ -557,6 +557,14 @@ public class CampoTest {
 		
 	}
 	
+	@Test
+	public void testLocalizacaoAdjacenteLivre3() {
+		
+		Campo c = new Campo(100,100);
+		Localizacao l = new Localizacao(101, 100);
+		assertNotEquals(null,c.localizacaoAdjacenteLivre(l));			
+		
+	}
 	
 	@Test (expected = NullPointerException.class)
 	public void testLocalizacaoAdjacenteLivre2() {
