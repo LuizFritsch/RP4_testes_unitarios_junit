@@ -11,10 +11,6 @@ public class LoboGuara extends Animal{
 	private static final int VALOR_FOME_OVELHA = 7;
 	private static final Random rand = Randomizador.getRandom();
 
-	private int idade;
-	private boolean vivo;
-	private Localizacao localizacao;
-	private Campo campo;
 	private int nivelFome;
 
 	public LoboGuara(boolean idadeRandomica, Campo campo, Localizacao localizacao) {

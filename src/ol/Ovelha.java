@@ -10,11 +10,6 @@ public class Ovelha extends Animal{
 	private static final int TAMANHO_MAXIMO_NINHADA = 4;
 	private static final Random rand = Randomizador.getRandom();
 
-	private int idade;
-	private boolean vivo;
-	private Localizacao localizacao;
-	private Campo campo;
-
 	public Ovelha(boolean randomAge, Campo campo, Localizacao localizacao) {
 		super(campo, localizacao);
 		if (randomAge) {
