@@ -5,11 +5,14 @@ import java.lang.reflect.*;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.GridBagLayoutInfo;
 import java.lang.invoke.MethodType;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import javax.swing.GrayFilter;
 import javax.swing.JLabel;
 import javax.xml.transform.SourceLocator;
 
@@ -319,7 +322,7 @@ public class SimuladorTelaTest {
 		
 		Class<?> vCampo = cons.newInstance(s, 1000,1000).getClass();
 		/*
-		 * Parte padrão do teste:  Agora muda apenas field e metodos:
+		 * Parte padrï¿½o do teste:  Agora muda apenas field e metodos:
 		 * 
 		 */
 		Field largura = vCampo.getDeclaredField("gridWidth");
@@ -372,7 +375,7 @@ public class SimuladorTelaTest {
 	
 	
 	/*
-	 * Erro:? O cosntrutor aceita valores negativos... Embora campo, e alguns outros não devam aceitar... verificar os documentos.
+	 * Erro:? O cosntrutor aceita valores negativos... Embora campo, e alguns outros nï¿½o devam aceitar... verificar os documentos.
 	 */
 
 	@Test
@@ -421,6 +424,10 @@ public class SimuladorTelaTest {
 	
 	
 	
+	/*
+	 * Olha o tributo GRID_VIEW_SCALING_FACTOR se retorna seu valor = 6, quando cria o objeto.
+	 */
+	
 	@Test
 	public void testVisaoCampo5() throws ClassNotFoundException, NoSuchMethodException, 
 	SecurityException, InstantiationException, IllegalAccessException, 
@@ -430,80 +437,153 @@ public class SimuladorTelaTest {
 		Class<?> visaoCampo = Class.forName("ol.SimuladorTela$VisaoCampo");
 	
 		Constructor<?> cons = visaoCampo.getConstructor(SimuladorTela.class, int.class, int.class);
-		cons.setAccessible(true);
-		
+		cons.setAccessible(true);		
 		
 		Class<?> vCampo = cons.newInstance(s,100,100).getClass();
-		Method m = vCampo.getMethod("preparePaint");
-		Field xScale = vCampo.getDeclaredField("xScale");
-		xScale.setAccessible(true);
+		Method m = vCampo.getDeclaredMethod("preparePaint");
+		m.setAccessible(true);
+		m.invoke(cons.newInstance(s,100,100));
 		
-		Field size = vCampo.getDeclaredField("size");
-		size.setAccessible(true);
+		Field f = vCampo.getDeclaredField("GRID_VIEW_SCALING_FACTOR");
+		f.setAccessible(true);
 		
-		int scala = (Integer) xScale.get(cons.newInstance(s,100,100));
-		Dimension sizeteste = (Dimension) size.get(cons.newInstance(s,100,100));
-				
-		assertEquals(scala, 0);
+		int xsc = (Integer) f.get(cons.newInstance(s,100,100));
+		assertEquals(xsc, 6);
 		
 	}
-	
 	
 	@Test
 	public void testVisaoCampo6() throws ClassNotFoundException, NoSuchMethodException, 
 	SecurityException, InstantiationException, IllegalAccessException, 
 	IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
 		
-		SimuladorTela s = new SimuladorTela(10, 100);
-		Class<?> visaoCampo = Class.forName("ol.SimuladorTela$VisaoCampo");
-	
-		Constructor<?> cons = visaoCampo.getConstructor(SimuladorTela.class, int.class, int.class);
-		cons.setAccessible(true);
+		SimuladorTela simuladorObject = new SimuladorTela(100, 10);
+		
+		Class<SimuladorTela> simuladorClass = SimuladorTela.class;
+		
+		/*
+		 * Pega pelo atributo da classe interna. Passa um type pelo tipo do atributo.
+		 */
+		Field attributeCampo = simuladorClass.getDeclaredField("visaoCampo");
+		attributeCampo.setAccessible(true);
+		
+		Class<?> visaoCampoClass = Class.forName("ol.SimuladorTela$VisaoCampo");
+		visaoCampoClass = attributeCampo.getType();
+		
+		Method method = visaoCampoClass.getDeclaredMethod("preparePaint");
+		method.setAccessible(true);
+		method.invoke(attributeCampo.get(simuladorObject));
+			
+		Field attributeXScale = visaoCampoClass.getDeclaredField("xScale");
+		attributeXScale.setAccessible(true);
+		
+		assertEquals(6, attributeXScale.get(attributeCampo.get(simuladorObject)));
 		
 		
-		Class<?> vCampo = cons.newInstance(s,10,100).getClass();
-		Method m = vCampo.getDeclaredMethod("getPreferredSize");
-		m.setAccessible(true);
-		Object obj = m.invoke(cons.newInstance(s,1,100));			
 		
-	  //  System.out.println(obj);
-	    /*
-	     * Falta fazer um cast do objeto obj para Dimension.. :(
-	     * 
-	     */
 	}	
-
+	
+	
 	
 	@Test
 	public void testVisaoCampo7() throws ClassNotFoundException, NoSuchMethodException, 
 	SecurityException, InstantiationException, IllegalAccessException, 
 	IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
 		
-		SimuladorTela s = new SimuladorTela(10, 100);
-		Class<?> visaoCampo = Class.forName("ol.SimuladorTela$VisaoCampo");
+		SimuladorTela simuladorObject = new SimuladorTela(10, 100);
+		
+		Class<SimuladorTela> simuladorClass = SimuladorTela.class;
+		
+		/*
+		 * Pega pelo atributo da classe interna. Passa um type pelo tipo do atributo.
+		 */
+		Field attributeCampo = simuladorClass.getDeclaredField("visaoCampo");
+		attributeCampo.setAccessible(true);
 	
-		Constructor<?> cons = visaoCampo.getConstructor(SimuladorTela.class, int.class, int.class);
-		cons.setAccessible(true);
+		Class<?> visaoCampoClass = Class.forName("ol.SimuladorTela$VisaoCampo");
+		visaoCampoClass = attributeCampo.getType();
 		
+		Method method = visaoCampoClass.getDeclaredMethod("preparePaint");
+		method.setAccessible(true);
+		method.invoke(attributeCampo.get(simuladorObject));
+			
+		Field attributeXScale = visaoCampoClass.getDeclaredField("xScale");
+		attributeXScale.setAccessible(true);
 		
-		Class<?> vCampo = cons.newInstance(s,10,100).getClass();
-		Method m = vCampo.getDeclaredMethod("preparePaint");
-		m.setAccessible(true);
-		Object obj = m.invoke(cons.newInstance(s,1,100));	
+		assertEquals(6, attributeXScale.get(attributeCampo.get(simuladorObject)));
 		
-		
-		Field xScala = vCampo.getDeclaredField("xScale");
-		xScala.setAccessible(true);
-		
-		int sx = (Integer) xScala.get(cons.newInstance(s,10,100));
-		
-		System.out.println(sx);
-		
-	    System.out.println(obj);
-	    /*
-	     * Falta fazer um cast do objeto obj para Dimension.. :(
-	     * 
-	     */
 	}	
+	
+	
+	@Test
+	public void testVisaoCampo8() throws ClassNotFoundException, NoSuchMethodException, 
+	SecurityException, InstantiationException, IllegalAccessException, 
+	IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
+		
+		SimuladorTela simuladorObject = new SimuladorTela(100, 10);
+		
+		Class<SimuladorTela> simuladorClass = SimuladorTela.class;
+		
+		/*
+		 * Pega pelo atributo da classe interna. Passa um type pelo tipo do atributo.
+		 */
+		Field attributeCampo = simuladorClass.getDeclaredField("visaoCampo");
+		attributeCampo.setAccessible(true);
+		
+		Class<?> visaoCampoClass = Class.forName("ol.SimuladorTela$VisaoCampo");
+		visaoCampoClass = attributeCampo.getType();
+		
+		Method method = visaoCampoClass.getDeclaredMethod("getPreferredSize");
+		method.setAccessible(true);
+		Object o = method.invoke(attributeCampo.get(simuladorObject));
+			
+		Dimension dimensionO = (Dimension) o;
+		
+	   /*
+	    * Dimension(Wigth, Height).... O campo (Height, Wigth)... então tem que inverter 
+	    */
+		
+		assertTrue(600== dimensionO.getHeight());
+		assertTrue(60==dimensionO.getWidth());
+		
+	}	
+	
+	
+	
+	@Test
+	public void testVisaoCampo9() throws ClassNotFoundException, NoSuchMethodException, 
+	SecurityException, InstantiationException, IllegalAccessException, 
+	IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
+		
+		SimuladorTela simuladorObject = new SimuladorTela(100, 100);
+		
+		Class<SimuladorTela> simuladorClass = SimuladorTela.class;
+		
+		/*
+		 * Pega pelo atributo da classe interna. Passa um type pelo tipo do atributo.
+		 */
+		Field attributeCampo = simuladorClass.getDeclaredField("visaoCampo");
+		attributeCampo.setAccessible(true);
+		
+		Class<?> visaoCampoClass = Class.forName("ol.SimuladorTela$VisaoCampo");
+		visaoCampoClass = attributeCampo.getType();
+		
+		
+		Class<?> [] parametro = {int.class, int.class, Color.class};
+		Method method = visaoCampoClass.getDeclaredMethod("drawMark", int.class,int.class, Color.class);
+		method.setAccessible(true);
+		//method.invoke(attributeCampo.get(simuladorObject), 0, 0, Color.BLUE);
+	
+		Field attributeG = visaoCampoClass.getDeclaredField("g");
+		attributeG.setAccessible(true);
+		
+		//Graphics grafico = (Graphics) attributeG.get(simuladorObject);
+		assertEquals(Color.BLUE,attributeG.get(simuladorObject));
+	}	
+	
+	
+	
+	
+	
 	
 }

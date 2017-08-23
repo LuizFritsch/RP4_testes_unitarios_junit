@@ -18,30 +18,7 @@ public class SimuladorTela extends JFrame {
 	private CampoEstatistica estatisticas; 
 	
 	
-	//------------------------------------------------------------------------------------------------
-	
-	/*
-	 * metodo para teste:
-	 */
-	
-	public Map<Class, Color> getCores(){
-		return cores;
-	}
-	
-	public JLabel getRotuloEtapa() {
-		
-		return rotuloEtapa;
-	}
-	
-    public JLabel getPapulaco() {
-		
-		return populacao;
-	}
-
-    
-    
-    //------------------------------------------------------------------------------------------------
-	public SimuladorTela(int height, int width) {
+		public SimuladorTela(int height, int width) {
 		estatisticas = new CampoEstatistica();
 		cores = new LinkedHashMap<Class, Color>();
 
@@ -91,7 +68,7 @@ public class SimuladorTela extends JFrame {
 				Object animal = campo.getObjectAt(row, col);
 				if (animal != null) {
 					estatisticas.incrementaContador(animal.getClass());
-					//visaoCampo.drawMark(col, row, getCor(animal.getClass()));
+					visaoCampo.drawMark(col, row, getCor(animal.getClass()));
 				} else {
 					visaoCampo.drawMark(col, row, COR_VAZIA);
 				}
