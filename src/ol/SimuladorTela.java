@@ -41,7 +41,15 @@ public class SimuladorTela extends JFrame {
 	}
 
 	public void setCor(Class animalClass, Color color) {
-		cores.put(animalClass, color);
+		if(animalClass == null || color ==null) {
+			throw new NullPointerException("Valor nulo recebido como argumento");
+		}
+		if(animalClass.equals(LoboGuara.class) || animalClass.equals(Ovelha.class)) {
+			cores.put(animalClass, color);
+		}else {
+			throw new IllegalArgumentException("Valor inválido recebido pelo método(argumento)");
+		}
+		
 	}
 
 	private Color getCor(Class animalClass) {

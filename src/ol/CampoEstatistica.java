@@ -52,8 +52,8 @@ public class CampoEstatistica {
 		contadoresValidos = true;
 	}
 
-	public boolean ehViavel(Campo campo) {//Posso não ter entendido bem o método mas no return da linha 66 seria nonZero > 0 pq só
-		int nonZero = 0;                  //precisa de um viável
+	public boolean ehViavel(Campo campo) {
+		int nonZero = 0;                  
 		if (!contadoresValidos) {
 			geraContadores(campo);
 		}
@@ -63,7 +63,7 @@ public class CampoEstatistica {
 				nonZero++;
 			}
 		}
-		return nonZero > 1;  //Será que precisa de dois contadores ou mais por causa dos animais(ovelha/lobo) Para ter os dois
+		return nonZero > 1;  
 	}
 
 	private void geraContadores(Campo campo) {
@@ -71,9 +71,14 @@ public class CampoEstatistica {
 		for (int linha = 0; linha < campo.getProfundidade(); linha++) {
 			for (int coluna = 0; coluna < campo.getLargura(); coluna++) {
 				Object animal = campo.getObjectAt(linha, coluna);
-				if (animal != null) {
-					incrementaContador(animal.getClass());
+				if(animal instanceof LoboGuara || animal instanceof Ovelha) {
+					if (animal != null) {
+						incrementaContador(animal.getClass());
+					}
+				}else {
+					campo.limpa(new Localizacao(linha, coluna));
 				}
+				
 			}
 		}
 		contadoresValidos = true;

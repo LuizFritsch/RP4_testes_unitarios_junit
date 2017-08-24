@@ -80,7 +80,7 @@ public class CampoEstatisticaTest {
 	 * Erro, o campo (ja reportado antes, aceita qualquer Object,  detecta e gera a string com esses objectos )
 	 * Nota: de Tempos em tempo, o retorno do metodo permuta a ordem da saida: Por que?  R: ?
 	 */
-	@Test
+	@Test //Espera uma IllegalArgumenteException devido o c.lugar(teste, 1, 2); onde teste é um campo
 	public void testGetPopulationDetails4() {
 		Campo c = new Campo(3,3);
 		Ovelha ove = new Ovelha(true, c, new Localizacao(0,0));
@@ -94,7 +94,10 @@ public class CampoEstatisticaTest {
 		c.lugar(teste, 2, 2);
 		c.lugar(teste, 2, 1);
 		CampoEstatistica campoe = new CampoEstatistica();
-		assertEquals( campoe.getPopulationDetails(c) ,"ol.Ovelha: 3 ol.LoboGuara: 3 ol.Campo: 3 ");	
+		System.out.println(campoe.getPopulationDetails(c)+"|");
+		assertEquals( campoe.getPopulationDetails(c) ,"ol.Ovelha: 3 ol.LoboGuara: 3 ol.Campo: 3 ");//Não entendi pq tem ol.Campo pois 
+																								   //isso não está escrito no código
+								
 		
 		
 	}
@@ -277,7 +280,7 @@ public class CampoEstatisticaTest {
 	 * Erro: Se tiver Object que não seja ovelha ou lobo, o metodo retorna true, e uma nova etapa de simulação pode ocorrer:
 	 * Não entendi pq tipo era para retornar true mesmo esse método
 	 */
-	@Test
+	@Test (expected= IllegalArgumentException.class)
 	public void testEhViavel4() {
 		Campo c = new Campo(100,100);
 		Campo teste = new Campo(1,1);

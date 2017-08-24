@@ -47,10 +47,10 @@ public class SimuladorTest {
 		m.invoke(s);
 
 	}
-
+	@Ignore
 	@Test
 	public void simula() {
-		Simulador s = new Simulador(9999, 9999);
+		Simulador s = new Simulador(9999, 9999);//Olha o tamanho dessa porra, meu note não aguenta isso
 		s.executaLongaSimulacao();		
 	}
 

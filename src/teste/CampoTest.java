@@ -254,7 +254,7 @@ public class CampoTest {
 	}
 	
 	
-	@Test
+	@Test (expected= IllegalArgumentException.class)
 	public void testLugarObjectLocalizacao2() {
 		
 		Campo c = new Campo(100, 300);		
@@ -262,7 +262,6 @@ public class CampoTest {
 		LoboGuara lobo = new LoboGuara(true, c, l);
 		c.lugar(null, l);
 		
-		assertNotSame(lobo, c.getObjectAt(l));
 		
 	}
 	
@@ -557,7 +556,7 @@ public class CampoTest {
 		
 	}
 	
-	@Test
+	@Test (expected= IllegalArgumentException.class)
 	public void testLocalizacaoAdjacenteLivre3() {
 		
 		Campo c = new Campo(100,100);

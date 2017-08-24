@@ -15,7 +15,7 @@ public class Localizacao {
 	public Localizacao(int linha, int coluna) {
 
 		if(linha<0 || coluna<0) {
-			throw new IllegalArgumentException();
+			throw new IllegalArgumentException("Localização Inválida(menor que 0)");
 		}else {
 			this.linha = linha;
 			this.coluna = coluna;

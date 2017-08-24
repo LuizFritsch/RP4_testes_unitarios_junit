@@ -102,7 +102,7 @@ public class SimuladorTelaTest {
 
 	// Erro: Passando null ele adiciona objeto null a lista com a cor Laranja.
 
-	@Test(expected = IllegalArgumentException.class)
+	@Test(expected = NullPointerException.class)
 	public void testSetCor() {
 		SimuladorTela s = new SimuladorTela(1000, 1000);
 		s.setCor(null, Color.ORANGE);
