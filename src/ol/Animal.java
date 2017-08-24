@@ -27,12 +27,13 @@ public class Animal {
 	
 	/*
 	 * Localizações com valores negativos ainda me parece problema para esse metodo. VERIFICAR ISSO!!
+	 * Resolvido em sala qualquer coisa perguntar a mim "Vitor Hugo"
 	 */
 	protected void setLocalizacao(Localizacao newLocalizacao) {
 		if (localizacao != null) {
 			campo.limpa(localizacao);
 		}
-		if(newLocalizacao.getLinha()> campo.getProfundidade() || newLocalizacao.getColuna() > campo.getLargura()) {
+		if(newLocalizacao.getLinha()> campo.getProfundidade()-1 || newLocalizacao.getColuna() > campo.getLargura()-1) {
 			throw new IllegalArgumentException();
 		}
 		localizacao = newLocalizacao;
