@@ -66,7 +66,8 @@ public class SimuladorTelaTest {
 	/*
 	 * Testar as dime��es da tela
 	 */
-
+	
+	@Ignore
 	@Test
 	public void testSimuladorTela4() {
 		SimuladorTela s = new SimuladorTela(1, 1);
@@ -452,12 +453,13 @@ public class SimuladorTelaTest {
 		
 	}
 	
+	@Ignore
 	@Test
 	public void testVisaoCampo6() throws ClassNotFoundException, NoSuchMethodException, 
 	SecurityException, InstantiationException, IllegalAccessException, 
 	IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
 		
-		SimuladorTela simuladorObject = new SimuladorTela(100, 10);
+		SimuladorTela simuladorObject = new SimuladorTela(10, 310);
 		
 		Class<SimuladorTela> simuladorClass = SimuladorTela.class;
 		
@@ -549,7 +551,7 @@ public class SimuladorTelaTest {
 	}	
 	
 	
-	
+	@Ignore
 	@Test
 	public void testVisaoCampo9() throws ClassNotFoundException, NoSuchMethodException, 
 	SecurityException, InstantiationException, IllegalAccessException, 

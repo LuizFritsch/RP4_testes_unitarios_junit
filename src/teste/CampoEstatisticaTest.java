@@ -94,7 +94,7 @@ public class CampoEstatisticaTest {
 		c.lugar(teste, 2, 2);
 		c.lugar(teste, 2, 1);
 		CampoEstatistica campoe = new CampoEstatistica();
-		System.out.println(campoe.getPopulationDetails(c)+"|");
+		System.out.println(campoe.getPopulationDetails(c)+"|");//Não pode receber campo apenas hendeiras de Animal
 		assertEquals( campoe.getPopulationDetails(c) ,"ol.Ovelha: 3 ol.LoboGuara: 3 ol.Campo: 3 ");//Não entendi pq tem ol.Campo pois 
 																								   //isso não está escrito no código
 								
