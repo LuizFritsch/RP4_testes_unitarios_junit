@@ -28,6 +28,16 @@ public class LoboGuaraTest {
 		
 		fail("Not yet implemented");
 	}
+	
+	
+    @Test
+    public void testPodeProcriar() throws Exception {
+        LoboGuara lb = new LoboGuara(false, new Campo(50, 50), new Localizacao(1, 1));
+        Method podeProcriar = lb.getClass().getDeclaredMethod("podeProcriar");
+        podeProcriar.setAccessible(true);
+        boolean b = (Boolean)podeProcriar.invoke(lb);
+        assertFalse(b);
+    }
 
 	@Ignore
 	@Test
