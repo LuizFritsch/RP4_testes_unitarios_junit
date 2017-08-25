@@ -36,21 +36,24 @@ public class SimuladorTest {
 		Simulador simulador = new Simulador();
 		simulador.executaLongaSimulacao();
 	}
+	
 
 	@Test
 	public void testPovoa() throws Exception {
-		Class<?> c = Class.forName("Simulador.java");
+		Class<?> c = Class.forName("ol.Simulador");
 		Simulador s = (Simulador) c.newInstance();
 
 		Method m = c.getDeclaredMethod("povoa");
 		m.setAccessible(true);
 		m.invoke(s);
+		Simulador sim = new Simulador(1,1);
+		
 
 	}
-	@Ignore
+
 	@Test
 	public void simula() {
-		Simulador s = new Simulador(9999, 9999);//Olha o tamanho dessa porra, meu note não aguenta isso
+		Simulador s = new Simulador(9999, 9999);
 		s.executaLongaSimulacao();		
 	}
 
