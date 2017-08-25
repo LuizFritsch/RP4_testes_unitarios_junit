@@ -1,6 +1,8 @@
 package teste;
 
 import static org.junit.Assert.*;
+
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +13,7 @@ import ol.Campo;
 import ol.LoboGuara;
 import ol.Localizacao;
 import ol.Ovelha;
+import ol.Simulador;
 
 public class LoboGuaraTest {
 	
@@ -65,9 +68,15 @@ public class LoboGuaraTest {
 	}
 	
 	@Test
-	public void testEstaVivoEstandoMorto() {
+	public void testEstaVivoEstandoMorto() throws Exception{
 		LoboGuara loboGuara = new LoboGuara(false , new Campo(3, 3), new Localizacao(0,0));
-		//setMorte está privado\\
+		//setMorte está privado\\ 
+		Class<?> c = Class.forName("ol.LoboGuara");
+		LoboGuara s = (LoboGuara) c.newInstance();
+
+		Method m = c.getDeclaredMethod("setMorte");
+		m.setAccessible(true);
+		m.invoke(s);
 		loboGuara.setMorte();
 		assertFalse(loboGuara.estaVivo());
 	}
