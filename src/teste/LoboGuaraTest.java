@@ -16,34 +16,32 @@ import ol.Ovelha;
 import ol.Simulador;
 
 public class LoboGuaraTest {
-	
-	@Ignore
-	@Test
-	public void testLoboGuara() {
-		
-		Localizacao localizacao = new Localizacao(1, 1);
-		Campo campo = new Campo(50,50);
-		LoboGuara x = new LoboGuara(true, campo, localizacao);
-		
-		
-		fail("Not yet implemented");
-	}
-	
-	
-    @Test
-    public void testPodeProcriar() throws Exception {
-        LoboGuara lb = new LoboGuara(false, new Campo(50, 50), new Localizacao(1, 1));
-        Method podeProcriar = lb.getClass().getDeclaredMethod("podeProcriar");
-        podeProcriar.setAccessible(true);
-        boolean b = (Boolean)podeProcriar.invoke(lb);
-        assertFalse(b);
-    }
 
 	@Ignore
 	@Test
-	public void testCaca(){
-		
-		Campo campo = new Campo(2,2);
+	public void testLoboGuara() {
+
+		Localizacao localizacao = new Localizacao(1, 1);
+		Campo campo = new Campo(50, 50);
+		LoboGuara x = new LoboGuara(true, campo, localizacao);
+
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testPodeProcriar() throws Exception {
+		LoboGuara lb = new LoboGuara(false, new Campo(50, 50), new Localizacao(1, 1));
+		Method podeProcriar = lb.getClass().getDeclaredMethod("podeProcriar");
+		podeProcriar.setAccessible(true);
+		boolean b = (Boolean) podeProcriar.invoke(lb);
+		assertFalse(b);
+	}
+
+	@Ignore
+	@Test
+	public void testCaca() {
+
+		Campo campo = new Campo(2, 2);
 		Localizacao localizacao1 = new Localizacao(0, 0);
 		Localizacao localizacao2 = new Localizacao(0, 1);
 		Localizacao localizacao3 = new Localizacao(1, 1);
@@ -56,42 +54,32 @@ public class LoboGuaraTest {
 		z.add(localizacao3);
 		z.add(localizacao4);
 		x.add(l1);
-		int y=0;
-		while(y < 300) {
+		int y = 0;
+		while (y < 300) {
 			for (int i = 0; i < 3; i++) {
-				if(z.get(i).equals(l1.getLocalizacao()) && campo.getObjectAt(z.get(i))==null) {
-					
-				}else {
+				if (z.get(i).equals(l1.getLocalizacao()) && campo.getObjectAt(z.get(i)) == null) {
+
+				} else {
 					Ovelha o = new Ovelha(true, campo, z.get(i));
 				}
 			}
 			l1.caca(x);
 		}
 		assertFalse(l1.estaVivo());
-		 
+
 	}
-	
+
 	@Test
 	public void testEstaVivo() {
-		LoboGuara loboGuara = new LoboGuara(false , new Campo(3, 3), new Localizacao(0,0));
+		LoboGuara loboGuara = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
 		assertTrue(loboGuara.estaVivo());
 	}
-	
-	@Test
-	public void testEstaVivoEstandoMorto() throws Exception{
-		LoboGuara loboGuara = new LoboGuara(false , new Campo(3, 3), new Localizacao(0,0));
-		//setMorte está privado\\ 
-		Class<?> c = Class.forName("ol.LoboGuara");
-		LoboGuara s = (LoboGuara) c.newInstance();
 
-		Method m = c.getDeclaredMethod("setMorte");
-		m.setAccessible(true);
-		m.invoke(s);
+	@Test
+	public void testEstaVivoEstandoMorto() {
+		LoboGuara loboGuara = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
 		loboGuara.setMorte();
 		assertFalse(loboGuara.estaVivo());
 	}
-	
-	
-	
 
 }
