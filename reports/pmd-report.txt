@@ -1,0 +1,1675 @@
+src/ol/Animal.java:3:	Avoid unused imports such as 'java.util.Random'
+src/ol/Animal.java:5:	headerCommentRequirement Required
+src/ol/Animal.java:7:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Animal.java:7:	fieldCommentRequirement Required
+src/ol/Animal.java:8:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Animal.java:8:	fieldCommentRequirement Required
+src/ol/Animal.java:9:	fieldCommentRequirement Required
+src/ol/Animal.java:10:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Animal.java:10:	fieldCommentRequirement Required
+src/ol/Animal.java:12:	Parameter 'campo' is not assigned and could be declared final
+src/ol/Animal.java:12:	Parameter 'localizacao' is not assigned and could be declared final
+src/ol/Animal.java:12:	publicMethodCommentRequirement Required
+src/ol/Animal.java:16:	Overridable method 'setLocalizacao' called during object construction
+src/ol/Animal.java:19:	publicMethodCommentRequirement Required
+src/ol/Animal.java:23:	publicMethodCommentRequirement Required
+src/ol/Animal.java:29:	Comment is too large: Line too long
+src/ol/Animal.java:31:	Parameter 'newLocalizacao' is not assigned and could be declared final
+src/ol/Animal.java:31:	protectedMethodCommentRequirement Required
+src/ol/Animal.java:42:	publicMethodCommentRequirement Required
+src/ol/Animal.java:46:	Assigning an Object to null is a code smell.  Consider refactoring.
+src/ol/Animal.java:47:	Assigning an Object to null is a code smell.  Consider refactoring.
+src/ol/Campo.java:4:	Avoid unused imports such as 'java.util.Iterator'
+src/ol/Campo.java:9:	The class 'Campo' has a Cyclomatic Complexity of 2 (Highest = 12).
+src/ol/Campo.java:9:	headerCommentRequirement Required
+src/ol/Campo.java:10:	Variables that are final and static should be all capitals, 'rand' is not all capitals.
+src/ol/Campo.java:10:	fieldCommentRequirement Required
+src/ol/Campo.java:12:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Campo.java:12:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Campo.java:12:	Private field 'largura' could be made final; it is only initialized in the declaration or constructor.
+src/ol/Campo.java:12:	Private field 'profundidade' could be made final; it is only initialized in the declaration or constructor.
+src/ol/Campo.java:12:	fieldCommentRequirement Required
+src/ol/Campo.java:13:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Campo.java:13:	It is somewhat confusing to have a field name matching the declaring class name
+src/ol/Campo.java:13:	fieldCommentRequirement Required
+src/ol/Campo.java:15:	Parameter 'largura' is not assigned and could be declared final
+src/ol/Campo.java:15:	Parameter 'profundidade' is not assigned and could be declared final
+src/ol/Campo.java:15:	publicMethodCommentRequirement Required
+src/ol/Campo.java:21:	publicMethodCommentRequirement Required
+src/ol/Campo.java:24:	Assigning an Object to null is a code smell.  Consider refactoring.
+src/ol/Campo.java:29:	Parameter 'localizacao' is not assigned and could be declared final
+src/ol/Campo.java:29:	publicMethodCommentRequirement Required
+src/ol/Campo.java:30:	Assigning an Object to null is a code smell.  Consider refactoring.
+src/ol/Campo.java:30:	Potential violation of Law of Demeter (method chain calls)
+src/ol/Campo.java:30:	Potential violation of Law of Demeter (method chain calls)
+src/ol/Campo.java:33:	Parameter 'animal' is not assigned and could be declared final
+src/ol/Campo.java:33:	Parameter 'coluna' is not assigned and could be declared final
+src/ol/Campo.java:33:	Parameter 'linha' is not assigned and could be declared final
+src/ol/Campo.java:33:	publicMethodCommentRequirement Required
+src/ol/Campo.java:37:	Parameter 'animal' is not assigned and could be declared final
+src/ol/Campo.java:37:	Parameter 'localizacao' is not assigned and could be declared final
+src/ol/Campo.java:37:	publicMethodCommentRequirement Required
+src/ol/Campo.java:38:	Potential violation of Law of Demeter (method chain calls)
+src/ol/Campo.java:38:	Potential violation of Law of Demeter (method chain calls)
+src/ol/Campo.java:41:	Parameter 'localizacao' is not assigned and could be declared final
+src/ol/Campo.java:41:	publicMethodCommentRequirement Required
+src/ol/Campo.java:45:	Parameter 'coluna' is not assigned and could be declared final
+src/ol/Campo.java:45:	Parameter 'linha' is not assigned and could be declared final
+src/ol/Campo.java:45:	publicMethodCommentRequirement Required
+src/ol/Campo.java:49:	Parameter 'localizacao' is not assigned and could be declared final
+src/ol/Campo.java:49:	publicMethodCommentRequirement Required
+src/ol/Campo.java:50:	Local variable 'adjacent' could be declared final
+src/ol/Campo.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/ol/Campo.java:51:	Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to isEmpty()
+src/ol/Campo.java:52:	A method should have only one exit point, and that should be the last statement in the method
+src/ol/Campo.java:52:	Potential violation of Law of Demeter (object not created locally)
+src/ol/Campo.java:57:	Found 'UR'-anomaly for variable 'proximo' (lines '57'-'61').
+src/ol/Campo.java:57:	Parameter 'localizacao' is not assigned and could be declared final
+src/ol/Campo.java:57:	publicMethodCommentRequirement Required
+src/ol/Campo.java:58:	Local variable 'livre' could be declared final
+src/ol/Campo.java:59:	Local variable 'adjacente' could be declared final
+src/ol/Campo.java:60:	Local variable 'proximo' could be declared final
+src/ol/Campo.java:68:	Parameter 'localizacao' is not assigned and could be declared final
+src/ol/Campo.java:68:	publicMethodCommentRequirement Required
+src/ol/Campo.java:69:	Local variable 'livre' could be declared final
+src/ol/Campo.java:70:	Potential violation of Law of Demeter (object not created locally)
+src/ol/Campo.java:70:	Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to isEmpty()
+src/ol/Campo.java:71:	A method should have only one exit point, and that should be the last statement in the method
+src/ol/Campo.java:71:	Potential violation of Law of Demeter (object not created locally)
+src/ol/Campo.java:77:	Parameter 'localizacao' is not assigned and could be declared final
+src/ol/Campo.java:77:	The method 'localizacoesAdjacentes' has a Cyclomatic Complexity of 12.
+src/ol/Campo.java:77:	publicMethodCommentRequirement Required
+src/ol/Campo.java:79:	Found 'DU'-anomaly for variable 'localizacoes' (lines '79'-'102').
+src/ol/Campo.java:79:	Local variable 'localizacoes' could be declared final
+src/ol/Campo.java:82:	Found 'DU'-anomaly for variable 'linha' (lines '82'-'102').
+src/ol/Campo.java:82:	Local variable 'linha' could be declared final
+src/ol/Campo.java:83:	Found 'DU'-anomaly for variable 'coluna' (lines '83'-'102').
+src/ol/Campo.java:83:	Local variable 'coluna' could be declared final
+src/ol/Campo.java:85:	Local variable 'proximaLinha' could be declared final
+src/ol/Campo.java:88:	Local variable 'proximaColuna' could be declared final
+src/ol/Campo.java:90:	Avoid instantiating new objects inside loops
+src/ol/Campo.java:104:	publicMethodCommentRequirement Required
+src/ol/Campo.java:108:	publicMethodCommentRequirement Required
+src/ol/CampoEstatistica.java:3:	Avoid unused imports such as 'java.awt.Color'
+src/ol/CampoEstatistica.java:6:	headerCommentRequirement Required
+src/ol/CampoEstatistica.java:7:	Avoid using implementation types like 'HashMap'; use the interface instead
+src/ol/CampoEstatistica.java:7:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/CampoEstatistica.java:7:	Private field 'contadores' could be made final; it is only initialized in the declaration or constructor.
+src/ol/CampoEstatistica.java:7:	fieldCommentRequirement Required
+src/ol/CampoEstatistica.java:8:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/CampoEstatistica.java:8:	fieldCommentRequirement Required
+src/ol/CampoEstatistica.java:10:	publicMethodCommentRequirement Required
+src/ol/CampoEstatistica.java:19:	Found 'UR'-anomaly for variable 'chave' (lines '19'-'25').
+src/ol/CampoEstatistica.java:19:	Parameter 'campo' is not assigned and could be declared final
+src/ol/CampoEstatistica.java:19:	publicMethodCommentRequirement Required
+src/ol/CampoEstatistica.java:20:	Local variable 'buffer' could be declared final
+src/ol/CampoEstatistica.java:24:	Local variable 'chave' could be declared final
+src/ol/CampoEstatistica.java:25:	Local variable 'info' could be declared final
+src/ol/CampoEstatistica.java:26:	Potential violation of Law of Demeter (object not created locally)
+src/ol/CampoEstatistica.java:28:	Potential violation of Law of Demeter (object not created locally)
+src/ol/CampoEstatistica.java:34:	Found 'UR'-anomaly for variable 'chave' (lines '34'-'37').
+src/ol/CampoEstatistica.java:34:	publicMethodCommentRequirement Required
+src/ol/CampoEstatistica.java:36:	Local variable 'chave' could be declared final
+src/ol/CampoEstatistica.java:37:	Local variable 'contador' could be declared final
+src/ol/CampoEstatistica.java:38:	Potential violation of Law of Demeter (object not created locally)
+src/ol/CampoEstatistica.java:42:	Parameter 'animalClass' is not assigned and could be declared final
+src/ol/CampoEstatistica.java:42:	publicMethodCommentRequirement Required
+src/ol/CampoEstatistica.java:51:	publicMethodCommentRequirement Required
+src/ol/CampoEstatistica.java:55:	Comment is too large: Line too long
+src/ol/CampoEstatistica.java:55:	Found 'UR'-anomaly for variable 'key' (lines '55'-'61').
+src/ol/CampoEstatistica.java:55:	Parameter 'campo' is not assigned and could be declared final
+src/ol/CampoEstatistica.java:55:	publicMethodCommentRequirement Required
+src/ol/CampoEstatistica.java:56:	Found 'DD'-anomaly for variable 'nonZero' (lines '56'-'63').
+src/ol/CampoEstatistica.java:60:	Local variable 'key' could be declared final
+src/ol/CampoEstatistica.java:61:	Local variable 'info' could be declared final
+src/ol/CampoEstatistica.java:62:	Potential violation of Law of Demeter (object not created locally)
+src/ol/CampoEstatistica.java:63:	Found 'DD'-anomaly for variable 'nonZero' (lines '63'-'63').
+src/ol/CampoEstatistica.java:66:	Comment is too large: Line too long
+src/ol/CampoEstatistica.java:69:	Parameter 'campo' is not assigned and could be declared final
+src/ol/CampoEstatistica.java:73:	Local variable 'animal' could be declared final
+src/ol/CampoEstatistica.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/ol/Contador.java:2:	Avoid unused imports such as 'java.awt.Color'
+src/ol/Contador.java:12:	headerCommentRequirement Required
+src/ol/Contador.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Contador.java:14:	Private field 'name' could be made final; it is only initialized in the declaration or constructor.
+src/ol/Contador.java:14:	fieldCommentRequirement Required
+src/ol/Contador.java:15:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Contador.java:15:	fieldCommentRequirement Required
+src/ol/Contador.java:17:	Parameter 'name' is not assigned and could be declared final
+src/ol/Contador.java:17:	publicMethodCommentRequirement Required
+src/ol/Contador.java:23:	publicMethodCommentRequirement Required
+src/ol/Contador.java:28:	publicMethodCommentRequirement Required
+src/ol/Contador.java:33:	publicMethodCommentRequirement Required
+src/ol/Contador.java:38:	publicMethodCommentRequirement Required
+src/ol/LoboGuara.java:6:	headerCommentRequirement Required
+src/ol/LoboGuara.java:7:	fieldCommentRequirement Required
+src/ol/LoboGuara.java:8:	fieldCommentRequirement Required
+src/ol/LoboGuara.java:9:	Avoid excessively long variable names like PROBABILIDADE_PROCRIACAO
+src/ol/LoboGuara.java:9:	fieldCommentRequirement Required
+src/ol/LoboGuara.java:10:	Avoid excessively long variable names like TAMANHO_MAXIMO_NINHADA
+src/ol/LoboGuara.java:10:	fieldCommentRequirement Required
+src/ol/LoboGuara.java:11:	fieldCommentRequirement Required
+src/ol/LoboGuara.java:12:	Variables that are final and static should be all capitals, 'rand' is not all capitals.
+src/ol/LoboGuara.java:12:	fieldCommentRequirement Required
+src/ol/LoboGuara.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/LoboGuara.java:14:	fieldCommentRequirement Required
+src/ol/LoboGuara.java:16:	Parameter 'campo' is not assigned and could be declared final
+src/ol/LoboGuara.java:16:	Parameter 'idadeRandomica' is not assigned and could be declared final
+src/ol/LoboGuara.java:16:	Parameter 'localizacao' is not assigned and could be declared final
+src/ol/LoboGuara.java:16:	publicMethodCommentRequirement Required
+src/ol/LoboGuara.java:26:	Parameter 'novosLobos' is not assigned and could be declared final
+src/ol/LoboGuara.java:26:	publicMethodCommentRequirement Required
+src/ol/LoboGuara.java:34:	Avoid if (x != y) ..; else ..;
+src/ol/LoboGuara.java:49:	Avoid unused private methods such as 'decrementaFome()'.
+src/ol/LoboGuara.java:56:	Parameter 'localizacao' is not assigned and could be declared final
+src/ol/LoboGuara.java:57:	Local variable 'adjacente' could be declared final
+src/ol/LoboGuara.java:58:	Avoid variables with short names like it
+src/ol/LoboGuara.java:58:	Local variable 'it' could be declared final
+src/ol/LoboGuara.java:58:	Potential violation of Law of Demeter (object not created locally)
+src/ol/LoboGuara.java:60:	Local variable 'onde' could be declared final
+src/ol/LoboGuara.java:61:	Local variable 'animal' could be declared final
+src/ol/LoboGuara.java:62:	Local variable 'ovelha' could be declared final
+src/ol/LoboGuara.java:63:	Potential violation of Law of Demeter (object not created locally)
+src/ol/LoboGuara.java:65:	A method should have only one exit point, and that should be the last statement in the method
+src/ol/LoboGuara.java:65:	Avoid using a branching statement as the last in a loop.
+src/ol/LoboGuara.java:71:	Parameter 'novosLobos' is not assigned and could be declared final
+src/ol/LoboGuara.java:72:	Found 'DU'-anomaly for variable 'livre' (lines '72'-'79').
+src/ol/LoboGuara.java:72:	Local variable 'livre' could be declared final
+src/ol/LoboGuara.java:73:	Local variable 'nascimentos' could be declared final
+src/ol/LoboGuara.java:75:	Local variable 'loc' could be declared final
+src/ol/LoboGuara.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/ol/LoboGuara.java:76:	Avoid instantiating new objects inside loops
+src/ol/LoboGuara.java:76:	Local variable 'jovem' could be declared final
+src/ol/LoboGuara.java:85:	Found 'DD'-anomaly for variable 'nascimentos' (lines '85'-'87').
+src/ol/LoboGuara.java:94:	Comment is too large: Line too long
+src/ol/Localizacao.java:11:	headerCommentRequirement Required
+src/ol/Localizacao.java:12:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Localizacao.java:12:	fieldCommentRequirement Required
+src/ol/Localizacao.java:13:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Localizacao.java:13:	fieldCommentRequirement Required
+src/ol/Localizacao.java:15:	Parameter 'coluna' is not assigned and could be declared final
+src/ol/Localizacao.java:15:	Parameter 'linha' is not assigned and could be declared final
+src/ol/Localizacao.java:15:	publicMethodCommentRequirement Required
+src/ol/Localizacao.java:25:	Parameter 'obj' is not assigned and could be declared final
+src/ol/Localizacao.java:25:	publicMethodCommentRequirement Required
+src/ol/Localizacao.java:27:	Local variable 'outra' could be declared final
+src/ol/Localizacao.java:28:	A method should have only one exit point, and that should be the last statement in the method
+src/ol/Localizacao.java:28:	Potential violation of Law of Demeter (object not created locally)
+src/ol/Localizacao.java:28:	Potential violation of Law of Demeter (object not created locally)
+src/ol/Localizacao.java:34:	publicMethodCommentRequirement Required
+src/ol/Localizacao.java:38:	publicMethodCommentRequirement Required
+src/ol/Localizacao.java:42:	publicMethodCommentRequirement Required
+src/ol/Localizacao.java:46:	publicMethodCommentRequirement Required
+src/ol/Main.java:3:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/ol/Main.java:3:	Avoid short class names like Main
+src/ol/Main.java:3:	headerCommentRequirement Required
+src/ol/Main.java:4:	Parameter 'args' is not assigned and could be declared final
+src/ol/Main.java:4:	publicMethodCommentRequirement Required
+src/ol/Main.java:5:	Avoid variables with short names like s
+src/ol/Main.java:5:	Local variable 's' could be declared final
+src/ol/Main.java:7:	Avoid unused local variables such as 'st'.
+src/ol/Main.java:7:	Avoid variables with short names like st
+src/ol/Main.java:7:	Found 'DU'-anomaly for variable 'st' (lines '7'-'8').
+src/ol/Main.java:7:	Local variable 'st' could be declared final
+src/ol/Ovelha.java:6:	headerCommentRequirement Required
+src/ol/Ovelha.java:7:	fieldCommentRequirement Required
+src/ol/Ovelha.java:8:	fieldCommentRequirement Required
+src/ol/Ovelha.java:9:	Avoid excessively long variable names like PROBABILIDADE_PROCRIACAO
+src/ol/Ovelha.java:9:	fieldCommentRequirement Required
+src/ol/Ovelha.java:10:	Avoid excessively long variable names like TAMANHO_MAXIMO_NINHADA
+src/ol/Ovelha.java:10:	fieldCommentRequirement Required
+src/ol/Ovelha.java:11:	Variables that are final and static should be all capitals, 'rand' is not all capitals.
+src/ol/Ovelha.java:11:	fieldCommentRequirement Required
+src/ol/Ovelha.java:13:	Parameter 'campo' is not assigned and could be declared final
+src/ol/Ovelha.java:13:	Parameter 'localizacao' is not assigned and could be declared final
+src/ol/Ovelha.java:13:	Parameter 'randomAge' is not assigned and could be declared final
+src/ol/Ovelha.java:13:	publicMethodCommentRequirement Required
+src/ol/Ovelha.java:20:	Parameter 'novasOvelhas' is not assigned and could be declared final
+src/ol/Ovelha.java:20:	publicMethodCommentRequirement Required
+src/ol/Ovelha.java:26:	Local variable 'newLocalizacao' could be declared final
+src/ol/Ovelha.java:27:	Avoid if (x != y) ..; else ..;
+src/ol/Ovelha.java:35:	publicMethodCommentRequirement Required
+src/ol/Ovelha.java:52:	Parameter 'novasOvelhas' is not assigned and could be declared final
+src/ol/Ovelha.java:53:	Found 'DU'-anomaly for variable 'livre' (lines '53'-'61').
+src/ol/Ovelha.java:53:	Local variable 'livre' could be declared final
+src/ol/Ovelha.java:54:	Local variable 'nascimentos' could be declared final
+src/ol/Ovelha.java:57:	Local variable 'loc' could be declared final
+src/ol/Ovelha.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/ol/Ovelha.java:58:	Avoid instantiating new objects inside loops
+src/ol/Ovelha.java:58:	Local variable 'jovem' could be declared final
+src/ol/Ovelha.java:65:	Found 'DD'-anomaly for variable 'nascimentos' (lines '65'-'67').
+src/ol/Ovelha.java:73:	System.out.println is used
+src/ol/Randomizador.java:11:	A class which only has private constructors should be final
+src/ol/Randomizador.java:11:	headerCommentRequirement Required
+src/ol/Randomizador.java:12:	Avoid using redundant field initializer for 'rand'
+src/ol/Randomizador.java:12:	fieldCommentRequirement Required
+src/ol/Randomizador.java:18:	publicMethodCommentRequirement Required
+src/ol/Randomizador.java:19:	Avoid if (x != y) ..; else ..;
+src/ol/Randomizador.java:19:	Singleton is not thread safe
+src/ol/Randomizador.java:20:	A method should have only one exit point, and that should be the last statement in the method
+src/ol/Randomizador.java:27:	publicMethodCommentRequirement Required
+src/ol/Simulador.java:17:	headerCommentRequirement Required
+src/ol/Simulador.java:18:	fieldCommentRequirement Required
+src/ol/Simulador.java:19:	Avoid excessively long variable names like PROFUNDIDADE_PADRAO
+src/ol/Simulador.java:19:	fieldCommentRequirement Required
+src/ol/Simulador.java:20:	Avoid excessively long variable names like PROBABILIDADE_CRIACAO_LOBOGUARA
+src/ol/Simulador.java:20:	fieldCommentRequirement Required
+src/ol/Simulador.java:21:	Avoid excessively long variable names like PROBABILIDADE_CRIACAO_OVELHA
+src/ol/Simulador.java:21:	fieldCommentRequirement Required
+src/ol/Simulador.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Simulador.java:23:	fieldCommentRequirement Required
+src/ol/Simulador.java:24:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Simulador.java:24:	fieldCommentRequirement Required
+src/ol/Simulador.java:25:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Simulador.java:25:	fieldCommentRequirement Required
+src/ol/Simulador.java:26:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Simulador.java:26:	fieldCommentRequirement Required
+src/ol/Simulador.java:27:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/Simulador.java:27:	fieldCommentRequirement Required
+src/ol/Simulador.java:29:	publicMethodCommentRequirement Required
+src/ol/Simulador.java:33:	Avoid reassigning parameters such as 'largura'
+src/ol/Simulador.java:33:	Avoid reassigning parameters such as 'profundidade'
+src/ol/Simulador.java:33:	publicMethodCommentRequirement Required
+src/ol/Simulador.java:35:	System.out.println is used
+src/ol/Simulador.java:36:	System.out.println is used
+src/ol/Simulador.java:49:	Overridable method 'redefine' called during object construction
+src/ol/Simulador.java:52:	publicMethodCommentRequirement Required
+src/ol/Simulador.java:56:	Parameter 'numEtapas' is not assigned and could be declared final
+src/ol/Simulador.java:56:	publicMethodCommentRequirement Required
+src/ol/Simulador.java:62:	publicMethodCommentRequirement Required
+src/ol/Simulador.java:63:	Local variable 'novasOvelhas' could be declared final
+src/ol/Simulador.java:64:	Local variable 'it' could be declared final
+src/ol/Simulador.java:65:	Local variable 'ovelha' could be declared final
+src/ol/Simulador.java:66:	Potential violation of Law of Demeter (object not created locally)
+src/ol/Simulador.java:67:	Potential violation of Law of Demeter (object not created locally)
+src/ol/Simulador.java:72:	Local variable 'novosLobos' could be declared final
+src/ol/Simulador.java:73:	Local variable 'it' could be declared final
+src/ol/Simulador.java:74:	Local variable 'loboGuara' could be declared final
+src/ol/Simulador.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/ol/Simulador.java:76:	Potential violation of Law of Demeter (object not created locally)
+src/ol/Simulador.java:87:	publicMethodCommentRequirement Required
+src/ol/Simulador.java:97:	Found 'DU'-anomaly for variable 'rand' (lines '97'-'112').
+src/ol/Simulador.java:97:	Local variable 'rand' could be declared final
+src/ol/Simulador.java:101:	Potential violation of Law of Demeter (object not created locally)
+src/ol/Simulador.java:102:	Avoid instantiating new objects inside loops
+src/ol/Simulador.java:102:	Local variable 'localizacao' could be declared final
+src/ol/Simulador.java:103:	Avoid instantiating new objects inside loops
+src/ol/Simulador.java:103:	Local variable 'loboGuara' could be declared final
+src/ol/Simulador.java:105:	Potential violation of Law of Demeter (object not created locally)
+src/ol/Simulador.java:106:	Avoid instantiating new objects inside loops
+src/ol/Simulador.java:106:	Local variable 'localizacao' could be declared final
+src/ol/Simulador.java:107:	Avoid instantiating new objects inside loops
+src/ol/Simulador.java:107:	Local variable 'ovelha' could be declared final
+src/ol/Simulador.java:115:	publicMethodCommentRequirement Required
+src/ol/Simulador.java:120:	publicMethodCommentRequirement Required
+src/ol/Simulador.java:124:	publicMethodCommentRequirement Required
+src/ol/SimuladorTela.java:8:	headerCommentRequirement Required
+src/ol/SimuladorTela.java:9:	fieldCommentRequirement Required
+src/ol/SimuladorTela.java:10:	fieldCommentRequirement Required
+src/ol/SimuladorTela.java:12:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:12:	This final field could be made static
+src/ol/SimuladorTela.java:12:	fieldCommentRequirement Required
+src/ol/SimuladorTela.java:13:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:13:	This final field could be made static
+src/ol/SimuladorTela.java:13:	fieldCommentRequirement Required
+src/ol/SimuladorTela.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:14:	Private field 'populacao' could be made final; it is only initialized in the declaration or constructor.
+src/ol/SimuladorTela.java:14:	Private field 'rotuloEtapa' could be made final; it is only initialized in the declaration or constructor.
+src/ol/SimuladorTela.java:14:	fieldCommentRequirement Required
+src/ol/SimuladorTela.java:15:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:15:	Private field 'visaoCampo' could be made final; it is only initialized in the declaration or constructor.
+src/ol/SimuladorTela.java:15:	fieldCommentRequirement Required
+src/ol/SimuladorTela.java:17:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:17:	Private field 'cores' could be made final; it is only initialized in the declaration or constructor.
+src/ol/SimuladorTela.java:17:	fieldCommentRequirement Required
+src/ol/SimuladorTela.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:18:	Private field 'estatisticas' could be made final; it is only initialized in the declaration or constructor.
+src/ol/SimuladorTela.java:18:	fieldCommentRequirement Required
+src/ol/SimuladorTela.java:21:	It is a good practice to call super() in a constructor
+src/ol/SimuladorTela.java:21:	Parameter 'height' is not assigned and could be declared final
+src/ol/SimuladorTela.java:21:	Parameter 'width' is not assigned and could be declared final
+src/ol/SimuladorTela.java:21:	publicMethodCommentRequirement Required
+src/ol/SimuladorTela.java:35:	Local variable 'conteudos' could be declared final
+src/ol/SimuladorTela.java:43:	Parameter 'animalClass' is not assigned and could be declared final
+src/ol/SimuladorTela.java:43:	Parameter 'color' is not assigned and could be declared final
+src/ol/SimuladorTela.java:43:	publicMethodCommentRequirement Required
+src/ol/SimuladorTela.java:47:	Parameter 'animalClass' is not assigned and could be declared final
+src/ol/SimuladorTela.java:48:	Local variable 'coluna' could be declared final
+src/ol/SimuladorTela.java:50:	A method should have only one exit point, and that should be the last statement in the method
+src/ol/SimuladorTela.java:56:	Parameter 'campo' is not assigned and could be declared final
+src/ol/SimuladorTela.java:56:	Parameter 'etapa' is not assigned and could be declared final
+src/ol/SimuladorTela.java:56:	publicMethodCommentRequirement Required
+src/ol/SimuladorTela.java:68:	Local variable 'animal' could be declared final
+src/ol/SimuladorTela.java:69:	Avoid if (x != y) ..; else ..;
+src/ol/SimuladorTela.java:70:	Potential violation of Law of Demeter (object not created locally)
+src/ol/SimuladorTela.java:71:	Potential violation of Law of Demeter (object not created locally)
+src/ol/SimuladorTela.java:83:	Parameter 'campo' is not assigned and could be declared final
+src/ol/SimuladorTela.java:83:	publicMethodCommentRequirement Required
+src/ol/SimuladorTela.java:87:	headerCommentRequirement Required
+src/ol/SimuladorTela.java:88:	Avoid excessively long variable names like GRID_VIEW_SCALING_FACTOR
+src/ol/SimuladorTela.java:88:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:88:	This final field could be made static
+src/ol/SimuladorTela.java:88:	fieldCommentRequirement Required
+src/ol/SimuladorTela.java:90:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:90:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:90:	Private field 'gridHeight' could be made final; it is only initialized in the declaration or constructor.
+src/ol/SimuladorTela.java:90:	Private field 'gridWidth' could be made final; it is only initialized in the declaration or constructor.
+src/ol/SimuladorTela.java:90:	fieldCommentRequirement Required
+src/ol/SimuladorTela.java:91:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:91:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:91:	fieldCommentRequirement Required
+src/ol/SimuladorTela.java:92:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:92:	To avoid mistakes add a comment at the beginning of the size field if you want a default access modifier
+src/ol/SimuladorTela.java:92:	Use explicit scoping instead of the default package private level
+src/ol/SimuladorTela.java:92:	fieldCommentRequirement Required
+src/ol/SimuladorTela.java:93:	Avoid variables with short names like g
+src/ol/SimuladorTela.java:93:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:93:	fieldCommentRequirement Required
+src/ol/SimuladorTela.java:94:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ol/SimuladorTela.java:94:	fieldCommentRequirement Required
+src/ol/SimuladorTela.java:96:	It is a good practice to call super() in a constructor
+src/ol/SimuladorTela.java:96:	Parameter 'height' is not assigned and could be declared final
+src/ol/SimuladorTela.java:96:	Parameter 'width' is not assigned and could be declared final
+src/ol/SimuladorTela.java:96:	publicMethodCommentRequirement Required
+src/ol/SimuladorTela.java:102:	publicMethodCommentRequirement Required
+src/ol/SimuladorTela.java:106:	publicMethodCommentRequirement Required
+src/ol/SimuladorTela.java:109:	Avoid autogenerated methods to access private fields and methods of inner / outer classes
+src/ol/SimuladorTela.java:113:	Avoid using Literals in Conditional Statements
+src/ol/SimuladorTela.java:117:	Avoid using Literals in Conditional Statements
+src/ol/SimuladorTela.java:123:	Avoid variables with short names like x
+src/ol/SimuladorTela.java:123:	Avoid variables with short names like y
+src/ol/SimuladorTela.java:123:	Parameter 'color' is not assigned and could be declared final
+src/ol/SimuladorTela.java:123:	Parameter 'x' is not assigned and could be declared final
+src/ol/SimuladorTela.java:123:	Parameter 'y' is not assigned and could be declared final
+src/ol/SimuladorTela.java:123:	publicMethodCommentRequirement Required
+src/ol/SimuladorTela.java:128:	Avoid variables with short names like g
+src/ol/SimuladorTela.java:128:	Parameter 'g' is not assigned and could be declared final
+src/ol/SimuladorTela.java:128:	publicMethodCommentRequirement Required
+src/ol/SimuladorTela.java:130:	Local variable 'currentSize' could be declared final
+src/teste/CampoEstatisticaTest.java:5:	Avoid unused imports such as 'javax.xml.transform.SourceLocator'
+src/teste/CampoEstatisticaTest.java:7:	Avoid unused imports such as 'org.junit.Ignore'
+src/teste/CampoEstatisticaTest.java:16:	Each class should declare at least one constructor
+src/teste/CampoEstatisticaTest.java:16:	This class has too many methods, consider refactoring it.
+src/teste/CampoEstatisticaTest.java:16:	headerCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:22:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:23:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:28:	Comment is too large: Line too long
+src/teste/CampoEstatisticaTest.java:31:	Comment is too large: Line too long
+src/teste/CampoEstatisticaTest.java:35:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:36:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:36:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:37:	Avoid unused local variables such as 'ove'.
+src/teste/CampoEstatisticaTest.java:37:	Found 'DU'-anomaly for variable 'ove' (lines '37'-'45').
+src/teste/CampoEstatisticaTest.java:37:	Local variable 'ove' could be declared final
+src/teste/CampoEstatisticaTest.java:38:	Avoid unused local variables such as 'ove1'.
+src/teste/CampoEstatisticaTest.java:38:	Found 'DU'-anomaly for variable 'ove1' (lines '38'-'45').
+src/teste/CampoEstatisticaTest.java:38:	Local variable 'ove1' could be declared final
+src/teste/CampoEstatisticaTest.java:39:	Avoid unused local variables such as 'ove2'.
+src/teste/CampoEstatisticaTest.java:39:	Found 'DU'-anomaly for variable 'ove2' (lines '39'-'45').
+src/teste/CampoEstatisticaTest.java:39:	Local variable 'ove2' could be declared final
+src/teste/CampoEstatisticaTest.java:40:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:49:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:50:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:50:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:51:	Avoid unused local variables such as 'ove'.
+src/teste/CampoEstatisticaTest.java:51:	Found 'DU'-anomaly for variable 'ove' (lines '51'-'58').
+src/teste/CampoEstatisticaTest.java:51:	Local variable 'ove' could be declared final
+src/teste/CampoEstatisticaTest.java:52:	Avoid unused local variables such as 'ove1'.
+src/teste/CampoEstatisticaTest.java:52:	Found 'DU'-anomaly for variable 'ove1' (lines '52'-'58').
+src/teste/CampoEstatisticaTest.java:52:	Local variable 'ove1' could be declared final
+src/teste/CampoEstatisticaTest.java:53:	Avoid unused local variables such as 'ove2'.
+src/teste/CampoEstatisticaTest.java:53:	Found 'DU'-anomaly for variable 'ove2' (lines '53'-'58').
+src/teste/CampoEstatisticaTest.java:53:	Local variable 'ove2' could be declared final
+src/teste/CampoEstatisticaTest.java:54:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:63:	Comment is too large: Line too long
+src/teste/CampoEstatisticaTest.java:66:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:67:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:67:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:68:	Avoid unused local variables such as 'ove'.
+src/teste/CampoEstatisticaTest.java:68:	Found 'DU'-anomaly for variable 'ove' (lines '68'-'75').
+src/teste/CampoEstatisticaTest.java:68:	Local variable 'ove' could be declared final
+src/teste/CampoEstatisticaTest.java:69:	Avoid unused local variables such as 'ove1'.
+src/teste/CampoEstatisticaTest.java:69:	Found 'DU'-anomaly for variable 'ove1' (lines '69'-'75').
+src/teste/CampoEstatisticaTest.java:69:	Local variable 'ove1' could be declared final
+src/teste/CampoEstatisticaTest.java:70:	Avoid unused local variables such as 'ove2'.
+src/teste/CampoEstatisticaTest.java:70:	Found 'DU'-anomaly for variable 'ove2' (lines '70'-'75').
+src/teste/CampoEstatisticaTest.java:70:	Local variable 'ove2' could be declared final
+src/teste/CampoEstatisticaTest.java:71:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:80:	Comment is too large: Line too long
+src/teste/CampoEstatisticaTest.java:81:	Comment is too large: Line too long
+src/teste/CampoEstatisticaTest.java:84:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:85:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:85:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:86:	Avoid unused local variables such as 'ove'.
+src/teste/CampoEstatisticaTest.java:86:	Found 'DU'-anomaly for variable 'ove' (lines '86'-'100').
+src/teste/CampoEstatisticaTest.java:86:	Local variable 'ove' could be declared final
+src/teste/CampoEstatisticaTest.java:87:	Avoid unused local variables such as 'ove1'.
+src/teste/CampoEstatisticaTest.java:87:	Found 'DU'-anomaly for variable 'ove1' (lines '87'-'100').
+src/teste/CampoEstatisticaTest.java:87:	Local variable 'ove1' could be declared final
+src/teste/CampoEstatisticaTest.java:88:	Avoid unused local variables such as 'ove2'.
+src/teste/CampoEstatisticaTest.java:88:	Found 'DU'-anomaly for variable 'ove2' (lines '88'-'100').
+src/teste/CampoEstatisticaTest.java:88:	Local variable 'ove2' could be declared final
+src/teste/CampoEstatisticaTest.java:89:	Avoid unused local variables such as 'lobo'.
+src/teste/CampoEstatisticaTest.java:89:	Found 'DU'-anomaly for variable 'lobo' (lines '89'-'100').
+src/teste/CampoEstatisticaTest.java:89:	Local variable 'lobo' could be declared final
+src/teste/CampoEstatisticaTest.java:90:	Avoid unused local variables such as 'lobo1'.
+src/teste/CampoEstatisticaTest.java:90:	Found 'DU'-anomaly for variable 'lobo1' (lines '90'-'100').
+src/teste/CampoEstatisticaTest.java:90:	Local variable 'lobo1' could be declared final
+src/teste/CampoEstatisticaTest.java:91:	Avoid unused local variables such as 'lobo2'.
+src/teste/CampoEstatisticaTest.java:91:	Found 'DU'-anomaly for variable 'lobo2' (lines '91'-'100').
+src/teste/CampoEstatisticaTest.java:91:	Local variable 'lobo2' could be declared final
+src/teste/CampoEstatisticaTest.java:92:	Local variable 'teste' could be declared final
+src/teste/CampoEstatisticaTest.java:96:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:103:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:104:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:104:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:105:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:111:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:112:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:112:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:114:	Found 'DU'-anomaly for variable 'ove' (lines '114'-'133').
+src/teste/CampoEstatisticaTest.java:114:	Local variable 'ove' could be declared final
+src/teste/CampoEstatisticaTest.java:120:	Found 'DU'-anomaly for variable 'lobo' (lines '120'-'133').
+src/teste/CampoEstatisticaTest.java:120:	Local variable 'lobo' could be declared final
+src/teste/CampoEstatisticaTest.java:128:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:129:	System.err.println is used
+src/teste/CampoEstatisticaTest.java:134:	Comment is too large: Line too long
+src/teste/CampoEstatisticaTest.java:137:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:139:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:139:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:140:	Local variable 'ove' could be declared final
+src/teste/CampoEstatisticaTest.java:141:	Avoid unused local variables such as 'ove1'.
+src/teste/CampoEstatisticaTest.java:141:	Found 'DU'-anomaly for variable 'ove1' (lines '141'-'153').
+src/teste/CampoEstatisticaTest.java:141:	Local variable 'ove1' could be declared final
+src/teste/CampoEstatisticaTest.java:142:	Avoid unused local variables such as 'ove2'.
+src/teste/CampoEstatisticaTest.java:142:	Found 'DU'-anomaly for variable 'ove2' (lines '142'-'153').
+src/teste/CampoEstatisticaTest.java:142:	Local variable 'ove2' could be declared final
+src/teste/CampoEstatisticaTest.java:143:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:158:	Comment is too large: Line too long
+src/teste/CampoEstatisticaTest.java:160:	Comment is too large: Line too long
+src/teste/CampoEstatisticaTest.java:163:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:164:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:164:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:165:	Local variable 'ove' could be declared final
+src/teste/CampoEstatisticaTest.java:166:	Avoid unused local variables such as 'ove1'.
+src/teste/CampoEstatisticaTest.java:166:	Found 'DU'-anomaly for variable 'ove1' (lines '166'-'175').
+src/teste/CampoEstatisticaTest.java:166:	Local variable 'ove1' could be declared final
+src/teste/CampoEstatisticaTest.java:167:	Avoid unused local variables such as 'ove2'.
+src/teste/CampoEstatisticaTest.java:167:	Found 'DU'-anomaly for variable 'ove2' (lines '167'-'175').
+src/teste/CampoEstatisticaTest.java:167:	Local variable 'ove2' could be declared final
+src/teste/CampoEstatisticaTest.java:168:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:182:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:183:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:183:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:184:	Local variable 'ove' could be declared final
+src/teste/CampoEstatisticaTest.java:185:	Avoid unused local variables such as 'ove1'.
+src/teste/CampoEstatisticaTest.java:185:	Found 'DU'-anomaly for variable 'ove1' (lines '185'-'196').
+src/teste/CampoEstatisticaTest.java:185:	Local variable 'ove1' could be declared final
+src/teste/CampoEstatisticaTest.java:186:	Avoid unused local variables such as 'ove2'.
+src/teste/CampoEstatisticaTest.java:186:	Found 'DU'-anomaly for variable 'ove2' (lines '186'-'196').
+src/teste/CampoEstatisticaTest.java:186:	Local variable 'ove2' could be declared final
+src/teste/CampoEstatisticaTest.java:187:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:198:	Comment is too large: Line too long
+src/teste/CampoEstatisticaTest.java:202:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:203:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:203:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:204:	Local variable 'ove' could be declared final
+src/teste/CampoEstatisticaTest.java:205:	Avoid unused local variables such as 'ove1'.
+src/teste/CampoEstatisticaTest.java:205:	Found 'DU'-anomaly for variable 'ove1' (lines '205'-'217').
+src/teste/CampoEstatisticaTest.java:205:	Local variable 'ove1' could be declared final
+src/teste/CampoEstatisticaTest.java:206:	Avoid unused local variables such as 'ove2'.
+src/teste/CampoEstatisticaTest.java:206:	Found 'DU'-anomaly for variable 'ove2' (lines '206'-'217').
+src/teste/CampoEstatisticaTest.java:206:	Local variable 'ove2' could be declared final
+src/teste/CampoEstatisticaTest.java:207:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:220:	Comment is too large: Line too long
+src/teste/CampoEstatisticaTest.java:223:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:225:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:225:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:226:	Avoid unused local variables such as 'ove'.
+src/teste/CampoEstatisticaTest.java:226:	Found 'DU'-anomaly for variable 'ove' (lines '226'-'234').
+src/teste/CampoEstatisticaTest.java:226:	Local variable 'ove' could be declared final
+src/teste/CampoEstatisticaTest.java:227:	Avoid unused local variables such as 'ove1'.
+src/teste/CampoEstatisticaTest.java:227:	Found 'DU'-anomaly for variable 'ove1' (lines '227'-'234').
+src/teste/CampoEstatisticaTest.java:227:	Local variable 'ove1' could be declared final
+src/teste/CampoEstatisticaTest.java:228:	Avoid unused local variables such as 'ove2'.
+src/teste/CampoEstatisticaTest.java:228:	Found 'DU'-anomaly for variable 'ove2' (lines '228'-'234').
+src/teste/CampoEstatisticaTest.java:228:	Local variable 'ove2' could be declared final
+src/teste/CampoEstatisticaTest.java:229:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:236:	Comment is too large: Line too long
+src/teste/CampoEstatisticaTest.java:239:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:240:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:240:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:241:	Avoid unused local variables such as 'ove'.
+src/teste/CampoEstatisticaTest.java:241:	Found 'DU'-anomaly for variable 'ove' (lines '241'-'248').
+src/teste/CampoEstatisticaTest.java:241:	Local variable 'ove' could be declared final
+src/teste/CampoEstatisticaTest.java:242:	Avoid unused local variables such as 'ove1'.
+src/teste/CampoEstatisticaTest.java:242:	Found 'DU'-anomaly for variable 'ove1' (lines '242'-'248').
+src/teste/CampoEstatisticaTest.java:242:	Local variable 'ove1' could be declared final
+src/teste/CampoEstatisticaTest.java:243:	Avoid unused local variables such as 'ove2'.
+src/teste/CampoEstatisticaTest.java:243:	Found 'DU'-anomaly for variable 'ove2' (lines '243'-'248').
+src/teste/CampoEstatisticaTest.java:243:	Local variable 'ove2' could be declared final
+src/teste/CampoEstatisticaTest.java:244:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:252:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:253:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:253:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:254:	Avoid unused local variables such as 'ove'.
+src/teste/CampoEstatisticaTest.java:254:	Found 'DU'-anomaly for variable 'ove' (lines '254'-'261').
+src/teste/CampoEstatisticaTest.java:254:	Local variable 'ove' could be declared final
+src/teste/CampoEstatisticaTest.java:255:	Avoid unused local variables such as 'ove1'.
+src/teste/CampoEstatisticaTest.java:255:	Found 'DU'-anomaly for variable 'ove1' (lines '255'-'261').
+src/teste/CampoEstatisticaTest.java:255:	Local variable 'ove1' could be declared final
+src/teste/CampoEstatisticaTest.java:256:	Avoid unused local variables such as 'ove2'.
+src/teste/CampoEstatisticaTest.java:256:	Found 'DU'-anomaly for variable 'ove2' (lines '256'-'261').
+src/teste/CampoEstatisticaTest.java:256:	Local variable 'ove2' could be declared final
+src/teste/CampoEstatisticaTest.java:257:	Avoid unused local variables such as 'lobo'.
+src/teste/CampoEstatisticaTest.java:257:	Found 'DU'-anomaly for variable 'lobo' (lines '257'-'261').
+src/teste/CampoEstatisticaTest.java:257:	Local variable 'lobo' could be declared final
+src/teste/CampoEstatisticaTest.java:258:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:265:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:266:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:266:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:267:	Avoid unused local variables such as 'ove'.
+src/teste/CampoEstatisticaTest.java:267:	Found 'DU'-anomaly for variable 'ove' (lines '267'-'272').
+src/teste/CampoEstatisticaTest.java:267:	Local variable 'ove' could be declared final
+src/teste/CampoEstatisticaTest.java:268:	Avoid unused local variables such as 'lobo'.
+src/teste/CampoEstatisticaTest.java:268:	Found 'DU'-anomaly for variable 'lobo' (lines '268'-'272').
+src/teste/CampoEstatisticaTest.java:268:	Local variable 'lobo' could be declared final
+src/teste/CampoEstatisticaTest.java:269:	Local variable 'campoe' could be declared final
+src/teste/CampoEstatisticaTest.java:277:	Comment is too large: Line too long
+src/teste/CampoEstatisticaTest.java:281:	publicMethodCommentRequirement Required
+src/teste/CampoEstatisticaTest.java:282:	Avoid variables with short names like c
+src/teste/CampoEstatisticaTest.java:282:	Local variable 'c' could be declared final
+src/teste/CampoEstatisticaTest.java:283:	Local variable 'teste' could be declared final
+src/teste/CampoEstatisticaTest.java:284:	Avoid unused local variables such as 'ove'.
+src/teste/CampoEstatisticaTest.java:284:	Found 'DU'-anomaly for variable 'ove' (lines '284'-'291').
+src/teste/CampoEstatisticaTest.java:284:	Local variable 'ove' could be declared final
+src/teste/CampoEstatisticaTest.java:285:	Avoid unused local variables such as 'lobo'.
+src/teste/CampoEstatisticaTest.java:285:	Found 'DU'-anomaly for variable 'lobo' (lines '285'-'291').
+src/teste/CampoEstatisticaTest.java:285:	Local variable 'lobo' could be declared final
+src/teste/CampoEstatisticaTest.java:287:	Local variable 'campoe' could be declared final
+src/teste/CampoTest.java:1:	Possible God class (WMC=58, ATFD=57, TCC=0.0)
+src/teste/CampoTest.java:1:	This class has a bunch of public methods and attributes
+src/teste/CampoTest.java:19:	Each class should declare at least one constructor
+src/teste/CampoTest.java:19:	This class has too many methods, consider refactoring it.
+src/teste/CampoTest.java:19:	headerCommentRequirement Required
+src/teste/CampoTest.java:22:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:24:	Avoid variables with short names like c
+src/teste/CampoTest.java:24:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:32:	JUnit tests should not contain more than 1 assert(s).
+src/teste/CampoTest.java:32:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:34:	Avoid variables with short names like c
+src/teste/CampoTest.java:34:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:42:	JUnit tests should not contain more than 1 assert(s).
+src/teste/CampoTest.java:42:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:44:	Avoid variables with short names like c
+src/teste/CampoTest.java:44:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:54:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:56:	Avoid variables with short names like c
+src/teste/CampoTest.java:56:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:63:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:65:	Avoid variables with short names like c
+src/teste/CampoTest.java:65:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:71:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:73:	Avoid variables with short names like c
+src/teste/CampoTest.java:73:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:78:	Comment is too large: Line too long
+src/teste/CampoTest.java:84:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:87:	Avoid variables with short names like c
+src/teste/CampoTest.java:87:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:88:	Avoid variables with short names like l
+src/teste/CampoTest.java:88:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:89:	Local variable 'lobo' could be declared final
+src/teste/CampoTest.java:100:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:102:	Avoid variables with short names like c
+src/teste/CampoTest.java:102:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:103:	Avoid variables with short names like l
+src/teste/CampoTest.java:103:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:104:	Local variable 'lobo' could be declared final
+src/teste/CampoTest.java:114:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:116:	Avoid variables with short names like c
+src/teste/CampoTest.java:116:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:117:	Avoid variables with short names like l
+src/teste/CampoTest.java:117:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:118:	Local variable 'ove' could be declared final
+src/teste/CampoTest.java:128:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:130:	Avoid variables with short names like c
+src/teste/CampoTest.java:130:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:131:	Avoid variables with short names like l
+src/teste/CampoTest.java:131:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:132:	Avoid unused local variables such as 'ove'.
+src/teste/CampoTest.java:132:	Found 'DU'-anomaly for variable 'ove' (lines '132'-'139').
+src/teste/CampoTest.java:132:	Local variable 'ove' could be declared final
+src/teste/CampoTest.java:144:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:146:	Avoid variables with short names like c
+src/teste/CampoTest.java:146:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:147:	Avoid variables with short names like l
+src/teste/CampoTest.java:147:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:156:	Comment is too large: Line too long
+src/teste/CampoTest.java:159:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:161:	Avoid variables with short names like c
+src/teste/CampoTest.java:161:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:162:	Avoid variables with short names like l
+src/teste/CampoTest.java:162:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:163:	Local variable 'lobo' could be declared final
+src/teste/CampoTest.java:173:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:175:	Avoid variables with short names like c
+src/teste/CampoTest.java:175:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:176:	Avoid variables with short names like l
+src/teste/CampoTest.java:176:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:177:	Local variable 'ove' could be declared final
+src/teste/CampoTest.java:187:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:189:	Avoid variables with short names like c
+src/teste/CampoTest.java:189:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:190:	Avoid variables with short names like l
+src/teste/CampoTest.java:190:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:191:	Local variable 'lobo' could be declared final
+src/teste/CampoTest.java:199:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:202:	Avoid variables with short names like c
+src/teste/CampoTest.java:202:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:203:	Avoid variables with short names like l
+src/teste/CampoTest.java:203:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:204:	Local variable 'lobo' could be declared final
+src/teste/CampoTest.java:214:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:216:	Avoid variables with short names like c
+src/teste/CampoTest.java:216:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:217:	Avoid variables with short names like l
+src/teste/CampoTest.java:217:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:225:	Comment is too large: Line too long
+src/teste/CampoTest.java:228:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:231:	Avoid variables with short names like c
+src/teste/CampoTest.java:231:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:232:	Avoid variables with short names like l
+src/teste/CampoTest.java:232:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:233:	Avoid unused local variables such as 'lobo'.
+src/teste/CampoTest.java:233:	Found 'DU'-anomaly for variable 'lobo' (lines '233'-'238').
+src/teste/CampoTest.java:233:	Local variable 'lobo' could be declared final
+src/teste/CampoTest.java:242:	Comment is too large: Line too long
+src/teste/CampoTest.java:245:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:247:	Avoid variables with short names like c
+src/teste/CampoTest.java:247:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:248:	Avoid variables with short names like l
+src/teste/CampoTest.java:248:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:249:	Local variable 'lobo' could be declared final
+src/teste/CampoTest.java:258:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:260:	Avoid variables with short names like c
+src/teste/CampoTest.java:260:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:261:	Avoid variables with short names like l
+src/teste/CampoTest.java:261:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:262:	Local variable 'lobo' could be declared final
+src/teste/CampoTest.java:270:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:272:	Avoid variables with short names like c
+src/teste/CampoTest.java:272:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:273:	Avoid variables with short names like l
+src/teste/CampoTest.java:273:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:274:	Avoid unused local variables such as 'lobo'.
+src/teste/CampoTest.java:274:	Found 'DU'-anomaly for variable 'lobo' (lines '274'-'279').
+src/teste/CampoTest.java:274:	Local variable 'lobo' could be declared final
+src/teste/CampoTest.java:282:	Comment is too large: Line too long
+src/teste/CampoTest.java:284:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:285:	Avoid variables with short names like c
+src/teste/CampoTest.java:285:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:286:	Avoid variables with short names like l
+src/teste/CampoTest.java:286:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:287:	Avoid unused local variables such as 'lobo'.
+src/teste/CampoTest.java:287:	Found 'DU'-anomaly for variable 'lobo' (lines '287'-'291').
+src/teste/CampoTest.java:287:	Local variable 'lobo' could be declared final
+src/teste/CampoTest.java:296:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:297:	Avoid variables with short names like c
+src/teste/CampoTest.java:297:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:298:	Avoid variables with short names like l
+src/teste/CampoTest.java:298:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:299:	Avoid unused local variables such as 'ove'.
+src/teste/CampoTest.java:299:	Found 'DU'-anomaly for variable 'ove' (lines '299'-'303').
+src/teste/CampoTest.java:299:	Local variable 'ove' could be declared final
+src/teste/CampoTest.java:307:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:308:	Avoid variables with short names like c
+src/teste/CampoTest.java:308:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:309:	Avoid variables with short names like l
+src/teste/CampoTest.java:309:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:310:	Avoid unused local variables such as 'ove'.
+src/teste/CampoTest.java:310:	Found 'DU'-anomaly for variable 'ove' (lines '310'-'316').
+src/teste/CampoTest.java:310:	Local variable 'ove' could be declared final
+src/teste/CampoTest.java:320:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:321:	Avoid variables with short names like c
+src/teste/CampoTest.java:321:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:322:	Avoid variables with short names like l
+src/teste/CampoTest.java:322:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:323:	Avoid unused local variables such as 'ove'.
+src/teste/CampoTest.java:323:	Found 'DU'-anomaly for variable 'ove' (lines '323'-'329').
+src/teste/CampoTest.java:323:	Local variable 'ove' could be declared final
+src/teste/CampoTest.java:336:	Comment is too large: Line too long
+src/teste/CampoTest.java:338:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:339:	Avoid variables with short names like c
+src/teste/CampoTest.java:339:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:340:	Avoid variables with short names like l
+src/teste/CampoTest.java:340:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:341:	Local variable 'ove' could be declared final
+src/teste/CampoTest.java:349:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:350:	Avoid variables with short names like c
+src/teste/CampoTest.java:350:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:351:	Avoid variables with short names like l
+src/teste/CampoTest.java:351:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:359:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:360:	Avoid variables with short names like c
+src/teste/CampoTest.java:360:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:361:	Avoid variables with short names like l
+src/teste/CampoTest.java:361:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:372:	Comment is too large: Line too long
+src/teste/CampoTest.java:375:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:377:	Avoid variables with short names like c
+src/teste/CampoTest.java:377:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:378:	Avoid variables with short names like l
+src/teste/CampoTest.java:378:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:380:	Avoid variables with short names like lo
+src/teste/CampoTest.java:380:	Local variable 'lo' could be declared final
+src/teste/CampoTest.java:386:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:388:	Avoid variables with short names like c
+src/teste/CampoTest.java:388:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:389:	Avoid variables with short names like l
+src/teste/CampoTest.java:389:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:390:	Avoid variables with short names like l2
+src/teste/CampoTest.java:390:	Local variable 'l2' could be declared final
+src/teste/CampoTest.java:391:	Avoid unused local variables such as 'l3'.
+src/teste/CampoTest.java:391:	Avoid variables with short names like l3
+src/teste/CampoTest.java:391:	Found 'DU'-anomaly for variable 'l3' (lines '391'-'397').
+src/teste/CampoTest.java:391:	Local variable 'l3' could be declared final
+src/teste/CampoTest.java:394:	Avoid variables with short names like lo
+src/teste/CampoTest.java:394:	Local variable 'lo' could be declared final
+src/teste/CampoTest.java:400:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:402:	Avoid variables with short names like c
+src/teste/CampoTest.java:402:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:403:	Avoid variables with short names like l
+src/teste/CampoTest.java:403:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:404:	Avoid variables with short names like l2
+src/teste/CampoTest.java:404:	Local variable 'l2' could be declared final
+src/teste/CampoTest.java:405:	Avoid unused local variables such as 'l3'.
+src/teste/CampoTest.java:405:	Avoid variables with short names like l3
+src/teste/CampoTest.java:405:	Found 'DU'-anomaly for variable 'l3' (lines '405'-'411').
+src/teste/CampoTest.java:405:	Local variable 'l3' could be declared final
+src/teste/CampoTest.java:408:	Avoid variables with short names like lo
+src/teste/CampoTest.java:408:	Local variable 'lo' could be declared final
+src/teste/CampoTest.java:414:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:416:	Avoid variables with short names like c
+src/teste/CampoTest.java:416:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:417:	Avoid variables with short names like l
+src/teste/CampoTest.java:417:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:418:	Avoid variables with short names like l2
+src/teste/CampoTest.java:418:	Local variable 'l2' could be declared final
+src/teste/CampoTest.java:419:	Avoid unused local variables such as 'l3'.
+src/teste/CampoTest.java:419:	Avoid variables with short names like l3
+src/teste/CampoTest.java:419:	Found 'DU'-anomaly for variable 'l3' (lines '419'-'425').
+src/teste/CampoTest.java:419:	Local variable 'l3' could be declared final
+src/teste/CampoTest.java:422:	Avoid variables with short names like lo
+src/teste/CampoTest.java:422:	Local variable 'lo' could be declared final
+src/teste/CampoTest.java:427:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:429:	Avoid variables with short names like c
+src/teste/CampoTest.java:429:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:430:	Avoid variables with short names like l
+src/teste/CampoTest.java:430:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:431:	Avoid variables with short names like l2
+src/teste/CampoTest.java:431:	Local variable 'l2' could be declared final
+src/teste/CampoTest.java:432:	Avoid unused local variables such as 'l3'.
+src/teste/CampoTest.java:432:	Avoid variables with short names like l3
+src/teste/CampoTest.java:432:	Found 'DU'-anomaly for variable 'l3' (lines '432'-'438').
+src/teste/CampoTest.java:432:	Local variable 'l3' could be declared final
+src/teste/CampoTest.java:435:	Avoid variables with short names like lo
+src/teste/CampoTest.java:435:	Local variable 'lo' could be declared final
+src/teste/CampoTest.java:440:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:442:	Avoid variables with short names like c
+src/teste/CampoTest.java:442:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:443:	Avoid variables with short names like l
+src/teste/CampoTest.java:443:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:444:	Avoid variables with short names like l2
+src/teste/CampoTest.java:444:	Local variable 'l2' could be declared final
+src/teste/CampoTest.java:445:	Avoid unused local variables such as 'l3'.
+src/teste/CampoTest.java:445:	Avoid variables with short names like l3
+src/teste/CampoTest.java:445:	Found 'DU'-anomaly for variable 'l3' (lines '445'-'451').
+src/teste/CampoTest.java:445:	Local variable 'l3' could be declared final
+src/teste/CampoTest.java:448:	Avoid variables with short names like lo
+src/teste/CampoTest.java:448:	Local variable 'lo' could be declared final
+src/teste/CampoTest.java:453:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:455:	Avoid variables with short names like c
+src/teste/CampoTest.java:455:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:456:	Avoid variables with short names like l
+src/teste/CampoTest.java:456:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:457:	Avoid variables with short names like l2
+src/teste/CampoTest.java:457:	Local variable 'l2' could be declared final
+src/teste/CampoTest.java:458:	Avoid unused local variables such as 'l3'.
+src/teste/CampoTest.java:458:	Avoid variables with short names like l3
+src/teste/CampoTest.java:458:	Found 'DU'-anomaly for variable 'l3' (lines '458'-'464').
+src/teste/CampoTest.java:458:	Local variable 'l3' could be declared final
+src/teste/CampoTest.java:461:	Avoid variables with short names like lo
+src/teste/CampoTest.java:461:	Local variable 'lo' could be declared final
+src/teste/CampoTest.java:469:	Comment is too large: Line too long
+src/teste/CampoTest.java:471:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:474:	Avoid variables with short names like c
+src/teste/CampoTest.java:474:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:475:	Avoid variables with short names like l
+src/teste/CampoTest.java:475:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:476:	Avoid unused local variables such as 'lobo'.
+src/teste/CampoTest.java:476:	Found 'DU'-anomaly for variable 'lobo' (lines '476'-'485').
+src/teste/CampoTest.java:476:	Local variable 'lobo' could be declared final
+src/teste/CampoTest.java:477:	Avoid unused local variables such as 'lobo1'.
+src/teste/CampoTest.java:477:	Found 'DU'-anomaly for variable 'lobo1' (lines '477'-'485').
+src/teste/CampoTest.java:477:	Local variable 'lobo1' could be declared final
+src/teste/CampoTest.java:478:	Avoid unused local variables such as 'lobo2'.
+src/teste/CampoTest.java:478:	Found 'DU'-anomaly for variable 'lobo2' (lines '478'-'485').
+src/teste/CampoTest.java:478:	Local variable 'lobo2' could be declared final
+src/teste/CampoTest.java:479:	Avoid unused local variables such as 'lobo3'.
+src/teste/CampoTest.java:479:	Found 'DU'-anomaly for variable 'lobo3' (lines '479'-'485').
+src/teste/CampoTest.java:479:	Local variable 'lobo3' could be declared final
+src/teste/CampoTest.java:482:	Local variable 'loca' could be declared final
+src/teste/CampoTest.java:483:	Potential violation of Law of Demeter (object not created locally)
+src/teste/CampoTest.java:489:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:492:	Avoid variables with short names like c
+src/teste/CampoTest.java:492:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:493:	Avoid variables with short names like l
+src/teste/CampoTest.java:493:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:494:	Avoid unused local variables such as 'lobo'.
+src/teste/CampoTest.java:494:	Found 'DU'-anomaly for variable 'lobo' (lines '494'-'503').
+src/teste/CampoTest.java:494:	Local variable 'lobo' could be declared final
+src/teste/CampoTest.java:495:	Avoid unused local variables such as 'lobo1'.
+src/teste/CampoTest.java:495:	Found 'DU'-anomaly for variable 'lobo1' (lines '495'-'503').
+src/teste/CampoTest.java:495:	Local variable 'lobo1' could be declared final
+src/teste/CampoTest.java:496:	Avoid unused local variables such as 'lobo2'.
+src/teste/CampoTest.java:496:	Found 'DU'-anomaly for variable 'lobo2' (lines '496'-'503').
+src/teste/CampoTest.java:496:	Local variable 'lobo2' could be declared final
+src/teste/CampoTest.java:500:	Local variable 'loca' could be declared final
+src/teste/CampoTest.java:501:	Potential violation of Law of Demeter (object not created locally)
+src/teste/CampoTest.java:508:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:511:	Avoid variables with short names like c
+src/teste/CampoTest.java:511:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:512:	Avoid variables with short names like l
+src/teste/CampoTest.java:512:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:513:	Avoid unused local variables such as 'lobo'.
+src/teste/CampoTest.java:513:	Found 'DU'-anomaly for variable 'lobo' (lines '513'-'521').
+src/teste/CampoTest.java:513:	Local variable 'lobo' could be declared final
+src/teste/CampoTest.java:514:	Avoid unused local variables such as 'lobo2'.
+src/teste/CampoTest.java:514:	Found 'DU'-anomaly for variable 'lobo2' (lines '514'-'521').
+src/teste/CampoTest.java:514:	Local variable 'lobo2' could be declared final
+src/teste/CampoTest.java:515:	Avoid unused local variables such as 'lobo3'.
+src/teste/CampoTest.java:515:	Found 'DU'-anomaly for variable 'lobo3' (lines '515'-'521').
+src/teste/CampoTest.java:515:	Local variable 'lobo3' could be declared final
+src/teste/CampoTest.java:518:	Local variable 'loca' could be declared final
+src/teste/CampoTest.java:519:	Potential violation of Law of Demeter (object not created locally)
+src/teste/CampoTest.java:525:	Comment is too large: Line too long
+src/teste/CampoTest.java:529:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:531:	Avoid variables with short names like c
+src/teste/CampoTest.java:531:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:532:	Avoid variables with short names like l
+src/teste/CampoTest.java:532:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:541:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:543:	Avoid variables with short names like c
+src/teste/CampoTest.java:543:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:544:	Avoid variables with short names like l
+src/teste/CampoTest.java:544:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:552:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:554:	Avoid variables with short names like c
+src/teste/CampoTest.java:554:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:555:	Avoid variables with short names like l
+src/teste/CampoTest.java:555:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:561:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:563:	Avoid variables with short names like c
+src/teste/CampoTest.java:563:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:564:	Avoid variables with short names like l
+src/teste/CampoTest.java:564:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:570:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:572:	Avoid variables with short names like c
+src/teste/CampoTest.java:572:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:573:	Avoid variables with short names like l
+src/teste/CampoTest.java:573:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:574:	Avoid unused local variables such as 'lobo'.
+src/teste/CampoTest.java:574:	Found 'DU'-anomaly for variable 'lobo' (lines '574'-'584').
+src/teste/CampoTest.java:574:	Local variable 'lobo' could be declared final
+src/teste/CampoTest.java:575:	Avoid unused local variables such as 'lobo1'.
+src/teste/CampoTest.java:575:	Found 'DU'-anomaly for variable 'lobo1' (lines '575'-'584').
+src/teste/CampoTest.java:575:	Local variable 'lobo1' could be declared final
+src/teste/CampoTest.java:576:	Avoid unused local variables such as 'lobo2'.
+src/teste/CampoTest.java:576:	Found 'DU'-anomaly for variable 'lobo2' (lines '576'-'584').
+src/teste/CampoTest.java:576:	Local variable 'lobo2' could be declared final
+src/teste/CampoTest.java:577:	Avoid unused local variables such as 'lobo3'.
+src/teste/CampoTest.java:577:	Found 'DU'-anomaly for variable 'lobo3' (lines '577'-'584').
+src/teste/CampoTest.java:577:	Local variable 'lobo3' could be declared final
+src/teste/CampoTest.java:580:	Local variable 'loca' could be declared final
+src/teste/CampoTest.java:588:	Comment is too large: Line too long
+src/teste/CampoTest.java:592:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:594:	Avoid variables with short names like c
+src/teste/CampoTest.java:594:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:595:	Avoid variables with short names like l
+src/teste/CampoTest.java:595:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:597:	Avoid variables with short names like lo
+src/teste/CampoTest.java:597:	Found 'DD'-anomaly for variable 'lo' (lines '597'-'598').
+src/teste/CampoTest.java:600:	Potential violation of Law of Demeter (object not created locally)
+src/teste/CampoTest.java:607:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:609:	Avoid variables with short names like c
+src/teste/CampoTest.java:609:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:610:	Avoid variables with short names like l
+src/teste/CampoTest.java:610:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:612:	Avoid variables with short names like lo
+src/teste/CampoTest.java:612:	Found 'DD'-anomaly for variable 'lo' (lines '612'-'613').
+src/teste/CampoTest.java:615:	Potential violation of Law of Demeter (object not created locally)
+src/teste/CampoTest.java:622:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:624:	Avoid variables with short names like c
+src/teste/CampoTest.java:624:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:625:	Avoid variables with short names like l
+src/teste/CampoTest.java:625:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:627:	Avoid variables with short names like lo
+src/teste/CampoTest.java:627:	Found 'DD'-anomaly for variable 'lo' (lines '627'-'628').
+src/teste/CampoTest.java:630:	Potential violation of Law of Demeter (object not created locally)
+src/teste/CampoTest.java:637:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:639:	Avoid variables with short names like c
+src/teste/CampoTest.java:639:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:640:	Avoid variables with short names like l
+src/teste/CampoTest.java:640:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:642:	Avoid variables with short names like lo
+src/teste/CampoTest.java:642:	Found 'DD'-anomaly for variable 'lo' (lines '642'-'643').
+src/teste/CampoTest.java:645:	Potential violation of Law of Demeter (object not created locally)
+src/teste/CampoTest.java:653:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:655:	Avoid variables with short names like c
+src/teste/CampoTest.java:655:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:656:	Avoid variables with short names like l
+src/teste/CampoTest.java:656:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:658:	Avoid variables with short names like lo
+src/teste/CampoTest.java:658:	Found 'DD'-anomaly for variable 'lo' (lines '658'-'659').
+src/teste/CampoTest.java:661:	Potential violation of Law of Demeter (object not created locally)
+src/teste/CampoTest.java:667:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:669:	Avoid variables with short names like c
+src/teste/CampoTest.java:669:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:670:	Avoid variables with short names like l
+src/teste/CampoTest.java:670:	Local variable 'l' could be declared final
+src/teste/CampoTest.java:672:	Avoid unused local variables such as 'lo'.
+src/teste/CampoTest.java:672:	Avoid variables with short names like lo
+src/teste/CampoTest.java:672:	Found 'DD'-anomaly for variable 'lo' (lines '672'-'673').
+src/teste/CampoTest.java:673:	Found 'DU'-anomaly for variable 'lo' (lines '673'-'678').
+src/teste/CampoTest.java:686:	Comment is too large: Line too long
+src/teste/CampoTest.java:688:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:689:	Avoid variables with short names like n
+src/teste/CampoTest.java:689:	Local variable 'n' could be declared final
+src/teste/CampoTest.java:690:	Avoid variables with short names like c
+src/teste/CampoTest.java:690:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:696:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:697:	Avoid variables with short names like n
+src/teste/CampoTest.java:697:	Local variable 'n' could be declared final
+src/teste/CampoTest.java:698:	Avoid variables with short names like c
+src/teste/CampoTest.java:698:	Do not start a literal by 0 unless its an octal value
+src/teste/CampoTest.java:698:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:706:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:707:	Avoid variables with short names like n
+src/teste/CampoTest.java:707:	Local variable 'n' could be declared final
+src/teste/CampoTest.java:708:	An empty statement (semicolon) not part of a loop
+src/teste/CampoTest.java:708:	Avoid variables with short names like c
+src/teste/CampoTest.java:708:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:714:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:715:	Avoid variables with short names like n
+src/teste/CampoTest.java:715:	Local variable 'n' could be declared final
+src/teste/CampoTest.java:716:	Avoid variables with short names like c
+src/teste/CampoTest.java:716:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:721:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:722:	Avoid variables with short names like c
+src/teste/CampoTest.java:722:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:727:	Comment is too large: Line too long
+src/teste/CampoTest.java:730:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:731:	Avoid variables with short names like n
+src/teste/CampoTest.java:731:	Local variable 'n' could be declared final
+src/teste/CampoTest.java:732:	Avoid variables with short names like c
+src/teste/CampoTest.java:732:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:737:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:738:	Avoid variables with short names like n
+src/teste/CampoTest.java:738:	Local variable 'n' could be declared final
+src/teste/CampoTest.java:739:	Avoid variables with short names like c
+src/teste/CampoTest.java:739:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:743:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:744:	Avoid variables with short names like n
+src/teste/CampoTest.java:744:	Local variable 'n' could be declared final
+src/teste/CampoTest.java:745:	Avoid variables with short names like c
+src/teste/CampoTest.java:745:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:750:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:751:	Avoid variables with short names like n
+src/teste/CampoTest.java:751:	Local variable 'n' could be declared final
+src/teste/CampoTest.java:752:	Avoid variables with short names like c
+src/teste/CampoTest.java:752:	Local variable 'c' could be declared final
+src/teste/CampoTest.java:759:	publicMethodCommentRequirement Required
+src/teste/CampoTest.java:760:	Avoid variables with short names like n
+src/teste/CampoTest.java:760:	Local variable 'n' could be declared final
+src/teste/CampoTest.java:761:	Avoid variables with short names like c
+src/teste/CampoTest.java:761:	Local variable 'c' could be declared final
+src/teste/ContadorTest.java:9:	Each class should declare at least one constructor
+src/teste/ContadorTest.java:9:	This class has too many methods, consider refactoring it.
+src/teste/ContadorTest.java:9:	headerCommentRequirement Required
+src/teste/ContadorTest.java:12:	Comment is too large: Line too long
+src/teste/ContadorTest.java:14:	publicMethodCommentRequirement Required
+src/teste/ContadorTest.java:16:	Local variable 'cont' could be declared final
+src/teste/ContadorTest.java:24:	Comment is too large: Line too long
+src/teste/ContadorTest.java:25:	Comment is too large: Line too long
+src/teste/ContadorTest.java:27:	publicMethodCommentRequirement Required
+src/teste/ContadorTest.java:29:	Local variable 'cont' could be declared final
+src/teste/ContadorTest.java:34:	publicMethodCommentRequirement Required
+src/teste/ContadorTest.java:36:	Local variable 'cont' could be declared final
+src/teste/ContadorTest.java:41:	publicMethodCommentRequirement Required
+src/teste/ContadorTest.java:43:	Local variable 'cont' could be declared final
+src/teste/ContadorTest.java:43:	The String literal "Ovelha" appears 8 times in this file; the first occurrence is on line 43
+src/teste/ContadorTest.java:48:	publicMethodCommentRequirement Required
+src/teste/ContadorTest.java:50:	Local variable 'cont' could be declared final
+src/teste/ContadorTest.java:55:	publicMethodCommentRequirement Required
+src/teste/ContadorTest.java:57:	Local variable 'cont' could be declared final
+src/teste/ContadorTest.java:62:	Comment is too large: Line too long
+src/teste/ContadorTest.java:65:	publicMethodCommentRequirement Required
+src/teste/ContadorTest.java:67:	Local variable 'cont' could be declared final
+src/teste/ContadorTest.java:74:	publicMethodCommentRequirement Required
+src/teste/ContadorTest.java:76:	Local variable 'cont' could be declared final
+src/teste/ContadorTest.java:83:	Comment is too large: Line too long
+src/teste/ContadorTest.java:85:	publicMethodCommentRequirement Required
+src/teste/ContadorTest.java:87:	Local variable 'cont' could be declared final
+src/teste/ContadorTest.java:95:	publicMethodCommentRequirement Required
+src/teste/ContadorTest.java:97:	Local variable 'cont' could be declared final
+src/teste/ContadorTest.java:108:	publicMethodCommentRequirement Required
+src/teste/ContadorTest.java:110:	Local variable 'cont' could be declared final
+src/teste/ContadorTest.java:116:	Comment is too large: Line too long
+src/teste/ContadorTest.java:119:	publicMethodCommentRequirement Required
+src/teste/ContadorTest.java:120:	Local variable 'cont' could be declared final
+src/teste/ContadorTest.java:130:	publicMethodCommentRequirement Required
+src/teste/ContadorTest.java:131:	Local variable 'cont' could be declared final
+src/teste/LoboGuaraTest.java:15:	Each class should declare at least one constructor
+src/teste/LoboGuaraTest.java:15:	headerCommentRequirement Required
+src/teste/LoboGuaraTest.java:19:	publicMethodCommentRequirement Required
+src/teste/LoboGuaraTest.java:21:	Local variable 'localizacao' could be declared final
+src/teste/LoboGuaraTest.java:22:	Local variable 'campo' could be declared final
+src/teste/LoboGuaraTest.java:23:	Avoid unused local variables such as 'x'.
+src/teste/LoboGuaraTest.java:23:	Avoid variables with short names like x
+src/teste/LoboGuaraTest.java:23:	Found 'DU'-anomaly for variable 'x' (lines '23'-'27').
+src/teste/LoboGuaraTest.java:23:	Local variable 'x' could be declared final
+src/teste/LoboGuaraTest.java:31:	publicMethodCommentRequirement Required
+src/teste/LoboGuaraTest.java:33:	Local variable 'campo' could be declared final
+src/teste/LoboGuaraTest.java:34:	Local variable 'localizacao1' could be declared final
+src/teste/LoboGuaraTest.java:35:	Local variable 'localizacao2' could be declared final
+src/teste/LoboGuaraTest.java:36:	Local variable 'localizacao3' could be declared final
+src/teste/LoboGuaraTest.java:37:	Local variable 'localizacao4' could be declared final
+src/teste/LoboGuaraTest.java:38:	Avoid variables with short names like l1
+src/teste/LoboGuaraTest.java:38:	Local variable 'l1' could be declared final
+src/teste/LoboGuaraTest.java:39:	Avoid variables with short names like x
+src/teste/LoboGuaraTest.java:39:	Local variable 'x' could be declared final
+src/teste/LoboGuaraTest.java:40:	Avoid variables with short names like z
+src/teste/LoboGuaraTest.java:40:	Local variable 'z' could be declared final
+src/teste/LoboGuaraTest.java:46:	Avoid variables with short names like y
+src/teste/LoboGuaraTest.java:46:	Local variable 'y' could be declared final
+src/teste/LoboGuaraTest.java:49:	Avoid empty if statements
+src/teste/LoboGuaraTest.java:49:	Potential violation of Law of Demeter (method chain calls)
+src/teste/LoboGuaraTest.java:52:	Avoid instantiating new objects inside loops
+src/teste/LoboGuaraTest.java:52:	Avoid unused local variables such as 'o'.
+src/teste/LoboGuaraTest.java:52:	Avoid variables with short names like o
+src/teste/LoboGuaraTest.java:52:	Found 'DD'-anomaly for variable 'o' (lines '52'-'52').
+src/teste/LoboGuaraTest.java:52:	Found 'DU'-anomaly for variable 'o' (lines '52'-'59').
+src/teste/LoboGuaraTest.java:52:	Local variable 'o' could be declared final
+src/teste/LoboGuaraTest.java:62:	publicMethodCommentRequirement Required
+src/teste/LoboGuaraTest.java:63:	Local variable 'loboGuara' could be declared final
+src/teste/LoboGuaraTest.java:68:	publicMethodCommentRequirement Required
+src/teste/LoboGuaraTest.java:69:	Local variable 'loboGuara' could be declared final
+src/teste/LocalizacaoTest.java:10:	Each class should declare at least one constructor
+src/teste/LocalizacaoTest.java:10:	This class has too many methods, consider refactoring it.
+src/teste/LocalizacaoTest.java:10:	headerCommentRequirement Required
+src/teste/LocalizacaoTest.java:14:	Document empty method body
+src/teste/LocalizacaoTest.java:14:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:18:	Comment is too large: Line too long
+src/teste/LocalizacaoTest.java:21:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:22:	Local variable 'obj' could be declared final
+src/teste/LocalizacaoTest.java:23:	Local variable 'ob1' could be declared final
+src/teste/LocalizacaoTest.java:24:	Use assertEquals(x, y) instead of assertTrue(x.equals(y))
+src/teste/LocalizacaoTest.java:29:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:30:	Local variable 'obj' could be declared final
+src/teste/LocalizacaoTest.java:31:	Local variable 'ob1' could be declared final
+src/teste/LocalizacaoTest.java:37:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:38:	Avoid unused local variables such as 'obj'.
+src/teste/LocalizacaoTest.java:38:	Found 'DU'-anomaly for variable 'obj' (lines '38'-'40').
+src/teste/LocalizacaoTest.java:38:	Local variable 'obj' could be declared final
+src/teste/LocalizacaoTest.java:39:	Avoid unused local variables such as 'ob1'.
+src/teste/LocalizacaoTest.java:39:	Found 'DU'-anomaly for variable 'ob1' (lines '39'-'40').
+src/teste/LocalizacaoTest.java:39:	Local variable 'ob1' could be declared final
+src/teste/LocalizacaoTest.java:46:	Comment is too large: Line too long
+src/teste/LocalizacaoTest.java:49:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:50:	Local variable 'obj' could be declared final
+src/teste/LocalizacaoTest.java:55:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:56:	Local variable 'obj' could be declared final
+src/teste/LocalizacaoTest.java:62:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:63:	Local variable 'obj' could be declared final
+src/teste/LocalizacaoTest.java:69:	Comment is too large: Line too long
+src/teste/LocalizacaoTest.java:73:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:74:	Local variable 'obj' could be declared final
+src/teste/LocalizacaoTest.java:79:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:80:	Local variable 'obj' could be declared final
+src/teste/LocalizacaoTest.java:85:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:86:	Local variable 'obj' could be declared final
+src/teste/LocalizacaoTest.java:87:	System.out.println is used
+src/teste/LocalizacaoTest.java:91:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:92:	Local variable 'obj' could be declared final
+src/teste/LocalizacaoTest.java:100:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:101:	Local variable 'obj' could be declared final
+src/teste/LocalizacaoTest.java:107:	Comment is too large: Line too long
+src/teste/LocalizacaoTest.java:110:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:111:	Local variable 'obj1' could be declared final
+src/teste/LocalizacaoTest.java:112:	Local variable 'obj2' could be declared final
+src/teste/LocalizacaoTest.java:119:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:120:	Local variable 'obj1' could be declared final
+src/teste/LocalizacaoTest.java:121:	Local variable 'obj2' could be declared final
+src/teste/LocalizacaoTest.java:122:	An empty statement (semicolon) not part of a loop
+src/teste/LocalizacaoTest.java:127:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:128:	Local variable 'obj1' could be declared final
+src/teste/LocalizacaoTest.java:135:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:136:	Avoid unused local variables such as 'obj1'.
+src/teste/LocalizacaoTest.java:136:	Found 'DU'-anomaly for variable 'obj1' (lines '136'-'138').
+src/teste/LocalizacaoTest.java:136:	Local variable 'obj1' could be declared final
+src/teste/LocalizacaoTest.java:137:	Avoid unused local variables such as 'obj2'.
+src/teste/LocalizacaoTest.java:137:	Found 'DU'-anomaly for variable 'obj2' (lines '137'-'138').
+src/teste/LocalizacaoTest.java:137:	Local variable 'obj2' could be declared final
+src/teste/LocalizacaoTest.java:142:	publicMethodCommentRequirement Required
+src/teste/LocalizacaoTest.java:143:	Avoid unused local variables such as 'obj1'.
+src/teste/LocalizacaoTest.java:143:	Found 'DU'-anomaly for variable 'obj1' (lines '143'-'144').
+src/teste/LocalizacaoTest.java:143:	Local variable 'obj1' could be declared final
+src/teste/OvelhaTest.java:5:	Avoid unused imports such as 'java.awt.List'
+src/teste/OvelhaTest.java:10:	Each class should declare at least one constructor
+src/teste/OvelhaTest.java:10:	headerCommentRequirement Required
+src/teste/OvelhaTest.java:13:	publicMethodCommentRequirement Required
+src/teste/OvelhaTest.java:14:	Local variable 'teste' could be declared final
+src/teste/OvelhaTest.java:15:	Local variable 'abe' could be declared final
+src/teste/OvelhaTest.java:23:	publicMethodCommentRequirement Required
+src/teste/OvelhaTest.java:24:	Found 'DU'-anomaly for variable 'teste' (lines '24'-'33').
+src/teste/OvelhaTest.java:24:	Local variable 'teste' could be declared final
+src/teste/OvelhaTest.java:25:	Local variable 'abe' could be declared final
+src/teste/OvelhaTest.java:26:	Avoid variables with short names like i
+src/teste/OvelhaTest.java:36:	publicMethodCommentRequirement Required
+src/teste/OvelhaTest.java:37:	Avoid variables with short names like o
+src/teste/OvelhaTest.java:37:	Local variable 'o' could be declared final
+src/teste/OvelhaTest.java:42:	publicMethodCommentRequirement Required
+src/teste/OvelhaTest.java:43:	Avoid variables with short names like o
+src/teste/OvelhaTest.java:43:	Local variable 'o' could be declared final
+src/teste/OvelhaTest.java:49:	publicMethodCommentRequirement Required
+src/teste/OvelhaTest.java:50:	Local variable 'camp' could be declared final
+src/teste/OvelhaTest.java:51:	Local variable 'local' could be declared final
+src/teste/OvelhaTest.java:52:	Avoid variables with short names like o
+src/teste/OvelhaTest.java:52:	Local variable 'o' could be declared final
+src/teste/OvelhaTest.java:58:	publicMethodCommentRequirement Required
+src/teste/OvelhaTest.java:59:	Avoid variables with short names like o
+src/teste/OvelhaTest.java:59:	Local variable 'o' could be declared final
+src/teste/OvelhaTest.java:60:	Local variable 'loc' could be declared final
+src/teste/OvelhaTest.java:61:	Potential violation of Law of Demeter (method chain calls)
+src/teste/OvelhaTest.java:61:	Potential violation of Law of Demeter (method chain calls)
+src/teste/OvelhaTest.java:61:	Potential violation of Law of Demeter (method chain calls)
+src/teste/OvelhaTest.java:61:	Potential violation of Law of Demeter (method chain calls)
+src/teste/OvelhaTest.java:65:	publicMethodCommentRequirement Required
+src/teste/OvelhaTest.java:66:	Avoid variables with short names like ov
+src/teste/OvelhaTest.java:66:	Local variable 'ov' could be declared final
+src/teste/OvelhaTest.java:68:	Avoid variables with short names like c
+src/teste/OvelhaTest.java:68:	Local variable 'c' could be declared final
+src/teste/OvelhaTest.java:69:	Avoid variables with short names like l
+src/teste/OvelhaTest.java:69:	Local variable 'l' could be declared final
+src/teste/OvelhaTest.java:70:	Local variable 'ovelha' could be declared final
+src/teste/OvelhaTest.java:77:	Found 'DD'-anomaly for variable 'contr' (lines '77'-'81').
+src/teste/OvelhaTest.java:81:	Found 'DD'-anomaly for variable 'contr' (lines '81'-'81').
+src/teste/RandomizadorTest.java:13:	Each class should declare at least one constructor
+src/teste/RandomizadorTest.java:13:	headerCommentRequirement Required
+src/teste/RandomizadorTest.java:19:	publicMethodCommentRequirement Required
+src/teste/RandomizadorTest.java:20:	Local variable 'rand' could be declared final
+src/teste/RandomizadorTest.java:21:	Local variable 'random' could be declared final
+src/teste/RandomizadorTest.java:21:	Potential violation of Law of Demeter (object not created locally)
+src/teste/RandomizadorTest.java:29:	publicMethodCommentRequirement Required
+src/teste/RandomizadorTest.java:30:	Local variable 'rand' could be declared final
+src/teste/RandomizadorTest.java:31:	Local variable 'random' could be declared final
+src/teste/RandomizadorTest.java:31:	Potential violation of Law of Demeter (object not created locally)
+src/teste/RandomizadorTest.java:39:	publicMethodCommentRequirement Required
+src/teste/RandomizadorTest.java:40:	Local variable 'rand' could be declared final
+src/teste/RandomizadorTest.java:41:	Local variable 'random' could be declared final
+src/teste/RandomizadorTest.java:41:	Potential violation of Law of Demeter (object not created locally)
+src/teste/RandomizadorTest.java:42:	Use assertSame(x, y) instead of assertTrue(x==y), or assertNotSame(x,y) vs assertFalse(x==y)
+src/teste/RandomizadorTest.java:48:	publicMethodCommentRequirement Required
+src/teste/RandomizadorTest.java:49:	Found 'DU'-anomaly for variable 'rand' (lines '49'-'73').
+src/teste/RandomizadorTest.java:49:	Local variable 'rand' could be declared final
+src/teste/RandomizadorTest.java:50:	Found 'DU'-anomaly for variable 'primeiro' (lines '50'-'73').
+src/teste/RandomizadorTest.java:50:	Local variable 'primeiro' could be declared final
+src/teste/RandomizadorTest.java:51:	Found 'DU'-anomaly for variable 'segundo' (lines '51'-'73').
+src/teste/RandomizadorTest.java:51:	Local variable 'segundo' could be declared final
+src/teste/RandomizadorTest.java:52:	Avoid variables with short names like i
+src/teste/RandomizadorTest.java:54:	Potential violation of Law of Demeter (object not created locally)
+src/teste/RandomizadorTest.java:57:	Avoid variables with short names like j
+src/teste/RandomizadorTest.java:58:	Found 'DU'-anomaly for variable 'rando' (lines '58'-'73').
+src/teste/RandomizadorTest.java:58:	Local variable 'rando' could be declared final
+src/teste/RandomizadorTest.java:60:	Potential violation of Law of Demeter (object not created locally)
+src/teste/RandomizadorTest.java:63:	Found 'DD'-anomaly for variable 'eIgual' (lines '63'-'68').
+src/teste/RandomizadorTest.java:65:	System.out.println is used
+src/teste/RandomizadorTest.java:66:	System.out.println is used
+src/teste/RandomizadorTest.java:68:	Found 'DD'-anomaly for variable 'eIgual' (lines '68'-'68').
+src/teste/RandomizadorTest.java:71:	System.out.println is used
+src/teste/RandomizadorTest.java:77:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:8:	Avoid unused imports such as 'java.awt.Graphics'
+src/teste/SimuladorTelaTest.java:9:	Avoid unused imports such as 'java.awt.GridBagLayoutInfo'
+src/teste/SimuladorTelaTest.java:10:	Avoid unused imports such as 'java.lang.invoke.MethodType'
+src/teste/SimuladorTelaTest.java:11:	Avoid unused imports such as 'java.util.HashMap'
+src/teste/SimuladorTelaTest.java:12:	Avoid unused imports such as 'java.util.LinkedHashMap'
+src/teste/SimuladorTelaTest.java:15:	Avoid unused imports such as 'javax.swing.GrayFilter'
+src/teste/SimuladorTelaTest.java:17:	Avoid unused imports such as 'javax.xml.transform.SourceLocator'
+src/teste/SimuladorTelaTest.java:19:	Avoid unused imports such as 'org.junit.Ignore'
+src/teste/SimuladorTelaTest.java:26:	Avoid unused imports such as 'ol.Simulador'
+src/teste/SimuladorTelaTest.java:29:	Each class should declare at least one constructor
+src/teste/SimuladorTelaTest.java:29:	This class has too many methods, consider refactoring it.
+src/teste/SimuladorTelaTest.java:29:	headerCommentRequirement Required
+src/teste/SimuladorTelaTest.java:32:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:33:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:33:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:39:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:40:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:40:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:49:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:50:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:50:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:60:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:61:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:61:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:71:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:72:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:72:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:73:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:73:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:82:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:83:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:83:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:89:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:90:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:90:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:96:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:97:	Avoid unused local variables such as 's'.
+src/teste/SimuladorTelaTest.java:97:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:97:	Found 'DU'-anomaly for variable 's' (lines '97'-'99').
+src/teste/SimuladorTelaTest.java:97:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:101:	Comment is too large: Line too long
+src/teste/SimuladorTelaTest.java:106:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:107:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:107:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:113:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:114:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:114:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:115:	Local variable 'ove' could be declared final
+src/teste/SimuladorTelaTest.java:117:	Avoid variables with short names like f
+src/teste/SimuladorTelaTest.java:117:	Local variable 'f' could be declared final
+src/teste/SimuladorTelaTest.java:117:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:118:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:119:	Local variable 'cor' could be declared final
+src/teste/SimuladorTelaTest.java:119:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:120:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:125:	JUnit tests should not contain more than 1 assert(s).
+src/teste/SimuladorTelaTest.java:125:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:126:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:126:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:127:	Avoid variables with short names like c
+src/teste/SimuladorTelaTest.java:127:	Local variable 'c' could be declared final
+src/teste/SimuladorTelaTest.java:128:	Local variable 'ove' could be declared final
+src/teste/SimuladorTelaTest.java:129:	Local variable 'lobo' could be declared final
+src/teste/SimuladorTelaTest.java:131:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:131:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:132:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:132:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:133:	Avoid variables with short names like f
+src/teste/SimuladorTelaTest.java:133:	Local variable 'f' could be declared final
+src/teste/SimuladorTelaTest.java:133:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:134:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:135:	Local variable 'cor' could be declared final
+src/teste/SimuladorTelaTest.java:135:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:136:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:137:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:148:	JUnit tests should not contain more than 1 assert(s).
+src/teste/SimuladorTelaTest.java:148:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:149:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:149:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:150:	Avoid variables with short names like c
+src/teste/SimuladorTelaTest.java:150:	Local variable 'c' could be declared final
+src/teste/SimuladorTelaTest.java:151:	Local variable 'ove' could be declared final
+src/teste/SimuladorTelaTest.java:152:	Avoid unused local variables such as 'ove1'.
+src/teste/SimuladorTelaTest.java:152:	Found 'DU'-anomaly for variable 'ove1' (lines '152'-'166').
+src/teste/SimuladorTelaTest.java:152:	Local variable 'ove1' could be declared final
+src/teste/SimuladorTelaTest.java:153:	Local variable 'lobo' could be declared final
+src/teste/SimuladorTelaTest.java:155:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:155:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:156:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:156:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:157:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:157:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:160:	Avoid variables with short names like f
+src/teste/SimuladorTelaTest.java:160:	Local variable 'f' could be declared final
+src/teste/SimuladorTelaTest.java:160:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:161:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:162:	Local variable 'cor' could be declared final
+src/teste/SimuladorTelaTest.java:162:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:163:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:164:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:168:	Comment is too large: Line too long
+src/teste/SimuladorTelaTest.java:170:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:173:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:173:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:174:	Local variable 'par' could be declared final
+src/teste/SimuladorTelaTest.java:175:	Avoid variables with short names like m
+src/teste/SimuladorTelaTest.java:175:	Local variable 'm' could be declared final
+src/teste/SimuladorTelaTest.java:175:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:176:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:177:	Local variable 'ove' could be declared final
+src/teste/SimuladorTelaTest.java:179:	Local variable 'ret' could be declared final
+src/teste/SimuladorTelaTest.java:179:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:185:	Comment is too large: Line too long
+src/teste/SimuladorTelaTest.java:189:	Comment is too large: Line too long
+src/teste/SimuladorTelaTest.java:192:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:195:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:195:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:196:	Local variable 'par' could be declared final
+src/teste/SimuladorTelaTest.java:197:	Avoid variables with short names like m
+src/teste/SimuladorTelaTest.java:197:	Local variable 'm' could be declared final
+src/teste/SimuladorTelaTest.java:197:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:198:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:199:	Avoid variables with short names like l
+src/teste/SimuladorTelaTest.java:199:	Local variable 'l' could be declared final
+src/teste/SimuladorTelaTest.java:201:	Local variable 'ret' could be declared final
+src/teste/SimuladorTelaTest.java:201:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:207:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:210:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:210:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:211:	Local variable 'par' could be declared final
+src/teste/SimuladorTelaTest.java:212:	Avoid variables with short names like m
+src/teste/SimuladorTelaTest.java:212:	Local variable 'm' could be declared final
+src/teste/SimuladorTelaTest.java:212:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:213:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:214:	Avoid variables with short names like l
+src/teste/SimuladorTelaTest.java:214:	Local variable 'l' could be declared final
+src/teste/SimuladorTelaTest.java:216:	Local variable 'ret' could be declared final
+src/teste/SimuladorTelaTest.java:216:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:223:	Comment is too large: Line too long
+src/teste/SimuladorTelaTest.java:226:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:227:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:227:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:228:	Avoid variables with short names like c
+src/teste/SimuladorTelaTest.java:228:	Local variable 'c' could be declared final
+src/teste/SimuladorTelaTest.java:230:	Avoid variables with short names like f
+src/teste/SimuladorTelaTest.java:230:	Local variable 'f' could be declared final
+src/teste/SimuladorTelaTest.java:230:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:231:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:233:	Avoid variables with short names like jl
+src/teste/SimuladorTelaTest.java:233:	Local variable 'jl' could be declared final
+src/teste/SimuladorTelaTest.java:233:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:235:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:240:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:241:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:241:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:242:	Avoid variables with short names like c
+src/teste/SimuladorTelaTest.java:242:	Local variable 'c' could be declared final
+src/teste/SimuladorTelaTest.java:244:	Avoid variables with short names like f
+src/teste/SimuladorTelaTest.java:244:	Local variable 'f' could be declared final
+src/teste/SimuladorTelaTest.java:244:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:245:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:247:	Avoid variables with short names like jl
+src/teste/SimuladorTelaTest.java:247:	Local variable 'jl' could be declared final
+src/teste/SimuladorTelaTest.java:247:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:248:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:256:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:257:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:257:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:258:	Avoid variables with short names like c
+src/teste/SimuladorTelaTest.java:258:	Local variable 'c' could be declared final
+src/teste/SimuladorTelaTest.java:261:	Avoid variables with short names like f
+src/teste/SimuladorTelaTest.java:261:	Local variable 'f' could be declared final
+src/teste/SimuladorTelaTest.java:261:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:262:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:264:	Avoid variables with short names like jl
+src/teste/SimuladorTelaTest.java:264:	Local variable 'jl' could be declared final
+src/teste/SimuladorTelaTest.java:264:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:265:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:269:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:270:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:270:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:271:	Avoid variables with short names like c
+src/teste/SimuladorTelaTest.java:271:	Local variable 'c' could be declared final
+src/teste/SimuladorTelaTest.java:273:	Avoid variables with short names like f
+src/teste/SimuladorTelaTest.java:273:	Local variable 'f' could be declared final
+src/teste/SimuladorTelaTest.java:273:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:274:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:276:	Avoid variables with short names like jl
+src/teste/SimuladorTelaTest.java:276:	Local variable 'jl' could be declared final
+src/teste/SimuladorTelaTest.java:276:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:277:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:280:	Comment is too large: Line too long
+src/teste/SimuladorTelaTest.java:283:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:284:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:284:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:285:	Avoid variables with short names like c
+src/teste/SimuladorTelaTest.java:285:	Local variable 'c' could be declared final
+src/teste/SimuladorTelaTest.java:291:	Comment is too large: Line too long
+src/teste/SimuladorTelaTest.java:295:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:296:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:296:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:297:	Avoid variables with short names like c
+src/teste/SimuladorTelaTest.java:297:	Local variable 'c' could be declared final
+src/teste/SimuladorTelaTest.java:298:	Avoid variables with short names like l
+src/teste/SimuladorTelaTest.java:298:	Local variable 'l' could be declared final
+src/teste/SimuladorTelaTest.java:299:	Avoid variables with short names like l1
+src/teste/SimuladorTelaTest.java:299:	Local variable 'l1' could be declared final
+src/teste/SimuladorTelaTest.java:307:	Comment is too large: Line too long
+src/teste/SimuladorTelaTest.java:311:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:316:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:316:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:317:	Local variable 'visaoCampo' could be declared final
+src/teste/SimuladorTelaTest.java:317:	The String literal "ol.SimuladorTela$VisaoCampo" appears 10 times in this file; the first occurrence is on line 317
+src/teste/SimuladorTelaTest.java:319:	Local variable 'cons' could be declared final
+src/teste/SimuladorTelaTest.java:319:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:320:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:323:	Local variable 'vCampo' could be declared final
+src/teste/SimuladorTelaTest.java:323:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:323:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:328:	Local variable 'largura' could be declared final
+src/teste/SimuladorTelaTest.java:328:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:328:	The String literal "gridWidth" appears 4 times in this file; the first occurrence is on line 328
+src/teste/SimuladorTelaTest.java:329:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:331:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:331:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:337:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:339:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:339:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:340:	Local variable 'visaoCampo' could be declared final
+src/teste/SimuladorTelaTest.java:342:	Local variable 'cons' could be declared final
+src/teste/SimuladorTelaTest.java:342:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:343:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:346:	Local variable 'vCampo' could be declared final
+src/teste/SimuladorTelaTest.java:346:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:346:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:347:	Local variable 'altura' could be declared final
+src/teste/SimuladorTelaTest.java:347:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:347:	The String literal "gridHeight" appears 4 times in this file; the first occurrence is on line 347
+src/teste/SimuladorTelaTest.java:348:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:350:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:350:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:355:	JUnit tests should not contain more than 1 assert(s).
+src/teste/SimuladorTelaTest.java:355:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:357:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:357:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:358:	Local variable 'visaoCampo' could be declared final
+src/teste/SimuladorTelaTest.java:360:	Local variable 'cons' could be declared final
+src/teste/SimuladorTelaTest.java:360:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:361:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:364:	Local variable 'vCampo' could be declared final
+src/teste/SimuladorTelaTest.java:364:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:364:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:365:	Local variable 'altura' could be declared final
+src/teste/SimuladorTelaTest.java:365:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:366:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:368:	Local variable 'largura' could be declared final
+src/teste/SimuladorTelaTest.java:368:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:369:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:371:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:371:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:372:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:372:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:378:	Comment is too large: Line too long
+src/teste/SimuladorTelaTest.java:382:	JUnit tests should not contain more than 1 assert(s).
+src/teste/SimuladorTelaTest.java:382:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:384:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:384:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:385:	Local variable 'visaoCampo' could be declared final
+src/teste/SimuladorTelaTest.java:387:	Local variable 'cons' could be declared final
+src/teste/SimuladorTelaTest.java:387:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:388:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:391:	Local variable 'vCampo' could be declared final
+src/teste/SimuladorTelaTest.java:391:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:391:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:392:	Local variable 'altura' could be declared final
+src/teste/SimuladorTelaTest.java:392:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:393:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:395:	Local variable 'largura' could be declared final
+src/teste/SimuladorTelaTest.java:395:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:396:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:398:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:398:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:399:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:399:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:404:	JUnit tests should not contain more than 1 assert(s).
+src/teste/SimuladorTelaTest.java:404:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:406:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:406:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:407:	Local variable 'visaoCampo' could be declared final
+src/teste/SimuladorTelaTest.java:409:	Local variable 'cons' could be declared final
+src/teste/SimuladorTelaTest.java:409:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:410:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:413:	Local variable 'vCampo' could be declared final
+src/teste/SimuladorTelaTest.java:413:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:413:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:414:	Local variable 'altura' could be declared final
+src/teste/SimuladorTelaTest.java:414:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:415:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:417:	Local variable 'largura' could be declared final
+src/teste/SimuladorTelaTest.java:417:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:418:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:420:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:420:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:421:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:421:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:428:	Comment is too large: Line too long
+src/teste/SimuladorTelaTest.java:432:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:436:	Avoid variables with short names like s
+src/teste/SimuladorTelaTest.java:436:	Local variable 's' could be declared final
+src/teste/SimuladorTelaTest.java:437:	Local variable 'visaoCampo' could be declared final
+src/teste/SimuladorTelaTest.java:439:	Local variable 'cons' could be declared final
+src/teste/SimuladorTelaTest.java:439:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:440:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:442:	Local variable 'vCampo' could be declared final
+src/teste/SimuladorTelaTest.java:442:	Potential violation of Law of Demeter (method chain calls)
+src/teste/SimuladorTelaTest.java:442:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:443:	Avoid variables with short names like m
+src/teste/SimuladorTelaTest.java:443:	Local variable 'm' could be declared final
+src/teste/SimuladorTelaTest.java:443:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:444:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:445:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:445:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:447:	Avoid variables with short names like f
+src/teste/SimuladorTelaTest.java:447:	Local variable 'f' could be declared final
+src/teste/SimuladorTelaTest.java:447:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:448:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:450:	Local variable 'xsc' could be declared final
+src/teste/SimuladorTelaTest.java:450:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:450:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:456:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:460:	Local variable 'simuladorObject' could be declared final
+src/teste/SimuladorTelaTest.java:462:	Local variable 'simuladorClass' could be declared final
+src/teste/SimuladorTelaTest.java:467:	Local variable 'attributeCampo' could be declared final
+src/teste/SimuladorTelaTest.java:467:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:467:	The String literal "visaoCampo" appears 4 times in this file; the first occurrence is on line 467
+src/teste/SimuladorTelaTest.java:468:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:470:	Found 'DD'-anomaly for variable 'visaoCampoClass' (lines '470'-'471').
+src/teste/SimuladorTelaTest.java:471:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:473:	Local variable 'method' could be declared final
+src/teste/SimuladorTelaTest.java:473:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:474:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:475:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:475:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:477:	Local variable 'attributeXScale' could be declared final
+src/teste/SimuladorTelaTest.java:477:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:478:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:480:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:480:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:489:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:493:	Local variable 'simuladorObject' could be declared final
+src/teste/SimuladorTelaTest.java:495:	Local variable 'simuladorClass' could be declared final
+src/teste/SimuladorTelaTest.java:500:	Local variable 'attributeCampo' could be declared final
+src/teste/SimuladorTelaTest.java:500:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:501:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:503:	Found 'DD'-anomaly for variable 'visaoCampoClass' (lines '503'-'504').
+src/teste/SimuladorTelaTest.java:504:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:506:	Local variable 'method' could be declared final
+src/teste/SimuladorTelaTest.java:506:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:507:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:508:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:508:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:510:	Local variable 'attributeXScale' could be declared final
+src/teste/SimuladorTelaTest.java:510:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:511:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:513:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:513:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:519:	JUnit tests should not contain more than 1 assert(s).
+src/teste/SimuladorTelaTest.java:519:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:523:	Local variable 'simuladorObject' could be declared final
+src/teste/SimuladorTelaTest.java:525:	Local variable 'simuladorClass' could be declared final
+src/teste/SimuladorTelaTest.java:530:	Local variable 'attributeCampo' could be declared final
+src/teste/SimuladorTelaTest.java:530:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:531:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:533:	Found 'DD'-anomaly for variable 'visaoCampoClass' (lines '533'-'534').
+src/teste/SimuladorTelaTest.java:534:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:536:	Local variable 'method' could be declared final
+src/teste/SimuladorTelaTest.java:536:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:537:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:538:	Avoid variables with short names like o
+src/teste/SimuladorTelaTest.java:538:	Local variable 'o' could be declared final
+src/teste/SimuladorTelaTest.java:538:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:538:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:540:	Local variable 'dimensionO' could be declared final
+src/teste/SimuladorTelaTest.java:546:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:546:	Use assertSame(x, y) instead of assertTrue(x==y), or assertNotSame(x,y) vs assertFalse(x==y)
+src/teste/SimuladorTelaTest.java:547:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:547:	Use assertSame(x, y) instead of assertTrue(x==y), or assertNotSame(x,y) vs assertFalse(x==y)
+src/teste/SimuladorTelaTest.java:554:	publicMethodCommentRequirement Required
+src/teste/SimuladorTelaTest.java:558:	Local variable 'simuladorObject' could be declared final
+src/teste/SimuladorTelaTest.java:560:	Local variable 'simuladorClass' could be declared final
+src/teste/SimuladorTelaTest.java:565:	Local variable 'attributeCampo' could be declared final
+src/teste/SimuladorTelaTest.java:565:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:566:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:568:	Found 'DD'-anomaly for variable 'visaoCampoClass' (lines '568'-'569').
+src/teste/SimuladorTelaTest.java:569:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:572:	Found 'DU'-anomaly for variable 'parametro' (lines '572'-'582').
+src/teste/SimuladorTelaTest.java:572:	Local variable 'parametro' could be declared final
+src/teste/SimuladorTelaTest.java:573:	Local variable 'method' could be declared final
+src/teste/SimuladorTelaTest.java:573:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:574:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:577:	Local variable 'attributeG' could be declared final
+src/teste/SimuladorTelaTest.java:577:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:578:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTelaTest.java:581:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTest.java:3:	Avoid unused imports such as 'java.awt.List'
+src/teste/SimuladorTest.java:5:	Avoid unused imports such as 'java.util.ArrayList'
+src/teste/SimuladorTest.java:7:	Avoid unused imports such as 'org.junit.Ignore'
+src/teste/SimuladorTest.java:10:	Avoid unused imports such as 'ol.Ovelha'
+src/teste/SimuladorTest.java:13:	Each class should declare at least one constructor
+src/teste/SimuladorTest.java:13:	headerCommentRequirement Required
+src/teste/SimuladorTest.java:19:	publicMethodCommentRequirement Required
+src/teste/SimuladorTest.java:20:	Avoid unused local variables such as 'simulador'.
+src/teste/SimuladorTest.java:20:	Found 'DU'-anomaly for variable 'simulador' (lines '20'-'21').
+src/teste/SimuladorTest.java:20:	Local variable 'simulador' could be declared final
+src/teste/SimuladorTest.java:27:	publicMethodCommentRequirement Required
+src/teste/SimuladorTest.java:28:	Avoid unused local variables such as 'simulador'.
+src/teste/SimuladorTest.java:28:	Found 'DU'-anomaly for variable 'simulador' (lines '28'-'29').
+src/teste/SimuladorTest.java:28:	Local variable 'simulador' could be declared final
+src/teste/SimuladorTest.java:35:	publicMethodCommentRequirement Required
+src/teste/SimuladorTest.java:36:	Local variable 'simulador' could be declared final
+src/teste/SimuladorTest.java:41:	publicMethodCommentRequirement Required
+src/teste/SimuladorTest.java:42:	Avoid variables with short names like c
+src/teste/SimuladorTest.java:42:	Local variable 'c' could be declared final
+src/teste/SimuladorTest.java:43:	Avoid variables with short names like s
+src/teste/SimuladorTest.java:43:	Local variable 's' could be declared final
+src/teste/SimuladorTest.java:43:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTest.java:45:	Avoid variables with short names like m
+src/teste/SimuladorTest.java:45:	Local variable 'm' could be declared final
+src/teste/SimuladorTest.java:45:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTest.java:46:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTest.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/teste/SimuladorTest.java:52:	publicMethodCommentRequirement Required
+src/teste/SimuladorTest.java:53:	Avoid variables with short names like s
+src/teste/SimuladorTest.java:53:	Local variable 's' could be declared final

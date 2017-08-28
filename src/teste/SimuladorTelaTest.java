@@ -551,7 +551,7 @@ public class SimuladorTelaTest {
 	}	
 	
 	
-	@Ignore
+	
 	@Test
 	public void testVisaoCampo9() throws ClassNotFoundException, NoSuchMethodException, 
 	SecurityException, InstantiationException, IllegalAccessException, 
@@ -571,16 +571,20 @@ public class SimuladorTelaTest {
 		visaoCampoClass = attributeCampo.getType();
 		
 		
-		Class<?> [] parametro = {int.class, int.class, Color.class};
-		Method method = visaoCampoClass.getDeclaredMethod("drawMark", int.class,int.class, Color.class);
+		Method method = visaoCampoClass.getDeclaredMethod("preparePaint");
 		method.setAccessible(true);
-		//method.invoke(attributeCampo.get(simuladorObject), 0, 0, Color.BLUE);
-	
-		Field attributeG = visaoCampoClass.getDeclaredField("g");
-		attributeG.setAccessible(true);
+		method.invoke(attributeCampo.get(simuladorObject));
 		
+		
+		Method methodD = visaoCampoClass.getDeclaredMethod("drawMark", int.class,int.class, Color.class);
+		methodD.setAccessible(true);
+		methodD.invoke(attributeCampo.get(simuladorObject), 1, 1, Color.BLUE);
+	
+		Class attributeG = visaoCampoClass.forName("g");
+		
+		System.out.println(attributeG.getName());
 		//Graphics grafico = (Graphics) attributeG.get(simuladorObject);
-		assertEquals(Color.BLUE,attributeG.get(simuladorObject));
+		assertEquals(Color.BLUE,attributeG);
 	}	
 	
 	
