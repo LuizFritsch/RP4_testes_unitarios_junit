@@ -46,3 +46,20 @@ O objetivo desta parte da especificação do teste é fornecer uma visão geral 
 | Objetivo                   |   Testar se o diagrama de classes corresponde ao projeto desenvolvido | 
 | Entrada            |Deve ser analisado o projeto do "simulador de habitat natural de lobo guará e ovelha"| 
 | Resultado esperado             |As classes do projeto devem estar iguais aos do diagrama de classes do MD.50|
+
+| **ID caso de teste 05**                  | **Rastreabilidade** Test ciclo de vida ovelha |  
+|-------------------------------|--------------------------------------------------------- ------------------|
+| Prioridade                    |  Média                                         |
+| Pré condição             | O simulador deve estar executando alguma simulação                       |
+| Objetivo                   |   Testar se uma ovelha pode procriar e morrer| 
+| Entrada            |Deve ser executado uma simulação| 
+| Resultado esperado             | O ciclo de vida da ovelha deve estar corretamente expressado |
+
+
+| **ID caso de teste 05**                  | **Rastreabilidade** Test ciclo de vida lobo guará |  
+|-------------------------------|--------------------------------------------------------- ------------------|
+| Prioridade                    |  Média                                         |
+| Pré condição             | O simulador deve estar executando alguma simulação                       |
+| Objetivo                   |   Testar se um lobo guará pode procriar e morrer| 
+| Entrada            |Deve ser executado uma simulação| 
+| Resultado esperado             | O ciclo de vida do lobo guará deve estar corretamente expressado |
