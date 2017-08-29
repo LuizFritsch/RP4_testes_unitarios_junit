@@ -59,10 +59,13 @@ public class LoboGuara extends Animal{
 		while (it.hasNext()) {
 			Localizacao onde = it.next();
 			Object animal = campo.getObjectAt(onde);
-			Ovelha ovelha = (Ovelha) animal;
-			ovelha.setMorte();
-			nivelFome = VALOR_FOME_OVELHA;
-			return onde;
+			if(animal instanceof Ovelha) {
+				Ovelha ovelha = (Ovelha) animal;
+				ovelha.setMorte();
+				nivelFome = VALOR_FOME_OVELHA;
+				return onde;
+			}
+			
 		}
 		return null;
 	}

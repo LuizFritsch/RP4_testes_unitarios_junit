@@ -52,7 +52,6 @@ public class Ovelha extends Animal{
 	private void daALuz(List<Ovelha> novasOvelhas) {
 		List<Localizacao> livre = campo.localizacoesAdjacentesLivres(localizacao);
 		int nascimentos = procria();
-
 		for (int b = 0; b < nascimentos; b++) {
 			Localizacao loc = livre.remove(0);
 			Ovelha jovem = new Ovelha(false, campo, loc);
