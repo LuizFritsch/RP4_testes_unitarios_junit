@@ -36,8 +36,7 @@ public class SimuladorTest {
 		Simulador simulador = new Simulador();
 		simulador.executaLongaSimulacao();
 	}
-	
-	@Ignore
+
 	@Test
 	public void testPovoa() throws Exception {
 		Class<?> c = Class.forName("Simulador.java");

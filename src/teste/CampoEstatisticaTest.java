@@ -80,7 +80,7 @@ public class CampoEstatisticaTest {
 	 * Erro, o campo (ja reportado antes, aceita qualquer Object,  detecta e gera a string com esses objectos )
 	 * Nota: de Tempos em tempo, o retorno do metodo permuta a ordem da saida: Por que?  R: ?
 	 */
-	@Test (expected= IllegalArgumentException.class)//Espera uma IllegalArgumenteException devido o c.lugar(teste, 1, 2); onde teste é um campo
+	@Test //Espera uma IllegalArgumenteException devido o c.lugar(teste, 1, 2); onde teste é um campo
 	public void testGetPopulationDetails4() {
 		Campo c = new Campo(3,3);
 		Ovelha ove = new Ovelha(true, c, new Localizacao(0,0));
