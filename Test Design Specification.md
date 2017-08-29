@@ -56,7 +56,7 @@ O objetivo desta parte da especificação do teste é fornecer uma visão geral 
 | Resultado esperado             | O ciclo de vida da ovelha deve estar corretamente expressado |
 
 
-| **ID caso de teste 05**                  | **Rastreabilidade** Test ciclo de vida lobo guará |  
+| **ID caso de teste 06**                  | **Rastreabilidade** Test ciclo de vida lobo guará |  
 |-------------------------------|--------------------------------------------------------- ------------------|
 | Prioridade                    |  Média                                         |
 | Pré condição             | O simulador deve estar executando alguma simulação                       |
