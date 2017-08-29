@@ -3,6 +3,7 @@ package teste;
 import static org.junit.Assert.*;
 
 import java.util.List;
+import java.lang.reflect.Field;
 import java.util.LinkedList;
 
 import org.junit.Ignore;
@@ -29,23 +30,102 @@ public class CampoTest {
 	
 	
 	@Test
-	public void testCampo1() {
+	public void testCampo1() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
 		
-		Campo c = new Campo(100,100);
-		assertEquals(100, c.getLargura());
-		assertEquals(100, c.getProfundidade());
+		Campo campo = new Campo(100,100);
+		Class<Campo> campoclass = Campo.class;
+		
+		Field campoLargura = campoclass.getDeclaredField("largura");
+		campoLargura.setAccessible(true);
+		
+		Field campoProfundidade = campoclass.getDeclaredField("profundidade");
+		campoProfundidade.setAccessible(true);
+		
+		
+		int campoLarguraInt = (Integer) campoLargura.get(campo);
+		int campoProfundidadeInt = (Integer) campoProfundidade.get(campo);
+				
+		assertEquals(100, campoLarguraInt);
+		assertEquals(100,campoProfundidadeInt);
 				
 	}
 	
 	
 	@Test
-	public void testCampo2() {
+	public void testCampo2() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
 		
-		Campo c = new Campo(100,100);
-		assertNotEquals(101, c.getLargura());
-		assertNotEquals(101, c.getProfundidade());
+		Campo campo = new Campo(100,100);
+		Class<Campo> campoclass = Campo.class;
+		
+		Field campoLargura = campoclass.getDeclaredField("largura");
+		campoLargura.setAccessible(true);
+		
+		Field campoProfundidade = campoclass.getDeclaredField("profundidade");
+		campoProfundidade.setAccessible(true);
+		
+		
+		int campoLarguraInt = (Integer) campoLargura.get(campo);
+		int campoProfundidadeInt = (Integer) campoProfundidade.get(campo);
+				
+		assertNotEquals(101, campoLarguraInt);
+		assertNotEquals(101,campoProfundidadeInt);
 				
 	}
+	
+	@Test
+	public void testCampo2b() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
+		
+		Campo campo = new Campo(0,100);
+		Class<Campo> campoclass = Campo.class;
+		
+		Field campoLargura = campoclass.getDeclaredField("largura");
+		campoLargura.setAccessible(true);
+		
+		Field campoProfundidade = campoclass.getDeclaredField("profundidade");
+		campoProfundidade.setAccessible(true);
+		
+		
+		int campoLarguraInt = (Integer) campoLargura.get(campo);
+		int campoProfundidadeInt = (Integer) campoProfundidade.get(campo);
+				
+		assertEquals(100, campoLarguraInt);
+		assertEquals(0,campoProfundidadeInt);
+				
+	}
+	
+	
+	@Test
+	public void testCampo2c() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
+		
+		Campo campo = new Campo(100,100);
+		Class<Campo> campoclass = Campo.class;
+		
+		Field campoParametro = campoclass.getDeclaredField("campo");
+		campoParametro.setAccessible(true);
+		
+	    Object[][] campoObject = (Object[][]) campoParametro.get(campo);
+				
+		assertEquals(null, campoObject[0][0]);
+		
+	}
+	
+	
+	@Test (expected = ArrayIndexOutOfBoundsException.class)
+	public void testCampo2d() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
+		
+		Campo campo = new Campo(100,100);
+		Class<Campo> campoclass = Campo.class;
+		
+		Field campoParametro = campoclass.getDeclaredField("campo");
+		campoParametro.setAccessible(true);
+		
+	    Object[][] campoObject = (Object[][]) campoParametro.get(campo);
+				
+		assertEquals(null, campoObject[100][0]);
+		
+	}
+	
+	
 	
 	
 	
