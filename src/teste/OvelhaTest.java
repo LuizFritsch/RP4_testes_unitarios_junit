@@ -90,6 +90,19 @@ public class OvelhaTest {
 
 	}
 
+	@Test (expected= Exception.class)
+	public void testDaALuz() throws Exception {
+		//Teste de um campo 1x1 que chama da a luz, deve lancar execcao pois nao ha espaco no campo para mais uma ovelha
+		Ovelha o = new Ovelha(false, new Campo(1, 1), new Localizacao(0, 0));
+		Method daALuz= o.getClass().getDeclaredMethod("daALuz");
+		daALuz.setAccessible(true);
+		ArrayList<Ovelha> ao = new ArrayList<Ovelha>();
+		ao.add(o);
+		daALuz.invoke(o, ao);
+		daALuz.invoke(o, ao);
+	}
+
+
 	@Test
 	public void testIncrementaIdade() throws Exception {
 		Ovelha lb = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
