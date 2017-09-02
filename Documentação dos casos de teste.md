@@ -809,52 +809,63 @@ modelo de software
 
 
 
-Identificador: CT41 testPodeProcriar2() classe LoboGuara
+**Identificador:**         CT41 testPodeProcriar2() classe LoboGuara
+**Objetivo:**     Verificar se o método podeProcriar() está comparando a idade corretamente        
 
-Objetivo: Verificar se o método podeProcriar() está comparando a idade corretamente
-Prioridade: Média
+ **Prioridade:**     Média               
 
-Condições prévias: Criação de objeto do tipo Campo, Localizacao, LoboGuara e o método incrementaIdade() estar funcionando corretamente
-Rastreabilidade: 	RE01 	RE02 	RE03 	RE04
-CT41 	X 	X 	-- 	X
-Entradas 	Resultado esperado 	Resultado do teste
-O método cria um LoboGuara 	LoboGuara estar apto para procriar 	teste passou
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, LoboGuara e o método incrementaIdade() estar funcionando corretamente
 
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT         |      X       |       X         |       --       |    X    |
 
-
-Identificador: CT42 incrementaIdade() classe LoboGuara
-
-Objetivo: Verificar se o método incrementaIdade() está 
-Prioridade: Média
-
-Condições prévias: Criação de objeto do tipo Campo, Localizacao, LoboGuara
-Rastreabilidade: 	RE01 	RE02 	RE03 	RE04
-CT42 	X 	X 	-- 	X
-Entradas 	Resultado esperado 	Resultado do teste
-O método cria um objeto LoboGuara 	LoboGuara envelhecer 	teste passou
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria um LoboGuara | LoboGuara estar apto para procriar | teste passou |
 
 
 
-Identificador: CT43 incrementaIdade2() classe LoboGuara
+**Identificador:**          CT42 incrementaIdade() classe LoboGuara
+**Objetivo:**    Verificar se o método incrementaIdade() está funcionando corretamente     
 
-Objetivo: Verificar se o método incrementaIdade() está funcionando.
-Prioridade: Média
+ **Prioridade:**     Média               
 
-Condições prévias: Criação de objeto do tipo Campo, Localizacao, LoboGuara
-Rastreabilidade: 	RE01 	RE02 	RE03 	RE04
-CT43 	X 	X 	-- 	X
-Entradas 	Resultado esperado 	Resultado do teste
-O método cria um objeto LoboGuara 	LoboGuara envelhecer 	teste passou
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, LoboGuara 
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT         |      X       |       X         |       --       |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria um objeto LoboGuara | LoboGuara envelhecer | teste passou |
 
 
 
-Identificador: CT44 decrementaFome() classe LoboGuara
+**Identificador:**          CT43 incrementaIdade2() classe LoboGuara
+**Objetivo:**    Verificar se o método incrementaIdade() está funcionando.
 
-Objetivo: Verificar se o método decrementaFome() está funcionando. 
-Prioridade: Média
+ **Prioridade:**     Média               
 
-Condições prévias: Criação de objeto do tipo Campo, Localizacao, LoboGuara
-Rastreabilidade: 	RE01 	RE02 	RE03 	RE04
-CT44 	X 	X 	-- 	X
-Entradas 	Resultado esperado 	Resultado do teste
-O método cria um objeto LoboGuara 	LoboGuara morrer, de fome 	teste passou
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, LoboGuara 
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT         |      X       |       X         |       --       |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria um objeto LoboGuara | LoboGuara envelhecer | teste passou |
+
+
+**Identificador:**           CT44 decrementaFome() classe LoboGuara
+**Objetivo:**    Verificar se o método decrementaFome() está funcionando. 
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, LoboGuara 
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT         |      X       |       X         |       --       |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria um objeto LoboGuara | LoboGuara morrer, de fome | teste passou |
