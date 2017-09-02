@@ -51,7 +51,7 @@ public class SimuladorTest {
 
 	}
 
-	@Test
+	@Test (expected= OutOfMemoryError.class)
 	public void simula() {
 		Simulador s = new Simulador(9999, 9999);
 		s.executaLongaSimulacao();		

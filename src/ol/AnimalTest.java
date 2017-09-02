@@ -49,7 +49,7 @@ public class AnimalTest {
 		animalTest.setLocalizacao(l2);
 		assertEquals(animalTest.getLocalizacao(), l2);
 	}
-	@Test
+	@Test (expected=IllegalArgumentException.class)
 	public void setLocalizacaoTeste02() {
 		Campo x = new Campo(50,50);
 		Localizacao l1 = new Localizacao(25,25);
@@ -61,7 +61,7 @@ public class AnimalTest {
 		assertEquals(animalTest2.getLocalizacao(), l1);
 	}
 	
-	@Test
+	@Test (expected=IllegalArgumentException.class)
 	public void setLocalizacaoTeste03() {
 		Campo x = new Campo(50,50);
 		Localizacao l1 = new Localizacao(25,25);
@@ -114,6 +114,19 @@ public class AnimalTest {
 		Animal animalTest = new Ovelha(true, x, l1);
 		animalTest.setMorte();
 		assertNull(x.getObjectAt(l1));
+
+	}
+	
+	@Test (expected=IllegalArgumentException.class)
+	public void setMorteTest03() {
+		Campo x = new Campo(50,50);
+		Localizacao l1 = new Localizacao(49,49);
+		Localizacao l2 = new Localizacao(48,48);
+		Animal animalTest1 = new Ovelha(true, x, l1);
+		Animal animalTest2 = new Ovelha(true, x, l1);
+		animalTest1.setMorte();
+		assertNull(x.getObjectAt(l1));
+		assertEquals(new Ovelha(true, x, l1), x.getObjectAt(l1));
 
 	}
 }

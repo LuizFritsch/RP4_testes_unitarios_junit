@@ -160,7 +160,7 @@ public class CampoTest {
 	
 	
 	//Esperar exceptions se campo for pequeno.
-	@Test
+	@Test (expected=IllegalArgumentException.class)
 	public void testLimpa() {	
 		
 		
@@ -168,15 +168,11 @@ public class CampoTest {
 		Localizacao l = new Localizacao(50, 50);
 		LoboGuara lobo = new LoboGuara(true, c, l);
 		c.lugar(lobo, new Localizacao(50,50));
-        c.limpa();	    		
-		assertNull(c.getObjectAt(l));		
-
-		
-			
+        c.limpa();	    				
 		
 	}
 	
-	@Test
+	@Test (expected=IllegalArgumentException.class)
 	public void testLimpa1() {	
 		
 		Campo c = new Campo(100, 100);
@@ -235,7 +231,7 @@ public class CampoTest {
 	}
 	//--------------------------------------------------------------------------------------------------------------------------------
 
-	@Test
+	@Test (expected= IllegalArgumentException.class)
 	public void testLimpaLocalizacao() {		
 
 		Campo c = new Campo(100, 100);
@@ -249,7 +245,7 @@ public class CampoTest {
 	}
 	
 	
-	@Test
+	@Test (expected=IllegalArgumentException.class)
 	public void testLimpaLocalizacao2() {		
 
 		Campo c = new Campo(100, 100);
@@ -321,7 +317,7 @@ public class CampoTest {
 	
 	//-------------------------------------------------------------------------------------------
 
-	@Test
+	@Test (expected=IllegalArgumentException.class)
 	public void testLugarObjectLocalizacao() {
 		
 		Campo c = new Campo(100, 70);

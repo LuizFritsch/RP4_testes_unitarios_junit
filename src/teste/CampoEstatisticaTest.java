@@ -77,7 +77,9 @@ public class CampoEstatisticaTest {
 	 * string com esses objectos ) Nota: de Tempos em tempo, o retorno do metodo
 	 * permuta a ordem da saida: Por que? R: ?
 	 */
-	@Test // Espera uma IllegalArgumenteException devido o c.lugar(teste, 1, 2); onde
+	
+	@Test (expected=IllegalArgumentException.class)
+	// Espera uma IllegalArgumenteException devido o c.lugar(teste, 1, 2); onde
 			// teste é um campo
 	public void testGetPopulationDetails4() {
 		Campo c = new Campo(3, 3);
@@ -107,18 +109,18 @@ public class CampoEstatisticaTest {
 		assertEquals("", campoe.getPopulationDetails(c));
 	}
 
-	@Test
+	@Test 
 	public void testGetPopulationDetails6() {
 		Campo c = new Campo(10000, 2);
 
 		Ovelha ove = new Ovelha(true, c, new Localizacao(0, 0));
-		for (int i = 0; i < 10000; i++) {
+		for (int i = 1; i < 10000; i++) {
 
 			c.lugar(ove, i, 0);
 
 		}
 		LoboGuara lobo = new LoboGuara(true, c, new Localizacao(0, 1));
-		for (int i = 0; i < 10000; i++) {
+		for (int i = 1; i < 10000; i++) {
 
 			c.lugar(lobo, i, 1);
 
@@ -322,7 +324,7 @@ public class CampoEstatisticaTest {
 
 	}
 
-	@Test
+	@Test (expected=IllegalArgumentException.class)
 	public void testHash3() throws NoSuchMethodException, SecurityException, IllegalAccessException,
 			IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
 

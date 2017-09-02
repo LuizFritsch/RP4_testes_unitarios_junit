@@ -36,7 +36,12 @@ public class Campo {
 
 	public void lugar(Object animal, Localizacao localizacao) {
 		if(animal instanceof LoboGuara || animal instanceof Ovelha) {
-			campo[localizacao.getLinha()][localizacao.getColuna()] = animal;
+			if(campo[localizacao.getLinha()][localizacao.getColuna()]==null) {
+				campo[localizacao.getLinha()][localizacao.getColuna()] = animal;
+			}else {
+				throw new IllegalArgumentException("Posição já ocupada!");
+			}
+			
 		}else {
 			throw new IllegalArgumentException("Dado inválido!(O dado inserido não é uma das herdeiras de Animal!");
 		}
