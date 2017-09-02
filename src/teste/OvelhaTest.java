@@ -3,6 +3,7 @@ package teste;
 import static org.junit.Assert.*;
 
 import java.awt.List;
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import org.junit.*;
@@ -101,8 +102,7 @@ public class OvelhaTest {
 		daALuz.invoke(o, ao);
 		daALuz.invoke(o, ao);
 	}
-
-
+	
 	@Test
 	public void testIncrementaIdade() throws Exception {
 		Ovelha lb = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
@@ -112,6 +112,30 @@ public class OvelhaTest {
 		incrementaIdade.invoke(lb);
 		assertEquals(2, lb.getIdade());
 	}
+	
+	@Test
+	public void testIncrementaIdade2() throws Exception {
+		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
+		Method incrementaIdade = ove.getClass().getDeclaredMethod("incrementaIdade");
+		incrementaIdade.setAccessible(true);
+		for(int i=0; i<40; i++) {
+			incrementaIdade.invoke(ove);
+		}
+		assertEquals(false, ove.estaVivo());
+	}
+	
+	@Test
+	public void testIncrementaIdade3() throws Exception {
+		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
+		Method incrementaIdade = ove.getClass().getDeclaredMethod("incrementaIdade");
+		incrementaIdade.setAccessible(true);
+		for(int i=0; i<39; i++) {
+			incrementaIdade.invoke(ove);
+		}
+		assertEquals(true, ove.estaVivo());
+	}
+	
+
 
 	@Test
 	public void testProcriaReflection() throws Exception {
@@ -129,6 +153,55 @@ public class OvelhaTest {
 		int i = (Integer) procria.invoke(lb);
 		assertTrue(i > 0);
 
+	}
+	@Test
+	public void testPodeProcriar() throws Exception {
+		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
+		Method incrementaIdade = ove.getClass().getDeclaredMethod("incrementaIdade");
+		incrementaIdade.setAccessible(true);
+		int j = 0;
+		while (j < 6) {
+			incrementaIdade.invoke(ove);
+			j++;
+		}
+		Method podeProcriar = ove.getClass().getDeclaredMethod("podeProcriar");
+		podeProcriar.setAccessible(true);
+		assertEquals(true,podeProcriar.invoke(ove));
+	}
+	
+	@Test
+	public void testPodeProcriar2() throws Exception {
+		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
+		Method incrementaIdade = ove.getClass().getDeclaredMethod("incrementaIdade");
+		incrementaIdade.setAccessible(true);
+		int j = 0;
+		while (j < 2) {
+			incrementaIdade.invoke(ove);
+			j++;
+		}
+		Method podeProcriar = ove.getClass().getDeclaredMethod("podeProcriar");
+		podeProcriar.setAccessible(true);
+		assertEquals(false,podeProcriar.invoke(ove));
+	}
+	
+	
+	@Test
+	public void testGetIdade() throws Exception{
+		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
+		assertEquals(0, ove.getIdade());
+	}
+	
+	@Test
+	public void testGetIdade2() throws Exception{
+		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
+		Method incrementaIdade = ove.getClass().getDeclaredMethod("incrementaIdade");
+		incrementaIdade.setAccessible(true);
+		int j = 0;
+		while (j < 40) {
+			incrementaIdade.invoke(ove);
+			j++;
+		}
+		assertEquals(40, ove.getIdade());
 	}
 
 }
