@@ -832,6 +832,7 @@ modelo de software
  **Prioridade:**     Média               
 
  **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, LoboGuara 
+
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
 |          CT         |      X       |       X         |       --       |    X    |
@@ -848,6 +849,7 @@ modelo de software
  **Prioridade:**     Média               
 
  **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, LoboGuara 
+
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
 |          CT         |      X       |       X         |       --       |    X    |
@@ -862,6 +864,7 @@ modelo de software
  **Prioridade:**     Média               
 
  **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, LoboGuara 
+
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
 |          CT         |      X       |       X         |       --       |    X    |
