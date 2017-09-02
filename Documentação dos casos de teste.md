@@ -769,7 +769,7 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | O método cria Campo e Localizacao(esse é inválida) e animal | O método deve retornar uma exceção do tipo IllegalArgumentException | teste passou |
 
-
+||
 
 
 
@@ -789,7 +789,7 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | O método cria a Ovelha | O método setMorte() deve retornar false | teste passou |
 
-
+<br />
 
 
 **Identificador:**        CT41  setMorteTest02()    classe  AnimalTest 
