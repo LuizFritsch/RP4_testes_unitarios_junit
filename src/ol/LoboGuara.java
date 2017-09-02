@@ -86,7 +86,7 @@ public class LoboGuara extends Animal{
 	 */
 	private int procria() {
 		int nascimentos = 0;
-		if (podeProcriar() && rand.nextDouble() <= PROBABILIDADE_PROCRIACAO) {
+		if (this.vivo && podeProcriar() && rand.nextDouble() <= PROBABILIDADE_PROCRIACAO) {
 			nascimentos = rand.nextInt(TAMANHO_MAXIMO_NINHADA) + 1;
 		}
 		return nascimentos;
