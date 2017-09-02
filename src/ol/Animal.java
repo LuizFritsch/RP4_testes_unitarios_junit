@@ -45,7 +45,7 @@ public class Animal {
 		if (localizacao != null) {
 			campo.limpa(localizacao);
 			localizacao = null;
-			campo = null;
+			campo = null;   // (o campo todo como null?)
 		}
 	}
 	
