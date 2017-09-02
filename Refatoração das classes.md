@@ -20,13 +20,18 @@
 **2. Métodos afetados:**  
 2.1 Os métodos afetados pela mudança, “getObjectAt(Localizacao localizacao)” e “ getObjectAt(int linha, int coluna)”.  
 **3. Solução:**  
-3.1 O retorno de ambos os métodos agora é um objeto da classe "Animal" ou null.  
-  
-#“Campo”  
+3.1 O retorno de ambos os métodos agora é um objeto da classe "Animal" ou null.    
 
-**1. Problema:**   
+**2. Problema:**   
 1.1 A classes “Campo” possui métodos que tinham como parâmetros - Object- em vez de Animal, apos a refatoração e criação da classe abstrata "Animal"  
 **2. Métodos afetados:**  
 2.1 Os métodos afetados pela mudança, “lugar(Animal animal, int linha, int coluna)” e “ lugar(Animal animal, Localizacao localizacao)”.  
 **3. Solução:**  
 3.1 Os parâmetros foram atualizados, agora Animal é da class Animal, e não da classe Object.
+
+**3. Problema:**   
+1.1 A classes “Campo” possui o método *lugar(Object animal, Localizacao localizacao)* que possibilita a inserção de um objeto em cima de outro.
+**2. Métodos afetados:**  
+2.1 Os métodos afetados pela mudança, “lugar(Animal animal, int linha, int coluna)” e “ lugar(Animal animal, Localizacao localizacao)”.  
+**3. Solução:**  
+3.1 Foi adicionada uma cláusula *if* que verifica se já existe um objeto na posição desejada(caso exista dispara uma IllegalArgumentException).
