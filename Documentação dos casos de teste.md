@@ -555,24 +555,255 @@ modelo de software
 | SimuladorTela (1,1) e campo (100,100) | teste deve apresentar uma mensagem de erro | teste passou |
 
 
+**Identificador:**        CT28   testMostrarStatus classe SimuladorTelaTest  
 
+ **Objetivo:**                    Checar se é possível criar um rótulo de etapa com informações validas e invalidas.
+ **Prioridade:**                   Baixa   
 
-**Identificador:**  CT0    classe         
+ **Condições prévias:**            O método deve tratar com thrwos as seguintes exceções: NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException.
 
-   **Objetivo:**   
-
-   **corretamente:**   
-
-   **Prioridade:**    
- 
- **Condições prévias:**   
-
-| Rastreabilidade:    |   RE01       |      RE02       |    RE03        |   RE04  |
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT01       |      X       |       --        |       X        |    X    |
+|          CT28       |      X       |       --        |       --        |    X    |
 
-
-| **Entradas**                                  | Resultado esperado                      |Resultado do Teste      |  
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
-|   |   |   |
-|   |  |
+|Criar um rótulo com etapa "0"| O teste deve passar. O rótulo deve ser criado com sucesso | teste passou |
+|Criar um rótulo com etapa "999999999"|O teste não deve passar | teste passou |
+|Criar um rótulo com etapa "-10"|O teste não deve passar | teste passou |
+
+
+
+**Identificador:**        CT30  estaVivoTest01()    classe  AnimalTest 
+
+ **Objetivo:**     O teste deve verificar se quando o animal é criado(teoricamente um recém nascido) ele inicialmente é setado como vivo           
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao e Ovelha        
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT       |             |               |               |        |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| false, Campo, Localizacao | true | teste passou |
+
+
+
+
+**Identificador:**        CT31  estaVivoTest02()    classe  AnimalTest 
+
+ **Objetivo:**     O teste deve verificar se quando o animal é criado(com idade randômica) ele inicialmente é setado como vivo           
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao e Ovelha        
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT       |             |               |               |        |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| true, Campo, Localizacao | true | teste passou |
+
+
+
+
+**Identificador:**        CT32  getLocalizacaoTeste01()    classe  AnimalTest 
+
+ **Objetivo:**     O teste deve verificar se a localização retornada pelo método está correta           
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo e Localizacao        
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT       |             |               |               |        |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria uma Ovelha na localização específica (25,25) | Objeto do tipo Localizacao com linha e coluna igual a 25 | teste passou |
+
+
+
+
+**Identificador:**        CT33  getLocalizacaoTeste02()    classe  AnimalTest 
+
+ **Objetivo:**     O teste deve verificar se a localização retornada pelo método é diferente de uma localização com linha e coluna diferentes.           
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo e Localizacao(2 criados)        
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT       |             |               |               |        |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria uma Ovelha na localização específica (25,25) | false | teste passou |
+
+
+
+
+**Identificador:**        CT34  setLocalizacaoTeste01()    classe  AnimalTest 
+
+ **Objetivo:**     O teste deve verificar se a o método setLocalizacao(Localizacao) realmente altera a localização do animal          
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao(2 criados) e o método getLocalizacao(Localizacao) estar funcionando corretamente.       
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT       |             |               |               |        |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria uma Ovelha na localização específica (25,25) e logo após seta a mesma para (26,26) | Localizacao igual a (26,26) | teste passou |
+
+
+
+
+
+**Identificador:**        CT35  setLocalizacaoTeste02()    classe  AnimalTest 
+
+ **Objetivo:**     O teste deve verificar se a o método setLocalizacao(Localizacao) realmente altera a localização do animal mesmo quando inicialmente foram criados na mesma Localizacao          
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao(2 criados) e o método getLocalizacao(Localizacao) estar funcionando corretamente.       
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT       |             |               |               |        |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria duas Ovelha na localização específica (25,25) e logo após seta a primeira delas para (26,26) | Localizacao da primeira Ovelha diferente de (25,25) e da segunda igual a (25,25) | teste passou |
+
+
+
+
+**Identificador:**        CT36  setLocalizacaoTeste03()    classe  AnimalTest 
+
+ **Objetivo:**     O teste deve verificar se a o método setLocalizacao(Localizacao) realmente altera a localização do animal mesmo quando inicialmente foram criados na mesma Localizacao          
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao(2 criados)       
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT       |             |               |               |        |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria duas Ovelha na localização específica (25,25) e logo após seta a primeira delas para (26,26) | O objeto pertencente a Localizacao(25,25) não ser a segunda ovelha | teste passou |
+
+
+
+
+
+
+**Identificador:**        CT38  animalConstruct01()    classe  AnimalTest 
+
+ **Objetivo:**     Verificar se o construtor da classe Animal aceita uma Localizacao maior que o campo recebido.         
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao(Essa localização é inválida)
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT       |             |               |               |        |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria Campo e Localizacao(esse é inválida) e animal | O método deve retornar uma exceção do tipo IllegalArgumentException | teste passou |
+
+
+
+
+
+
+
+**Identificador:**        CT39  animalConstruct02()    classe  AnimalTest 
+
+ **Objetivo:**     Verificar se o construtor da classe Animal aceita uma Localizacao menor que 0
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao(Essa localização é inválida)
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT       |             |               |               |        |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria Campo e Localizacao(esse é inválida) e animal | O método deve retornar uma exceção do tipo IllegalArgumentException | teste passou |
+
+
+
+
+
+
+**Identificador:**        CT39  animalConstruct03()    classe  AnimalTest 
+
+ **Objetivo:**     Verificar se o construtor da classe Animal aceita uma Localizacao com coluna e largura igual a tamanho máxima mais um.         
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao(Essa localização é inválida)
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT       |             |               |               |        |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria Campo e Localizacao(esse é inválida) e animal | O método deve retornar uma exceção do tipo IllegalArgumentException | teste passou |
+
+
+
+
+
+**Identificador:**        CT40  setMorteTest01()    classe  AnimalTest 
+
+ **Objetivo:**     Verificar se o método setMorte() altera o atributo vivo do animal para false        
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao e Ovelha
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT       |             |               |               |        |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria a Ovelha | O método setMorte() deve retornar false | teste passou |
+
+
+
+
+**Identificador:**        CT41  setMorteTest02()    classe  AnimalTest 
+
+ **Objetivo:**     Verificar se o método setMorte() remove o animal do Campo        
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, Ovelha e o método getObjectAt() estar funcionando corretamente
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT       |             |               |               |        |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria a Ovelha | O método getObjectAt(Localizacao) que recebe a Localizacao da Ovelha deve retornar null | teste passou |
