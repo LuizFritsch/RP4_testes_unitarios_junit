@@ -553,3 +553,26 @@ modelo de software
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | SimuladorTela (1,1) e campo (100,100) | teste deve apresentar uma mensagem de erro | teste passou |
+
+
+
+
+**Identificador:**  CT0    classe         
+
+   **Objetivo:**   
+
+   **corretamente:**   
+
+   **Prioridade:**    
+ 
+ **Condições prévias:**   
+
+| Rastreabilidade:    |   RE01       |      RE02       |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT01       |      X       |       --        |       X        |    X    |
+
+
+| **Entradas**                                  | Resultado esperado                      |Resultado do Teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+|   |   |   |
+|   |  |
