@@ -872,3 +872,70 @@ modelo de software
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | O método cria um objeto LoboGuara | LoboGuara morrer, de fome | teste passou |
+
+
+
+**Identificador:**          CT45 incrementaIdade2() classe Ovelha
+**Objetivo:**    Verificar se o método incrementaIdade() está funcionando.
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, Ovelha 
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT         |      X       |       X         |       --       |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria um objeto Ovelha | Ovelha envelhecer e morrer | teste passou |
+
+
+
+**Identificador:**          CT46 incrementaIdade3() classe Ovelha
+**Objetivo:**    Verificar se o método incrementaIdade() está funcionando.
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, Ovelha 
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT         |      X       |       X         |       --       |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria um objeto Ovelha | Ovelha envelhecer e estar viva  | teste passou |
+
+
+
+**Identificador:**          CT47 podeProcriar() classe Ovelha
+**Objetivo:**    Verificar se o método podeProcriar() está funcionando.
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, Ovelha 
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT         |      X       |       X         |       --       |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria um objeto Ovelha | ovelha estar apta para procriar  | teste passou |
+
+
+**Identificador:**          CT48 podeProcriar2() classe Ovelha
+**Objetivo:**    Verificar se o método podeProcriar() está funcionando.
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, Ovelha 
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT         |      X       |       X         |       --       |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria um objeto Ovelha | ovelha não estar apta para procriar  | teste passou |
