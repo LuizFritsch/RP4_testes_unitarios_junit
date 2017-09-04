@@ -48,102 +48,96 @@ Correção 6
 6.5 Solução: Mudança do if de ‘if (loboGuara.estaVivo())’ para ‘if (!loboGuara.estaVivo())’  
 
 
-1.Erro encontrado por meio do Junit  
-1.1 Classe: ‘Campo’  
-1.2 Método: ‘localizacoesAdjacentes(Localizacao localizacao)’  
-1.3 Linha: 78  
-1.4 Erro: O método aceita uma Localizacao com linha/coluna maior que a profundidade/largura do campo  
-1.5 Solução: Adição de uma condição ‘if’ na linha 78 que exige que a linha/coluna da localização seja menor que a profundidade/largura do campo.  
+Correção 7 - Encontrado por meio do Junit  
+7.1 Classe: ‘Campo’  
+7.2 Método: ‘localizacoesAdjacentes(Localizacao localizacao)’  
+7.3 Linha: 78  
+7.4 Erro: O método aceita uma Localizacao com linha/coluna maior que a profundidade/largura do campo  
+7.5 Solução: Adição de uma condição ‘if’ na linha 78 que exige que a linha/coluna da localização seja menor que a profundidade/largura do campo.  
 
 
 
 
-2. Erro encontrado por meio do Junit  
-2.1 Classe: ‘Localizacao’  
-2.2 Método: Construtor  
-2.3 Linha: 20  
-2.4 Erro: Não lançava exceção quando recebia dados inválidos  
-2.5 Solução: Refatoração do ‘if’ de ‘(linha>=0 && coluna>=0)’ para ‘(linha<0 || coluna<0)’ e quando satisfeita a condição fazer com que lance uma exceção ‘IllegalArgumentException’ além da mudança do código que antes estava   
-2.6 dentro do ‘if’ para dentro do ‘else’   
+Correção 8 - Encontrado por meio do Junit  
+8.1 Classe: ‘Localizacao’  
+8.2 Método: Construtor  
+8.3 Linha: 20  
+8.4 Erro: Não lançava exceção quando recebia dados inválidos  
+8.5 Solução: Refatoração do ‘if’ de ‘(linha>=0 && coluna>=0)’ para ‘(linha<0 || coluna<0)’ e quando satisfeita a condição fazer com que lance uma exceção ‘IllegalArgumentException’ além da mudança do código que antes estava   
+8.6 dentro do ‘if’ para dentro do ‘else’   
 
 
-3. Correção   
-3.1 Classe: ‘Campo’  
-3.2 Método: ‘localizacaoAdjacenteRandomica(Localizacao localizacao)’  
-3.3 Linha: 51  
-3.4 Erro: Caso a lista usada no método esteja vazia o sistema retornará uma exceção ‘IndexOutOfBoundsException’  
-3.5 Solução: Adição de cláusula ‘if’ para verificar o tamanho da ‘List’ e adição de um ‘return null;’ fora da  cláusula.  
+Correção 9 - Encontrado por meio do Junit   
+9.1 Classe: ‘Campo’  
+9.2 Método: ‘localizacaoAdjacenteRandomica(Localizacao localizacao)’  
+9.3 Linha: 51  
+9.4 Erro: Caso a lista usada no método esteja vazia o sistema retornará uma exceção ‘IndexOutOfBoundsException’  
+9.5 Solução: Adição de cláusula ‘if’ para verificar o tamanho da ‘List’ e adição de um ‘return null;’ fora da  cláusula.  
 
-1.Classe: ‘LoboGuara’  
-1.1 Método: ‘daALuz(List<LoboGuara> novosLobos)’  
-1.2 Linha: 97  
-1.3 Erro: Quando o método é chamado ele não compara se tem a quantidade correta de localizações livres para 
+Correção 10 - Encontrado por meio do Junit
+10.Classe: ‘LoboGuara’  
+10.1 Método: ‘daALuz(List<LoboGuara> novosLobos)’  
+10.2 Linha: 97  
+10.3 Erro: Quando o método é chamado ele não compara se tem a quantidade correta de localizações livres para 
 introduzir os filhotes de lobo guará.  
-1.4 Solução:  
+10.4 Solução:  
 
 
 
-2.Classe: ‘LoboGuara’  
-2.1 Método: ‘procuraComida(Localizacao localizacao)’  
-2.2 Linha: 82  
-2.3 Erro:  Não verifica se o animal encontrado é uma ovelha  
-2.4 Solução:
+Correção 11 - Encontrado por meio do Junit  
+11.Classe: ‘LoboGuara’  
+11.1 Método: ‘procuraComida(Localizacao localizacao)’  
+11.2 Linha: 82  
+11.3 Erro:  Não verifica se o animal encontrado é uma ovelha  
+11.4 Solução: Fazer um instanceOf dentro de um condicional if.
 
 
 
-**1. Problema:**   
-1.1 As classes “LoboGuara” e “Ovelha” possuem métodos exatamente iguais ou seja, as classes possuem replicação de código sem motivo.  
-1.2 As classes “LoboGuara” e “Ovelha” também possuem atributos com mesma função.  
-**2. Métodos afetados:**  
-2.1 Ambos os construtores e os métodos das duas classes com os nomes “estaVivo()”, “getLocalizacao()”, “setLocalizacao(Localizacao newLocalizacao)” e “setMorte()”.  
-**3. Atributos Afetados:**  
-3.1 private int idade;  
-3.2 private boolean vivo;  
-3.3 private Localizacao localizacao;  
-3.4 private Campo campo;  
-**4. Solução:**  
-4.1 Adição de uma superclasse chamada “Animal” com os métodos e atributos repetidos que seria a classe mãe tanto de “LoboGuara” quanto de “Ovelha” além da remoção dos métodos e atributos repetidos.  
+Correção 12 - Encontrado por meio do Junit  
   
-#“Campo”  
+12.1 As classes “LoboGuara” e “Ovelha” possuem métodos exatamente iguais ou seja, as classes possuem replicação de código sem motivo.  
+12.2 As classes “LoboGuara” e “Ovelha” também possuem atributos com mesma função.  
+12. Métodos afetados:**  
+12.1 Ambos os construtores e os métodos das duas classes com os nomes “estaVivo()”, “getLocalizacao()”, “setLocalizacao(Localizacao newLocalizacao)” e “setMorte()”.  
 
-**1. Problema:**   
-1.1 A classes “Campo” possui métodos que retornavam  - Object- em vez de Animal, apos a refatoração e criação da classe abstrata "Animal"  
-**2. Métodos afetados:**  
-2.1 Os métodos afetados pela mudança, “getObjectAt(Localizacao localizacao)” e “ getObjectAt(int linha, int coluna)”.  
-**3. Solução:**  
-3.1 O retorno de ambos os métodos agora é um objeto da classe "Animal" ou null.    
 
-**2. Problema:**   
+Correção 13 - Encontrado por meio do Junit  
+13.1 private int idade;  
+13.2 private boolean vivo;  
+13.3 private Localizacao localizacao;  
+13.4 private Campo campo;  
+
+
+Correção 14 - Encontrado por meio do Junit  
+
+14.1 A classes “Campo” possui métodos que retornavam  - Object- em vez de Animal, apos a refatoração e criação da classe abstrata "Animal"  
+14.2 Métodos afetados:**  
+14.3 Os métodos afetados pela mudança, “getObjectAt(Localizacao localizacao)” e “ getObjectAt(int linha, int coluna)”.  
+14.4 Solução:  
+14.4.1 O retorno de ambos os métodos agora é um objeto da classe "Animal" ou null.    
+
+Correção 15 - Encontrado por meio do Junit  
+ 
 1.1 A classes “Campo” possui métodos que tinham como parâmetros - Object- em vez de Animal, apos a refatoração e criação da classe abstrata "Animal"  
-**2. Métodos afetados:**  
+2. Métodos afetados:
 2.1 Os métodos afetados pela mudança, “lugar(Animal animal, int linha, int coluna)” e “ lugar(Animal animal, Localizacao localizacao)”.  
-**3. Solução:**  
+3. Solução:
 3.1 Os parâmetros foram atualizados, agora o parâmetro animal é da class Animal, e não da classe Object.
 
-**3. Problema:**   
-1.1 A classes “Campo” possui o método *lugar(Object animal, Localizacao localizacao)* que remove um objeto e adiciona outro em seu lugar.  
-**2. Métodos afetados:**  
-2.1 Os métodos afetados pela mudança, “lugar(Animal animal, int linha, int coluna)” e “ lugar(Animal animal, Localizacao localizacao)”.  
-**3. Solução:**  
-3.1 Foi adicionada uma cláusula *if* que verifica se já existe um objeto na posição desejada(caso exista dispara uma IllegalArgumentException).
+Correção 16 - Encontrado por meio do Junit  
+  
+16.1 A classes “Campo” possui o método *lugar(Object animal, Localizacao localizacao)* que remove um objeto e adiciona outro em seu lugar.  
+16.2 Métodos afetados:
+16.3 Os métodos afetados pela mudança, “lugar(Animal animal, int linha, int coluna)” e “ lugar(Animal animal, Localizacao localizacao)”.  
+16.4 Solução:  
+16.5 Foi adicionada uma cláusula *if* que verifica se já existe um objeto na posição desejada(caso exista dispara uma IllegalArgumentException).
 
 
-  
-  
-  
-### Diagrama de Classe
-Diagrama de Classe Antigo
+Correção 17 - Encontrado por meio do Junit
+##Diagrama de Classe
+###Diagrama de Classe Antigo
 
 ![Diagrama de Classe Logo Guara e Ovelha versão antiga.png](https://bitbucket.org/repo/z8947B5/images/1703861044-Diagrama%20de%20Classe%20Logo%20Guara%20e%20Ovelha%20vers%C3%A3o%20antiga.png)  
   
-Refatorações:  
-
-
-Adição da Classe Abstrata Animal:  
-Correção nos parâmetros de alguns métodos da classe Campo: Antigo parâmetro  da classe object, agora Animal  
-Correção da classe Randomizador:  
-  
-Diagrama de Classe Atual:
-
 
 ![Diagrama de Classe Logo Guara e Ovelha.png](https://bitbucket.org/repo/z8947B5/images/626485898-Diagrama%20de%20Classe%20Logo%20Guara%20e%20Ovelha.png)
