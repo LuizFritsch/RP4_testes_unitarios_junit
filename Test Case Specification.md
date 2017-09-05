@@ -247,50 +247,160 @@
 
 ***
 
-| Test Case ID:       	| Objetivo: 	|
+| Test Case ID:    CT11   	| Objetivo: 	O teste deve criar um contador com parâmetros validos, e testar a execução do método increment |
 |---------------------	|-----------	|
-| Prioridade:         	|           	|
-| Rastreador:         	|       RE01, RE02, RE03, RE04     	|
-| Precondições:       	|           	|
-| Entradas:             |               |
-| Resultado Esperado: 	|           	|
+| Prioridade:         	|   Media        	|
+| Rastreador:         	|       RE01, RE03, RE04     	|
+| Precondições:       	|     Nenhuma      	|
+| Entradas:             |   Incrementar 1000 vezes a ovelha            |
+| Resultado Esperado: 	|  tratamento de exceção         	|
 
 ***
 
-| Test Case ID:       	| Objetivo: 	|
+| Test Case ID:  CT12     	| Objetivo:  O teste deve criar um contador com parâmetros validos e inválidos, e testar a execução do método Reset 	|
 |---------------------	|-----------	|
-| Prioridade:         	|           	|
-| Rastreador:         	|       RE01, RE02, RE03, RE04     	|
-| Precondições:       	|           	|
-| Entradas:             |               |
-| Resultado Esperado: 	|           	|
+| Prioridade:         	|    baixa         	|
+| Rastreador:         	|       RE01, RE03, RE04     	|
+| Precondições:       	|      Nenhuma     	|
+| Entradas:             |   chamar o método reset            |
+| Resultado Esperado: 	|     teste retornar 0      	|
 
 ***
 
-| Test Case ID:       	| Objetivo: 	|
+| Test Case ID:   CT13    	| Objetivo: 	 O método testGetLargura deve verificar se o método getLargura retorna a largura exata de um campo |
 |---------------------	|-----------	|
-| Prioridade:         	|           	|
-| Rastreador:         	|       RE01, RE02, RE03, RE04     	|
-| Precondições:       	|           	|
-| Entradas:             |               |
-| Resultado Esperado: 	|           	|
+| Prioridade:         	|  baixa          	|
+| Rastreador:         	|       RE01, RE03, RE04     	|
+| Precondições:       	|   Nenhuma        	|
+| Entradas:             | chamar o método reset              |
+| Resultado Esperado: 	|  teste retornar 0         	|
 
 ***
 
-| Test Case ID:       	| Objetivo: 	|
+| Test Case ID: CT14.1      	| Objetivo:  O teste verifica se o método GetPopulation retorna uma String informando corretamente os dados do campo 	|
 |---------------------	|-----------	|
-| Prioridade:         	|           	|
+| Prioridade:         	|    Alta         	|
 | Rastreador:         	|       RE01, RE02, RE03, RE04     	|
-| Precondições:       	|           	|
-| Entradas:             |               |
-| Resultado Esperado: 	|           	|
+| Precondições:       	|       Nenhuma    	|
+| Entradas:             |  Criar 3 ovelhas com entradas (0,0)(0,1)(0,2)             |
+| Resultado Esperado: 	|  O método não deve retornar null         	|
 
 ***
 
-| Test Case ID:       	| Objetivo: 	|
+| Test Case ID: CT14.2      	| Objetivo:  O teste verifica se o método GetPopulation retorna uma String informando corretamente os dados do campo 	|
 |---------------------	|-----------	|
-| Prioridade:         	|           	|
+| Prioridade:         	|    Alta         	|
 | Rastreador:         	|       RE01, RE02, RE03, RE04     	|
-| Precondições:       	|           	|
-| Entradas:             |               |
-| Resultado Esperado: 	|           	|
+| Precondições:       	|       Nenhuma    	|
+| Entradas:             |  Criar 3 ovelhas com entradas validas, criar 3 lobos guará com entradas validas e criar 3 campos com entradas validas             |
+| Resultado Esperado: 	|    O método deve retornar a String na ordem "ol.LoboGuara: 3 ol.Ovelha: 3 ol.Campo: 3"       	|
+
+***
+
+| Test Case ID: CT14.3      	| Objetivo:  O teste verifica se o método GetPopulation retorna uma String informando corretamente os dados do campo 	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Alta         	|
+| Rastreador:         	|       RE01, RE02, RE03, RE04     	|
+| Precondições:       	|       Nenhuma    	|
+| Entradas:             |  Deixar o campo vazio             |
+| Resultado Esperado: 	|     O método deve informar que o campo se encontra vazio      	|
+
+***
+
+| Test Case ID:   CT15.1    	| Objetivo: O método verifica se após a execução do método Redefine o campo terá 0 objetos	|
+|---------------------	|-----------	|
+| Prioridade:         	|  baixa          	|
+| Rastreador:         	|       RE01 RE03, RE04     	|
+| Precondições:       	| O método GetPopulationDetails da mesma classe, deve estar implementado corretamente          	|
+| Entradas:             |  Deve ser criado 3 ovelhas e chamar o método Redefine             |
+| Resultado Esperado: 	|   teste deve mostrar que não tem objetos no campo        	|
+
+***
+
+| Test Case ID:   CT15.2    	| Objetivo: O método verifica se após a execução do método Redefine o campo terá 0 objetos	|
+|---------------------	|-----------	|
+| Prioridade:         	|  baixa          	|
+| Rastreador:         	|       RE01 RE03, RE04     	|
+| Precondições:       	| O método GetPopulationDetails da mesma classe, deve estar implementado corretamente          	|
+| Entradas:             |  Deve ser criado 3 ovelha, chamar o método Redefine e incrementar o campo          |
+| Resultado Esperado: 	|  O teste só deve contar os objetos que foram incrementados após redefinir o campo       	|
+
+***
+
+| Test Case ID:   CT16    	| Objetivo: O método verifica a execução do método contadorFinalizado 	|
+|---------------------	|-----------	|
+| Prioridade:         	|     baixa       	|
+| Rastreador:         	|       RE01, RE03, RE04     	|
+| Precondições:       	| O método GetPopulationDetails da mesma classe, deve estar implementado corretamente           	|
+| Entradas:             |  Deve ser criado 3 ovelhas e chamar o método contadorFinalizado             |
+| Resultado Esperado: 	|     Saída esperada: " "      	|
+
+***
+
+| Test Case ID:     CT17.1  	| Objetivo: 	 O método verifica se há um lobo e uma ovelha para fazer a simulação|
+|---------------------	|-----------	|
+| Prioridade:         	|  Média         	|
+| Rastreador:         	|       RE01, RE02, RE03, RE04     	|
+| Precondições:       	|      Nenhuma      	|
+| Entradas:             |  O método cria 3 ovelhas             |
+| Resultado Esperado: 	|     False      	|
+
+***
+
+| Test Case ID:     CT17.2  	| Objetivo: 	 O método verifica se há um lobo e uma ovelha para fazer a simulação|
+|---------------------	|-----------	|
+| Prioridade:         	|  Média         	|
+| Rastreador:         	|       RE01, RE02, RE03, RE04     	|
+| Precondições:       	|      Nenhuma      	|
+| Entradas:             |    O método cria 3 ovelhas e um lobo guará           |
+| Resultado Esperado: 	|     True      	|
+
+***
+
+| Test Case ID:     CT17.3  	| Objetivo: 	 O método verifica se há um lobo e uma ovelha para fazer a simulação|
+|---------------------	|-----------	|
+| Prioridade:         	|  Média         	|
+| Rastreador:         	|       RE01, RE02, RE03, RE04     	|
+| Precondições:       	|      Nenhuma      	|
+| Entradas:             |   O método cria 1 e um campo            |
+| Resultado Esperado: 	|       false    	|
+
+***
+
+| Test Case ID:   CT18.1    	| Objetivo: O metodo testEstaViva verifica se o método estaViva retorna true para ovelhas vivas e false para ovelhas mortas. 	|
+|---------------------	|-----------	|
+| Prioridade:         	|  Baixa         	|
+| Rastreador:         	|       RE01, RE02, RE04     	|
+| Precondições:       	|    Para o uso do segundo teste o método setMorte deve esta corretamente implementado.         	|
+| Entradas:             |  O método cria uma ovelha             |
+| Resultado Esperado: 	|    true       	|
+
+***
+
+| Test Case ID:   CT18.2    	| Objetivo: O metodo testEstaViva verifica se o método estaViva retorna true para ovelhas vivas e false para ovelhas mortas. 	|
+|---------------------	|-----------	|
+| Prioridade:         	|  Baixa         	|
+| Rastreador:         	|       RE01, RE02, RE04     	|
+| Precondições:       	|    Para o uso do segundo teste o método setMorte deve esta corretamente implementado.         	|
+| Entradas:             |   O método cria uma ovelha e executa o setMorte            |
+| Resultado Esperado: 	|   false        	|
+
+***
+
+| Test Case ID: CT19      	| Objetivo: Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta. 	|
+|---------------------	|-----------	|
+| Prioridade:         	|   baixa        	|
+| Rastreador:         	|       RE01, RE02, RE04     	|
+| Precondições:       	|  O método estaViva deve estar funcionando corretamente.          	|
+| Entradas:             |  Executa o metodo setMorte para uma ovelha e chama o método estaViva             |
+| Resultado Esperado: 	|  false         	|
+
+***
+
+| Test Case ID:  CT20     	| Objetivo: 	Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta. |
+|---------------------	|-----------	|
+| Prioridade:         	| baixa          	|
+| Rastreador:         	|       RE01, RE02, RE04     	|
+| Precondições:       	| O método estaViva deve estar funcionando corretamente.            	|
+| Entradas:             | Executa o método setMorte para uma ovelha e chama o método estaViva              |
+| Resultado Esperado: 	|  false         	|
