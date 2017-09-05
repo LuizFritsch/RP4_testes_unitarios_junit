@@ -60,9 +60,9 @@ h. Relatório de status sobre a execução do teste todas as semanas;
 #6 Pessoal
 **5.1 Funções, atividades e responsabilidades**  
 
-![tabela de tarefas.png](https://bitbucket.org/repo/z8947B5/images/2418568227-tabela%20de%20tarefas.png)
+![tabela de tarefas.png](https://.org/repo/z8947B5/images/2418568227-tabela%20de%20tarefas.png)
 
 #7 Horário  
 O cronograma geral para o teste é mostrado abaixo.  
 (O cronograma apresentado é um esboço do real)  
-![cronograma basico.png](https://.org/repo/z8947B5/images/1063542163-cronograma%20basico.png)
+![cronograma basico.png](https://bitbucket.org/repo/z8947B5/images/3312916741-cronograma%20basico.png)
