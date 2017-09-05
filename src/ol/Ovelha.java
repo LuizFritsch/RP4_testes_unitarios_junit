@@ -43,14 +43,20 @@ public class Ovelha extends Animal{
 			setMorte();
 		}
 	}
-
+/*
+ * Método não verifica quantos campos vazios existem
+ */
 	private void daALuz(List<Ovelha> novasOvelhas) {
 		List<Localizacao> livre = campo.localizacoesAdjacentesLivres(localizacao);
 		int nascimentos = procria();
 		for (int b = 0; b < nascimentos; b++) {
-			Localizacao loc = livre.remove(0);
-			Ovelha jovem = new Ovelha(false, campo, loc);
-			novasOvelhas.add(jovem);
+			if(!livre.isEmpty()) {
+				Localizacao loc = livre.remove(0);
+				Ovelha jovem = new Ovelha(false, campo, loc);
+				novasOvelhas.add(jovem);
+			}else {
+				break;
+			}
 		}
 	}
 

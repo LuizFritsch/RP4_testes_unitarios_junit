@@ -16,7 +16,11 @@ public class Contador
 
     public Contador(String name)
     {
-        this.name = name;
+    	String novoNome="";
+    	for (int i = 3; i < name.length(); i++) {
+			novoNome = novoNome+name.charAt(i);
+		}
+        this.name = novoNome;
         count = 0;
     }
     
