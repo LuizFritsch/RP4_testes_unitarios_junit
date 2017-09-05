@@ -55,13 +55,13 @@ g. Terceiro ciclo de procedimentos de teste (teste de reteste e regressão do se
 ciclo);
 h. Relatório de status sobre a execução do teste todas as semanas;
 
-#4. Teste relatórios de conclusão.
+#5. Teste relatórios de conclusão.
 
-#5 Pessoal
+#6 Pessoal
 **5.1 Funções, atividades e responsabilidades**  
 ![tabela de tarefas.png](https://.org/repo/z8947B5/images/3370480048-tabela%20de%20tarefas.png)
 
-#6 Horário  
+#7 Horário  
 O cronograma geral para o teste é mostrado abaixo.  
 (O cronograma apresentado é um esboço do real)  
 ![cronograma basico.png](https://bitbucket.org/repo/z8947B5/images/1063542163-cronograma%20basico.png)![cronograma basico.png](https://bitbucket.org/repo/z8947B5/images/1009928551-cronograma%20basico.png)
