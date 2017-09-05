@@ -6,6 +6,7 @@
 | Resultado Esperado: 	|           	|
 
 ***
+***
 
 | Test Case ID:       	| Objetivo: 	|
 |---------------------	|-----------	|
