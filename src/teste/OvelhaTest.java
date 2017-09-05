@@ -184,6 +184,81 @@ public class OvelhaTest {
 		assertEquals(false,podeProcriar.invoke(ove));
 	}
 	
+	@Test
+	public void testPodeProcriar3() throws Exception {
+		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
+		Method incrementaIdade = ove.getClass().getDeclaredMethod("incrementaIdade");
+		incrementaIdade.setAccessible(true);
+		int j = 0;
+		while (j < 3) {
+			incrementaIdade.invoke(ove);
+			j++;
+		}
+		Method podeProcriar = ove.getClass().getDeclaredMethod("podeProcriar");
+		podeProcriar.setAccessible(true);
+		assertEquals(false,podeProcriar.invoke(ove));
+	}
+	
+	@Test
+	public void testPodeProcriarMorta() throws Exception {
+		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
+		Method incrementaIdade = ove.getClass().getDeclaredMethod("incrementaIdade");
+		incrementaIdade.setAccessible(true);
+		int j = 0;
+		while (j < 42) {
+			incrementaIdade.invoke(ove);
+			j++;
+		}
+		Method podeProcriar = ove.getClass().getDeclaredMethod("podeProcriar");
+		podeProcriar.setAccessible(true);
+		assertEquals(false,podeProcriar.invoke(ove));
+	}
+	@Test
+	public void testPodeProcriar5() throws Exception {
+		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
+		Method incrementaIdade = ove.getClass().getDeclaredMethod("incrementaIdade");
+		incrementaIdade.setAccessible(true);
+		int j = 0;
+		while (j < 6) {
+			incrementaIdade.invoke(ove);
+			j++;
+		}
+		Method podeProcriar = ove.getClass().getDeclaredMethod("podeProcriar");
+		podeProcriar.setAccessible(true);
+		assertEquals(true,podeProcriar.invoke(ove));
+	}
+	
+	@Test
+	public void testPodeProcriar10() throws Exception {
+		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
+		Method incrementaIdade = ove.getClass().getDeclaredMethod("incrementaIdade");
+		incrementaIdade.setAccessible(true);
+		int j = 0;
+		while (j < 10) {
+			incrementaIdade.invoke(ove);
+			j++;
+		}
+		Method podeProcriar = ove.getClass().getDeclaredMethod("podeProcriar");
+		podeProcriar.setAccessible(true);
+		assertEquals(true,podeProcriar.invoke(ove));
+	}
+	
+
+	@Test
+	public void testPodeProcriar40() throws Exception {
+		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
+		Method incrementaIdade = ove.getClass().getDeclaredMethod("incrementaIdade");
+		incrementaIdade.setAccessible(true);
+		int j = 0;
+		while (j < 40) {
+			incrementaIdade.invoke(ove);
+			j++;
+		}
+		Method podeProcriar = ove.getClass().getDeclaredMethod("podeProcriar");
+		podeProcriar.setAccessible(true);
+		assertEquals(true,podeProcriar.invoke(ove));
+	}
+	
 	
 	@Test
 	public void testGetIdade() throws Exception{
