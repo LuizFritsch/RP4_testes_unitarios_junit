@@ -103,6 +103,9 @@ public class OvelhaTest {
 		daALuz.invoke(o, ao);
 	}
 	
+	/*
+	 * 
+	 *  getIdade() não existe realmente
 	@Test
 	public void testIncrementaIdade() throws Exception {
 		Ovelha lb = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
@@ -112,6 +115,8 @@ public class OvelhaTest {
 		incrementaIdade.invoke(lb);
 		assertEquals(2, lb.getIdade());
 	}
+	*
+	*/
 	
 	@Test
 	public void testIncrementaIdade2() throws Exception {

@@ -283,9 +283,11 @@ public class LoboGuaraTest {
 		decrementaFome.setAccessible(true);
 		
 		int i = 7;
-		while(i>=0)
+		while(i>=0) {
 			decrementaFome.invoke(lobo);
-		
+			i++;
+		}
+			
 		assertTrue((Integer)procria.invoke(lobo) == 0);
 		
 	}
