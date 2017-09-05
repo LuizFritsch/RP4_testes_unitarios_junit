@@ -195,6 +195,28 @@ public class LoboGuaraTest {
 		assertTrue(lobo.estaVivo());
 	}
 	
+	public void incrementaIdade3() throws Exception{
+		LoboGuara lobo = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
+		Method incrementaIdade = lobo.getClass().getDeclaredMethod("incrementaIdade");
+		incrementaIdade.setAccessible(true);
+		for(int i=0; i<5000; i++) {
+			incrementaIdade.invoke(lobo);
+		}
+		assertTrue(lobo.estaVivo());
+	}
+	
+	public void incrementaIdade4() throws Exception{
+		LoboGuara lobo = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
+		Method incrementaIdade = lobo.getClass().getDeclaredMethod("incrementaIdade");
+		incrementaIdade.setAccessible(true);
+		for(int i=0; i<150; i++) {
+			incrementaIdade.invoke(lobo);
+		}
+		assertFalse(lobo.estaVivo());
+	}
+	
+	
+	
 	@Test
 	public void decrementaFome() throws Exception{
 		LoboGuara lobo = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
@@ -207,11 +229,45 @@ public class LoboGuaraTest {
 	}
 	
 	@Test
+	public void decrementaFome5000() throws Exception{
+		LoboGuara lobo = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
+		Method decrementaFome = lobo.getClass().getDeclaredMethod("decrementaFome");
+		decrementaFome.setAccessible(true);
+		for(int i=0; i<8; i++) {
+			decrementaFome.invoke(lobo);
+		}
+		assertFalse(lobo.estaVivo());
+	}
+	
+	@Test
+	public void decrementaFome22() throws Exception{
+		LoboGuara lobo = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
+		Method decrementaFome = lobo.getClass().getDeclaredMethod("decrementaFome");
+		decrementaFome.setAccessible(true);
+		for(int i=0; i<2; i++) {
+			decrementaFome.invoke(lobo);
+		}
+		assertTrue(lobo.estaVivo());
+	}
+	
+	
+	@Test
 	public void decrementaFome2() throws Exception{
 		LoboGuara lobo = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
 		Method decrementaFome = lobo.getClass().getDeclaredMethod("decrementaFome");
 		decrementaFome.setAccessible(true);
 		for(int i=0; i<6; i++) {
+			decrementaFome.invoke(lobo);
+		}
+		assertTrue(lobo.estaVivo());
+	}
+	
+	@Test
+	public void decrementaFome3() throws Exception{
+		LoboGuara lobo = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
+		Method decrementaFome = lobo.getClass().getDeclaredMethod("decrementaFome");
+		decrementaFome.setAccessible(true);
+		for(int i=0; i<5; i++) {
 			decrementaFome.invoke(lobo);
 		}
 		assertTrue(lobo.estaVivo());
