@@ -1,5 +1,5 @@
 #1.Introdução
- 
+ Este documento apresenta a abordagem que deve ser cumprida para a execução dos casos de teste.  
 #2. Plano de Contexto
 **Projeto 2.1**  
     Sistema que envolve monitoramento de populações de lobos guará e ovelhas dentro de uma área demarcada. A simulação tem por objetivo avaliar o resultado entre predador (lobo guará) e presa (ovelha).  
@@ -59,9 +59,9 @@ h. Relatório de status sobre a execução do teste todas as semanas;
 
 #5 Pessoal
 **5.1 Funções, atividades e responsabilidades**  
-![tabela de tarefas.png](https://bitbucket.org/repo/z8947B5/images/3370480048-tabela%20de%20tarefas.png)
+![tabela de tarefas.png](https://.org/repo/z8947B5/images/3370480048-tabela%20de%20tarefas.png)
 
 #6 Horário  
 O cronograma geral para o teste é mostrado abaixo.  
 (O cronograma apresentado é um esboço do real)  
-![cronograma basico.png](https://bitbucket.org/repo/z8947B5/images/1392776559-cronograma%20basico.png)
+![cronograma basico.png](https://bitbucket.org/repo/z8947B5/images/1063542163-cronograma%20basico.png)![cronograma basico.png](https://bitbucket.org/repo/z8947B5/images/1009928551-cronograma%20basico.png)
