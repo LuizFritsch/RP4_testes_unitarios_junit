@@ -1,4 +1,4 @@
-package ol;
+	package ol;
 
 import java.util.List;
 import java.util.Random;
@@ -31,11 +31,6 @@ public class Ovelha extends Animal{
 			}
 		}
 	}
-	
-	public int getIdade() {
-		return idade;
-	}
-	
 
 	// Deveria morrer quando chega na idade máxima
 	/*
@@ -69,7 +64,6 @@ public class Ovelha extends Animal{
 	}
 
 	private boolean podeProcriar() {
-		System.out.println(idade >= IDADE_PROCRIACAO);
 		return idade >= IDADE_PROCRIACAO;
 	}
 }
