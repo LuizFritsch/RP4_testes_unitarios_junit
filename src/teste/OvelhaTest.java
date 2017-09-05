@@ -259,17 +259,5 @@ public class OvelhaTest {
 		assertEquals(true,podeProcriar.invoke(ove));
 	}
 	
-	@Test
-	public void testGetIdade2() throws Exception{
-		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
-		Method incrementaIdade = ove.getClass().getDeclaredMethod("incrementaIdade");
-		incrementaIdade.setAccessible(true);
-		int j = 0;
-		while (j < 40) {
-			incrementaIdade.invoke(ove);
-			j++;
-		}
-		assertEquals(40, ove.getIdade());
-	}
 
 }
