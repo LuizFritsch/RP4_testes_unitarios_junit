@@ -217,4 +217,21 @@ public class LoboGuaraTest {
 		assertTrue(lobo.estaVivo());
 	}
 	
+	@Test
+	public void testProcria() throws Exception {
+		LoboGuara lobo = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
+		Method procria = lobo.getClass().getDeclaredMethod("procria");
+		procria.setAccessible(true);
+		
+		Method decrementaFome = lobo.getClass().getDeclaredMethod("decrementaFome");
+		decrementaFome.setAccessible(true);
+		
+		int i = 7;
+		while(i>=0)
+			decrementaFome.invoke(lobo);
+		
+		assertTrue((Integer)procria.invoke(lobo) == 0);
+		
+	}
+	
 }
