@@ -4,7 +4,9 @@
 | Rastreador:         	|           	|
 | Precondições:       	|           	|
 | Resultado Esperado: 	|           	|
+
 ***
+
 | Test Case ID:       	| Objetivo: 	|
 |---------------------	|-----------	|
 | Prioridade:         	|           	|
