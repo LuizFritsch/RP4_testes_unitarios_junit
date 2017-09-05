@@ -64,4 +64,4 @@ h. Relatório de status sobre a execução do teste todas as semanas;
 #7 Horário  
 O cronograma geral para o teste é mostrado abaixo.  
 (O cronograma apresentado é um esboço do real)  
-![cronograma basico.png](https://bitbucket.org/repo/z8947B5/images/1063542163-cronograma%20basico.png)![cronograma basico.png](https://bitbucket.org/repo/z8947B5/images/1009928551-cronograma%20basico.png)
+![cronograma basico.png](https://bitbucket.org/repo/z8947B5/images/1063542163-cronograma%20basico.png)
