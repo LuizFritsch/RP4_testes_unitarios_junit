@@ -34,7 +34,7 @@ public class LoboGuara extends Animal{
 			if (newLocalizacao != null) {
 				setLocalizacao(newLocalizacao);
 			} else {
-				setMorte();
+				decrementaFome();
 			}
 		}
 	}

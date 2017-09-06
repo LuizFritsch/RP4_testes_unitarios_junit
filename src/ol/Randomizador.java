@@ -19,7 +19,7 @@ public class Randomizador {
 		if (rand != null) {
 			return rand;
 		} else {
-			rand = new Random();
+			rand = new Random(111);
 			return rand;
 		}
 	}
