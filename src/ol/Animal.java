@@ -2,7 +2,7 @@ package ol;
 
 import java.util.Random;
 
-public class Animal {
+public abstract class Animal {
 	
 	protected int idade;
 	protected boolean vivo;

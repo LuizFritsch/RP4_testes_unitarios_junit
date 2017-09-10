@@ -30,11 +30,11 @@ public class Campo {
 		campo[localizacao.getLinha()][localizacao.getColuna()] = null;
 	}
 
-	public void lugar(Object animal, int linha, int coluna) {
+	public void lugar(Animal animal, int linha, int coluna) {
 		lugar(animal, new Localizacao(linha, coluna));
 	}
 
-	public void lugar(Object animal, Localizacao localizacao) {
+	public void lugar(Animal animal, Localizacao localizacao) {
 		if(animal instanceof LoboGuara || animal instanceof Ovelha) {
 			if(campo[localizacao.getLinha()][localizacao.getColuna()]==null) {
 				campo[localizacao.getLinha()][localizacao.getColuna()] = animal;
@@ -48,12 +48,20 @@ public class Campo {
 		
 	}
 
-	public Object getObjectAt(Localizacao localizacao) {
+	public Animal getObjectAt(Localizacao localizacao) {
 		return getObjectAt(localizacao.getLinha(), localizacao.getColuna());
 	}
 
-	public Object getObjectAt(int linha, int coluna) {
-		return campo[linha][coluna];
+	
+	/*
+	 * Refatoração do metodo. Return animal agora. FAZER NOVOS TESTES!!!
+	 */
+	public Animal getObjectAt(int linha, int coluna) {
+		if(campo[linha][coluna]!=null) {
+			
+			return (Animal) campo[linha][coluna];
+		}
+		return null;
 	}
 
 	public Localizacao localizacaoAdjacenteRandomica(Localizacao localizacao) {

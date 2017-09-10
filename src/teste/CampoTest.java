@@ -307,7 +307,7 @@ public class CampoTest {
 	Campo c = new Campo(10,10);
 	Localizacao l = new Localizacao(50, 50);
 	LoboGuara lobo = new LoboGuara(true, c, l);
-	c.lugar(c, l);
+	//c.lugar(c, l);
 			
 			
 			
@@ -347,7 +347,7 @@ public class CampoTest {
 		Campo c = new Campo(10,10);
 		Localizacao l = new Localizacao(50, 50);
 		LoboGuara lobo = new LoboGuara(true, c, l);
-		c.lugar(c, l);
+		//c.lugar(c, l);
 		
 		
 		
