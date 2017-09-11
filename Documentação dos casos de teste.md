@@ -981,4 +981,40 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Animal ovelha, idade 11                             | ovelha está apta para procriar  | teste passou |  
 | Animal ovelha, idade entre 11 e 40                  | ovelha está apta para procriar  | teste passou |  
-| Animal ovelha, idade igual 40, Antes de morrer      | ovelha está apta para procriar  | teste passou |
+| Animal ovelha, idade igual 40, Antes de morrer      | ovelha está apta para procriar  | teste passou |  
+  
+**Identificador:**          CT51 incrementaIdade3() classe LoboGuara  
+
+**Objetivo:**    Verificar se o método incrementaIdade() está funcionando  
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto loboGuara
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT50         |      X       |       --        |       --       |   --  |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Animal loboGuara, idade igual 5000                  | O lobo esta morto  | teste passou |   
+| Animal loboGuara, idade igual 150                 | O lobo esta vivo  | teste passou |  
+  
+  
+**Identificador:**          CT52 incrementaIdade() classe LoboGuara  
+
+**Objetivo:**    Verificar se o método incrementaFome() está funcionando  
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto loboGuara
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT50         |      X       |       --        |       --       |   x  |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Animal loboGuara, nivel 8 de fome              | O lobo esta morto  | teste passou |   
+| Animal loboGuara, nivel 3 de fome                | O lobo esta vivo  | teste passou |  
+| Animal loboGuara, nivel 5 de fome                | O lobo esta vivo  | teste passou |
