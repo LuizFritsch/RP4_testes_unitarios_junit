@@ -809,7 +809,8 @@ modelo de software
 
 
 
-**Identificador:**         CT41 testPodeProcriar2() classe LoboGuara
+**Identificador:**         CT41-2 testPodeProcriar2() classe LoboGuara  
+
 **Objetivo:**     Verificar se o método podeProcriar() está comparando a idade corretamente        
 
  **Prioridade:**     Média               
@@ -818,7 +819,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      X       |       X         |       --       |    X    |
+|          CT41-2         |      X       |       X         |       --       |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -826,7 +827,8 @@ modelo de software
 
 
 
-**Identificador:**          CT42 incrementaIdade() classe LoboGuara
+**Identificador:**          CT42 incrementaIdade() classe LoboGuara  
+
 **Objetivo:**    Verificar se o método incrementaIdade() está funcionando corretamente     
 
  **Prioridade:**     Média               
@@ -835,7 +837,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      X       |       X         |       --       |    X    |
+|          CT42         |      X       |       X         |       --       |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -843,7 +845,8 @@ modelo de software
 
 
 
-**Identificador:**          CT43 incrementaIdade2() classe LoboGuara
+**Identificador:**          CT43 incrementaIdade2() classe LoboGuara  
+
 **Objetivo:**    Verificar se o método incrementaIdade() está funcionando.
 
  **Prioridade:**     Média               
@@ -852,14 +855,15 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      X       |       X         |       --       |    X    |
+|          CT43         |      X       |       X         |       --       |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | O método cria um objeto LoboGuara | LoboGuara envelhecer | teste passou |
 
 
-**Identificador:**           CT44 decrementaFome() classe LoboGuara
+**Identificador:**           CT44 decrementaFome() classe LoboGuara  
+
 **Objetivo:**    Verificar se o método decrementaFome() está funcionando. 
  **Prioridade:**     Média               
 
@@ -867,7 +871,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      X       |       X         |       --       |    X    |
+|          CT44         |      X       |       X         |       --       |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -875,7 +879,8 @@ modelo de software
 
 
 
-**Identificador:**          CT45 incrementaIdade2() classe Ovelha
+**Identificador:**          CT45 incrementaIdade2() classe Ovelha  
+
 **Objetivo:**    Verificar se o método incrementaIdade() está funcionando.
 
  **Prioridade:**     Média               
@@ -884,7 +889,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      X       |       X         |       --       |    X    |
+|          CT45         |      X       |       X         |       --       |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -892,7 +897,8 @@ modelo de software
 
 
 
-**Identificador:**          CT46 incrementaIdade3() classe Ovelha
+**Identificador:**          CT46 incrementaIdade3() classe Ovelha  
+
 **Objetivo:**    Verificar se o método incrementaIdade() está funcionando.
 
  **Prioridade:**     Média               
@@ -901,7 +907,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      X       |       X         |       --       |    X    |
+|          CT46         |      X       |       X         |       --       |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -909,7 +915,8 @@ modelo de software
 
 
 
-**Identificador:**          CT47 podeProcriar() classe Ovelha
+**Identificador:**          CT47 podeProcriar() classe Ovelha  
+
 **Objetivo:**    Verificar se o método podeProcriar() está funcionando.
 
  **Prioridade:**     Média               
@@ -918,14 +925,15 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      X       |       X         |       --       |    X    |
+|          CT47         |      X       |       X         |       --       |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | O método cria um objeto Ovelha | ovelha estar apta para procriar  | teste passou |
 
 
-**Identificador:**          CT48 podeProcriar2() classe Ovelha
+**Identificador:**          CT48 podeProcriar2(), podeProciar3() classe Ovelha  
+
 **Objetivo:**    Verificar se o método podeProcriar() está funcionando.
 
  **Prioridade:**     Média               
@@ -934,8 +942,43 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      X       |       X         |       --       |    X    |
+|        CT48         |      X       |       X         |       --       |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
-| O método cria um objeto Ovelha | ovelha não estar apta para procriar  | teste passou |
+| O método cria um objeto Ovelha | ovelha não estar apta para procriar  | teste passou |  
+| O método cria um objeto Ovelha | ovelha não estar apta para procriar  | teste passou |   
+  
+**Identificador:**          CT49 podeProcriarMorta() classe Ovelha  
+
+**Objetivo:**    Verificar se o método podeProcriar() está funcionando.
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, Ovelha 
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT49         |      X       |       X         |       --       |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria um objeto Ovelha | ovelha não estar apta para procriar, está morta  | teste passou |  
+
+**Identificador:**          CT50 podeProcriar5() classe Ovelha  
+
+**Objetivo:**    Verificar se o método podeProcriar() está funcionando.
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, Ovelha 
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT50         |      X       |       X         |       --       |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Animal ovelha, idade 11                             | ovelha está apta para procriar  | teste passou |  
+| Animal ovelha, idade entre 11 e 40                  | ovelha está apta para procriar  | teste passou |  
+| Animal ovelha, idade igual 40, Antes de morrer      | ovelha está apta para procriar  | teste passou |
