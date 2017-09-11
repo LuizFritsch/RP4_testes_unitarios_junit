@@ -61,6 +61,10 @@ public class SimuladorTela extends JFrame {
 		}
 	}
 
+	
+	/*
+	 * Refatorar object par animal:10/09/17
+	 */
 	public void mostraStatus(int etapa, Campo campo) {
 		if (!isVisible()) {
 			setVisible(true);
@@ -73,7 +77,7 @@ public class SimuladorTela extends JFrame {
 
 		for (int row = 0; row < campo.getProfundidade(); row++) {
 			for (int col = 0; col < campo.getLargura(); col++) {
-				Object animal = campo.getObjectAt(row, col);
+				Animal animal = campo.getObjectAt(row, col);
 				if (animal != null) {
 					estatisticas.incrementaContador(animal.getClass());
 					visaoCampo.drawMark(col, row, getCor(animal.getClass()));

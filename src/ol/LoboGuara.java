@@ -52,13 +52,15 @@ public class LoboGuara extends Animal{
 			setMorte();
 		}
 	}
-
+/*
+ * Obeject para animal.  Documentar isso!!! 10/09/17
+ */
 	private Localizacao procuraComida(Localizacao localizacao) {
 		List<Localizacao> adjacente = campo.localizacoesAdjacentes(localizacao);
 		Iterator<Localizacao> it = adjacente.iterator();
 		while (it.hasNext()) {
 			Localizacao onde = it.next();
-			Object animal = campo.getObjectAt(onde);
+			Animal animal = campo.getObjectAt(onde);
 			if(animal instanceof Ovelha) {
 				Ovelha ovelha = (Ovelha) animal;
 				ovelha.setMorte();
@@ -90,7 +92,7 @@ public class LoboGuara extends Animal{
 	 */
 	private int procria() {
 		int nascimentos = 0;
-		if (podeProcriar() && rand.nextDouble() <= PROBABILIDADE_PROCRIACAO) {
+		if (this.vivo && podeProcriar() && rand.nextDouble() <= PROBABILIDADE_PROCRIACAO) {
 			nascimentos = rand.nextInt(TAMANHO_MAXIMO_NINHADA) + 1;
 		}
 		return nascimentos;

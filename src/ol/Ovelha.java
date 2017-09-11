@@ -16,6 +16,9 @@ public class Ovelha extends Animal{
 			idade = rand.nextInt(IDADE_MAXIMA);
 		}
 	}
+	/*
+	 * Se a ovelha não se move ela deve morrer? Acho que não faz sentido: Removido o setMorte(); Documentar isso: 10/09/17
+	 */
 	
 	public void corre(List<Ovelha> novasOvelhas) {
 		incrementaIdade();
@@ -27,7 +30,7 @@ public class Ovelha extends Animal{
 			if (newLocalizacao != null) {
 				setLocalizacao(newLocalizacao);
 			} else {
-				setMorte();
+				
 			}
 		}
 	}

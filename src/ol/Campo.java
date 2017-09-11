@@ -110,6 +110,7 @@ public class Campo {
 						}
 					}
 				}
+				Collections.shuffle(localizacoes, rand);
 			
 			}else {
 				throw new IllegalArgumentException();

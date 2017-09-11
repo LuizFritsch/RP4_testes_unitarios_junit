@@ -79,55 +79,16 @@ public class LoboGuaraTest {
 		podeProcriar.setAccessible(true);
 		Method incrementaIdade = lb.getClass().getDeclaredMethod("incrementaIdade");
 		incrementaIdade.setAccessible(true);
-		for(int i=0;i<151; i++) {
+		for(int i=0;i<=151; i++) {
 			incrementaIdade.invoke(lb);
 		}
 		boolean b = (Boolean) podeProcriar.invoke(lb);
-		assertFalse(b);
+		System.out.println(b);
+		assertTrue(b);
 
 	}
 	
-	/*
-	 * Corrigir erro da lista adjacente estar cheia. Ainda terminar esse metodo, corrigir a referencia do null ao morre o lobo 
-	 */
 	
-	@Test 
-	public void testPodeProcriar5() throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException{
-		Campo campo = new Campo(50, 50);
-		LoboGuara lb = new LoboGuara(false, campo, new Localizacao(1, 1));
-		Method podeProcriar = lb.getClass().getDeclaredMethod("podeProcriar");
-		podeProcriar.setAccessible(true);
-		
-		Method incrementaIdade = lb.getClass().getDeclaredMethod("incrementaIdade");
-		incrementaIdade.setAccessible(true);
-		
-		Method luz = lb.getClass().getDeclaredMethod("daALuz", List.class);
-		luz.setAccessible(true);
-		
-		List<LoboGuara> x = new ArrayList();
-		x.add(lb);
-		
-		for(int i=0;i<150; i++) {
-			incrementaIdade.invoke(lb);
-			
-				
-		}
-		
-		for(int i=150;i<152; i++) {
-			incrementaIdade.invoke(lb);
-			
-			luz.invoke(lb, x);
-			
-		}
-		
-		
-		
-		
-		boolean b = (Boolean) podeProcriar.invoke(lb);
-		assertFalse(b);
-
-	}
-
 	@Ignore
 	@Test
 	public void testCaca() {
@@ -195,6 +156,7 @@ public class LoboGuaraTest {
 		assertTrue(lobo.estaVivo());
 	}
 	
+	@Test
 	public void incrementaIdade3() throws Exception{
 		LoboGuara lobo = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
 		Method incrementaIdade = lobo.getClass().getDeclaredMethod("incrementaIdade");
@@ -202,9 +164,10 @@ public class LoboGuaraTest {
 		for(int i=0; i<5000; i++) {
 			incrementaIdade.invoke(lobo);
 		}
-		assertTrue(lobo.estaVivo());
+		assertFalse(lobo.estaVivo());
 	}
 	
+	@Test
 	public void incrementaIdade4() throws Exception{
 		LoboGuara lobo = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
 		Method incrementaIdade = lobo.getClass().getDeclaredMethod("incrementaIdade");

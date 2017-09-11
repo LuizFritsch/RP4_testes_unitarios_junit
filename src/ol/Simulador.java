@@ -93,6 +93,10 @@ public class Simulador {
 		tela.mostraStatus(etapa, campo);
 	}
 
+	
+	/*
+	 * Idade não randomica: Correto é true. Documentar isso: 10/09/17
+	 */
 	private void povoa() {
 		Random rand = Randomizador.getRandom();
 		campo.limpa();
@@ -100,11 +104,11 @@ public class Simulador {
 			for (int coluna = 0; coluna < campo.getLargura(); coluna++) {
 				if (rand.nextDouble() < PROBABILIDADE_CRIACAO_OVELHA) {
 					Localizacao localizacao = new Localizacao(linha, coluna);
-					Ovelha ovelha = new Ovelha(false, campo, localizacao);
+					Ovelha ovelha = new Ovelha(true, campo, localizacao);
 					ovelhas.add(ovelha);
 				} else if (rand.nextDouble() < PROBABILIDADE_CRIACAO_LOBOGUARA) {
 					Localizacao localizacao = new Localizacao(linha, coluna);
-					LoboGuara loboGuara = new LoboGuara(false, campo, localizacao);
+					LoboGuara loboGuara = new LoboGuara(true, campo, localizacao);
 					lobos.add(loboGuara);
 				}
 			}
