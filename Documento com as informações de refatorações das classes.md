@@ -132,8 +132,91 @@ Correção 16 - Encontrado por meio do Junit
 16.4 Solução:  
 16.5 Foi adicionada uma cláusula *if* que verifica se já existe um objeto na posição desejada(caso exista dispara uma IllegalArgumentException).
 
+Correção 17 - 
+17.1 Classe: "CampoEstatistica" 
+17.2 Método: "geraContadores(Campo campo)"
+17.3 Linha: 69
+17.4 Erro: Não exige que sejam herdeiros da classe Animal  
+17.5 Solução: Fazer casting para do objeto retornado pelo método “getObjectAt(linha, coluna)” de “Object” para “Animal”
 
-Correção 17 - Encontrado por meio do Junit
+Correção 18 - 
+18.1 Classe: “CampoTest”
+18.2 Método: “testLugarObjectLocalizacao2()” 
+18.3 Linha: 258 
+18.4 Erro: Método não necessita de um assert e precisa da adição do (excepected = IllegalArgumenteException.class) pois ao enviar null no método “lugar(null, l)” o sistema retorna a exceção  
+18.5 Solução: Remoção do assert desnecessário e adição da cláusula (excepected = IllegalArgumenteException.class) no método refatorado.
+
+Correção 19 - 
+19.1 Classe: “SimuladorTela”  
+19.2 Método: “setCor(Class animalClass, Color color)”
+19.3 Linha: 43
+19.4 Erro: Aceita dados inválidos como por exemplo “null”  
+19.5 Solução: Adição de cláusula “if” para verificar se os valores são nulos e disparar as devidas exceções e verificar se a classe do animal recebido é uma das herdeira de “Animal”
+
+Correção 20 - 
+20.1 Classe: “Animal”  
+20.2 Método: “setLocalizacao(Localizacao newLocalizacao)”
+20.3 Linha: 31 
+20.4 Erro: O método “setLocalizacao(Localizacao newLocalizacao)” aceita uma localização com linha ou coluna igual a tamanho máximo+1  
+20.5 Solução:  Adição de “-1” logo após cada comparação na cláusula “if” da linha 35 possibilitando apenas localizações com tamanho menor que o tamanho máximo do campo.
+
+Correção 21 - 
+21.1 Classe: “Simulador”  
+21.2 Método: “povoa()”
+21.3 Linha: 101 e 105 
+21.4 Erro: Condições para procriação estão invertidas. A probabilidade de criar ovelhas na realidade cria lobos e a de criar lobos cria ovelhas.  
+21.5 Solução: Inversão do código dentro do “if” da linha 101 para o “else if” linha 105 e vice versa.
+
+Correção 22 - 
+22.1 Classe: “LoboGuara”  
+22.2 Método: “procuraComida(Localizacao localizacao)”
+22.3 Linha: 62 
+22.4 Erro: Não confere se o animal recebido é uma ovelha   
+22.5 Solução: Adição de cláusula “if” para verificar se o objeto é uma instância de Ovelha.
+
+Correção 23 - 
+23.1 Classe: “Contador”  
+23.2 Método: construtor
+23.3 Linha: 17 
+23.4 Erro: Mostra o nome do pacote no método "getName()"  
+23.5 Solução: Adição de um laço de repetição “for” para retirar os 3 primeiros caracteres da string “ol.”
+
+Correção 24 - 
+24.1 Classe: “Simulador”
+24.2 Método: “simulacaoUmaEtapa()”
+24.3 Linha: 83
+24.4 Erro: Não adicionava +1 a variável global "etapa" ao fim de cada etapa
+24.5 Solução: adição da linha “etapa++;” na linha 83
+
+Correção 25 - 
+25.1 Classe: “Ovelha”
+25.2 Método: “daALuz(List<Ovelha> novasOvelhas)”
+25.3 Linha: 58
+25.4 Erro: Não verificava se a lista de posições livres estava vazia
+25.5 Solução: Adição da cláusula “if” na linha 58 que verifica se a lista está vazia e cláusula “else” após o “if” com um break
+
+Correção 26 - 
+26.1 Classe: “Lobo”
+26.2 Método: “daALuz(List<Ovelha> novasOvelhas)”
+26.3 Linha: 79
+26.4 Erro: Não verificava se a lista de posições livres estava vazia
+26.5 Solução: Adição da cláusula “if” na linha 79 e cláusula “else” após o “if” com um break
+
+Correção 27 - 
+27.1 Classe: “Simulador”
+27.2 Método: “povoa()”
+27.3 Linha: 111
+27.4 Erro: Criava um objeto sem ter idade randômica
+27.5 Solução: Substituição do argumento false para true
+
+Correção 28 - 
+28.1 Classe: “LoboGuara”
+28.2 Método: “procuraComida(Localizacao localizacao)”
+28.3 Linha: 63
+28.4 Erro: O objeto utilizado para guardar a ovelha era do tipo “Object” ao invés do tipo “Ovelha”
+28.5 Solução: Substituir o tipo do objeto usado para guardar a ovelha de “Object” para “Ovelha”.
+
+
 ##Diagrama de Classe
 ###Diagrama de Classe Antigo
 
