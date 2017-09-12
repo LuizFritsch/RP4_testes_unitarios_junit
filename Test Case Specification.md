@@ -412,9 +412,8 @@
 | Prioridade:         	| Média          	|
 | Rastreador:         	|       RE01, RE02, RE04     	|
 | Precondições:       	|  getProfundidade, getLargura e getObjectAt, funcionando corretamente.            	|
-| Entradas                                   |  Resultado esperado                       |  
-|-----------------------------------------------------|-----------------------------------------|  
-| Deve chamar o método ovelha 7 vezes, após isso deve ser testado se há outro objeto na mesma localização | true|
+| Entradas              | Deve chamar o método ovelha 7 vezes, após isso deve ser testado se há outro objeto na mesma localização |
+|Resultado esperado      | true|
 
 ***
 
@@ -423,11 +422,12 @@
 | Prioridade:         	| baixa          	|
 | Rastreador:         	|       RE01, RE03, RE04     	|
 | Precondições:       	|  Nenhuma            	|
+
 | Entradas                                   |  Resultado esperado                  |  
-|-----------------------------------------------------|---------------------------------------|  
-| (0,0) | Tratamento de exceção  |
-| (1,1) | Teste passar |
-| (-1,-1) | Tratamento de exceção |
+|--------------------------------------------|--------------------------------------|  
+| (0,0)                                      | Tratamento de exceção                |
+| (1,1)                                      | Teste passar                         |
+| (-1,-1)                                    | Tratamento de exceção                |
 
 ***
 
@@ -436,6 +436,7 @@
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE03, RE04     	|
 | Precondições:       	|  Nenhuma            	|
+
 | Entradas                                   |  Resultado esperado                            |  
 |-----------------------------------------------------|---------------------------------------|  
 | criar uma simulação longa | Tratamento de exceção |
@@ -447,6 +448,7 @@
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE03, RE04     	|
 | Precondições:       	|  Nenhuma            	|
+
 | Entradas                                   |  Resultado esperado                     |  
 |-----------------------------------------------------|-----------------------------------------|  
 | Randomizar com parâmetro 1 | 0 |
@@ -457,7 +459,8 @@
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE03, RE04     	|
-| Precondições:       	|  Para o uso do segundo teste o método setMorte deve esta corretamente implementado.              	
+| Precondições:       	|  Para o uso do segundo teste o método setMorte deve esta corretamente implementado.|
+              	
 | Entradas                                   |  Resultado esperado                |  
 |-----------------------------------------------------|---------------------------------------|  
 | O método cria um lobo guará  | true 
@@ -470,6 +473,7 @@
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE04     	|
 | Precondições:       	|  Nenhuma            	|
+
 | Entradas                                   |  Resultado esperado                           |  
 |-----------------------------------------------------|---------------------------------|  
 |Instancia um simuladorTela| a tela deve apresentar o seguinte titulo "Simulacao Ovelhas and Lobos Guara"|
@@ -507,6 +511,7 @@
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	| Criação de objeto do tipo Campo, Localizacao e Ovelha     |
+
 | Entradas                                   |  Resultado esperado                   |  
 |-----------------------------------------------------|------------------------------------------|  
 | false, Campo, Localizacao | true |
@@ -531,6 +536,7 @@
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	| Criação de objeto do tipo Campo, Localizacao(2 criados) e o método getLocalizacao(Localizacao) estar funcionando corretamente.         |
+
 | Entradas                                   |  Resultado esperado                  |  
 |-----------------------------------------------------|------------------------------------------|  
 | O método cria uma Ovelha na localização específica (25,25) e logo após seta a mesma para (26,26) | Localizacao igual a (26,26)  |
@@ -544,6 +550,7 @@
 | Prioridade:         	| Média        	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	|  Criação de objeto do tipo Campo, Localizacao(Essa localização é inválida)      |
+
 | Entradas                                   |  Resultado esperado                     |  
 |-----------------------------------------------------|-------------------------------------------|  
 | O método cria Campo e Localizacao(esse é inválida) e animal | O método deve retornar uma exceção do tipo IllegalArgumentException |
@@ -555,6 +562,7 @@
 | Prioridade:         	| Média        	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	| Criação de objeto do tipo Campo, Localizacao, Ovelha e o método getObjectAt() estar funcionando corretamente     |
+
 | Entradas                                   |  Resultado esperado                     |  
 |-----------------------------------------------------|-------------------------------------------|  
 | O método cria a Ovelha | O método setMorte() deve retornar false |
@@ -567,6 +575,7 @@
 | Prioridade:         	| Média        	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	|  Criação de objeto do tipo Campo, Localizacao, LoboGuara e o método incrementaIdade() estar funcionando corretamente   |
+
 | Entradas                                   |  Resultado esperado                         |  
 |-----------------------------------------------------|------------------------------------------|  
 | O método cria um LoboGuara | LoboGuara estar apto para procriar |
@@ -578,6 +587,7 @@
 | Prioridade:         	| Média        	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, LoboGuara  |
+
 | Entradas                                   |  Resultado esperado                    |  
 |-----------------------------------------------------|-------------------------------------------|  
 | O método cria um objeto LoboGuara | LoboGuara envelhecer |
@@ -593,6 +603,7 @@
 | Prioridade:         	| Média        	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, LoboGuara  |
+
 | Entradas                                   |  Resultado esperado                       |  
 |-----------------------------------------------------|---------------------------------------|  
 | O método cria um objeto LoboGuara | LoboGuara morrer, de fome |
@@ -602,12 +613,12 @@
 
 ***
 
-| Test Case ID:  CT37     	| Objetivo: Verificar se o método podeProcriar() está funcionando.
-       |
+| Test Case ID:  CT37     	| Objetivo: Verificar se o método podeProcriar() está funcionando.|
 |---------------------	|-----------	|
 | Prioridade:         	| Média        	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
-| Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, Ovelha   |
+| Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, Ovelha |
+
 | Entradas                                   |  Resultado esperado                        |  
 |-----------------------------------------------------|---------------------------------------|  
 | O método cria um objeto Ovelha | ovelha estar apta para procriar  |
