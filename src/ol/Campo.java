@@ -109,7 +109,11 @@ public class Campo {
 							}
 						}
 					}
+<<<<<<< Updated upstream
 				}
+=======
+				} 
+>>>>>>> Stashed changes
 				Collections.shuffle(localizacoes, rand);
 			
 			}else {
