@@ -947,7 +947,6 @@ modelo de software
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | O método cria um objeto Ovelha | ovelha não estar apta para procriar  | teste passou |  
-| O método cria um objeto Ovelha | ovelha não estar apta para procriar  | teste passou |   
   
 **Identificador:**          CT49 podeProcriarMorta() classe Ovelha  
 
