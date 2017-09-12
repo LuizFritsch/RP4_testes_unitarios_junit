@@ -216,7 +216,14 @@ Correção 28 -
 28.4 Erro: O objeto utilizado para guardar a ovelha era do tipo “Object” ao invés do tipo “Ovelha”     
 28.5 Solução: Substituir o tipo do objeto usado para guardar a ovelha de “Object” para “Ovelha”.      
 
-
+Correção 29 -    
+28.1 Classe: “LoboGuara”    
+28.2 Método: “caca(List<LoboGuara> novosLobos)”    
+28.3 Linha: 26     
+28.4 Erro: O lobo sempre morria caso não encontrasse comida ao invés de reduzir sua barra de fome     
+28.5 Solução: Substituir o "setMorte()" da cláusula "else" para "decrementaFome()"    
+     
+      
 ##Diagrama de Classe
 ###Diagrama de Classe Antigo
 
