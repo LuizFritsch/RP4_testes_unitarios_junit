@@ -217,12 +217,18 @@ Correção 28 -
 28.5 Solução: Substituir o tipo do objeto usado para guardar a ovelha de “Object” para “Ovelha”.      
 
 Correção 29 -    
-28.1 Classe: “LoboGuara”    
-28.2 Método: “caca(List<LoboGuara> novosLobos)”    
-28.3 Linha: 26     
-28.4 Erro: O lobo sempre morria caso não encontrasse comida ao invés de reduzir sua barra de fome     
-28.5 Solução: Substituir o "setMorte()" da cláusula "else" para "decrementaFome()"    
+29.1 Classe: “LoboGuara”    
+29.2 Método: “caca(List<LoboGuara> novosLobos)”    
+29.3 Linha: 26     
+29.4 Erro: O lobo sempre morria caso não encontrasse comida ao invés de reduzir sua barra de fome     
+29.5 Solução: Substituir o "setMorte()" da cláusula "else" para "decrementaFome()"    
      
+Correção 30 -    
+30.1 Classe: "Campo"    
+30.2 Método: "localizacaoAdjacenteRandomica(Localizacao localizacao)"    
+30.3 Linha: 69     
+30.4 Erro: Usava "lista.size()==0"  ao invés de "isEmpty()"     
+30.5 Solução: Substituir o "lista.size()==0" por "isEmpty()"
       
 ##Diagrama de Classe
 ###Diagrama de Classe Antigo
