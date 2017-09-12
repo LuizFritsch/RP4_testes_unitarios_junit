@@ -446,14 +446,28 @@ public class CampoTest {
 	
 	//----------------------------------------------------------------------------------------------------------------------------------
 
-	@Test (expected= IllegalArgumentException.class)
+	@Test 
 	public void testLocalizacaoAdjacenteRandomica() {
 
 		Campo c = new Campo(100,100);
-		Localizacao l = new Localizacao(-1,0);
-		
-	    Localizacao lo = c.localizacaoAdjacenteRandomica(l);
-		assertNotEquals(lo, null);
+		assertTrue(c.localizacaoAdjacenteRandomica(new Localizacao(0, 0)) instanceof Localizacao);
+				
+	}
+	
+	@Test 
+	public void testLocalizacaoAdjacenteRandomica1a() {
+
+		Campo c = new Campo(100,100);
+		Localizacao l = new Localizacao(0,1);
+		assertEquals(c.localizacaoAdjacenteRandomica(new Localizacao(0, 0)), l);
+				
+	}
+	
+	@Test 
+	public void testLocalizacaoAdjacenteRandomicaa2() {
+
+		Campo c = new Campo(1,1);
+		assertEquals(c.localizacaoAdjacenteRandomica(new Localizacao(0, 0)), null);
 				
 	}
 	
