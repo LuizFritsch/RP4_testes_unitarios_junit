@@ -254,5 +254,83 @@ public class LoboGuaraTest {
 		assertTrue((Integer)procria.invoke(lobo) == 0);
 		
 	}
+
+	
+	
+	
+	
+	
+	@Test
+	public void loboGuaraFome1() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
+		Campo campo = new  Campo(100, 100);
+		Localizacao loc = new Localizacao(0, 0);
+		
+		for (int i=0; i< 1000;i++) {
+		LoboGuara lobo = new LoboGuara(true, campo , loc);
+		
+		Field nivelFome = lobo.getClass().getDeclaredField("nivelFome");
+		nivelFome.setAccessible(true);
+		
+		int nivelFomeInt = (Integer) nivelFome.get(lobo);
+		
+		System.out.println(nivelFomeInt);
+				
+		campo.limpa(loc);
+		}
+		/*assertTrue(0<= nivelFomeInt);
+		assertTrue(nivelFomeInt<=7);*/		
+		
+	}
+	
+	@Test
+	public void loboGuaraFome2() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
+		Campo campo = new  Campo(100, 100);
+		Localizacao loc = new Localizacao(0, 0);
+				
+		LoboGuara lobo = new LoboGuara(false, campo , loc);
+		
+		Field nivelFome = lobo.getClass().getDeclaredField("nivelFome");
+		nivelFome.setAccessible(true);
+		
+		int nivelFomeInt = (Integer) nivelFome.get(lobo);
+						
+		assertTrue(7 == nivelFomeInt);
+				
+		}
+	
+	@Test
+	public void loboGuaraFome3() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
+		Campo campo = new  Campo(3, 3);
+		Localizacao loc = new Localizacao(0, 0);
+		Localizacao loc1 = new Localizacao(0, 1);
+		Localizacao loc3 = new Localizacao(0, 2);
+				
+		LoboGuara lobo = new LoboGuara(false, campo , loc);
+		LoboGuara lobo2 = new LoboGuara(false, campo , loc1);
+		Ovelha ove = new Ovelha(true, campo, loc3);
+		List<LoboGuara> lista = new ArrayList<LoboGuara>();
+		lista.add(lobo);
+		lista.add(lobo2);
+		lobo.caca(lista);
+		lobo2.caca(lista);
+		
+		
+		
+		Field nivelFome = lobo.getClass().getDeclaredField("nivelFome");
+		nivelFome.setAccessible(true);
+		int nivelFomeInt = (Integer) nivelFome.get(lobo);
+		
+		Field nivelFome2 = lobo2.getClass().getDeclaredField("nivelFome");
+		nivelFome2.setAccessible(true);
+		int nivelFomeInt2 = (Integer) nivelFome2.get(lobo2);	
+		
+		System.out.println(nivelFomeInt);
+		System.out.println(nivelFomeInt2);
+		
+						
+		//assertTrue(5 == nivelFomeInt);
+				
+		}
+	
 	
 }

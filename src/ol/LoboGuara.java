@@ -12,17 +12,25 @@ public class LoboGuara extends Animal{
 	private static final Random rand = Randomizador.getRandom();
 
 	private int nivelFome;
+	
+	/*
+	 * Erro detectado:  Animais podem ser criados com nivel de fome  = 0, logo deveria estar morto. Para evitar de validar fome antes colocarm animal no campo.
+	 */
 
 	public LoboGuara(boolean idadeRandomica, Campo campo, Localizacao localizacao) {
 		super(campo, localizacao);
 		if (idadeRandomica) {
 			idade = rand.nextInt(IDADE_MAXIMA);
-			nivelFome = rand.nextInt(VALOR_FOME_OVELHA);
+			nivelFome = rand.nextInt(VALOR_FOME_OVELHA) + 1;
 		} else {
 			nivelFome = VALOR_FOME_OVELHA;
 		}
 	}
 
+	
+	/*
+	 * Erro detectado:  O lobo se move, mas a fome não aumenta. Refatorando e corrigido: Teste Lobo testeLoboguaraFome3. 
+	 */
 	public void caca(List<LoboGuara> novosLobos) {
 		incrementaIdade();
 		if (vivo) {
@@ -33,6 +41,7 @@ public class LoboGuara extends Animal{
 			}
 			if (newLocalizacao != null) {
 				setLocalizacao(newLocalizacao);
+				decrementaFome();
 			} else {
 				decrementaFome();
 			}

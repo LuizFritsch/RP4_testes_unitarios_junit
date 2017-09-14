@@ -838,5 +838,22 @@ public class CampoTest {
 	}
 	
 	
+	@Test
+	public void localizacaoAdjacenteRadndomicaTest() {
+		Campo c = new Campo(100, 100);
+		
+		assertTrue(c.localizacaoAdjacenteRandomica(new Localizacao(0, 0)) instanceof Localizacao);
+				
+	}
+	
+	
+	@Test
+	public void localizacaoAdjacenteRadndomicaTest2() {
+		Campo c = new Campo(1,1);
+		
+		assertEquals(c.localizacaoAdjacenteRandomica(new Localizacao(0, 0)), null);
+				
+	}
+	
 
 }
