@@ -66,7 +66,7 @@ public class Campo {
 
 	public Localizacao localizacaoAdjacenteRandomica(Localizacao localizacao) {
 		List<Localizacao> adjacent = localizacoesAdjacentes(localizacao);
-		if(adjacent.size()>0) {
+		if(!adjacent.isEmpty()) {
 			return adjacent.get(0);
 		}
 		return null;
@@ -109,7 +109,11 @@ public class Campo {
 							}
 						}
 					}
-				}
+
+				
+
+				} 
+
 				Collections.shuffle(localizacoes, rand);
 			
 			}else {
