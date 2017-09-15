@@ -1,3 +1,5 @@
+#Check List para inspeção das classes “LoboGuara”, “Randomizador” e “Simulador”  
+
 |**Status**                              |**Sim**  |**Não**  |**Indiferente**  | 
 |----------------------------------------|---------|---------|-----------------|   
 |Todas as constantes foram denominadas?  |     X   |   --    |       --        |  
