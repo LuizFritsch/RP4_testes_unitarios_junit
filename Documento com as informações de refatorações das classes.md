@@ -249,10 +249,60 @@ Correção 30 -
 30.3 Linha: 69     
 30.4 Erro: Usava "lista.size()==0"  ao invés de "isEmpty()"     
 30.5 Solução: Substituir o "lista.size()==0" por "isEmpty()"   
-30.6 Rastreabilidade: Análise em grupo
+30.6 Rastreabilidade: Análise em grupo  
+  
+Correção 31 -    
+31.1 Classe: "LoboGuara"    
+31.2 Método: "Construtor loboGuara"    
+31.3 Linha: 24     
+31.4 Erro: nivelFome ao ser iniciado pela rand, podia receber 0. 0 de fome o lobo deve estar morto.      
+31.5 Solução: "Adicionar + 1. Após o sorteio feito pelo rand"   
+31.6 Rastreabilidade:  [ Documentação caso de teste](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste) CT53.  
+  
+  
+Correção 32 -    
+32.1 Classe: "LoboGuara"    
+32.2 Método: "caca"    
+32.3 Linha: 44     
+32.4 Erro: Se o lobo não se move, nivél fome não se altera corretamente.      
+32.5 Solução: "Adicionar metodo decremetafome() dentro do if"   
+32.6 Rastreabilidade:  [ Documentação caso de teste](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste) CT54 e CT55. 
+  
+  
+Correção 33 -    
+33.1 Classe: "Ovelha"    
+33.2 Método: "corre"    
+33.3 Linha: 26     
+33.4 Erro: A localização influencia na quantidade de individuos máximo.      
+33.5 Solução: " Ovelha corre, só então executa  daLuz"   
+33.6 Rastreabilidade:  [ Documentação caso de teste](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste) CT57 e CT58.  
+  
+Correção 34 -    
+34.1 Classe: "Ovelha"    
+34.2 Método: "daALuz"    
+34.3 Linha: 56     
+34.4 Erro: "else" desnecessário. Refatorações anteriores não removeu.      
+34.5 Solução: "remover o else do condisional IF".   
+34.6 Rastreabilidade:  [Inspeção - Reinspeção](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Inspe%C3%A7%C3%A3o)  
+  
+Correção 35 -    
+35.1 Classe: "Ovelha"    
+35.2 Método: "procia"    
+35.3 Linha: 75     
+35.4 Erro: ovelha morta, poderia dar a luz.      
+35.5 Solução: "Adição do this.vivo dentro do condicional if"   
+35.6 Rastreabilidade:  [ Documentação caso de teste](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste) CT53.  
+  
+    
+  
+
+
+
 
       
     
+
+
     
     
 ##Diagrama de Classe
