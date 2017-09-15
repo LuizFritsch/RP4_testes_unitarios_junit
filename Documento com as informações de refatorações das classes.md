@@ -10,7 +10,7 @@ Correção 1
 1.2 Método: ‘procria()’  
 1.3 Linha ‘108’(mais especificamente no “IF”)  
 1.4 Erro: Método para procriação incorreto pois a probabilidade de procriação fica menor que ‘0.75 ao invés de ‘0.75’’  
-1.5 Solução: Substituir o ‘<’ por ‘<=’ na linha 108 
+1.5 Solução: Substituir o ‘<’ por ‘<=’ na linha 108            
 1.6 Rastreabilidade: [Inspeção](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Inspe%C3%A7%C3%A3o)  
 
 Correção 2     
