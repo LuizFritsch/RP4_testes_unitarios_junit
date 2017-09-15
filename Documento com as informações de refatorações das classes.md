@@ -26,14 +26,16 @@ Correção 3
 3.2 Método: ‘Nesse caso toda a classe será refatorada’  
 3.3 Linha: ‘Todas basicamente’  
 3.4 Erro: ‘Padrão singleton muito mal implementado e com diversos problemas’  
-3.5 Solução: ‘Aplicação do padrão singleton e exclusão das variáveis “useShared” e “SEED” ’  
+3.5 Solução: ‘Aplicação do padrão singleton e exclusão das variáveis “useShared” e “SEED” ’              
+3.6 Rastreabilidade: [Inspeção INS01](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Inspe%C3%A7%C3%A3o)
 
 Correção 4  
 4.1 Classe: ‘Simulador’  
 4.2 Método: ‘Simulador(int profundidade, int largura)’  
 4.3 Linha: ‘33’  
 4.4 Erro: Aceita simulações com largura ou/e profundidade iguais a 0  
-4.5 Solução: Mudança dos dois operadores ‘<’ por ‘<=’  
+4.5 Solução: Mudança dos dois operadores ‘<’ por ‘<=’              
+4.6 Rastreabilidade: [Inspeção INS01](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Inspe%C3%A7%C3%A3o)
 
 Correção 5  
 5.1 Classe: ‘Simulador’  
