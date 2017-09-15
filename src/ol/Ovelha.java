@@ -18,20 +18,22 @@ public class Ovelha extends Animal{
 	}
 	/*
 	 * Se a ovelha não se move ela deve morrer? Acho que não faz sentido: Removido o setMorte(); Documentar isso: 10/09/17
+	 * 
+	 * 
+	 * Nova alteração, a ovelha tenta se mover, então ela tenta dar a luz... nesse caso a possição dela pode gerar mais filhotes.
 	 */
 	
 	public void corre(List<Ovelha> novasOvelhas) {
 		incrementaIdade();
 		
-		if (vivo) {
+		if (vivo) {			
 			
-			daALuz(novasOvelhas);
 			Localizacao newLocalizacao = campo.localizacaoAdjacenteLivre(localizacao);// Se ela não tiver campos livres ela morre?
 			if (newLocalizacao != null) {
 				setLocalizacao(newLocalizacao);
-			} else {
-				
 			}
+			
+			daALuz(novasOvelhas);
 		}
 	}
 
@@ -48,6 +50,8 @@ public class Ovelha extends Animal{
 	}
 /*
  * Método não verifica quantos campos vazios existem
+ * 
+ * Refatorado - 15/09/2017 removido o esle extra.
  */
 	private void daALuz(List<Ovelha> novasOvelhas) {
 		List<Localizacao> livre = campo.localizacoesAdjacentesLivres(localizacao);
@@ -57,16 +61,18 @@ public class Ovelha extends Animal{
 				Localizacao loc = livre.remove(0);
 				Ovelha jovem = new Ovelha(false, campo, loc);
 				novasOvelhas.add(jovem);
-			}else {
-				break;
 			}
 		}
 	}
 
 	
+	/*
+	 * Refatorado - 15/09/2017  ovelha morta poderia dar a Luz.
+	 */
+	
 	private int procria() {
 		int nascimentos = 0;
-		if (podeProcriar() && rand.nextDouble() <= PROBABILIDADE_PROCRIACAO) {
+		if (this.vivo && podeProcriar() && rand.nextDouble() <= PROBABILIDADE_PROCRIACAO) {
 			nascimentos = rand.nextInt(TAMANHO_MAXIMO_NINHADA) + 1;			
 		}
 		return nascimentos;

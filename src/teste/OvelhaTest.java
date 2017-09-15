@@ -216,6 +216,7 @@ public class OvelhaTest {
 		}
 		Method podeProcriar = ove.getClass().getDeclaredMethod("podeProcriar");
 		podeProcriar.setAccessible(true);
+		System.out.println(ove.estaVivo());
 		assertEquals(false,podeProcriar.invoke(ove));
 	}
 	@Test
@@ -262,6 +263,26 @@ public class OvelhaTest {
 		Method podeProcriar = ove.getClass().getDeclaredMethod("podeProcriar");
 		podeProcriar.setAccessible(true);
 		assertEquals(true,podeProcriar.invoke(ove));
+	}
+	
+	
+	
+	
+	@Test
+	public void correAtualizado() {
+		
+		ArrayList<Ovelha> teste = new ArrayList<Ovelha>();
+		Campo  campo = new Campo(10,10);
+		Localizacao loc = new Localizacao(1, 1);
+		Ovelha abe = new Ovelha(true ,campo, loc);
+		abe.corre(teste);
+		abe.corre(teste);
+		
+		System.out.println(campo.localizacoesAdjacentesLivres(loc));
+		
+		
+		
+		
 	}
 	
 

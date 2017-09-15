@@ -29,7 +29,8 @@ public class LoboGuara extends Animal{
 
 	
 	/*
-	 * Erro detectado:  O lobo se move, mas a fome não aumenta. Refatorando e corrigido: Teste Lobo testeLoboguaraFome3. 
+	 * Erro detectado:  O lobo se move, mas a fome não aumenta. Refatorando e corrigido: Teste Lobo testeLoboguaraFome3, agora tem outro problema
+	 * lobo come, mas a fome dele decrementa.
 	 */
 	public void caca(List<LoboGuara> novosLobos) {
 		incrementaIdade();
@@ -73,7 +74,7 @@ public class LoboGuara extends Animal{
 			if(animal instanceof Ovelha) {
 				Ovelha ovelha = (Ovelha) animal;
 				ovelha.setMorte();
-				nivelFome = VALOR_FOME_OVELHA;
+				nivelFome = VALOR_FOME_OVELHA +1;
 				return onde;
 			}
 			

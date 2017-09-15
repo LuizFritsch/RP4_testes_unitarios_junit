@@ -82,10 +82,14 @@ public class Campo {
 		}
 		return livre;
 	}
+	
+	/*
+	 * Refatorado - 15/09/2017  isEmpty para lista. 
+	 */
 
 	public Localizacao localizacaoAdjacenteLivre(Localizacao localizacao) {
 		List<Localizacao> livre = localizacoesAdjacentesLivres(localizacao);
-		if (livre.size() > 0) {
+		if (!livre.isEmpty()) {
 			return livre.get(0);
 		} else {
 			return null;
