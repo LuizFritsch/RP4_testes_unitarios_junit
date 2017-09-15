@@ -1,4 +1,4 @@
-#Check List para inspeção das classes “LoboGuara”, “Randomizador” e “Simulador”  
+# **INS01** - Check List para inspeção das classes “LoboGuara”, “Randomizador” e “Simulador”  
 
 |**Status**                              |**Sim**  |**Não**  |**Indiferente**  | 
 |----------------------------------------|---------|---------|-----------------|   
@@ -65,7 +65,7 @@ Correção 6
 6.5 Solução: Mudança do if de ‘if (loboGuara.estaVivo())’ para ‘if (!loboGuara.estaVivo())’
 
 
-#Check List para inspeção das classes “Ovelha”, “Campo”
+# **INS02** - Check List para inspeção das classes “Ovelha”, “Campo”
 
 |**Status**                              |**Sim**  |**Não**  |**Indiferente**  | 
 |----------------------------------------|---------|---------|-----------------|   
@@ -84,7 +84,7 @@ Correção 6
 
 
 
-#Check List para inspeção das classes “SimuladorTela”, “CampoEstatistica”
+# **INS03** - Check List para inspeção das classes “SimuladorTela”, “CampoEstatistica”
 
 |**Status**                              |**Sim**  |**Não**  |**Indiferente**  | 
 |----------------------------------------|---------|---------|-----------------|   
@@ -131,7 +131,7 @@ Correção 6
 3.5 Solução: Adição de cláusula ‘if’ para verificar o tamanho da ‘List’ e adição de um ‘return null;’ fora da  cláusula.  
 
 
-#Check List para inspeção da classe “LoboGuara”
+# **INS04** - Check List para inspeção da classe “LoboGuara”
 
 
 |**Status**                              |**Sim**  |**Não**  |**Indiferente**  | 
