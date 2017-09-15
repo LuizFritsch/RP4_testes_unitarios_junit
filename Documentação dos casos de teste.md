@@ -1016,4 +1016,135 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Animal loboGuara, nivel 8 de fome              | O lobo esta morto  | teste passou |   
 | Animal loboGuara, nivel 3 de fome                | O lobo esta vivo  | teste passou |  
-| Animal loboGuara, nivel 5 de fome                | O lobo esta vivo  | teste passou |
+| Animal loboGuara, nivel 5 de fome                | O lobo esta vivo  | teste passou |  
+  
+**Identificador:**          CT53 loboGuaraFome2() classe LoboGuara  
+
+**Objetivo:**    Verificar se ao criar um lobo com idade não randômica, o nível de fome é igual a 7.
+
+ **Prioridade:**     Alta               
+
+ **Condições prévias:**   Criação de objeto loboGuara, campo, ovelha.
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT53         |      X       |      X        |       X       |   x  |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Animal loboGuara, idade randomica false.             | nivél fome igaul a 7  | teste passou |    
+
+ **Identificador:**          CT53 loboGuaraFome1() classe LoboGuara  
+
+**Objetivo:**    Verificar se ao criar um lobo com idade randômica, o nível de fome é igual esta entre 0 e 7, zero não incluso.
+
+ **Prioridade:**     Alta               
+
+ **Condições prévias:**   Criação de objeto loboGuara, campo.
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT54         |      X       |      X        |       X       |   x  |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Animal loboGuara, idade randomica true.             | nivél fome esta entre 0 e 7  | teste falhou |  
+
+**Identificador:**          CT53 loboGuaraFome2() classe LoboGuara  
+
+**Objetivo:**    Verificar se ao criar um lobo com idade não randômica, o nível de fome é igual a 7.
+
+ **Prioridade:**     Alta               
+
+ **Condições prévias:**   Criação de objeto loboGuara, campo, ovelha.
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT52         |      X       |      X        |       X       |   x  |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Animal loboGuara, idade randomica false.             | nivél fome igaul a 7  | teste passou |  
+
+**Identificador:**          CT54 loboGuaraFome3() classe LoboGuara  
+
+**Objetivo:**    Verificar se o lobo ao cacar e quando encontra ou não comida, o nivel de fome é ajustado corretamente.
+
+ **Prioridade:**     Alta               
+
+ **Condições prévias:**   Criação de objeto loboGuara, campo, ovelha.
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT54        |      X       |      X        |       X       |   x  |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| Animal loboGuara, idade randomica false.             | nivél de fome  é ajustado  | teste passou |  
+| Animal loboGuara, idade randomica true               | nivel de fome  é ajustado  | teste passou |  
+
+
+**Identificador:**          CT55 loboGuaraFome4() classe LoboGuara  
+
+**Objetivo:**    Verificar se quando o loboGuara se move, a fome é ajustada, assim como quando não se move.
+
+ **Prioridade:**     Alta               
+
+ **Condições prévias:**   Criação de objeto loboGuara, campo.
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT55         |      X       |      X        |       X       |   x  |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| loboGuara idade randômica false, não se move.           | nivél fome ajustado. | teste  falhou |  
+
+**Identificador:**          CT56 loboGuaraFome4() classe LoboGuara  
+
+**Objetivo:**    Verificar se quando o loboGuara se move, a fome é ajustada, assim como quando não se move. Após refatoração do erro apontado pelo CT55.
+
+ **Prioridade:**     Alta               
+
+ **Condições prévias:**   Criação de objeto loboGuara, campo.
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT56         |      X       |      X        |       X       |   x  |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| loboGuara idade randômica false, não se move.           | nivél fome ajustado. | teste  passou |  
+| loboGuara idade randômica, não se move.           | nivél fome ajustado. | teste  passou |  
+  
+**Identificador:**          CT57 corre() classe Ovelha  
+
+**Objetivo:**   Verificar se corre esta funcionando corretamente, sem se mover.
+
+ **Prioridade:**     Alta               
+
+ **Condições prévias:**   Criação de objeto ovelha, campo.
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT57         |      X       |      X        |       X       |   x  |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| ovelha idade randômica true que não se move           | numero de indivíduos ovelhas máximo não atingido | teste passou |   
+  
+**Identificador:**          CT58 corre() classe Ovelha  
+
+**Objetivo:**   Verificar se corre esta funcionando corretamente, refatoração realizada, primeiro ela tenta se mover.
+
+ **Prioridade:**     Alta               
+
+ **Condições prévias:**   Criação de objeto ovelha, campo.
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT57         |      X       |      X        |       X       |   x  |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| ovelha idade randômica true que se move           | numero de indivíduos ovelhas máximo atingido (localização)| teste passou |
