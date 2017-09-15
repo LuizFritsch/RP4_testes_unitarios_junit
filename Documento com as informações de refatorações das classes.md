@@ -137,7 +137,7 @@ Correção 16 - Encontrado por meio do Junit
 16.3 Os métodos afetados pela mudança, “lugar(Animal animal, int linha, int coluna)” e “ lugar(Animal animal, Localizacao localizacao)”.  
 16.4 Solução:  
 16.5 Foi adicionada uma cláusula *if* que verifica se já existe um objeto na posição desejada(caso exista dispara uma IllegalArgumentException).      
-.6 Rastreabilidade: [JUnit](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste)    
+16.6 Rastreabilidade: [JUnit](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste)    
 
 Correção 17 -   
 17.1 Classe: "CampoEstatistica"    
@@ -145,7 +145,7 @@ Correção 17 -
 17.3 Linha: 69     
 17.4 Erro: Não exige que sejam herdeiros da classe Animal        
 17.5 Solução: Fazer casting para do objeto retornado pelo método “getObjectAt(linha, coluna)” de “Object” para “Animal”       
-17.6 Rastreabilidade: 
+17.6 Rastreabilidade: [JUnit](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste) 
 
 Correção 18 -      
 18.1 Classe: “CampoTest”     
@@ -153,7 +153,7 @@ Correção 18 -
 18.3 Linha: 258     
 18.4 Erro: Método não necessita de um assert e precisa da adição do (excepected = IllegalArgumenteException.class) pois ao enviar null no método “lugar(null, l)” o sistema retorna a exceção.       
 18.5 Solução: Remoção do assert desnecessário e adição da cláusula (excepected = IllegalArgumenteException.class) no método refatorado.    
-18.6 Rastreabilidade:      
+18.6 Rastreabilidade: Análise em grupo        
 
 Correção 19 -      
 19.1 Classe: “SimuladorTela”       
@@ -161,7 +161,7 @@ Correção 19 -
 19.3 Linha: 43      
 19.4 Erro: Aceita dados inválidos como por exemplo “null”         
 19.5 Solução: Adição de cláusula “if” para verificar se os valores são nulos e disparar as devidas exceções e verificar se a classe do animal recebido é uma das herdeira de “Animal”    
-19.6 Rastreabilidade:     
+19.6 Rastreabilidade: [JUnit](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste)    
 
 Correção 20 -      
 20.1 Classe: “Animal”       
@@ -169,7 +169,7 @@ Correção 20 -
 20.3 Linha: 31      
 20.4 Erro: O método “setLocalizacao(Localizacao newLocalizacao)” aceita uma localização com linha ou coluna igual a tamanho máximo+1         
 20.5 Solução:  Adição de “-1” logo após cada comparação na cláusula “if” da linha 35 possibilitando apenas localizações com tamanho menor que o tamanho máximo do campo.    
-20.6 Rastreabilidade:     
+20.6 Rastreabilidade: [JUnit](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste)        
 
 Correção 21 -      
 21.1 Classe: “Simulador”       
@@ -177,7 +177,7 @@ Correção 21 -
 21.3 Linha: 101 e 105      
 21.4 Erro: Condições para procriação estão invertidas. A probabilidade de criar ovelhas na realidade cria lobos e a de criar lobos cria ovelhas.        
 21.5 Solução: Inversão do código dentro do “if” da linha 101 para o “else if” linha 105 e vice versa.    
-21.6 Rastreabilidade:      
+21.6 Rastreabilidade: Análise em grupo        
 
 Correção 22 -     
 22.1 Classe: “LoboGuara”       
@@ -185,15 +185,15 @@ Correção 22 -
 22.3 Linha: 62      
 22.4 Erro: Não confere se o animal recebido é uma ovelha       
 22.5 Solução: Adição de cláusula “if” para verificar se o objeto é uma instância de Ovelha.    
-22.6 Rastreabilidade:     
+22.6 Rastreabilidade: [JUnit](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste)    
 
 Correção 23 -      
 23.1 Classe: “Contador”       
 23.2 Método: construtor     
 23.3 Linha: 17       
 23.4 Erro: Mostra o nome do pacote no método "getName()"        
-23.5 Solução: Adição de um laço de repetição “for” para retirar os 3 primeiros caracteres da string “ol.”    
-23.6 Rastreabilidade:      
+23.5 Solução: Adição de um laço de repetição “for” para retirar os 3 primeiros caracteres da string “ol.”      
+23.6 Rastreabilidade: [JUnit](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste)     
  
 Correção 24 -       
 24.1 Classe: “Simulador”     
@@ -201,7 +201,7 @@ Correção 24 -
 24.3 Linha: 83     
 24.4 Erro: Não adicionava +1 a variável global "etapa" ao fim de cada etapa     
 24.5 Solução: adição da linha “etapa++;” na linha 83    
-24.6 Rastreabilidade:   
+24.6 Rastreabilidade: Análise em grupo  
 
 Correção 25 -     
 25.1 Classe: “Ovelha”    
@@ -209,7 +209,7 @@ Correção 25 -
 25.3 Linha: 58     
 25.4 Erro: Não verificava se a lista de posições livres estava vazia    
 25.5 Solução: Adição da cláusula “if” na linha 58 que verifica se a lista está vazia e cláusula “else” após o “if” com um break       
-25.6 Rastreabilidade: 
+25.6 Rastreabilidade: Análise em grupo
 
 Correção 26 -     
 26.1 Classe: “Lobo”    
@@ -217,7 +217,7 @@ Correção 26 -
 26.3 Linha: 79    
 26.4 Erro: Não verificava se a lista de posições livres estava vazia    
 26.5 Solução: Adição da cláusula “if” na linha 79 e cláusula “else” após o “if” com um break        
-26.6 Rastreabilidade: 
+26.6 Rastreabilidade: Análise em grupo
 
 Correção 27 -     
 27.1 Classe: “Simulador”     
@@ -225,7 +225,7 @@ Correção 27 -
 27.3 Linha: 111    
 27.4 Erro: Criava um objeto sem ter idade randômica   
 27.5 Solução: Substituição do argumento false para true     
-27.6 Rastreabilidade:   
+27.6 Rastreabilidade: Análise em grupo  
  
 Correção 28 -    
 28.1 Classe: “LoboGuara”    
@@ -233,7 +233,7 @@ Correção 28 -
 28.3 Linha: 63     
 28.4 Erro: O objeto utilizado para guardar a ovelha era do tipo “Object” ao invés do tipo “Ovelha”     
 28.5 Solução: Substituir o tipo do objeto usado para guardar a ovelha de “Object” para “Ovelha”.        
-28.6 Rastreabilidade:   
+28.6 Rastreabilidade: Análise em grupo  
 
 Correção 29 -    
 29.1 Classe: “LoboGuara”    
@@ -241,7 +241,7 @@ Correção 29 -
 29.3 Linha: 26     
 29.4 Erro: O lobo sempre morria caso não encontrasse comida ao invés de reduzir sua barra de fome     
 29.5 Solução: Substituir o "setMorte()" da cláusula "else" para "decrementaFome()"       
-29.6 Rastreabilidade:   
+29.6 Rastreabilidade: Análise em grupo
 
 Correção 30 -    
 30.1 Classe: "Campo"    
@@ -249,7 +249,9 @@ Correção 30 -
 30.3 Linha: 69     
 30.4 Erro: Usava "lista.size()==0"  ao invés de "isEmpty()"     
 30.5 Solução: Substituir o "lista.size()==0" por "isEmpty()"   
-30.6 Rastreabilidade:       
+30.6 Rastreabilidade: Análise em grupo
+
+      
     
     
     
