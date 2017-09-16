@@ -387,7 +387,7 @@
 
 ***
 
-| Test Case ID: CT19      	| Objetivo: Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta. 	|
+| Test Case ID: CT19.1      	| Objetivo: Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta. 	|
 |---------------------	|-----------	|
 | Prioridade:         	|   baixa        	|
 | Rastreador:         	|       RE01, RE02, RE04     	|
@@ -397,7 +397,7 @@
 
 ***
 
-| Test Case ID:  CT20     	| Objetivo: 	Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta. |
+| Test Case ID:  CT20.1     	| Objetivo: 	Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta. |
 |---------------------	|-----------	|
 | Prioridade:         	| baixa          	|
 | Rastreador:         	|       RE01, RE02, RE04     	|
@@ -407,223 +407,387 @@
 
 ***
 
-| Test Case ID:  CT21     	| Objetivo: 	Verificar se uma ovelha está procriando. |
+| Test Case ID:  CT21.1     	| Objetivo: 	Verificar se uma ovelha está procriando. |
 |---------------------	|-----------	|
 | Prioridade:         	| Média          	|
 | Rastreador:         	|       RE01, RE02, RE04     	|
 | Precondições:       	|  getProfundidade, getLargura e getObjectAt, funcionando corretamente.            	|
-| Entradas              | Deve chamar o método ovelha 7 vezes, após isso deve ser testado se há outro objeto na mesma localização |
-|Resultado esperado      | true|
+| Entrada               | Deve chamar o método ovelha 7 vezes, após isso deve ser testado se há outro objeto na mesma localização |
+|Resultado esperado     | true|
 
 ***
 
-| Test Case ID:  CT22     	| Objetivo: 	O objetivo do teste é verificar o funcionamento do construtor da classe Simulador.  |
+| Test Case ID:  CT22.1     	| Objetivo: 	O objetivo do teste é verificar o funcionamento do construtor da classe Simulador.  |
 |---------------------	|-----------	|
 | Prioridade:         	| baixa          	|
 | Rastreador:         	|       RE01, RE03, RE04     	|
 | Precondições:       	|  Nenhuma            	|
+| Entrada               | (0,0) |
+|  Resultado esperado   |  Tratamento de exceção      | 
 
-| Entradas                                   |  Resultado esperado                  |  
-|--------------------------------------------|--------------------------------------|  
-| (0,0)                                      | Tratamento de exceção                |
-| (1,1)                                      | Teste passar                         |
-| (-1,-1)                                    | Tratamento de exceção                |
 
 ***
 
-| Test Case ID:  CT23     	| Objetivo: 	 O objetivo do teste é verificar o funcionamento de uma simulação. |
+| Test Case ID:  CT22.2     	| Objetivo: 	O objetivo do teste é verificar o funcionamento do construtor da classe Simulador.  |
+|---------------------	|-----------	|
+| Prioridade:         	| baixa          	|
+| Rastreador:         	|       RE01, RE03, RE04     	|
+| Precondições:       	|  Nenhuma            	|
+| Entrada               | (1,1) |
+|  Resultado esperado   |  Teste passar       | 
+
+***
+
+| Test Case ID:  CT22.3     	| Objetivo: 	O objetivo do teste é verificar o funcionamento do construtor da classe Simulador.  |
+|---------------------	|-----------	|
+| Prioridade:         	| baixa          	|
+| Rastreador:         	|       RE01, RE03, RE04     	|
+| Precondições:       	|  Nenhuma            	|
+| Entrada               | (-1,-1)   |
+|  Resultado esperado   |  Tratamento de exceção        | 
+
+***
+
+| Test Case ID:  CT23.1     	| Objetivo: 	 O objetivo do teste é verificar o funcionamento de uma simulação. |
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE03, RE04     	|
 | Precondições:       	|  Nenhuma            	|
-
-| Entradas                                   |  Resultado esperado                            |  
-|-----------------------------------------------------|---------------------------------------|  
-| criar uma simulação longa | Tratamento de exceção |
+| Entrada               | criar uma simulação longa |
+| Resultado esperado    | Tratamento de exceção |
 
 ***
 
-| Test Case ID:  CT24     	| Objetivo: 	O objetivo do teste é verificar o funcionamento do método getRandom. |
+| Test Case ID:  CT24.1     	| Objetivo: 	O objetivo do teste é verificar o funcionamento do método getRandom. |
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE03, RE04     	|
 | Precondições:       	|  Nenhuma            	|
+| Entrada               | Randomizar com parâmetro 1 |
+| Resultado esperado    |   0                       |
 
-| Entradas                                   |  Resultado esperado                     |  
-|-----------------------------------------------------|-----------------------------------------|  
-| Randomizar com parâmetro 1 | 0 |
 
 ***
 
-| Test Case ID:  CT25     	| Objetivo: 	 O metodo testEstaViva verifica se o método estaVivo retorna true para lobos vivos e false para lobos mortos. |
+| Test Case ID:  CT25.1     	| Objetivo: 	 O metodo testEstaViva verifica se o método estaVivo retorna true para lobos vivos e false para lobos mortos. |
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE03, RE04     	|
 | Precondições:       	|  Para o uso do segundo teste o método setMorte deve esta corretamente implementado.|
-              	
-| Entradas                                   |  Resultado esperado                |  
-|-----------------------------------------------------|---------------------------------------|  
-| O método cria um lobo guará  | true 
-| O método cria um lobo guará e executa o setMorte | teste passou |
+| Entrada               | O método cria um lobo guará |
+| Resultado esperado    |   true           |
 
 ***
 
-| Test Case ID:  CT26     	| Objetivo: 	    Testar o funcionamento da criação de tela |
+| Test Case ID:  CT25.2     	| Objetivo: 	 O metodo testEstaViva verifica se o método estaVivo retorna true para lobos vivos e false para lobos mortos. |
+|---------------------	|-----------	|
+| Prioridade:         	| Alta          	|
+| Rastreador:         	|       RE01, RE03, RE04     	|
+| Precondições:       	|  Para o uso do segundo teste o método setMorte deve esta corretamente implementado.|
+| Entrada               | O método cria um lobo guará e executa o setMorte |
+| Resultado esperado    |   teste passou           |
+
+***
+
+| Test Case ID:  CT26.1     	| Objetivo: 	    Testar o funcionamento da criação de tela |
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE04     	|
 | Precondições:       	|  Nenhuma            	|
+| Entrada               | Instancia um simuladorTela |
+| Resultado esperado    | a tela deve apresentar o seguinte titulo "Simulacao Ovelhas and Lobos Guara"          |
 
-| Entradas                                   |  Resultado esperado                           |  
-|-----------------------------------------------------|---------------------------------|  
-|Instancia um simuladorTela| a tela deve apresentar o seguinte titulo "Simulacao Ovelhas and Lobos Guara"|
 
 ***
 
-| Test Case ID:  CT27     	| Objetivo: 	   Checar se é possível criar um rótulo de etapa com informações validas e invalidas.|
+| Test Case ID:  CT27.1     	| Objetivo: 	   Checar se é possível criar um rótulo de etapa com informações validas e invalidas.|
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE04     	|
 | Precondições:       	|  O método deve tratar com thrwos as seguintes exceções: NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException.           	|
+| Entrada               | Criar um rótulo com etapa "0" |
+| Resultado esperado    | O teste deve passar. O rótulo deve ser criado com sucesso   |
 
-| Entradas                                   |  Resultado esperado                     |  
-|-----------------------------------------------------|-----------------------------------------|  
-|Criar um rótulo com etapa "0"| O teste deve passar. O rótulo deve ser criado com sucesso  |
-|Criar um rótulo com etapa "999999999"|O teste não deve passar |
-|Criar um rótulo com etapa "-10"|O teste não deve passar |
 
 ***
 
-| Test Case ID:  CT28     	| Objetivo: 	    Verificar o tamanho do campo para criar uma tela.|
+| Test Case ID:  CT27.2     	| Objetivo: 	   Checar se é possível criar um rótulo de etapa com informações validas e invalidas.|
+|---------------------	|-----------	|
+| Prioridade:         	| Alta          	|
+| Rastreador:         	|       RE01, RE04     	|
+| Precondições:       	|  O método deve tratar com thrwos as seguintes exceções: NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException.           	|
+| Entrada               | Criar um rótulo com etapa "999999999" |
+| Resultado esperado    |O teste não deve passar  |
+
+***
+
+| Test Case ID:  CT27.3     	| Objetivo: 	   Checar se é possível criar um rótulo de etapa com informações validas e invalidas.|
+|---------------------	|-----------	|
+| Prioridade:         	| Alta          	|
+| Rastreador:         	|       RE01, RE04     	|
+| Precondições:       	|  O método deve tratar com thrwos as seguintes exceções: NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException.           	|
+| Entrada               | Criar um rótulo com etapa "-10" |
+| Resultado esperado    | O teste não deve passar   |
+
+***
+
+| Test Case ID:  CT28.1     	| Objetivo: 	    Verificar o tamanho do campo para criar uma tela.|
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE04     	|
 | Precondições:       	| Nenhuma         	|
-
-| Entradas                                   |  Resultado esperado                          |  
-|-----------------------------------------------------|-------------------------------------------|  
-| SimuladorTela (1,1) e campo (100,100) | teste deve apresentar uma mensagem de erro |
+| Entrada               | SimuladorTela (1,1) e campo (100,100) |
+| Resultado esperado    | teste deve apresentar uma mensagem de erro   |
 
 ***
 
-| Test Case ID:  CT29     	| Objetivo: 	   O teste deve verificar se quando o animal é criado(teoricamente um recém nascido) ele inicialmente é setado como vivo.|
+| Test Case ID:  CT29.1     	| Objetivo: 	   O teste deve verificar se quando o animal é criado(teoricamente um recém nascido) ele inicialmente é setado como vivo.|
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	| Criação de objeto do tipo Campo, Localizacao e Ovelha     |
-
-| Entradas                                   |  Resultado esperado                   |  
-|-----------------------------------------------------|------------------------------------------|  
-| false, Campo, Localizacao | true |
-| true, Campo, Localizacao | true  |
+| Entrada               | false, Campo, Localizacao|
+| Resultado esperado    |true  |
 
 ***
 
-| Test Case ID:  CT30     	| Objetivo:  O teste deve verificar se a localização retornada pelo método está correta     |
+| Test Case ID:  CT29.1     	| Objetivo: 	   O teste deve verificar se quando o animal é criado(teoricamente um recém nascido) ele inicialmente é setado como vivo.|
+|---------------------	|-----------	|
+| Prioridade:         	| Alta          	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	| Criação de objeto do tipo Campo, Localizacao e Ovelha     |
+| Entrada               | true, Campo, Localizacao |
+| Resultado esperado    |true  |
+
+***
+
+| Test Case ID:  CT30.1     	| Objetivo:  O teste deve verificar se a localização retornada pelo método está correta     |
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	| Criação de objeto do tipo Campo e Localizacao(2 criados)        |
-| Entradas                                   |  Resultado esperado                      |  
-|-----------------------------------------------------|-------------------------------------------|  
-| O método cria uma Ovelha na localização específica (25,25) | Objeto do tipo Localizacao com linha e coluna igual a 25 |
-| O método cria uma Ovelha na localização específica (25,25) | false |
+| Entrada               | O método cria uma Ovelha na localização específica (25,25) |
+| Resultado esperado    | Objeto do tipo Localizacao com linha e coluna igual a 25 |
 
 ***
 
-| Test Case ID:  CT31     	| Objetivo:  O teste deve verificar se a o método setLocalizacao(Localizacao) realmente altera a localização do animal     |
+| Test Case ID:  CT30.2     	| Objetivo:  O teste deve verificar se a localização retornada pelo método está correta     |
+|---------------------	|-----------	|
+| Prioridade:         	| Alta          	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	| Criação de objeto do tipo Campo e Localizacao(2 criados)        |
+| Entrada               | O método cria uma Ovelha na localização específica (25,25) |
+| Resultado esperado    | false |
+
+***
+
+| Test Case ID:  CT31.1     	| Objetivo:  O teste deve verificar se a o método setLocalizacao(Localizacao) realmente altera a localização do animal     |
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	| Criação de objeto do tipo Campo, Localizacao(2 criados) e o método getLocalizacao(Localizacao) estar funcionando corretamente.         |
-
-| Entradas                                   |  Resultado esperado                  |  
-|-----------------------------------------------------|------------------------------------------|  
-| O método cria uma Ovelha na localização específica (25,25) e logo após seta a mesma para (26,26) | Localizacao igual a (26,26)  |
-| O método cria duas Ovelha na localização específica (25,25) e logo após seta a primeira delas para (26,26) | Localizacao da primeira Ovelha diferente de (25,25) e da segunda igual a (25,25) |
-| O método cria duas Ovelha na localização específica (25,25) e logo após seta a primeira delas para (26,26) | O objeto pertencente a Localizacao(25,25) não ser a segunda ovelha|
+| Entrada               | O método cria uma Ovelha na localização específica (25,25) e logo após seta a mesma para (26,26)  |
+| Resultado esperado    | Localizacao igual a (26,26) |
 
 ***
 
-| Test Case ID:  CT32     	| Objetivo:  Verificar se o construtor da classe Animal aceita uma Localizacao maior que o campo recebido.    |
+| Test Case ID:  CT31.2     	| Objetivo:  O teste deve verificar se a o método setLocalizacao(Localizacao) realmente altera a localização do animal     |
+|---------------------	|-----------	|
+| Prioridade:         	| Alta          	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	| Criação de objeto do tipo Campo, Localizacao(2 criados) e o método getLocalizacao(Localizacao) estar funcionando corretamente.         |
+| Entrada               | O método cria duas Ovelha na localização específica (25,25) e logo após seta a primeira delas para (26,26)  |
+| Resultado esperado    | Localizacao da primeira Ovelha diferente de (25,25) e da segunda igual a (25,25) |
+
+***
+
+| Test Case ID:  CT31.3     	| Objetivo:  O teste deve verificar se a o método setLocalizacao(Localizacao) realmente altera a localização do animal     |
+|---------------------	|-----------	|
+| Prioridade:         	| Alta          	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	| Criação de objeto do tipo Campo, Localizacao(2 criados) e o método getLocalizacao(Localizacao) estar funcionando corretamente.         |
+| Entrada               | O método cria duas Ovelha na localização específica (25,25) e logo após seta a primeira delas para (26,26)  |
+| Resultado esperado    | O objeto pertencente a Localizacao(25,25) não ser a segunda ovelha |
+
+***
+
+| Test Case ID:  CT32.1     	| Objetivo:  Verificar se o construtor da classe Animal aceita uma Localizacao maior que o campo recebido.    |
 |---------------------	|-----------	|
 | Prioridade:         	| Média        	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	|  Criação de objeto do tipo Campo, Localizacao(Essa localização é inválida)      |
-
-| Entradas                                   |  Resultado esperado                     |  
-|-----------------------------------------------------|-------------------------------------------|  
-| O método cria Campo e Localizacao(esse é inválida) e animal | O método deve retornar uma exceção do tipo IllegalArgumentException |
+| Entrada               | O método cria Campo e Localizacao(esse é inválida) e animal  |
+| Resultado esperado    | O método deve retornar uma exceção do tipo IllegalArgumentException  |
 
 ***
 
-| Test Case ID:  CT33     	| Objetivo:  Verificar se o método setMorte() altera o atributo vivo do animal para false    |
+| Test Case ID:  CT33.1     	| Objetivo:  Verificar se o método setMorte() altera o atributo vivo do animal para false    |
 |---------------------	|-----------	|
 | Prioridade:         	| Média        	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	| Criação de objeto do tipo Campo, Localizacao, Ovelha e o método getObjectAt() estar funcionando corretamente     |
-
-| Entradas                                   |  Resultado esperado                     |  
-|-----------------------------------------------------|-------------------------------------------|  
-| O método cria a Ovelha | O método setMorte() deve retornar false |
-| O método cria a Ovelha | O método getObjectAt(Localizacao) que recebe a Localizacao da Ovelha deve retornar null |
+| Entrada               | O método cria a Ovelha  |
+| Resultado esperado    | O método setMorte() deve retornar false  |
 
 ***
 
-| Test Case ID:  CT34     	| Objetivo:  Verificar se o método podeProcriar() está comparando a idade corretamente        |
+| Test Case ID:  CT33.2     	| Objetivo:  Verificar se o método setMorte() altera o atributo vivo do animal para false    |
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	| Criação de objeto do tipo Campo, Localizacao, Ovelha e o método getObjectAt() estar funcionando corretamente     |
+| Entrada               | O método cria a Ovelha  |
+| Resultado esperado    | O método getObjectAt(Localizacao) que recebe a Localizacao da Ovelha deve retornar null  |
+
+***
+
+| Test Case ID:  CT34.1     	| Objetivo:  Verificar se o método podeProcriar() está comparando a idade corretamente        |
 |---------------------	|-----------	|
 | Prioridade:         	| Média        	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	|  Criação de objeto do tipo Campo, Localizacao, LoboGuara e o método incrementaIdade() estar funcionando corretamente   |
-
-| Entradas                                   |  Resultado esperado                         |  
-|-----------------------------------------------------|------------------------------------------|  
-| O método cria um LoboGuara | LoboGuara estar apto para procriar |
+| Entrada               | O método cria um LoboGuara com idade para procriar  |
+| Resultado esperado    | LoboGuara estar apto para procriar  |
 
 ***
 
-| Test Case ID:  CT35     	| Objetivo: Verificar se o método incrementaIdade() está funcionando corretamente         |
+| Test Case ID:  CT35.1     	| Objetivo: Verificar se o método incrementaIdade() está funcionando corretamente         |
 |---------------------	|-----------	|
 | Prioridade:         	| Média        	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, LoboGuara  |
-
-| Entradas                                   |  Resultado esperado                    |  
-|-----------------------------------------------------|-------------------------------------------|  
-| O método cria um objeto LoboGuara | LoboGuara envelhecer |
-| Animal loboGuara, idade igual 150                 | O lobo esta vivo  |  
-| Animal loboGuara, nivel 8 de fome              | O lobo esta morto |   
-| Animal loboGuara, nivel 3 de fome                | O lobo esta vivo  |  
-| Animal loboGuara, nivel 5 de fome                | O lobo esta vivo |
+| Entrada               |  O método cria um objeto LoboGuara  |
+| Resultado esperado    | LoboGuara envelhecer |
 
 ***
 
-| Test Case ID:  CT36     	| Objetivo: Verificar se o método decrementaFome() está funcionando.       |
+| Test Case ID:  CT35.2     	| Objetivo: Verificar se o método incrementaIdade() está funcionando corretamente         |
 |---------------------	|-----------	|
 | Prioridade:         	| Média        	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, LoboGuara  |
+| Entrada               | Animal loboGuara, idade igual 150  |
+| Resultado esperado    | O lobo esta vivo  |
 
-| Entradas                                   |  Resultado esperado                       |  
-|-----------------------------------------------------|---------------------------------------|  
-| O método cria um objeto LoboGuara | LoboGuara morrer, de fome |
-| O método cria um objeto Ovelha | Ovelha envelhecer e morrer  |
-| O método cria um objeto Ovelha | Ovelha envelhecer e estar viva |
+***
+
+| Test Case ID:  CT35.3     	| Objetivo: Verificar se o método incrementaIdade() está funcionando corretamente         |
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, LoboGuara  |
+| Entrada               | Animal loboGuara, nivel 8 de fome   |
+| Resultado esperado    | O lobo esta morto  |
+
+***
+
+| Test Case ID:  CT35.3     	| Objetivo: Verificar se o método incrementaIdade() está funcionando corretamente         |
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, LoboGuara  |
+| Entrada               | Animal loboGuara, nivel 3 de fome    |
+| Resultado esperado    | O lobo esta vivo   |
+
+***
+
+| Test Case ID:  CT35.4     	| Objetivo: Verificar se o método incrementaIdade() está funcionando corretamente         |
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, LoboGuara  |
+| Entrada               | Animal loboGuara, nivel 5 de fome    |
+| Resultado esperado    | O lobo esta vivo   |
 
 
 ***
 
-| Test Case ID:  CT37     	| Objetivo: Verificar se o método podeProcriar() está funcionando.|
+| Test Case ID:  CT36.1     	| Objetivo: Verificar se o método decrementaFome() está funcionando.       |
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, LoboGuara  |
+| Entrada               |  O método cria um objeto LoboGuara    |
+| Resultado esperado    | LoboGuara morrer, de fome   |
+
+***
+
+| Test Case ID:  CT36.2     	| Objetivo: Verificar se o método decrementaFome() está funcionando.       |
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, LoboGuara  |
+| Entrada               |  Ovelha envelhecer e morrer    |
+| Resultado esperado    | LoboGuara morrer, de fome   |
+
+***
+
+| Test Case ID:  CT36.3     	| Objetivo: Verificar se o método decrementaFome() está funcionando.       |
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, LoboGuara  |
+| Entrada               |  Ovelha envelhecer e morrer    |
+| Resultado esperado    | Ovelha envelhecer e estar viva  |
+
+***
+
+| Test Case ID:  CT37.1     	| Objetivo: Verificar se o método podeProcriar() está funcionando.|
 |---------------------	|-----------	|
 | Prioridade:         	| Média        	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, Ovelha |
+| Entrada               |  O método cria um objeto Ovelha    |
+| Resultado esperado    | ovelha estar apta para procriar |
 
-| Entradas                                   |  Resultado esperado                        |  
-|-----------------------------------------------------|---------------------------------------|  
-| O método cria um objeto Ovelha | ovelha estar apta para procriar  |
-| O método cria um objeto Ovelha | ovelha não estar apta para procriar |  
-| O método cria um objeto Ovelha | ovelha não estar apta para procriar, está morta |  
-| Animal ovelha, idade 11                             | ovelha está apta para procriar |  
-| Animal ovelha, idade entre 11 e 40                  | ovelha está apta para procriar |  
-| Animal ovelha, idade igual 40, Antes de morrer      | ovelha está apta para procriar |
+
+
+***
+
+| Test Case ID:  CT37.2     	| Objetivo: Verificar se o método podeProcriar() está funcionando.|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, Ovelha |
+| Entrada               |  O método cria um objeto Ovelha    |
+| Resultado esperado    | ovelha não estar apta para procriar |
+
+***
+
+| Test Case ID:  CT37.3     	| Objetivo: Verificar se o método podeProcriar() está funcionando.|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, Ovelha |
+| Entrada               |  O método cria um objeto Ovelha    |
+| Resultado esperado    | ovelha não estar apta para procriar, está morta |
+
+***
+
+| Test Case ID:  CT37.4     	| Objetivo: Verificar se o método podeProcriar() está funcionando.|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, Ovelha |
+| Entrada               |  Animal ovelha, idade 11       |
+| Resultado esperado    | ovelha está apta para procriar |
+
+***
+
+| Test Case ID:  CT37.5     	| Objetivo: Verificar se o método podeProcriar() está funcionando.|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, Ovelha |
+| Entrada               | Animal ovelha, idade entre 11 e 40      |
+| Resultado esperado    | ovelha está apta para procriar |
+
+***
+
+| Test Case ID:  CT37.6     	| Objetivo: Verificar se o método podeProcriar() está funcionando.|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	|       RE01,RE02,RE04     	|
+| Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, Ovelha |
+| Entrada               | Animal ovelha, idade igual 40, Antes de morrer     |
+| Resultado esperado    | ovelha está apta para procriar |
