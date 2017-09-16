@@ -257,7 +257,7 @@
 
 ***
 
-| Test Case ID:  CT12     	| Objetivo:  O teste deve criar um contador com parâmetros validos e inválidos, e testar a execução do método Reset 	|
+| Test Case ID:  CT12.1     	| Objetivo:  O teste deve criar um contador com parâmetros validos e inválidos, e testar a execução do método Reset 	|
 |---------------------	|-----------	|
 | Prioridade:         	|    baixa         	|
 | Rastreador:         	|       RE01, RE03, RE04     	|
@@ -387,7 +387,7 @@
 
 ***
 
-| Test Case ID: CT19.1      	| Objetivo: Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta. 	|
+| Test Case ID: CT19      	| Objetivo: Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta. 	|
 |---------------------	|-----------	|
 | Prioridade:         	|   baixa        	|
 | Rastreador:         	|       RE01, RE02, RE04     	|
@@ -397,7 +397,7 @@
 
 ***
 
-| Test Case ID:  CT20.1     	| Objetivo: 	Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta. |
+| Test Case ID:  CT20     	| Objetivo: 	Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta. |
 |---------------------	|-----------	|
 | Prioridade:         	| baixa          	|
 | Rastreador:         	|       RE01, RE02, RE04     	|
@@ -407,7 +407,7 @@
 
 ***
 
-| Test Case ID:  CT21.1     	| Objetivo: 	Verificar se uma ovelha está procriando. |
+| Test Case ID:  CT21     	| Objetivo: 	Verificar se uma ovelha está procriando. |
 |---------------------	|-----------	|
 | Prioridade:         	| Média          	|
 | Rastreador:         	|       RE01, RE02, RE04     	|
@@ -448,7 +448,7 @@
 
 ***
 
-| Test Case ID:  CT23.1     	| Objetivo: 	 O objetivo do teste é verificar o funcionamento de uma simulação. |
+| Test Case ID:  CT23     	| Objetivo: 	 O objetivo do teste é verificar o funcionamento de uma simulação. |
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE03, RE04     	|
@@ -458,7 +458,7 @@
 
 ***
 
-| Test Case ID:  CT24.1     	| Objetivo: 	O objetivo do teste é verificar o funcionamento do método getRandom. |
+| Test Case ID:  CT24     	| Objetivo: 	O objetivo do teste é verificar o funcionamento do método getRandom. |
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE03, RE04     	|
@@ -489,7 +489,7 @@
 
 ***
 
-| Test Case ID:  CT26.1     	| Objetivo: 	    Testar o funcionamento da criação de tela |
+| Test Case ID:  CT26     	| Objetivo: 	    Testar o funcionamento da criação de tela |
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE04     	|
@@ -531,7 +531,7 @@
 
 ***
 
-| Test Case ID:  CT28.1     	| Objetivo: 	    Verificar o tamanho do campo para criar uma tela.|
+| Test Case ID:  CT28     	| Objetivo: 	    Verificar o tamanho do campo para criar uma tela.|
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE04     	|
@@ -611,7 +611,7 @@
 
 ***
 
-| Test Case ID:  CT32.1     	| Objetivo:  Verificar se o construtor da classe Animal aceita uma Localizacao maior que o campo recebido.    |
+| Test Case ID:  CT32     	| Objetivo:  Verificar se o construtor da classe Animal aceita uma Localizacao maior que o campo recebido.    |
 |---------------------	|-----------	|
 | Prioridade:         	| Média        	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
@@ -641,7 +641,7 @@
 
 ***
 
-| Test Case ID:  CT34.1     	| Objetivo:  Verificar se o método podeProcriar() está comparando a idade corretamente        |
+| Test Case ID:  CT34     	| Objetivo:  Verificar se o método podeProcriar() está comparando a idade corretamente        |
 |---------------------	|-----------	|
 | Prioridade:         	| Média        	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
