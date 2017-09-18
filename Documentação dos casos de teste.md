@@ -7,11 +7,11 @@ modelo de software
   
 #Casos de teste
 
- **Identificador:**  CT01  testGetLargura  classe CampoTest        
+ **Identificador:**  CT01  GetLargura  classe Campo  
 
-   **Objetivo:**  O teste deve verificar se em uma execução de simulação, o metodo GetLargura esta funcionando 
+  **Objetivo:**  O teste deve verificar se em uma instancia de Campo, o metodo GetLargura esta funcionando 
 
-   **corretamente:** Para isso deve-se criar uma simulação com parâmetros validos e inválidos.    
+   **corretamente:** Para isso deve-se criar um Objeto com parâmetros validos.    
 
    **Prioridade:** Média   
  
@@ -25,14 +25,16 @@ modelo de software
 | **Entradas**                                  | Resultado esperado                      |Resultado do Teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | profundidade 5 e largura 31  | É esperado que o teste não encontre erros  |  Teste passou |
-| profundidade 5 e largura 0   | É esperado que o teste lance a exceção illergalArgumentException  |  Teste falhou, o teste lançou um ArithmeticException |
+| profundidade 5 e largura 0   | É esperado que o teste lance a exceção illergalArgumentException  |  Teste falhou, o teste lançou um ArithmeticException |  
+  
 
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
-**Identificador:**            CT02   testGetProfundidade classe CampoTest      
 
- **Objetivo:**                    O teste deve verificar se em uma execução de simulação, o metodo GetProfundidade esta funcionando corretamente. Para isso deve-se criar uma simulação com parâmetros validos e inválidos.  
+
+**Identificador:**            CT02 GetProfundidade classe Campo      
+
+ **Objetivo:**                    O teste deve verificar se em uma instancia de Campo, o metodo GetProfundidade esta funcionando corretamente. Para isso deve-se criar um objeto Campo com parâmetros validos.  
 
  **Prioridade:**                Média
   
@@ -46,13 +48,15 @@ modelo de software
 | Entradas                              |  Resultado esperado                             |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | profundidade 31 e largura 5  | É esperado que o teste não encontre erros  |  Teste passou |
-| profundidade 0 e largura 5   | É esperado que o teste lance a exceção illegalArgumentException  |  Teste falhou, o teste lançou um ArithmeticException |
+| profundidade 0 e largura 5   | É esperado que o teste lance a exceção illegalArgumentException  |  Teste falhou, o teste lançou um ArithmeticException |  
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
-**Identificador:**             CT03   testGetPopulationDetails   classe CampoEstatisticaTest    
+
+**Identificador:**             CT03   GetPopulationDetails   classe CampoEstatistica  
+   
  
-**Objetivo:**                    O teste deve verificar se é retornado os detalhes da população em uma simulação.   
+**Objetivo:**                    O teste deve verificar se é retornado os detalhes da população em uma isntancia de CampoEstatistica.  
+   
  
 **Prioridade:**                  Alta  
  
@@ -65,14 +69,15 @@ modelo de software
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | criar um campo 3x3 e 3 ovelhas com parâmetros (0,0)(0,1)(0,2) | É esperado que o teste retorne null  |  Teste passou |
-| criar um campo 100x100 e 3 ovelhas com parâmetros (0,0)(0,1)(0,2) | "" |  ""|
-
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+| criar um campo 100x100 e 3 ovelhas com parâmetros (0,0)(0,1)(0,2) | "" |  ""|  
 
 
-**Identificador:**             CT04   testCorre classe OvelhaTest      
 
- **Objetivo:**                    O teste deve verificar o uso do metodo Corre da ovelha.    
+
+
+**Identificador:**             CT04   Corre classe Ovelha     
+
+ **Objetivo:**                    O teste deve verificar o uso do método Corre da classe ovelha.    
 
  **Prioridade:**                  Alta  
 
@@ -86,12 +91,14 @@ modelo de software
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 |Executar o método corre e chamar o metodo estaViva  | return true  |  teste falhou |
-|Incrementar a idade da ovelha até o máximo +1 e chamar o metodo estaViva  | return false  |  teste falhou, a ovelha continua viva após a idade máxima |
+|Incrementar a idade da ovelha até o máximo +1 e chamar o metodo estaViva  | return false  |  teste falhou, a ovelha continua viva após a idade máxima |  
 
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
-**Identificador:**            CT05   testEqualsObject classe LocalizacaoTest      
+
+
+**Identificador:**            CT05   EqualsObject classe Localizacao  
+      
 
  **Objetivo:**                     O teste deve verificar o uso do metodo equals. Deve-se criar uma localizacao com parâmetros validos e inválidos   
 
@@ -106,11 +113,12 @@ modelo de software
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | localizacao(10,10)|""  |  teste passou |
-| localizacao(,)| "" |  teste passou |
+| localizacao(,)| "" |  teste passou |  
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
-**Identificador:**            CT06   testGetLinha classe LocalizacaoTest      
+
+
+**Identificador:**            CT06   GetLinha classe Localizacao      
  
 **Objetivo:**                     O teste deve criar uma localizacao com parametros validos e invalidos e verificar o uso do metodo getLinha 
  
@@ -126,11 +134,14 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | localizacao(10,15)| teste passar |  teste passou |
 | localizacao(0,100)| tratamento de exceção |  teste passou |
-| localizacao(0,-100)| tratamento de exceção |  teste retornou um IllegalArgumentException |
+| localizacao(0,-100)| tratamento de exceção |  teste retornou um IllegalArgumentException |  
+  
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
-**Identificador:**        CT07   testGetColuna classe LocalizacaoTest      
+
+
+**Identificador:**        CT07   GetColuna classe Localizacao  
+      
 
  **Objetivo:**                     O teste deve criar uma localizacao com parametros validos e invalidos e verificar o uso do metodo getColuna 
  **Prioridade:**                  baixa   
@@ -146,9 +157,11 @@ modelo de software
 | localizacao(0,100)| teste falhar |  teste passou |
 | localizacao(-100,0)| teste falhar |  teste retornou um IllegalArgumentException |
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+  
 
-**Identificador:**       CT08   testHashCode classe LocalizacaoTest      
+
+**Identificador:**       CT08   HashCode classe Localizacao  
+      
 
 ** Objetivo:**                     O teste deve criar uma localizacao com parametros validos e invalidos e verificar o uso do metodo HashCode 
 
@@ -164,11 +177,13 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | localizacao(10,15)|teste passar  |  teste passou |
 | localizacao(-1,-1)| tratamento de exceção |  teste retornou um IllegalArgumentException |
-| localizacao(-110, 15)| tratamento de exceção |  teste retornou um IllegalArgumentException |
+| localizacao(-110, 15)| tratamento de exceção |  teste retornou um IllegalArgumentException |  
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
- **Identificador:**             CT09   testGetName classe ContadorTest     
+
+
+ **Identificador:**             CT09   GetName classe Contador  
+    
 
  **Objetivo:**                     O teste deve criar um contador com parâmetros validos e inválidos, e testar a execução do método getName  
 
@@ -184,11 +199,13 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Contador ("lobo")|O teste não retornar nenhum erro |  teste passou |
 | Contador ("")| tratamento de exceção |  teste passou |
-| Contador ("Ovelha")|  O teste não retornar nenhum erro |  teste passou  |
+| Contador ("Ovelha")|  O teste não retornar nenhum erro |  teste passou  |  
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
-**Identificador:**        CT10   testGetCount classe ContadorTest     
+
+
+**Identificador:**        CT10   GetCount classe Contador  
+    
 
  **Objetivo:**                     O teste deve criar um contador com parâmetros validos e inválidos, e testar a execução do método getCount  
 
@@ -203,11 +220,11 @@ modelo de software
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Contador ("")| tratamento de exceção |  teste passou |
-| Contador ("Ovelha")|  O teste não retornar nenhum erro |  teste passou  |
+| Contador ("Ovelha")|  O teste não retornar nenhum erro |  teste passou  |  
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
-**Identificador:**        CT11   testIncrement classe ContadorTest     
+
+**Identificador:**        CT11   Increment classe Contador     
 
  **Objetivo:**                     O teste deve criar um contador com parâmetros validos, e testar a execução do método increment  
 
@@ -221,12 +238,12 @@ modelo de software
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
-| incrementar 1000 vezes a ovelha| tratamento de exceção |  teste passou |
+| incrementar 1000 vezes a ovelha| tratamento de exceção |  teste passou |  
 
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
-**Identificador:**       CT12   testReset classe ContadorTest     
+
+**Identificador:**       CT12  Reset classe Contador    
  
 **Objetivo:**                     O teste deve criar um contador com parâmetros validos e inválidos, e testar a execução do método Reset   
 
@@ -242,15 +259,14 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | chamar o método reset| teste retornar 0 |  teste passou |
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
-**Identificador:**        CT13   testGetLargura classe CampoTest    |
+**Identificador:**        CT13   GetLargura classe Campo  
 
  **Objetivo:**                    O metodo testGetLargura deve verificar se o metodo getLargura retorna a largura exata de um campo  
 
- **Prioridade:**                  |baixa |  
+ **Prioridade:**                  baixa 
 
- **Condições prévias:**           |Nenhuma|
+ **Condições prévias:**           Nenhuma
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
@@ -260,9 +276,12 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | chamar o método reset| teste retornar 0 |  teste passou |
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+  
+  
 
-**Identificador:**       CT14   testGetPopulationDetails classe CampoEstatisticaTest    
+
+**Identificador:**       CT14   GetPopulationDetails classe CampoEstatistica  
+    
  
 **Objetivo:**                    O teste verifica se o metodo GetPopulation retorna uma String informando corretamente os dados do campo  
  
@@ -280,11 +299,14 @@ modelo de software
 |Criar 3 ovelhas com entradas (0,0)(0,1)(0,2) | O método deve retornar uma String | teste passou |
 |Criar 3 ovelhas com entradas (0,0)(0,1)(0,2) | O método deve retornar a String "Ovelha:3" | teste falhou, o pacote da classe é descrito na String, exemplo: ol.Ovelha: 3 |
 |Criar 3 ovelhas com entradas validas, criar 3 lobos guará com entradas validas e criar 3 campos com entradas validas | O método deve retornar a String na ordem "ol.LoboGuara: 3 ol.Ovelha: 3 ol.Campo: 3" | teste falhou, o método não tem uma ordem especifica para retornar as Strings, os Objetos podem variar de posição em qualquer execução do método |
-|Deixar o campo vazio |O método deve informar que o campo se encontra vazio | teste falhou, o método ão retorna nenhuma informação |
+|Deixar o campo vazio |O método deve informar que o campo se encontra vazio | teste falhou, o método ão retorna nenhuma informação |  
+  
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
-**Identificador:**        CT15   testRedefine classe CampoEstatisticaTest    
+
+
+**Identificador:**        CT15   Redefine classe CampoEstatistica  
+   
 
  **Objetivo:**                     O método verifica se após a execução do método Redefine o campo terá 0 objetos 
  
@@ -301,9 +323,11 @@ modelo de software
 | Deve ser criado 3 ovelhas e chamar o método Redefine | teste deve mostrar que não tem objetos no campo |  teste passou, retornou 0 |
 | Deve ser criado 3 ovelha, chamar o método Redefine e incrementar o campo | O teste só deve contar os objetos que foram incrementados após redefinir o campo |  teste passou |
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+  
+  
 
-**Identificador:**      CT16   testContadorFinalizado classe CampoEstatisticaTest    
+
+**Identificador:**      CT16   ContadorFinalizado classe CampoEstatistica    
  **Objetivo:**                     O método verifica a execução do método contadorFinalizado  
 
  **Prioridade:**                   baixa 
@@ -318,9 +342,10 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Deve ser criado 3 ovelhas e chamar o método contadorFinalizado | Saida esperada: " " |  teste passou |
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+  
 
-**Identificador:**        CT17   testEhViavel classe CampoEstatisticaTest    
+
+**Identificador:**        CT17   EhViavel classe CampoEstatistica    
 
  **Objetivo:**                     O método verifica se há um lobo e uma ovelha para fazer a simulação
 
@@ -336,11 +361,12 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | O método cria 3 ovelhas  | False |  teste passou |
 | O método cria 3 ovelhas e um lobo guará  | True |  teste passou |
-| O método cria 1 e um campo  | false |  teste falhou |
+| O método cria 1 e um campo  | false |  teste falhou |  
+  
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
 
-**Identificador:**        CT18   testEstaViva classe OvelhaTest    
+
+**Identificador:**        CT18    EstaViva classe Ovelha     
 
  **Objetivo:**                    O metodo testEstaViva verifica se o método estaViva retorna true para ovelhas vivas e false para ovelhas mortas.
  **Prioridade:**                   Baixa   
@@ -356,9 +382,11 @@ modelo de software
 | O método cria uma ovelha  | true |  teste passou |
 | O método cria uma ovelha e executa o setMorte | false |  teste passou |
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
+  
+  
+ 
 
-**Identificador:**        CT19   testSetMorte classe OvelhaTest    
+**Identificador:**        CT19   SetMorte classe Ovelha    
 
  **Objetivo:**  Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta.  
 
@@ -375,11 +403,13 @@ modelo de software
 | Executa o metodo setMorte para uma ovelha e chama o método estaViva | false |  teste passou |
 
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
 
-**Identificador:**        CT20   testSetMorte classe OvelhaTest    
+  
 
- **Objetivo:**  Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta.  
+**Identificador:**        CT20   SetMorte classe Ovelha  
+   
+
+ **Objetivo:**  Verificar se após a execução do método setMorte a ovelha esteja morta.  
 
  **Prioridade:**                   Baixa   
 
@@ -394,9 +424,11 @@ modelo de software
 | Executa o metodo setMorte para uma ovelha e chama o método estaViva | false |  teste passou |
 
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
 
-**Identificador:**        CT21   testProcria classe OvelhaTest    
+
+ 
+
+**Identificador:**        CT21   Procria classe Ovelha   
 
  **Objetivo:** Verifica se uma ovelha está procriando.
 
@@ -413,9 +445,10 @@ modelo de software
 | Deve chamar o método ovelha 7 vezes, após isso deve ser testado se há outro objeto na mesma localização | true |  teste passou |
 
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
 
-**Identificador:**        CT22   testSimulador classe SimuladorTest    
+
+
+**Identificador:**        CT22  Simulador classe Simulador   
 
  **Objetivo:** O objetivo do teste é verificar o funcionamento do construtor da classe Simulador.  
 
@@ -431,13 +464,14 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | (0,0) | Tratamento de exceção |  teste falhou |
 | (1,1) | Teste passar |  teste passou |
-| (-1,-1) | Tratamento de exceção |  teste falhou |
+| (-1,-1) | Tratamento de exceção |  teste falhou |  
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
 
-**Identificador:**        CT23   testSimulador classe SimuladorTest    
 
- **Objetivo:** O objetivo do teste é verificar o funcionamento de uma simulação.  
+
+**Identificador:**        CT23   Simulador classe Simulador   
+
+ **Objetivo:** O objetivo do teste é verificar o funcionamento do simulador.  
 
  **Prioridade:**                  Alta   
 
@@ -451,9 +485,11 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | criar uma simulação longa | Tratamento de exceção |  teste falhou |
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)  
+  
 
-**Identificador:**        CT24   testGetRandom classe RandomizadorTest      
+  
+
+**Identificador:**        CT24   GetRandom classe Randomizador      
 
  **Objetivo:** O objetivo do teste é verificar o funcionamento do método getRandom.
 
@@ -470,9 +506,10 @@ modelo de software
 | Randomizar com parâmetro 1 | 0 |  teste passou |
 
 
-![Screenshot_1.png](https://.org/repo/z8947B5/images/497449455-Screenshot_1.png)
+  
 
-**Identificador:**        CT25   testEstaVivO classe loboGuaraTest  
+
+**Identificador:**        CT25   EstaVivO classe loboGuara
 
  **Objetivo:**                    O metodo testEstaViva verifica se o método estaVivo retorna true para lobos vivos e false para lobos mortos.
  **Prioridade:**                   Baixa   
@@ -487,6 +524,8 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | O método cria um lobo guará  | true |  teste passou |
 | O método cria um lobo guará e executa o setMorte | false |  teste passou |
+  
+
 
 **Identificador:**        CT26   testSimuladorTela classe SimuladorTelaTest  
 
