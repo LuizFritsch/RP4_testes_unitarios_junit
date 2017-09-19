@@ -562,7 +562,8 @@ modelo de software
 
 **Identificador:**        CT28   testMostrarStatus classe SimuladorTelaTest  
 
- **Objetivo:**                    Checar se é possível criar um rótulo de etapa com informações validas e invalidas.
+ **Objetivo:**                    Checar se é possível criar um rótulo de etapa com informações validas e invalidas.  
+
  **Prioridade:**                   Baixa   
 
  **Condições prévias:**            O método deve tratar com thrwos as seguintes exceções: NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException.
