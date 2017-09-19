@@ -1,5 +1,5 @@
 #1.Introdução
- Este documento apresenta a abordagem que deve ser cumprida para a execução dos casos de teste.  
+ Este documento apresenta a abordagem adotada para a realização dos casos de testes, juntamente as atribuições de cada membro da equipe de teste num esforço conjunto para a tarefa de testar - Simulador Lobo Guara e Ovelha deve ser cumprida para a execução dos casos de teste.  
 #2. Plano de Contexto
 **Projeto 2.1**  
     Sistema que envolve monitoramento de populações de lobos guará e ovelhas dentro de uma área demarcada. A simulação tem por objetivo avaliar o resultado entre predador (lobo guará) e presa (ovelha).  
@@ -24,10 +24,10 @@ relatórios levantados durante a execução do teste, se houver;
 
 **3.2 Técnicas de teste de projeto**  
 As seguintes técnicas de design do caso de teste devem ser usadas onde são relevantes:  
-! particionamento de equivalência e análise de valor de limite;  
+! particionamento de equivalência, valores significativos e análise de valor de limite;  
 ! teste de caso de uso.  
 **3.3 Requisitos de conclusão do teste**  
-O teste do sistema devem atingir uma cobertura de requisitos de 80%.  
+O teste do sistema devem atingir uma cobertura de requisitos de 85% do Código fonte testado.  
 
 **3.4 Métricas a serem coletadas**  
 As seguintes métricas devem ser coletadas durante o curso do teste do sistema:  
@@ -39,6 +39,8 @@ O testador (a pessoa responsável pela execução do teste) deve ter os seguinte
 a execução do teste:  
 ! Um PC que contenha uma IDE para execução do software.  
 ! Uma IDE que tenha instalado o JUnit.  
+! O documento de Especificação de teste. 
+ 
 
 **3.6 Testes de regressão**  
 Os testes de regressão são necessários para cumprir os critérios de conclusão devem ser realizados. Isto é
@@ -60,7 +62,9 @@ h. Relatório de status sobre a execução do teste todas as semanas;
 #6 Pessoal
 **5.1 Funções, atividades e responsabilidades**  
 
-![tabela de tarefas.png](https://bitbucket.org/repo/z8947B5/images/81878850-tabela%20de%20tarefas.png)
+![Rp 4.png](https://bitbucket.org/repo/z8947B5/images/1543479047-Rp%204.png)
+![Rp 4 b.png](https://bitbucket.org/repo/z8947B5/images/1070568770-Rp%204%20b.png)
+
 #7 Horário  
 O cronograma geral para o teste é mostrado abaixo.  
 (O cronograma apresentado é um esboço do real)  
