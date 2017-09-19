@@ -69,7 +69,8 @@ h. Relatório de status sobre a execução do teste todas as semanas;
 #6 Pessoal
 **5.1 Funções, atividades e responsabilidades**  
 
-![Rp 4.png](https://bitbucket.org/repo/z8947B5/images/1543479047-Rp%204.png)
+![Rp 4.png](https://bitbucket.org/repo/z8947B5/images/1543479047-Rp%204.png)  
+
 ![Rp 4 b.png](https://bitbucket.org/repo/z8947B5/images/1070568770-Rp%204%20b.png)
 
 #7 Horário  
