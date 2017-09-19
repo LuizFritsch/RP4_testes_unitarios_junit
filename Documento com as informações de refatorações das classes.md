@@ -301,7 +301,13 @@ Correção 36 -
 35.5 Solução: Adicionar na variável fome ovelha +1   
 35.6 Rastreabilidade: Análise em grupo.    
            
-
+Correção 37 -    
+35.1 Classe: "SimuladorTela"    
+35.2 Método: "preparePaint"    
+35.3 Linha: 128     
+35.4 Erro: Dentro da clausula "if" tem um "getSize" que não redimensionava corretamente após colocar um campo muito grande       
+35.5 Solução: Remover o "getSize" e adicionar um "getPrefireSize"  
+35.6 Rastreabilidade: Análise em grupo.
 
       
     
