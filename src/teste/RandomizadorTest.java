@@ -17,7 +17,6 @@ public class RandomizadorTest {
 	/*
 	 * Testar se ele está gerando Double na faixa de valor pretendida
 	 */
-	
 	@Test
 	public void testGetDouble() {
 		Random rand = Randomizador.getRandom();
