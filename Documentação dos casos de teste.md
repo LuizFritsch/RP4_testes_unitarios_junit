@@ -7,7 +7,7 @@ modelo de software
   
 #Casos de teste
 
- **Identificador:**  CT01  GetLargura  classe Campo  
+ **Identificador:**  CT01  testGetLargura  classe testCampo  
 
   **Objetivo:**  O teste deve verificar se em uma instancia de Campo, o metodo GetLargura esta funcionando 
 
@@ -32,7 +32,7 @@ modelo de software
 
 
 
-**Identificador:**            CT02 GetProfundidade classe Campo      
+**Identificador:**            CT02 testGetProfundidade classe CampoTest       
 
  **Objetivo:**                    O teste deve verificar se em uma instancia de Campo, o metodo GetProfundidade esta funcionando corretamente. Para isso deve-se criar um objeto Campo com parâmetros validos.  
 
@@ -52,7 +52,7 @@ modelo de software
 
 
 
-**Identificador:**             CT03   GetPopulationDetails   classe CampoEstatistica  
+**Identificador:**             CT03   testGetPopulationDetails   classe CampoEstatisticaTest   
    
  
 **Objetivo:**                    O teste deve verificar se é retornado os detalhes da população em uma isntancia de CampoEstatistica.  
@@ -75,7 +75,7 @@ modelo de software
 
 
 
-**Identificador:**             CT04   Corre classe Ovelha     
+**Identificador:**             CT04   testCorre classe OvelhaTest      
 
  **Objetivo:**                    O teste deve verificar o uso do método Corre da classe ovelha.    
 
@@ -97,7 +97,7 @@ modelo de software
 
 
 
-**Identificador:**            CT05   EqualsObject classe Localizacao  
+**Identificador:**            CT05   testEqualsObject classe LocalizacaoTest   
       
 
  **Objetivo:**                     O teste deve verificar o uso do metodo equals. Deve-se criar uma localizacao com parâmetros validos e inválidos   
@@ -118,7 +118,7 @@ modelo de software
 
 
 
-**Identificador:**            CT06   GetLinha classe Localizacao      
+**Identificador:**            CT06   testGetLinha classe LocalizacaoTest       
  
 **Objetivo:**                     O teste deve criar uma localizacao com parametros validos e invalidos e verificar o uso do metodo getLinha 
  
@@ -140,7 +140,7 @@ modelo de software
 
 
 
-**Identificador:**        CT07   GetColuna classe Localizacao  
+**Identificador:**        CT07   testGetColuna classe LocalizacaoTest   
       
 
  **Objetivo:**                     O teste deve criar uma localizacao com parametros validos e invalidos e verificar o uso do metodo getColuna 
@@ -160,7 +160,7 @@ modelo de software
   
 
 
-**Identificador:**       CT08   HashCode classe Localizacao  
+**Identificador:**       CT08   testHashCode classe LocalizacaoTest   
       
 
 ** Objetivo:**                     O teste deve criar uma localizacao com parametros validos e invalidos e verificar o uso do metodo HashCode 
@@ -182,7 +182,7 @@ modelo de software
 
 
 
- **Identificador:**             CT09   GetName classe Contador  
+ **Identificador:**             CT09   testGetName classe ContadorTest   
     
 
  **Objetivo:**                     O teste deve criar um contador com parâmetros validos e inválidos, e testar a execução do método getName  
@@ -204,7 +204,7 @@ modelo de software
 
 
 
-**Identificador:**        CT10   GetCount classe Contador  
+**Identificador:**        CT10   testGetCount classe ContadorTest   
     
 
  **Objetivo:**                     O teste deve criar um contador com parâmetros validos e inválidos, e testar a execução do método getCount  
@@ -224,7 +224,7 @@ modelo de software
 
 
 
-**Identificador:**        CT11   Increment classe Contador     
+**Identificador:**        CT11   testIncrement classe ContadorTest      
 
  **Objetivo:**                     O teste deve criar um contador com parâmetros validos, e testar a execução do método increment  
 
@@ -243,7 +243,7 @@ modelo de software
 
 
 
-**Identificador:**       CT12  Reset classe Contador    
+**Identificador:**       CT12  testReset classe ContadorTest     
  
 **Objetivo:**                     O teste deve criar um contador com parâmetros validos e inválidos, e testar a execução do método Reset   
 
@@ -260,7 +260,7 @@ modelo de software
 | chamar o método reset| teste retornar 0 |  teste passou |
 
 
-**Identificador:**        CT13   GetLargura classe Campo  
+**Identificador:**        CT13   testGetLargura classe CampoTest   
 
  **Objetivo:**                    O metodo testGetLargura deve verificar se o metodo getLargura retorna a largura exata de um campo  
 
@@ -280,7 +280,7 @@ modelo de software
   
 
 
-**Identificador:**       CT14   GetPopulationDetails classe CampoEstatistica  
+**Identificador:**       CT14   testGetPopulationDetails classe CampoEstatisticaTest   
     
  
 **Objetivo:**                    O teste verifica se o metodo GetPopulation retorna uma String informando corretamente os dados do campo  
@@ -305,7 +305,7 @@ modelo de software
 
 
 
-**Identificador:**        CT15   Redefine classe CampoEstatistica  
+**Identificador:**        CT15   testRedefine classe CampoEstatisticaTest   
    
 
  **Objetivo:**                     O método verifica se após a execução do método Redefine o campo terá 0 objetos 
@@ -327,7 +327,7 @@ modelo de software
   
 
 
-**Identificador:**      CT16   ContadorFinalizado classe CampoEstatistica    
+**Identificador:**      CT16   testContadorFinalizado classe CampoEstatisticaTest     
  **Objetivo:**                     O método verifica a execução do método contadorFinalizado  
 
  **Prioridade:**                   baixa 
@@ -345,7 +345,7 @@ modelo de software
   
 
 
-**Identificador:**        CT17   EhViavel classe CampoEstatistica    
+**Identificador:**        CT17   testEhViavel classe CampoEstatisticaTest     
 
  **Objetivo:**                     O método verifica se há um lobo e uma ovelha para fazer a simulação
 
@@ -366,7 +366,7 @@ modelo de software
 
 
 
-**Identificador:**        CT18    EstaViva classe Ovelha     
+**Identificador:**        CT18   testEstaViva classe OvelhaTest      
 
  **Objetivo:**                    O metodo testEstaViva verifica se o método estaViva retorna true para ovelhas vivas e false para ovelhas mortas.
  **Prioridade:**                   Baixa   
@@ -386,7 +386,7 @@ modelo de software
   
  
 
-**Identificador:**        CT19   SetMorte classe Ovelha    
+**Identificador:**        CT19   testSetMorte classe OvelhaTest     
 
  **Objetivo:**  Verificar se após a execução do metodo setMorte a ovelha esteja marcada como morta.  
 
@@ -406,7 +406,7 @@ modelo de software
 
   
 
-**Identificador:**        CT20   SetMorte classe Ovelha  
+**Identificador:**        CT20   testSetMorte classe OvelhaTest   
    
 
  **Objetivo:**  Verificar se após a execução do método setMorte a ovelha esteja morta.  
@@ -428,7 +428,7 @@ modelo de software
 
  
 
-**Identificador:**        CT21   Procria classe Ovelha   
+**Identificador:**        CT21   testProcria classe OvelhaTest    
 
  **Objetivo:** Verifica se uma ovelha está procriando.
 
@@ -448,7 +448,7 @@ modelo de software
 
 
 
-**Identificador:**        CT22  Simulador classe Simulador   
+**Identificador:**        CT22  testSimulador classe SimuladorTest    
 
  **Objetivo:** O objetivo do teste é verificar o funcionamento do construtor da classe Simulador.  
 
@@ -469,7 +469,7 @@ modelo de software
 
 
 
-**Identificador:**        CT23   Simulador classe Simulador   
+**Identificador:**        CT23   testSimulador classe SimuladorTest    
 
  **Objetivo:** O objetivo do teste é verificar o funcionamento do simulador.  
 
@@ -489,7 +489,7 @@ modelo de software
 
   
 
-**Identificador:**        CT24   GetRandom classe Randomizador      
+**Identificador:**        CT24   GetRandom classe RandomizadorTest       
 
  **Objetivo:** O objetivo do teste é verificar o funcionamento do método getRandom.
 
@@ -509,7 +509,7 @@ modelo de software
   
 
 
-**Identificador:**        CT25   EstaVivO classe loboGuara
+**Identificador:**        CT25   EstaVivO classe loboGuaraTest 
 
  **Objetivo:**                    O metodo testEstaViva verifica se o método estaVivo retorna true para lobos vivos e false para lobos mortos.
  **Prioridade:**                   Baixa   
@@ -594,22 +594,6 @@ modelo de software
 | SimuladorTela (1,1) e campo (100,100) | teste deve apresentar uma mensagem de erro | teste passou |
 
 
-**Identificador:**        CT28   testMostrarStatus classe SimuladorTelaTest  
-
- **Objetivo:**                    Checar se é possível criar um rótulo de etapa com informações validas e invalidas.
- **Prioridade:**                   Baixa   
-
- **Condições prévias:**            O método deve tratar com thrwos as seguintes exceções: NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException.
-
-| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
-|---------------------|--------------|-----------------|----------------|---------|  
-|          CT28       |      X       |       --        |       --        |    X    |
-
-| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
-|-----------------------------------------------------|--------------------------------------------|---------------|  
-|Criar um rótulo com etapa "0"| O teste deve passar. O rótulo deve ser criado com sucesso | teste passou |
-|Criar um rótulo com etapa "999999999"|O teste não deve passar | teste passou |
-|Criar um rótulo com etapa "-10"|O teste não deve passar | teste passou |
 
 
 
@@ -623,7 +607,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |       X      |        X        |        --      |    X    |
+|          CT30         |       X      |        X        |        --      |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -642,7 +626,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |       X      |        X        |        --      |    X    |
+|          CT31         |       X      |        X        |        --      |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -661,9 +645,10 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      --      |       --        |        X       |   --    |
-| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
-|-----------------------------------------------------|--------------------------------------------|---------------|  
+|          CT32         |      --      |       --        |        X       |   --    |  
+
+| Entradas                         |  Resultado esperado                       |Resultado do teste      |  
+|--------------------------------------------|-------------------------------------------|---------------|  
 | O método cria uma Ovelha na localização específica (25,25) | Objeto do tipo Localizacao com linha e coluna igual a 25 | teste passou |
 
 
@@ -679,7 +664,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      --      |       --        |        X       |   --    |
+|          CT33         |      --      |       --        |        X       |   --    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -698,7 +683,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      --      |       --        |        X       |   --    |
+|          CT34         |      --      |       --        |        X       |   --    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -718,7 +703,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      --      |       --        |        X       |   --    |
+|          CT35         |      --      |       --        |        X       |   --    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -737,13 +722,28 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      --      |       --        |        X       |   --    |
+|          CT36         |      --      |       --        |        X       |   --    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
-| O método cria duas Ovelha na localização específica (25,25) e logo após seta a primeira delas para (26,26) | O objeto pertencente a Localizacao(25,25) não ser a segunda ovelha | teste passou |
+| O método cria duas Ovelha na localização específica (25,25) e logo após seta a primeira delas para (26,26) | O objeto pertencente a Localizacao(25,25) não ser a segunda ovelha | teste passou |  
 
+**Identificador:**        CT37   testMostrarStatus classe SimuladorTelaTest  
 
+ **Objetivo:**                    Checar se é possível criar um rótulo de etapa com informações validas e invalidas.
+ **Prioridade:**                   Baixa   
+
+ **Condições prévias:**            O método deve tratar com thrwos as seguintes exceções: NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException.
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT37       |      X       |       --        |       --        |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+|Criar um rótulo com etapa "0"| O teste deve passar. O rótulo deve ser criado com sucesso | teste passou |
+|Criar um rótulo com etapa "999999999"|O teste não deve passar | teste passou |
+|Criar um rótulo com etapa "-10"|O teste não deve passar | teste passou |
 
 
 
@@ -758,7 +758,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      X       |       X         |       --       |    X    |
+|          CT38         |      X       |       X         |       --       |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -780,35 +780,11 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      X       |       X         |       --       |    X    |
+|          CT39         |      X       |       X         |       --       |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | O método cria Campo e Localizacao(esse é inválida) e animal | O método deve retornar uma exceção do tipo IllegalArgumentException | teste passou |
-
-
-
-
-
-
-**Identificador:**        CT39  animalConstruct03()    classe  AnimalTest 
-
- **Objetivo:**     Verificar se o construtor da classe Animal aceita uma Localizacao com coluna e largura igual a tamanho máxima mais um.         
-
- **Prioridade:**     Média               
-
- **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao(Essa localização é inválida)
-
-| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
-|---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      X       |       X         |       --       |    X    |
-
-| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
-|-----------------------------------------------------|--------------------------------------------|---------------|  
-| O método cria Campo e Localizacao(esse é inválida) e animal | O método deve retornar uma exceção do tipo IllegalArgumentException | teste passou |
-
-
-
 
 
 **Identificador:**        CT40  setMorteTest01()    classe  AnimalTest 
@@ -821,7 +797,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      X       |       X         |       --       |    X    |
+|          CT40         |      X       |       X         |       --       |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -840,7 +816,7 @@ modelo de software
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
-|          CT         |      X       |       X         |       --       |    X    |
+|          CT41         |      X       |       X         |       --       |    X    |
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
@@ -848,25 +824,11 @@ modelo de software
 
 
 
-**Identificador:**         CT41-2 testPodeProcriar2() classe LoboGuara  
-
-**Objetivo:**     Verificar se o método podeProcriar() está comparando a idade corretamente        
-
- **Prioridade:**     Média               
-
- **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, LoboGuara e o método incrementaIdade() estar funcionando corretamente
-
-| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
-|---------------------|--------------|-----------------|----------------|---------|  
-|          CT41-2         |      X       |       X         |       --       |    X    |
-
-| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
-|-----------------------------------------------------|--------------------------------------------|---------------|  
-| O método cria um LoboGuara | LoboGuara estar apto para procriar | teste passou |
 
 
 
-**Identificador:**          CT42 incrementaIdade() classe LoboGuara  
+
+**Identificador:**          CT42 incrementaIdade() classe LoboGuaraTest   
 
 **Objetivo:**    Verificar se o método incrementaIdade() está funcionando corretamente     
 
@@ -884,7 +846,7 @@ modelo de software
 
 
 
-**Identificador:**          CT43 incrementaIdade2() classe LoboGuara  
+**Identificador:**          CT43 incrementaIdade2() classe LoboGuaraTest  
 
 **Objetivo:**    Verificar se o método incrementaIdade() está funcionando.
 
@@ -906,7 +868,7 @@ modelo de software
 **Objetivo:**    Verificar se o método decrementaFome() está funcionando. 
  **Prioridade:**     Média               
 
- **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, LoboGuara 
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, LoboGuaraTest  
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
@@ -918,7 +880,7 @@ modelo de software
 
 
 
-**Identificador:**          CT45 incrementaIdade2() classe Ovelha  
+**Identificador:**          CT45 incrementaIdade2() classe OvelhaTest   
 
 **Objetivo:**    Verificar se o método incrementaIdade() está funcionando.
 
@@ -936,7 +898,7 @@ modelo de software
 
 
 
-**Identificador:**          CT46 incrementaIdade3() classe Ovelha  
+**Identificador:**          CT46 incrementaIdade3() classe OvelhaTest   
 
 **Objetivo:**    Verificar se o método incrementaIdade() está funcionando.
 
@@ -954,7 +916,7 @@ modelo de software
 
 
 
-**Identificador:**          CT47 podeProcriar() classe Ovelha  
+**Identificador:**          CT47 podeProcriar() classe OvelhaTest   
 
 **Objetivo:**    Verificar se o método podeProcriar() está funcionando.
 
@@ -971,7 +933,7 @@ modelo de software
 | O método cria um objeto Ovelha | ovelha estar apta para procriar  | teste passou |
 
 
-**Identificador:**          CT48 podeProcriar2(), podeProciar3() classe Ovelha  
+**Identificador:**          CT48 podeProcriar2(), podeProciar3() classe OvelhaTest   
 
 **Objetivo:**    Verificar se o método podeProcriar() está funcionando.
 
@@ -987,13 +949,15 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | O método cria um objeto Ovelha | ovelha não estar apta para procriar  | teste passou |  
   
-**Identificador:**          CT49 podeProcriarMorta() classe Ovelha  
+  
+  
+**Identificador:**          CT49 podeProcriarMorta() classe OvelhaTest   
 
 **Objetivo:**    Verificar se o método podeProcriar() está funcionando.
 
  **Prioridade:**     Média               
 
- **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, Ovelha 
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, OvelhaTest  
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
@@ -1002,6 +966,8 @@ modelo de software
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | O método cria um objeto Ovelha | ovelha não estar apta para procriar, está morta  | teste passou |  
+  
+  
 
 **Identificador:**          CT50 podeProcriar5() classe Ovelha  
 
@@ -1009,7 +975,7 @@ modelo de software
 
  **Prioridade:**     Média               
 
- **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, Ovelha 
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, OvelhaTest  
 
 | Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
@@ -1021,7 +987,7 @@ modelo de software
 | Animal ovelha, idade entre 11 e 40                  | ovelha está apta para procriar  | teste passou |  
 | Animal ovelha, idade igual 40, Antes de morrer      | ovelha está apta para procriar  | teste passou |  
   
-**Identificador:**          CT51 incrementaIdade3() classe LoboGuara  
+**Identificador:**          CT51 incrementaIdade3() classe LoboGuaraTest   
 
 **Objetivo:**    Verificar se o método incrementaIdade() está funcionando  
 
@@ -1039,7 +1005,7 @@ modelo de software
 | Animal loboGuara, idade igual 150                 | O lobo esta vivo  | teste passou |  
   
   
-**Identificador:**          CT52 incrementaIdade() classe LoboGuara  
+**Identificador:**          CT52 incrementaIdade() classe LoboGuaraTest   
 
 **Objetivo:**    Verificar se o método incrementaFome() está funcionando  
 
@@ -1057,7 +1023,7 @@ modelo de software
 | Animal loboGuara, nivel 3 de fome                | O lobo esta vivo  | teste passou |  
 | Animal loboGuara, nivel 5 de fome                | O lobo esta vivo  | teste passou |  
   
-**Identificador:**          CT53 loboGuaraFome2() classe LoboGuara  
+**Identificador:**          CT53 loboGuaraFome2() classe LoboGuaraTest   
 
 **Objetivo:**    Verificar se ao criar um lobo com idade não randômica, o nível de fome é igual a 7.
 
@@ -1073,7 +1039,7 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Animal loboGuara, idade randomica false.             | nivél fome igaul a 7  | teste passou |    
 
- **Identificador:**          CT53 loboGuaraFome1() classe LoboGuara  
+ **Identificador:**          CT53 loboGuaraFome1() classe LoboGuaraTest   
 
 **Objetivo:**    Verificar se ao criar um lobo com idade randômica, o nível de fome é igual esta entre 0 e 7, zero não incluso.
 
@@ -1089,7 +1055,7 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Animal loboGuara, idade randomica true.             | nivél fome esta entre 0 e 7  | teste falhou |  
 
-**Identificador:**          CT53 loboGuaraFome2() classe LoboGuara  
+**Identificador:**          CT53 loboGuaraFome2() classe LoboGuaraTest   
 
 **Objetivo:**    Verificar se ao criar um lobo com idade não randômica, o nível de fome é igual a 7.
 
@@ -1105,7 +1071,7 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | Animal loboGuara, idade randomica false.             | nivél fome igaul a 7  | teste passou |  
 
-**Identificador:**          CT54 loboGuaraFome3() classe LoboGuara  
+**Identificador:**          CT54 loboGuaraFome3() classe LoboGuaraTest   
 
 **Objetivo:**    Verificar se o lobo ao cacar e quando encontra ou não comida, o nivel de fome é ajustado corretamente.
 
@@ -1123,7 +1089,7 @@ modelo de software
 | Animal loboGuara, idade randomica true               | nivel de fome  é ajustado  | teste passou |  
 
 
-**Identificador:**          CT55 loboGuaraFome4() classe LoboGuara  
+**Identificador:**          CT55 loboGuaraFome4() classe LoboGuaraTest   
 
 **Objetivo:**    Verificar se quando o loboGuara se move, a fome é ajustada, assim como quando não se move.
 
@@ -1139,7 +1105,7 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | loboGuara idade randômica false, não se move.           | nivél fome ajustado. | teste  falhou |  
 
-**Identificador:**          CT56 loboGuaraFome4() classe LoboGuara  
+**Identificador:**          CT56 loboGuaraFome4() classe LoboGuaraTest   
 
 **Objetivo:**    Verificar se quando o loboGuara se move, a fome é ajustada, assim como quando não se move. Após refatoração do erro apontado pelo CT55.
 
@@ -1156,7 +1122,7 @@ modelo de software
 | loboGuara idade randômica false, não se move.           | nivél fome ajustado. | teste  passou |  
 | loboGuara idade randômica, não se move.           | nivél fome ajustado. | teste  passou |  
   
-**Identificador:**          CT57 corre() classe Ovelha  
+**Identificador:**          CT57 corre() classe OvelhaTest   
 
 **Objetivo:**   Verificar se corre esta funcionando corretamente, sem se mover.
 
@@ -1172,7 +1138,7 @@ modelo de software
 |-----------------------------------------------------|--------------------------------------------|---------------|  
 | ovelha idade randômica true que não se move           | numero de indivíduos ovelhas máximo não atingido | teste passou |   
   
-**Identificador:**          CT58 corre() classe Ovelha  
+**Identificador:**          CT58 corre() classe OvelhaTest   
 
 **Objetivo:**   Verificar se corre esta funcionando corretamente, refatoração realizada, primeiro ela tenta se mover.
 
@@ -1186,4 +1152,37 @@ modelo de software
 
 | Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
 |-----------------------------------------------------|--------------------------------------------|---------------|  
-| ovelha idade randômica true que se move           | numero de indivíduos ovelhas máximo atingido (localização)| teste passou |
+| ovelha idade randômica true que se move           | numero de indivíduos ovelhas máximo atingido (localização)| teste passou |    
+  
+
+**Identificador:**        CT59  testanimalConstruct03()    classe  AnimalTest 
+
+ **Objetivo:**     Verificar se o construtor da classe Animal aceita uma Localizacao com coluna e largura igual a tamanho máxima mais um.         
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao(Essa localização é inválida)
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT59         |      X       |       X         |       --       |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria Campo e Localizacao(esse é inválida) e animal | O método deve retornar uma exceção do tipo IllegalArgumentException | teste passou |  
+  
+**Identificador:**         CT60 testPodeProcriar2() classe LoboGuaraTest   
+
+**Objetivo:**     Verificar se o método podeProcriar() está comparando a idade corretamente        
+
+ **Prioridade:**     Média               
+
+ **Condições prévias:**   Criação de objeto do tipo Campo, Localizacao, LoboGuara e o método incrementaIdade() estar funcionando corretamente
+
+| Rastreabilidade:    |   RE01       |    RE02         |    RE03        |   RE04  |
+|---------------------|--------------|-----------------|----------------|---------|  
+|          CT60         |      X       |       X         |       --       |    X    |
+
+| Entradas                                   |  Resultado esperado                       |Resultado do teste      |  
+|-----------------------------------------------------|--------------------------------------------|---------------|  
+| O método cria um LoboGuara | LoboGuara estar apto para procriar | teste passou |
