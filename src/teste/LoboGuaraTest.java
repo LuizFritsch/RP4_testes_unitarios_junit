@@ -156,6 +156,7 @@ public class LoboGuaraTest {
 		assertTrue(lobo.estaVivo());
 	}
 	
+	//Documentado
 	@Test
 	public void incrementaIdade3() throws Exception{
 		LoboGuara lobo = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
@@ -167,6 +168,7 @@ public class LoboGuaraTest {
 		assertFalse(lobo.estaVivo());
 	}
 	
+	//Documentado
 	@Test
 	public void incrementaIdade4() throws Exception{
 		LoboGuara lobo = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
@@ -236,6 +238,8 @@ public class LoboGuaraTest {
 		assertTrue(lobo.estaVivo());
 	}
 	
+	
+	@Ignore //Tem certeza que este método está certo?
 	@Test
 	public void testProcria() throws Exception {
 		LoboGuara lobo = new LoboGuara(false, new Campo(3, 3), new Localizacao(0, 0));
@@ -259,7 +263,7 @@ public class LoboGuaraTest {
 	
 	
 	
-	
+	@Ignore
 	@Test
 	public void loboGuaraFome1() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
 		Campo campo = new  Campo(100, 100);
@@ -281,7 +285,7 @@ public class LoboGuaraTest {
 		assertTrue(nivelFomeInt<=7);*/		
 		
 	}
-	
+	//Documentado
 	@Test
 	public void loboGuaraFome2() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
 		Campo campo = new  Campo(100, 100);
@@ -330,6 +334,7 @@ public class LoboGuaraTest {
 				
 		}
 	
+	//Documentado
 	@Test
 	public void loboGuaraFome4() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
 		Campo campo = new  Campo(1, 2);

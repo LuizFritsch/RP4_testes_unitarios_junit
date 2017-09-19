@@ -189,6 +189,7 @@ public class OvelhaTest {
 		assertEquals(false,podeProcriar.invoke(ove));
 	}
 	
+	//Documentado
 	@Test
 	public void testPodeProcriar3() throws Exception {
 		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
@@ -204,6 +205,7 @@ public class OvelhaTest {
 		assertEquals(false,podeProcriar.invoke(ove));
 	}
 	
+	//Documentado
 	@Test
 	public void testPodeProcriarMorta() throws Exception {
 		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
@@ -219,6 +221,8 @@ public class OvelhaTest {
 		System.out.println(ove.estaVivo());
 		assertEquals(false,podeProcriar.invoke(ove));
 	}
+	
+	//Documentado
 	@Test
 	public void testPodeProcriar5() throws Exception {
 		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
@@ -234,6 +238,7 @@ public class OvelhaTest {
 		assertEquals(true,podeProcriar.invoke(ove));
 	}
 	
+	//Documentado
 	@Test
 	public void testPodeProcriar10() throws Exception {
 		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
@@ -250,6 +255,7 @@ public class OvelhaTest {
 	}
 	
 	
+	//Documentado
 	@Test
 	public void testPodeProcriar40() throws Exception {
 		Ovelha ove = new Ovelha(false, new Campo(50, 50), new Localizacao(1, 1));
@@ -267,7 +273,7 @@ public class OvelhaTest {
 	
 	
 	
-	
+	@Ignore
 	@Test
 	public void correAtualizado() {
 		

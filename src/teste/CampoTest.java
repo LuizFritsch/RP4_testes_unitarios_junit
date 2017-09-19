@@ -454,6 +454,7 @@ public class CampoTest {
 				
 	}
 	
+	//Documentado
 	@Test 
 	public void testLocalizacaoAdjacenteRandomica1a() {
 
@@ -463,6 +464,7 @@ public class CampoTest {
 				
 	}
 	
+	//Documentado
 	@Test 
 	public void testLocalizacaoAdjacenteRandomicaa2() {
 
@@ -851,7 +853,7 @@ public class CampoTest {
 		assertEquals(n ,c.getLargura());
 	}
 	
-	
+	//Documentado
 	@Test
 	public void localizacaoAdjacenteRadndomicaTest() {
 		Campo c = new Campo(100, 100);
