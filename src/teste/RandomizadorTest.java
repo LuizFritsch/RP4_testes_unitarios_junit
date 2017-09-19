@@ -51,13 +51,13 @@ public class RandomizadorTest {
 		ArrayList<Integer> segundo= new ArrayList<Integer>();
 		int i = 0;
 		while (i < 11) {
-			primeiro.add(rand.nextInt(100));
+			primeiro.add(rand.nextInt(2147483647));
 			i++;
 		}
 		int j = 0;
 		Random rando = Randomizador.getRandom();
 		while (j < 11) {
-			segundo.add(rando.nextInt(100));
+			segundo.add(rando.nextInt(2147483647));
 			j++;
 		}
 		int eIgual = 0;
@@ -68,14 +68,75 @@ public class RandomizadorTest {
 				eIgual++;
 			}
 		}
-		System.out.println(eIgual);
 		assertNotEquals(10, eIgual);
 	}
 
-	@Ignore
 	@Test
 	public void testReset() {
-		//assertTrue(true);
+		Random rand = Randomizador.getRandom();
+		int i = rand.nextInt();
+		Randomizador.reset();
+		int j = rand.nextInt();
+		assertNotEquals(i, j);
 	}
+	@Test
+	public void testResetVarios() {
+		Random rand = Randomizador.getRandom();
+		ArrayList<Integer> primeiro = new ArrayList<Integer>();
+		ArrayList<Integer> segundo= new ArrayList<Integer>();
+		int i = 0;
+		while (i < 100) {
+			primeiro.add(rand.nextInt(2147483647));
+			i++;
+		}
+		int j = 0;
+		
+		Randomizador.reset();
+		
+		while (j < 100) {
+			segundo.add(rand.nextInt(2147483647));
+			j++;
+		}
+		int eIgual = 0;
+		for (int k = 0; k < 100; k++) {
+			if (primeiro.get(k) == segundo.get(k)) {
+				eIgual++;
+			}
+		}
+		
+		assertNotEquals(100, eIgual);
+	}
+	
+	@Test
+	public void testResetVarios2() {
+		Random rand = Randomizador.getRandom();
+		ArrayList<Integer> primeiro = new ArrayList<Integer>();
+		ArrayList<Integer> segundo= new ArrayList<Integer>();
+		int i = 0;
+		while (i < 1000) {
+			primeiro.add(rand.nextInt(2147483647));
+			i++;
+		}
+		int j = 0;
+		
+		Randomizador.reset();
+		
+		while (j < 1000) {
+			segundo.add(rand.nextInt(2147483647));
+			j++;
+		}
+		int eIgual = 0;
+		for (int k = 0; k < 1000; k++) {
+			System.out.println("em "+ k + " da primeira lista " + primeiro.get(k));
+			System.out.println("em "+ k + " da segunda lista " + segundo.get(k));
+			if (primeiro.get(k) == segundo.get(k)) {
+				eIgual++;
+			}
+		}
+		
+		assertNotEquals(1000, eIgual);
+	}
+	
+	
 
 }
