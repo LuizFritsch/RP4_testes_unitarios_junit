@@ -19,10 +19,10 @@ A. Stakeholders: pessoas interessadas no sistema.
 **3.4. Premissas e restrições: ** Os testes não devem mudar o código fonte do sistema.  
 **3.5. Stakeholders: ** Biólogos, Ambientalistas e professores.   
 **4. Comunicação: ** 
-A. Quando ocorrer um erro ele deve ser reportado por e-mail e comunicado aos demais membros da equipe.  
+A. Quando ocorrer um erro ele deve ser reportado por e-mail e comunicado aos demais membros da equipe via WhatsApp.  
 B. O teste pode começar a qualquer hora pelo testador.
 **5. Registros de risco: **
-**5.1. Riscos do produto: ** Se ocorrer algum erro com o produto no ambiente de execução pode acarretar em danos no habitat dos animais em questão.  
+**5.1. Riscos do produto: ** Se ocorrer algum erro com o produto no ambiente de execução pode acarretar em danos no habitat dos animais em questão podendo gerar até mesmo uma extinção de uma das espécies.  
 **5.2. Riscos do projeto: ** --  
 **6. Estrategia de teste** 
 **6.1. Subprocessos de teste: ** --    
@@ -35,19 +35,19 @@ A. Os testes devem ser finalizados apenas quando não encontrem erros, caso o er
 **6.7. Requisitos de ambiente de teste: ** Os testes serão realizados nos computadores pessoais dos testadores, sem nenhum requisito prévio. 
 **6.8. Testes de repetição e regressão: ** Os testes devem ser refeitos após a correção dos erros encontrados.  
 **6.9. Critérios de Suspensão e retomada: ** 
-A. Se as partições de equivalência do teste já foram testadas e todas as entradas foram documentadas, o caso de teste deve ser finalizado.  
+A. Se as partições de equivalência do teste já foram testadas, todas as entradas foram documentadas e o testador não vê necessidade de mais testes, os caso de teste do método específico devem ser finalizados.  
 B. Se foi encontrado um erro fatal, os demais testes correm risco de serem consequências do erro primário. Nessas condições o erro deve ser reportado e corrigido para a liberação de execução dos demais testes.  
 **6.10. Desvios da estratégia de teste organizacional: ** --
 **7. Testando atividades e estimativas: **
-A. testes JUnit, debug e revisões conjuntas.   
+A. testes JUnit, debug, inspeção de software e revisões conjuntas.   
 B. O gerenciamento de configuração deve ser feito pelos membros da equipe de teste.     
 C. Os testes de regressão devem ser feitos a cada modificação do md50.  
 **8. Pessoal**
 **8.1. Papéis, atividades e responsabilidades: **
-A. Guilherme Souza Santos - Implementação das classes de teste (JUnit)    
-B. Luiz Guilherme Fritsch - Implementação das classes de teste (JUnit)  
-C. Vitor Hugo Maciel dos Santos - Análise e correção das classes  
-D. Iderli Pereira Souza Filho - Documentação **
+A. Guilherme Souza Santos - Implementação das classes de teste (JUnit) e Documentação**.    
+B. Luiz Guilherme Fritsch - Implementação das classes de teste (JUnit) e Documentação**.     
+C. Vitor Hugo Maciel dos Santos - Análise e correção das classes, Implementação das classes de teste (JUnit) e Documentação**.      
+D. Iderli Pereira Souza Filho - Implementação das classes de teste (JUnit) e Documentação**.
 **8.2. Necessidades de contratação: ** Nenhuma  
 **8.3. necessidades de treinamento: ** Nenhuma  
 **9. Cronograma: **  Não ah um cronograma previsto.
