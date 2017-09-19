@@ -50,4 +50,7 @@ C. Vitor Hugo Maciel dos Santos - Análise e correção das classes, Implementa�
 D. Iderli Pereira Souza Filho - Implementação das classes de teste (JUnit) e Documentação**.
 **8.2. Necessidades de contratação: ** Nenhuma  
 **8.3. necessidades de treinamento: ** Nenhuma  
-**9. Cronograma: **  Não ah um cronograma previsto.
+**9. Cronograma: **  
+A. Avaliação toda terça-feira e sábado por conta dos professores com avaliação(NOK, POK, TOK)
+B. Entrega da Release 1: 29/09/2017
+C. Evento de Avaliações 30/09/2017
