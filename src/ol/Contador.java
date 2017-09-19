@@ -17,9 +17,13 @@ public class Contador
     public Contador(String name)
     {
     	String novoNome="";
-    	for (int i = 3; i < name.length(); i++) {
-			novoNome = novoNome+name.charAt(i);
-		}
+    	if(name.contains("Ovelha")) {
+    		novoNome="Ovelha";
+    	}else if(name.contains("Lobo")){
+    		novoNome="LoboGuara";
+    	}else {
+    		novoNome=name;
+    	}
         this.name = novoNome;
         count = 0;
     }
