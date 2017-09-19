@@ -192,7 +192,7 @@ Correção 23 -
 23.2 Método: construtor     
 23.3 Linha: 17       
 23.4 Erro: Mostra o nome do pacote no método "getName()"        
-23.5 Solução: Adição de um laço de repetição “for” para retirar os 3 primeiros caracteres da string “ol.”      
+23.5 Solução: Adição de cláusula "if" para verificar se é uma Ovelha ou um LoboGuara     
 23.6 Rastreabilidade: [JUnit](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste)     
  
 Correção 24 -       
