@@ -1,7 +1,7 @@
 # Refatorações #
 ### Inspeção ###
 A inspeção e documentação da mesma foi realizado em conjunto por Vitor Hugo e Iderli. O documento oficial pode ser acessado no seguinte link: [INSPEÇÂO](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Inspe%C3%A7%C3%A3o)  
-As refatorações que ocorreram após esta etapa fora a seguinte:  
+As refatorações que ocorreram após esta etapa foram as seguintes:  
 
 
 
@@ -265,7 +265,7 @@ Correção 32 -
 32.2 Método: "caca"    
 32.3 Linha: 44     
 32.4 Erro: Se o lobo não se move, nivél fome não se altera corretamente.      
-32.5 Solução: "Adicionar metodo decremetafome() dentro do if"   
+32.5 Solução: "Adicionar método decremetafome() dentro do if"   
 32.6 Rastreabilidade:  [ Documentação caso de teste](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste) CT54 e CT55. 
   
   
@@ -305,7 +305,7 @@ Correção 37 -
 35.1 Classe: "SimuladorTela"    
 35.2 Método: "preparePaint"    
 35.3 Linha: 128     
-35.4 Erro: Dentro da clausula "if" tem um "getSize" que não redimensionava corretamente após colocar um campo muito grande       
+35.4 Erro: Dentro da cláusula "if" tem um "getSize" que não redimensionava corretamente após colocar um campo muito grande       
 35.5 Solução: Remover o "getSize" e adicionar um "getPrefireSize"  
 35.6 Rastreabilidade: Análise em grupo.
 
