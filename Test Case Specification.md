@@ -791,3 +791,154 @@
 | Precondições:       	|   Criação de objeto do tipo Campo, Localizacao, Ovelha |
 | Entrada               | Animal ovelha, idade igual 40, Antes de morrer     |
 | Resultado esperado    | ovelha está apta para procriar |
+
+***
+
+| Test Case ID:  CT38.1     	| Objetivo: Decrementar a fome de um Lobo 5 vezes e verificar se o mesmo está vivo|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criar um "LoboGuara" e decrementar sua fome 5 vezes  |
+| Entrada               | "LoboGuara"     |
+| Resultado esperado    | true |
+
+***
+
+| Test Case ID:  CT38.2     	| Objetivo: Decrementar a fome de um Lobo 2 vezes e verificar se o mesmo está vivo|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criar um "LoboGuara" e decrementar sua fome 2 vezes  |
+| Entrada               | "LoboGuara"     |
+| Resultado esperado    | true |
+
+***
+
+
+| Test Case ID:  CT38.3     	| Objetivo: Decrementar a fome de um Lobo 8 vezes e verificar se o mesmo está vivo|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criar um "LoboGuara" e decrementar sua fome 8 vezes  |
+| Entrada               | "LoboGuara"     |
+| Resultado esperado    | false |
+
+***
+
+| Test Case ID:  CT38.4     	| Objetivo: Incrementar a idade de um Lobo até 150 e verificar se o mesmo está vivo|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criar um "LoboGuara" e incrementar sua idade até 150 |
+| Entrada               | "LoboGuara"     |
+| Resultado esperado    | false |
+
+***
+
+| Test Case ID:  CT38.5     	| Objetivo: Incrementar a idade de um Lobo até 5000 e verificar se o mesmo está vivo|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criar um "LoboGuara" e incrementar sua idade até 5000  |
+| Entrada               | "LoboGuara"     |
+| Resultado esperado    | false |
+
+***
+
+| Test Case ID:  CT39.1     	| Objetivo: Verificar se uma "Ovelha" que pode procriar pode procriar|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criar uma "Ovelha" com 40 anos de idade  |
+| Entrada               | "Ovelha"     |
+| Resultado esperado    | true |
+
+***
+
+| Test Case ID:  CT39.2     	| Objetivo: Verificar se uma "Ovelha" que pode procriar pode procriar|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criar uma "Ovelha" com 10 anos de idade  |
+| Entrada               | "Ovelha"     |
+| Resultado esperado    | true |
+
+***
+
+| Test Case ID:  CT39.3     	| Objetivo: Verificar se uma "Ovelha" que pode procriar pode procriar|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criar uma "Ovelha" com 6 anos de idade  |
+| Entrada               | "Ovelha"     |
+| Resultado esperado    | true |
+
+***
+
+| Test Case ID:  CT40     	| Objetivo: Verificar se uma "Ovelha" morta pode procriar|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criar uma "Ovelha" e aumentar sua idade até que esteja morta  |
+| Entrada               | "Ovelha"     |
+| Resultado esperado    | false |
+
+***
+
+| Test Case ID:  CT41     	| Objetivo: Verificar se uma Ovelha pode Procriar sem idade mínima de procriação|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criar "Ovelha" com Idade Mínima de procriação - 1  |
+| Entrada               |  "Ovelha"     |
+| Resultado esperado    | False |
+
+***
+
+| Test Case ID:  CT42     	| Objetivo: Verificar se um "Campo" de 1x1 retorna null como "Localizacao" adjacente|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criar um "Campo" de 1x1  |
+| Entrada               | localizacões adjacentes do "Campo"     |
+| Resultado esperado    | null |
+
+***
+
+| Test Case ID:  CT43     	| Objetivo: Testar o se o método "LocalizacaoAdjacenteRandomica" retorna a "Localizacao" correta|
+|---------------------	|-----------	|
+| Prioridade:         	| Média        	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criar "Campo" e "Localizacao"  |
+| Entrada               | "Localizacao" adjacente do "Campo"     |
+| Resultado esperado    | Localizacao(0,1) |
+
+***
+
+| Test Case ID:  CT44     	| Objetivo: Testar a fome do Lobo Guara|
+|---------------------	|-----------	|
+| Prioridade:         	| Baixa       	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criar um Lobo Guara  |
+| Entrada               | Lobo Guara|
+| Resultado esperado    | 7 |
+
+***
+
+| Test Case ID:  CT45     	| Objetivo: Verificar se o objeto retornado pelo método "localizacaoAdjacenteRandomica" é uma "Localizacao"|
+|---------------------	|-----------	|
+| Prioridade:         	| Baixa  |
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criar um "Campo"  |
+| Entrada               | Campo de 100x100     |
+| Resultado esperado    | True |
+
+***
+
+| Test Case ID:  CT46     	| Objetivo: testar se o lobo está sendo criado com a fome certa |
+|---------------------	|-----------	|
+| Prioridade:         	| Média       	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Adicionar permissão de acesso ao atributo fome do Lobo Guara |
+| Entrada               | Nível de fome do Lobo|
+| Resultado esperado    | 6 |
