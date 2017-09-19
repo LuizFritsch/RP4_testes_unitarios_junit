@@ -4,7 +4,7 @@
 |-------------------------------|--------------------------------------------------------- ------------------|
 **Data: **  29/08/2017       
 **Versão:  **   0.1   
-**Preparada por:  **  Iderli Souza  
+**Preparado por:  **  Iderli Souza  
 **Descrição da mudança:  **    Primeiro rascuho  
          
 #1 Introdução     
