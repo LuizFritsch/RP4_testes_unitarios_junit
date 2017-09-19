@@ -2,8 +2,8 @@
 
 | Versões                  ||  
 |-------------------------------|--------------------------------------------------------- ------------------|
-**Data: **  29/08/2017       
-**Versão:  **   0.1   
+**Data: **  29/08/2017  -  19/09/2017     
+**Versão:  **   0.2   
 **Preparado por:  **  Iderli Souza  
 **Descrição da mudança:  **    Primeiro rascuho  
          
@@ -11,7 +11,7 @@
 **1.2 Finalidade**  
 O objetivo desta parte da especificação do teste é fornecer uma visão geral do que será testado no sistema.  
 **1.3 Documento de referência: ** MD.050 APPLICATION EXTENSIONS FUNCTIONAL DESIGN.  
-**1.4 Glossário: ** -- 
+**1.4 Glossário: ** ID - Identificador  
 
 #2 Identificação dos casos de teste  
 
