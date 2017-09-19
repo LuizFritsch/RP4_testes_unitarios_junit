@@ -16,7 +16,14 @@ public class LocalizacaoTest {
 	}
 	
 	//-------------------------------------------------------------------------------------------------------------------------------------------
-
+	
+	@Test
+	public void testEqualsNotEquals() {
+		Localizacao l = new Localizacao(1,1);
+		LoboGuara lo = new LoboGuara(false, new Campo(50,50), l);
+		l.equals(lo);
+	}
+	
 	@Test
 	public void testEqualsObject() {
 		Localizacao obj = new Localizacao(10, 10);

@@ -2,6 +2,8 @@ package teste;
 
 import static org.junit.Assert.*;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -41,6 +43,23 @@ public class RandomizadorTest {
 		int random = rand.nextInt(1);
 		assertTrue(random == 0);
 	}
+	
+	@Test
+	public void testGetName() {
+		Random rand = Randomizador.getRandom();
+		long i = rand.nextLong();
+		assertNotNull(i);
+	}
+	
+	@Ignore
+	@Test
+	public void testConstrutor2() throws InvocationTargetException, IllegalAccessException, ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalArgumentException {
+		Class<?> p = Class.forName("ol.Randomizador");
+		Constructor<?> ransd = p.getConstructor();
+		Class i = ransd.newInstance().getClass();
+		assertNotNull(i);
+	}
+	
 	/*
 	 * Verificando se gera nmrs iguais
 	 */
@@ -62,13 +81,17 @@ public class RandomizadorTest {
 		}
 		int eIgual = 0;
 		for (int k = 0; k < 11; k++) {
-			System.out.println("em "+ k + " da primeira lista " + primeiro.get(k));
-			System.out.println("em "+ k + " da segunda lista " + segundo.get(k));
 			if (primeiro.get(k) == segundo.get(k)) {
 				eIgual++;
 			}
 		}
 		assertNotEquals(10, eIgual);
+	}	
+	
+	@Test
+	public void testConstrutor() {
+		Random rand = Randomizador.getRandom();
+		assertNotNull(rand);
 	}
 
 	@Test
@@ -127,8 +150,6 @@ public class RandomizadorTest {
 		}
 		int eIgual = 0;
 		for (int k = 0; k < 1000; k++) {
-			System.out.println("em "+ k + " da primeira lista " + primeiro.get(k));
-			System.out.println("em "+ k + " da segunda lista " + segundo.get(k));
 			if (primeiro.get(k) == segundo.get(k)) {
 				eIgual++;
 			}
