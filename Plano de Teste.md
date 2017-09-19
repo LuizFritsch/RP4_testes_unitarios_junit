@@ -44,13 +44,14 @@ B. O gerenciamento de configuração deve ser feito pelos membros da equipe de t
 C. Os testes de regressão devem ser feitos a cada modificação do md50.  
 **8. Pessoal**
 **8.1. Papéis, atividades e responsabilidades: **
+     
 | Índice | Nome                         | Papéis e Responsabilidades                                                                |
-|--------|------------------------------|-------------------------------------------------------------------------------------------|
-| A      | Guilherme Souza Santos       | Implementação das classes de teste (JUnit) e Documentação                                 |
-| B      | Luiz Guilherme Fritsch       | Implementação das classes de teste (JUnit) e Documentação                                 |
+|--------|------------------------------|------------------------------------------------------------------|
+| A      | Guilherme Souza Santos       | Implementação das classes de teste (JUnit) e Documentação  |
+| B      | Luiz Guilherme Fritsch       | Implementação das classes de teste (JUnit) e Documentação  |
 | C      | Vitor Hugo Maciel dos Santos | Análise e correção das classes, Implementação das classes de teste (JUnit) e Documentação |
-| D      | Iderli Pereira Souza Filho   | Implementação das classes de teste (JUnit) e Documentação                                 |
-
+| D      | Iderli Pereira Souza Filho   | Implementação das classes de teste (JUnit) e Documentação  |
+    
 A. Guilherme Souza Santos - Implementação das classes de teste (JUnit) e Documentação**.    
 B. Luiz Guilherme Fritsch - Implementação das classes de teste (JUnit) e Documentação**.     
 C. Vitor Hugo Maciel dos Santos - Análise e correção das classes, Implementação das classes de teste (JUnit) e Documentação**.      
