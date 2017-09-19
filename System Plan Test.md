@@ -47,15 +47,22 @@ Os testes de regressão são necessários para cumprir os critérios de conclus�
 foi estimado que pelo menos 3 ciclos de teste serão realizados, o último incluindo um teste de regressão completo.  
 
 #4 Testando atividades e estimativas  
-a trabalho de teste será dividido nas seguintes atividades principais de acordo com [OTS]:
-b. Definição de uma estrutura geral para o teste na forma de conjuntos de recursos a serem testados;
-c. Especificação detalhada dos casos de teste e dos procedimentos de teste;
-d. Estabelecimento do ambiente de teste;
-e. Primeiro ciclo de execução dos procedimentos de teste;
-f. Segundo ciclo de procedimentos de teste (teste de reteste e regressão do primeiro ciclo);
-g. Terceiro ciclo de procedimentos de teste (teste de reteste e regressão do segundo ciclo e qualquer outro sobre o primeiro
-ciclo);
-h. Relatório de status sobre a execução do teste todas as semanas;
+O trabalho de teste será dividido nas seguintes atividades principais de acordo com [OTS]:  
+
+b. Definição de uma estrutura geral para o teste na forma de conjuntos de recursos a serem testados;  
+
+c. Especificação detalhada dos casos de teste e dos procedimentos de teste;  
+
+d. Estabelecimento do ambiente de teste;  
+
+e. Primeiro ciclo de execução dos procedimentos de teste;  
+
+f. Segundo ciclo de procedimentos de teste (teste de reteste e regressão do primeiro ciclo);  
+
+g. Terceiro ciclo de procedimentos de teste (teste de reteste e regressão do segundo ciclo e qualquer outro sobre o primeiro ciclo);  
+
+h. Relatório de status sobre a execução do teste todas as semanas;  
+
 
 #5. Teste relatórios de conclusão.
 
