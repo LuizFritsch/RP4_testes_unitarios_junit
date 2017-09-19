@@ -116,8 +116,8 @@ public class SimuladorTela extends JFrame {
 		}
 
 		public void preparePaint() {
-			if (!size.equals(getSize())) {
-				size = getSize();
+			if (!size.equals(getPreferredSize())) {
+				size = getPreferredSize();
 				fieldImage = visaoCampo.createImage(size.width, size.height);
 				g = fieldImage.getGraphics();
 

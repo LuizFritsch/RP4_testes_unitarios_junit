@@ -10,7 +10,6 @@ public class Main {
 		s.simulacaoUmaEtapa();
 		s.simulacao(5);
 
-
 		
 		Simulador s1 = new Simulador(100,100);
 		s1.executaLongaSimulacao();
