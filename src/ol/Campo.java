@@ -15,8 +15,13 @@ public class Campo {
 	public Campo(int profundidade, int largura) {
 		this.profundidade = profundidade;
 		this.largura = largura;
-		campo = new Object[profundidade][largura];
-	}
+		try {
+			campo = new Object[profundidade][largura];
+		} catch (OutOfMemoryError e) {
+			System.out.println("Memoria excedida, informe valores menores para profundidade ou largura!");
+			System.exit(0);
+		}
+}
 
 	public void limpa() {
 		for (int linha = 0; linha < profundidade; linha++) {
@@ -39,11 +44,11 @@ public class Campo {
 			if(campo[localizacao.getLinha()][localizacao.getColuna()]==null) {
 				campo[localizacao.getLinha()][localizacao.getColuna()] = animal;
 			}else {
-				throw new IllegalArgumentException("Posição já ocupada!");
+				throw new IllegalArgumentException("Posiï¿½ï¿½o jï¿½ ocupada!");
 			}
 			
 		}else {
-			throw new IllegalArgumentException("Dado inválido!(O dado inserido não é uma das herdeiras de Animal!");
+			throw new IllegalArgumentException("Dado invï¿½lido!(O dado inserido nï¿½o ï¿½ uma das herdeiras de Animal!");
 		}
 		
 	}
@@ -54,7 +59,7 @@ public class Campo {
 
 	
 	/*
-	 * Refatoração do metodo. Return animal agora. FAZER NOVOS TESTES!!!
+	 * Refatoraï¿½ï¿½o do metodo. Return animal agora. FAZER NOVOS TESTES!!!
 	 */
 	public Animal getObjectAt(int linha, int coluna) {
 		if(campo[linha][coluna]!=null) {
