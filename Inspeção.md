@@ -158,7 +158,7 @@ Correção 6
 1.2 Linha: 97  
 1.3 Erro: Quando o método é chamado ele não compara se tem a quantidade correta de localizações livres para 
 introduzir os filhotes de lobo guará.  
-1.4 Solução:  
+1.4 Solução: Verificar se há adjacentes livres, e ir adicionando filhotes até zerar a lista. Caso o número de localizações adjacentes livres seja menor que a de filhotes, ele remove os filhotes excedentes. (Não nascem)
 
 
 
@@ -166,4 +166,4 @@ introduzir os filhotes de lobo guará.
 2.1 Método: ‘procuraComida(Localizacao localizacao)’  
 2.2 Linha: 82  
 2.3 Erro:  Não verifica se o animal encontrado é uma ovelha  
-2.4 Solução:
+2.4 Solução: Verificar se o objeto encontrado é uma Ovelha
