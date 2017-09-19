@@ -52,10 +52,6 @@ C. Os testes de regressão devem ser feitos a cada modificação do md50.
 | C      | Vitor Hugo Maciel dos Santos | Análise e correção das classes, Implementação das classes de teste (JUnit) e Documentação |
 | D      | Iderli Pereira Souza Filho   | Implementação das classes de teste (JUnit) e Documentação  |
     
-A. Guilherme Souza Santos - Implementação das classes de teste (JUnit) e Documentação**.    
-B. Luiz Guilherme Fritsch - Implementação das classes de teste (JUnit) e Documentação**.     
-C. Vitor Hugo Maciel dos Santos - Análise e correção das classes, Implementação das classes de teste (JUnit) e Documentação**.      
-D. Iderli Pereira Souza Filho - Implementação das classes de teste (JUnit) e Documentação**.
 **8.2. Necessidades de contratação: ** Nenhuma  
 **8.3. necessidades de treinamento: ** Nenhuma  
 **9. Cronograma: **  
