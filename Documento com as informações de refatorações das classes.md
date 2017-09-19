@@ -292,11 +292,15 @@ Correção 35 -
 35.4 Erro: ovelha morta, poderia dar a luz.      
 35.5 Solução: "Adição do this.vivo dentro do condicional if"   
 35.6 Rastreabilidade:  [ Documentação caso de teste](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste) CT53.  
-  
-    
-  
-
-
+              
+Correção 36 -    
+35.1 Classe: "LoboGuara"    
+35.2 Método: "caca"    
+35.3 Linha: 77     
+35.4 Erro: Referente a implementação do método o lobo se alimenta antes de andar sempre perdendo 1 de fome      
+35.5 Solução: Adicionar na variável fome ovelha +1   
+35.6 Rastreabilidade: Análise em grupo.    
+           
 
 
       
