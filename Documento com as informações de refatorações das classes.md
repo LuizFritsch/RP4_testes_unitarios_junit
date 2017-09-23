@@ -1,6 +1,6 @@
 # Refatorações #
 ### Inspeção ###
-A inspeção e documentação da mesma foi realizado em conjunto por Vitor Hugo e Iderli. O documento oficial pode ser acessado no seguinte link: [INSPEÇÂO](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Inspe%C3%A7%C3%A3o)  
+A inspeção e documentação da mesma foi realizada em conjunto por Vitor Hugo e Iderli. O documento oficial pode ser acessado no seguinte link: [INSPEÇÂO](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Inspe%C3%A7%C3%A3o)  
 As refatorações que ocorreram após esta etapa foram as seguintes:  
 
 
@@ -116,7 +116,7 @@ Correção 13 - Encontrado por meio do Junit
 
 Correção 14 - Encontrado por meio do Junit  
 
-14.1 A classes “Campo” possui métodos que retornavam  - Object- em vez de Animal, apos a refatoração e criação da classe abstrata "Animal"  
+14.1 A classes “Campo” possui métodos que retornavam  - Object- em vez de Animal, após a refatoração e criação da classe abstrata "Animal"  
 14.2 Métodos afetados:**  
 14.3 Os métodos afetados pela mudança, “getObjectAt(Localizacao localizacao)” e “ getObjectAt(int linha, int coluna)”.  
 14.4 Solução:  
@@ -124,7 +124,7 @@ Correção 14 - Encontrado por meio do Junit
 
 Correção 15 - Encontrado por meio do Junit  
  
-1.1 A classes “Campo” possui métodos que tinham como parâmetros - Object- em vez de Animal, apos a refatoração e criação da classe abstrata "Animal"  
+1.1 A classes “Campo” possui métodos que tinham como parâmetros - Object- em vez de Animal, após a refatoração e criação da classe abstrata "Animal"  
 2. Métodos afetados:
 2.1 Os métodos afetados pela mudança, “lugar(Animal animal, int linha, int coluna)” e “ lugar(Animal animal, Localizacao localizacao)”.  
 3. Solução:
@@ -151,8 +151,8 @@ Correção 18 -
 18.1 Classe: “CampoTest”     
 18.2 Método: “testLugarObjectLocalizacao2()”     
 18.3 Linha: 258     
-18.4 Erro: Método não necessita de um assert e precisa da adição do (excepected = IllegalArgumenteException.class) pois ao enviar null no método “lugar(null, l)” o sistema retorna a exceção.       
-18.5 Solução: Remoção do assert desnecessário e adição da cláusula (excepected = IllegalArgumenteException.class) no método refatorado.    
+18.4 Erro: Método não necessita de um assert e precisa da adição do (expected = IllegalArgumenteException.class) pois ao enviar null no método “lugar(null, l)” o sistema retorna a exceção.       
+18.5 Solução: Remoção do assert desnecessário e adição da cláusula (expected = IllegalArgumenteException.class) no método refatorado.    
 18.6 Rastreabilidade: Análise em grupo        
 
 Correção 19 -      
@@ -253,7 +253,7 @@ Correção 30 -
   
 Correção 31 -    
 31.1 Classe: "LoboGuara"    
-31.2 Método: "Construtor loboGuara"    
+31.2 Método: "Construtor LoboGuara"    
 31.3 Linha: 24     
 31.4 Erro: nivelFome ao ser iniciado pela rand, podia receber 0. 0 de fome o lobo deve estar morto.      
 31.5 Solução: "Adicionar + 1. Após o sorteio feito pelo rand"   
@@ -264,7 +264,7 @@ Correção 32 -
 32.1 Classe: "LoboGuara"    
 32.2 Método: "caca"    
 32.3 Linha: 44     
-32.4 Erro: Se o lobo não se move, nivél fome não se altera corretamente.      
+32.4 Erro: Se o lobo não se move, nível fome não se altera corretamente.      
 32.5 Solução: "Adicionar método decremetafome() dentro do if"   
 32.6 Rastreabilidade:  [ Documentação caso de teste](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste) CT54 e CT55. 
   
@@ -282,7 +282,7 @@ Correção 34 -
 34.2 Método: "daALuz"    
 34.3 Linha: 56     
 34.4 Erro: "else" desnecessário. Refatorações anteriores não removeu.      
-34.5 Solução: "remover o else do condisional IF".   
+34.5 Solução: "remover o else do condicional IF".   
 34.6 Rastreabilidade:  [Inspeção - Reinspeção](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Inspe%C3%A7%C3%A3o)  
   
 Correção 35 -    
