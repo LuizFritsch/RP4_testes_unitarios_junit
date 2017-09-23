@@ -2,10 +2,10 @@
 
 | Versões                  ||  
 |-------------------------------|--------------------------------------------------------- ------------------|
-**Data: **  29/08/2017  -  19/09/2017     
+**Data: **  29/08/2017  -  22/09/2017     
 **Versão:  **   0.2   
 **Preparado por:  **  Iderli Souza  
-**Descrição da mudança:  **    Primeiro rascuho  
+**Descrição da mudança:  **    Documento refatorado para melhor atender ao modelo da IEEE    
          
 #1 Introdução     
 **1.2 Finalidade**  
