@@ -18,7 +18,8 @@ O objetivo desta parte da especificação do teste é fornecer uma visão geral 
 **Característica C01** Configuração do Sistema  
 Objetivo: Testar o resultado da simulação entregue ao usuário.  
 Prioridade: Alta  
-Abordagem: Testes estruturais e particionamento de equivalência.  
+Abordagem: Testes estruturais e particionamento de equivalência. 
+ 
 | Rastreabilidade:    |   RE01       |      RE02       |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
 |          C01        |      --      |       --        |       X        |    X    |
@@ -27,6 +28,7 @@ Abordagem: Testes estruturais e particionamento de equivalência.
 Objetivo: Testar os resultados presentes em uma simulação longa.   
 Prioridade: Média  
 Abordagem: Testes estruturais.   
+
 | Rastreabilidade:    |   RE01       |      RE02       |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
 |          C02        |       X      |       --        |       X        |    X    |
@@ -35,6 +37,7 @@ Abordagem: Testes estruturais.
 Objetivo: Testar os resultados presentes em uma simulação por etapa.     
 Prioridade: Média  
 Abordagem: Testes estruturais.   
+
 | Rastreabilidade:    |   RE01       |      RE02       |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
 |          C03        |       X      |       --        |       X        |    X    |
@@ -43,6 +46,7 @@ Abordagem: Testes estruturais.
 Objetivo: Testar o tamanho para criação da tela do simulador.     
 Prioridade: Média  
 Abordagem: Particionamento de equivalência.     
+
 | Rastreabilidade:    |   RE01       |      RE02       |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
 |          C04        |       --     |       --        |       --       |    X    |
@@ -50,7 +54,8 @@ Abordagem: Particionamento de equivalência.
 **Característica C05** Randomização.  
 Objetivo: Testar os resultados oferecidos pela classe randomizador.      
 Prioridade: Média  
-Abordagem: Testes estruturais, Particionamento de equivalência.     
+Abordagem: Testes estruturais, Particionamento de equivalência. 
+    
 | Rastreabilidade:    |   RE01       |      RE02       |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
 |          C05        |       --     |       --        |       --       |    X    |
@@ -59,6 +64,7 @@ Abordagem: Testes estruturais, Particionamento de equivalência.
 Objetivo: Testar o ciclo de vida do lobo-guará.        
 Prioridade: Média  
 Abordagem: Testes estruturais.     
+
 | Rastreabilidade:    |   RE01       |      RE02       |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
 |          C06        |       x      |        x        |       --       |    X    |
@@ -67,6 +73,7 @@ Abordagem: Testes estruturais.
 Objetivo: Testar o ciclo de vida da Ovelha.        
 Prioridade: Média  
 Abordagem: Testes estruturais.     
+
 | Rastreabilidade:    |   RE01       |      RE02       |    RE03        |   RE04  |
 |---------------------|--------------|-----------------|----------------|---------|  
 |          C07        |       x      |        x        |       --       |    X    |
