@@ -79,7 +79,7 @@ Abordagem: Testes estruturais.
 |          C07        |       x      |        x        |       --       |    X    |
 
 
-*#Requisitos do MD50  
+#Requisitos do MD50  
  RE01: Modela o comportamento de um subconjunto do mundo real com base em um
 modelo de software  
  RE02: Estima o comportamento de populações entre predadores e presas  
