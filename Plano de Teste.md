@@ -54,7 +54,11 @@ C. Os testes de regressão devem ser feitos a cada modificação do md50.
     
 **8.2. Necessidades de contratação: ** Nenhuma  
 **8.3. necessidades de treinamento: ** Nenhuma  
-**9. Cronograma: **  
-A. Avaliação toda terça-feira e sábado por conta dos professores com avaliação(NOK, POK, TOK)
-B. Entrega da Release 1: 29/09/2017
-C. Evento de Avaliações 30/09/2017
+**9. Cronograma: **      
+      
+| Funcionário | 12/08 | 15/08 | 19/08 | 22/08 | 29/08 | 02/09 | 05/09 | 12/09 | 16/09 | 23/09 |
+|:----------------------------:|:--------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|:-----:|:---------------------------------:|:-------------------------------------------:|:--------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------:|
+| Iderli Pereira Souza Filho | Draft Plano de Teste IEEE | --- | --- | Terminar a documentação dos casos de teste das classes faltantes e refatoração: | --- | criar 10 casos de teste novos | --- | --- | Melhorar a identificação de casos de testes com múltiplas entradas e saídas. | --- |
+| Guilherme Souza Santos | Implementação das classes de teste (JUnit) (campo) | Implementação da classes de teste (1 classe CampoEstatistica, Contador, Localizacao) e aplicar técnica de teste | Implementação da classes de teste (Classe SimuladorTela) e aplicar técnica de teste | --- | --- | --- | --- | Documentar os casos de testes implementados nas classes Lobo/Ovelha e demais métodos que o Fritsh implementar. | --- | --- |
+| Luiz Guilherme Fritsch | Implementação das classes de teste (JUnit)  | Implementação das classes de teste (teste ovelha) e implementar Lobo (pelo menos parcial) | Implementação da classes de teste (Classe Simulador, Randomizador) e aplicar técnica de teste | --- | --- | Relatório dos resultados do teste | Criar 10 casos de teste classes lobo/ovelha | Revisar as classes refatoradas e finalizar a implementação dos métodos de testes que faltam. | Expandir os métodos de testes das classes de teste, bem como documentá-los. | --- |
+| Vitor Hugo Maciel dos Santos | --- | Inspeção do software (4 classes): Simulador, Contador, Rsandomizador, LoboGuara | --- | --- | --- | Relatório dos resultados do teste | --- | --- | --- | Finalizar o documento do Plano de Teste. Corrigir o cronograma. Colocar os papéis e responsabilidades em forma de tabela. |
