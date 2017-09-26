@@ -28,10 +28,7 @@ public class SimuladorTest {
 		Simulador simulador = new Simulador(-1, -1);
 	}
 
-	@Test(expected = Exception.class)
-	/*
-	 * Ao fazer cast, nenhuma exceção é tratada
-	 */
+	@Test
 	public void testSimulacaoUmaEtapa() {
 		Simulador simulador = new Simulador();
 		simulador.executaLongaSimulacao();
