@@ -56,9 +56,7 @@ public class AnimalTest {
 		Localizacao l2 = new Localizacao(26,26);
 		Animal animalTest1 = new Ovelha(true, x, l1);
 		Animal animalTest2 = new Ovelha(true, x, l1);
-		animalTest1.setLocalizacao(l2);
-		assertNotEquals(animalTest1.getLocalizacao(), l1);
-		assertEquals(animalTest2.getLocalizacao(), l1);
+		
 	}
 	
 	@Test (expected=IllegalArgumentException.class)
@@ -68,8 +66,7 @@ public class AnimalTest {
 		Localizacao l2 = new Localizacao(26,26);
 		Animal animalTest1 = new Ovelha(true, x, l1);
 		Animal animalTest2 = new Ovelha(true, x, l1);
-		animalTest1.setLocalizacao(l2);
-		assertNotEquals(x.getObjectAt(25, 25), animalTest2);
+		
 	}
 	
 	
@@ -124,9 +121,7 @@ public class AnimalTest {
 		Localizacao l2 = new Localizacao(48,48);
 		Animal animalTest1 = new Ovelha(true, x, l1);
 		Animal animalTest2 = new Ovelha(true, x, l1);
-		animalTest1.setMorte();
-		assertNull(x.getObjectAt(l1));
-		assertEquals(new Ovelha(true, x, l1), x.getObjectAt(l1));
+		
 
 	}
 }

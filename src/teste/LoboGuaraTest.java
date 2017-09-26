@@ -343,7 +343,7 @@ public class LoboGuaraTest {
 		
 				
 		LoboGuara lobo = new LoboGuara(false, campo , loc);
-		LoboGuara lobo1 = new LoboGuara(false, campo , loc1);
+		LoboGuara lobo1 = new LoboGuara(true, campo , loc1);
 		List<LoboGuara> lista = new ArrayList<LoboGuara>();
 		lista.add(lobo);
 		lista.add(lobo1);

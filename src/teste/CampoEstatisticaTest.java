@@ -148,7 +148,7 @@ public class CampoEstatisticaTest {
 		campoe.redefine();
 		campoe.contadorFinalizado();
 
-		assertEquals(campoe.getPopulationDetails(c), "ol.Ovelha: 0 ");
+		assertEquals(campoe.getPopulationDetails(c), "Ovelha: 0 ");
 
 	}
 
@@ -168,7 +168,7 @@ public class CampoEstatisticaTest {
 
 		campoe.contadorFinalizado();
 
-		assertEquals(campoe.getPopulationDetails(c), "ol.Ovelha: 1 ");
+		assertEquals(campoe.getPopulationDetails(c), "Ovelha: 1 ");
 
 	}
 
@@ -188,7 +188,7 @@ public class CampoEstatisticaTest {
 
 		campoe.contadorFinalizado();
 
-		assertEquals(campoe.getPopulationDetails(c), "ol.Ovelha: 4 ");
+		assertEquals(campoe.getPopulationDetails(c), "Ovelha: 4 ");
 
 	}
 	/*
@@ -209,7 +209,7 @@ public class CampoEstatisticaTest {
 
 		campoe.contadorFinalizado();
 
-		assertNotEquals(campoe.getPopulationDetails(c), "ol.Ovelha: 4 ");
+		assertNotEquals(campoe.getPopulationDetails(c), "Ovelha: 4 ");
 
 	}
 
