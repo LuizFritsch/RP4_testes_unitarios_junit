@@ -114,6 +114,15 @@
 | Resultado Esperado: 	|    true       	|
 | Resultado Obtido:  	| teste passou |
 
+| Test Case ID: CT05.2       	| Objetivo:  O teste deve verificar o uso do método equals. Deve-se criar uma localização com parâmetros validos e inválidos  	|
+|---------------------	|-----------	|
+| Prioridade:         	|      Alta      	|
+| Rastreador:         	|       RE04     	|
+| Precondições:       	|     Nenhuma        	|
+| Entradas:             |     Localizacao(,)    |
+| Resultado Esperado: 	|    Illegalargumentexception 	|
+| Resultado Obtido:  	| teste passou |
+
 ***
 
 | Test Case ID: CT06.1      	| Objetivo: 	O teste deve criar uma Localizacao com parâmetros validos e inválidos e verificar o uso do método getLinha |
@@ -381,6 +390,15 @@
 | Resultado Esperado: 	|  O teste só deve contar os objetos que foram incrementados após redefinir o campo  |
 | Resultado Obtido:  	| teste passou |
 
+| Test Case ID:   CT15.3    	| Objetivo: O método verifica se após a execução do método Redefine o campo terá 0 objetos	|
+|---------------------	|-----------	|
+| Prioridade:         	|  baixa          	|
+| Rastreador:         	|       RE01 RE03, RE04     	|
+| Precondições:       	| O método GetPopulationDetails da mesma classe, deve estar implementado corretamente          	|
+| Entradas:             |  Deve ser criado 3 Ovelha e chamar o método Redefine    |
+| Resultado Esperado: 	| teste deve mostrar que não tem objetos no campo  |
+| Resultado Obtido:  	| teste passou|
+
 
 ***
 
@@ -427,6 +445,15 @@
 | Entradas:             |   O método cria 1 e um campo            |
 | Resultado Esperado: 	|       false    	|
 | Resultado Obtido:  	| teste falhou |
+
+| Test Case ID:     CT17.4  	| Objetivo: 	 O método verifica se há um lobo e uma ovelha para fazer a simulação|
+|---------------------	|-----------	|
+| Prioridade:         	|  Média         	|
+| Rastreador:         	|       RE01, RE02, RE03, RE04     	|
+| Precondições:       	|      Nenhuma      	|
+| Entradas:             |   O método cria 3 ovelhas e um LoboGuara         |
+| Resultado Esperado: 	|       True    	|
+| Resultado Obtido:  	| teste passou |
 
 
 ***
@@ -557,6 +584,15 @@
 | Resultado esperado    |   teste passar           |
 | Resultado Obtido:  	| teste passou |
 
+
+| Test Case ID:  CT24.3     	| Objetivo: 	 O metodo testEstaViva verifica se o método estaVivo retorna true para lobos vivos e false para lobos mortos. |
+|---------------------	|-----------	|
+| Prioridade:         	| Alta          	|
+| Rastreador:         	|       RE01, RE03, RE04     	|
+| Precondições:       	|  Para o uso do segundo teste o método setMorte deve esta corretamente implementado.|
+| Entrada               | O método cria um LoboGuara |
+| Resultado esperado    |   true           |
+| Resultado Obtido:  	| teste passou |
 
 
 ***
@@ -1155,4 +1191,50 @@
 | Precondições:       	|  Criação de objeto do tipo Campo, Localizacao, LoboGuara e o método incrementaIdade() estar funcionando corretamente |
 | Entrada               | O método cria um LoboGuara					|
 | Resultado esperado    | LoboGuara estar apto para procriar	|
+| Resultado Obtido:  	| teste passou |
+
+
+| Test Case ID:  CT50     	| Objetivo:  O teste verifica se o metodo GetPopulation retorna uma String informando corretamente os dados do campo.|
+|---------------------	|-----------	|
+| Prioridade:         	| Alta      	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	|  Nenhuma |
+| Entrada               | Criar 3 ovelhas com entradas validas, criar 3 LoboGuara com entradas validas e criar 3 campos com entradas validas |				|
+| Resultado esperado    | O método deve retornar a String na ordem "ol.LoboGuara: 3 ol.Ovelha: 3 ol.Campo: 3"	|
+| Resultado Obtido:  	| teste falhou, o método não tem uma ordem especifica para retornar as Strings, os Objetos podem variar de posição em qualquer execução do método |
+
+| Test Case ID:  CT51     	| Objetivo: Verificar se corre esta funcionando corretamente, refatoração realizada, primeiro ela tenta se mover.|
+|---------------------	|-----------	|
+| Prioridade:         	| Alta      	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criação de objeto Ovelha, Campo. |
+| Entrada               | Ovelha com idade randômica, true e que se move. |				|
+| Resultado esperado    | numero de indivíduos ovelhas máximo atingido (localização)	|
+| Resultado Obtido:  	| teste passou |
+
+| Test Case ID:  CT52     	| Objetivo: O objetivo do teste é verificar o funcionamento do simulador.|
+|---------------------	|-----------	|
+| Prioridade:         	| Alta      	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Nenhuma |
+| Entrada               | criar uma simulação longa |				|
+| Resultado esperado    | Tratamento de exceção	|
+| Resultado Obtido:  	| teste falhou |
+
+| Test Case ID:  CT53.1     	| Objetivo: Verificar se o método incrementaIdade está funcionando |
+|---------------------	|-----------	|
+| Prioridade:         	| Alta      	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criação de objeto LoboGuara |
+| Entrada               | Animal LoboGuara, idade igual 5000 |				|
+| Resultado esperado    | O lobo esta morto	|
+| Resultado Obtido:  	| teste passou |
+
+| Test Case ID:  CT53.2     	| Objetivo: Verificar se o método incrementaIdade está funcionando |
+|---------------------	|-----------	|
+| Prioridade:         	| Alta      	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Criação de objeto LoboGuara |
+| Entrada               | Animal LoboGuara, idade igual 150 |				|
+| Resultado esperado    | O lobo esta vivo	|
 | Resultado Obtido:  	| teste passou |
