@@ -309,7 +309,7 @@ Correção 37 -
 37.5 Solução: Remover o "getSize" e adicionar um "getPrefireSize"  
 37.6 Rastreabilidade: Análise em grupo.
 
-Correção 37 -    
+Correção 38 -    
 38.1 Classe: "Campo"    
 38.2 Método: "localizacaoAdjacentRandomica"    
 38.3 Linha: 72     
@@ -318,6 +318,13 @@ Correção 37 -
 38.6 Rastreabilidade:   [ Documentação caso de teste](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste) CT 42, CT 44.
 
 
+Correção 39 -    
+39.1 Classe: "Ovelha"    
+392 Método: "podeProcriar"    
+39.3 Linha: 85     
+39.4 Erro: Ovelhas mortas podem procriar  
+39.5 Solução: Clausula if verificando se ela esta viva e tem idade suficiente.  
+39.6 Rastreabilidade:   [ Documentação caso de teste](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste) CT 47, CT 49.
 
       
     
