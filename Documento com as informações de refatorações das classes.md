@@ -294,20 +294,30 @@ Correção 35 -
 35.6 Rastreabilidade:  [ Documentação caso de teste](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste) CT53.  
               
 Correção 36 -    
-35.1 Classe: "LoboGuara"    
-35.2 Método: "caca"    
-35.3 Linha: 77     
-35.4 Erro: Referente a implementação do método o lobo se alimenta antes de andar sempre perdendo 1 de fome      
-35.5 Solução: Adicionar na variável fome ovelha +1   
-35.6 Rastreabilidade: Análise em grupo.    
+36.1 Classe: "LoboGuara"    
+36.2 Método: "caca"    
+36.3 Linha: 77     
+36.4 Erro: Referente a implementação do método o lobo se alimenta antes de andar sempre perdendo 1 de fome      
+36.5 Solução: Adicionar na variável fome ovelha +1   
+36.6 Rastreabilidade: Análise em grupo.    
            
 Correção 37 -    
-35.1 Classe: "SimuladorTela"    
-35.2 Método: "preparePaint"    
-35.3 Linha: 128     
-35.4 Erro: Dentro da cláusula "if" tem um "getSize" que não redimensionava corretamente após colocar um campo muito grande       
-35.5 Solução: Remover o "getSize" e adicionar um "getPrefireSize"  
-35.6 Rastreabilidade: Análise em grupo.
+37.1 Classe: "SimuladorTela"    
+37.2 Método: "preparePaint"    
+37.3 Linha: 128     
+37.4 Erro: Dentro da cláusula "if" tem um "getSize" que não redimensionava corretamente após colocar um campo muito grande       
+37.5 Solução: Remover o "getSize" e adicionar um "getPrefireSize"  
+37.6 Rastreabilidade: Análise em grupo.
+
+Correção 37 -    
+38.1 Classe: "Campo"    
+38.2 Método: "localizacaoAdjacentRandomica"    
+38.3 Linha: 72     
+38.4 Erro: Lista null não possui a posição inicial 
+38.5 Solução: Acionado clausula if para que se a lista esta vazia retorna null, caso contrario pega a primeira posição.  
+38.6 Rastreabilidade:   [ Documentação caso de teste](https://bitbucket.org/rpiv_grupo4/rpiv_grupo4/wiki/Documenta%C3%A7%C3%A3o%20dos%20casos%20de%20teste) CT 42, CT 44.
+
+
 
       
     
