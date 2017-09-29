@@ -597,7 +597,7 @@
 
 ***
 
-| Test Case ID:  CT25     	| Objetivo: 	    Testar o funcionamento da criação de tela |
+| Test Case ID:  CT25     	| Objetivo: 	    Testar se o construtor da classe SimuladorTela entá funcionando corretamente |
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE04     	|
