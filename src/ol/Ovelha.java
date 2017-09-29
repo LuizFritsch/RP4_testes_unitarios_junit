@@ -81,6 +81,9 @@ public class Ovelha extends Animal {
 		return nascimentos;
 	}
 
+    /*
+     * Refatorar
+     */
 	private boolean podeProcriar() {
 		if (this.vivo && idade >= IDADE_PROCRIACAO) {
 			return true;

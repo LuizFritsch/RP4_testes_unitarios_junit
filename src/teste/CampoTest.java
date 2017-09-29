@@ -9,6 +9,7 @@ import java.util.LinkedList;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import ol.Animal;
 import ol.Campo;
 import ol.LoboGuara;
 import ol.Localizacao;
@@ -160,26 +161,24 @@ public class CampoTest {
 	
 	
 	//Esperar exceptions se campo for pequeno.
-	@Test (expected=IllegalArgumentException.class)
+	@Test 
 	public void testLimpa() {	
 		
 		
 		Campo c = new Campo(100, 100);
 		Localizacao l = new Localizacao(50, 50);
 		LoboGuara lobo = new LoboGuara(true, c, l);
-		c.lugar(lobo, new Localizacao(50,50));
-        c.limpa();	    				
-		
+		 c.limpa();	    				
+		 assertFalse(c.getObjectAt(l) instanceof Animal);
 	}
 	
-	@Test (expected=IllegalArgumentException.class)
+	@Test 
 	public void testLimpa1() {	
 		
 		Campo c = new Campo(100, 100);
 		Localizacao l = new Localizacao(50, 50);
 		LoboGuara lobo = new LoboGuara(true, c, l);
-		c.lugar(lobo, new Localizacao(50,50));
-        c.limpa();			
+		c.limpa();			
 		assertNotSame(lobo, c.getObjectAt(l));		
 
 			
@@ -209,9 +208,6 @@ public class CampoTest {
         c.limpa();              		
 		assertSame(null, c.getObjectAt(l));		
 
-		
-			
-		
 	}
 	
 	
@@ -223,35 +219,30 @@ public class CampoTest {
 		Localizacao l = new Localizacao(50, 50);
 		c.limpa();	
 	    assertNull(c.getObjectAt(l));
-		
-
-		
-			
-		
+	
 	}
 	//--------------------------------------------------------------------------------------------------------------------------------
 
-	@Test (expected= IllegalArgumentException.class)
+	@Test
 	public void testLimpaLocalizacao() {		
 
 		Campo c = new Campo(100, 100);
 		Localizacao l = new Localizacao(50, 50);
 		LoboGuara lobo = new LoboGuara(true, c, l);
-		c.lugar(lobo, new Localizacao(50,50));
-        c.limpa(l);		
+		c.limpa(l);		
 	    assertNull(c.getObjectAt(l));
 		
 	    
 	}
 	
 	
-	@Test (expected=IllegalArgumentException.class)
+	@Test 
 	public void testLimpaLocalizacao2() {		
 
 		Campo c = new Campo(100, 100);
 		Localizacao l = new Localizacao(50, 50);
 		Ovelha ove = new Ovelha(true, c, l);
-		c.lugar(ove, new Localizacao(50,50));
+		
         c.limpa(l);		
 	    assertNull(c.getObjectAt(l));
 		
@@ -265,29 +256,16 @@ public class CampoTest {
 		Campo c = new Campo(100, 100);
 		Localizacao l = new Localizacao(-1, -50);
 		LoboGuara lobo = new LoboGuara(true, c, l);
-		c.lugar(lobo, new Localizacao(50,50));
-        c.limpa(l);
+		 c.limpa(l);
 		
 	    
 	}
 
-	@Test (expected = IllegalArgumentException.class )
-	public void testLimpaLocalizacao4() {		
-
-
-		Campo c = new Campo(100, 100);
-		Localizacao l = new Localizacao(1001, 10050);
-		LoboGuara lobo = new LoboGuara(true, c, l);
-		c.lugar(lobo, new Localizacao(50,50));
-        c.limpa(l);	
-	   
-		
-	    
-	}
+	
 	
 
 	@Test (expected = IndexOutOfBoundsException.class )
-	public void testLimpaLocalizacao5() {		
+	public void testLimpaLocalizacao4() {		
 
 		Campo c = new Campo(590, 500); 
 	    Localizacao l = new Localizacao(590,501);
@@ -434,7 +412,7 @@ public class CampoTest {
 	public void testGetObjectAt2() {
 		Campo c = new Campo(100, 100);
 		Localizacao l = new Localizacao(50, 50);
-	    
+		Ovelha ove = new Ovelha(true, c, l);
 	    c.limpa(l);
 	    
 	    assertEquals(null,c.getObjectAt(l.getLinha(), l.getColuna()));			
@@ -459,7 +437,7 @@ public class CampoTest {
 	public void testLocalizacaoAdjacenteRandomica1a() {
 
 		Campo c = new Campo(100,100);
-		Localizacao l = new Localizacao(0,1);
+		Localizacao l = new Localizacao(99,99);
 		assertEquals(c.localizacaoAdjacenteRandomica(new Localizacao(0, 0)), l);
 				
 	}
@@ -487,76 +465,7 @@ public class CampoTest {
 				
 	}
 	
-	@Test (expected= IllegalArgumentException.class)
-	public void testLocalizacaoAdjacenteRandomica2() {
 
-		Campo c = new Campo(100,100);
-		Localizacao l = new Localizacao(-1,0);
-		Localizacao l2 = new Localizacao(0,0);
-		Localizacao l3 = new Localizacao(1,0);
-		
-		
-	    Localizacao lo = c.localizacaoAdjacenteRandomica(l);
-		assertEquals(lo,l2);
-				
-	}
-	
-	@Test (expected= IllegalArgumentException.class)
-	public void testLocalizacaoAdjacenteRandomica4() {
-
-		Campo c = new Campo(100,100);
-		Localizacao l = new Localizacao(-1,0);
-		Localizacao l2 = new Localizacao(0,0);
-		Localizacao l3 = new Localizacao(1,0);
-		
-		
-	    Localizacao lo = c.localizacaoAdjacenteRandomica(l);
-		assertEquals(lo,l2);
-				
-	}
-	@Test (expected= IllegalArgumentException.class)
-	public void testLocalizacaoAdjacenteRandomica5() {
-
-		Campo c = new Campo(100,100);
-		Localizacao l = new Localizacao(-1,0);
-		Localizacao l2 = new Localizacao(0,0);
-		Localizacao l3 = new Localizacao(1,0);
-		
-		
-	    Localizacao lo = c.localizacaoAdjacenteRandomica(l);
-		assertEquals(lo,l2);
-				
-	}
-	@Test (expected= IllegalArgumentException.class)
-	public void testLocalizacaoAdjacenteRandomica6() {
-
-		Campo c = new Campo(100,100);
-		Localizacao l = new Localizacao(-1,0);
-		Localizacao l2 = new Localizacao(0,0);
-		Localizacao l3 = new Localizacao(1,0);
-		
-		
-	    Localizacao lo = c.localizacaoAdjacenteRandomica(l);
-		assertEquals(lo,l2);
-				
-	}
-	@Test (expected= IllegalArgumentException.class)
-	public void testLocalizacaoAdjacenteRandomica3() {
-
-		Campo c = new Campo(100,100);
-		Localizacao l = new Localizacao(-1,0);
-		Localizacao l2 = new Localizacao(0,0);
-		Localizacao l3 = new Localizacao(1,0);
-		
-		
-	    Localizacao lo = c.localizacaoAdjacenteRandomica(l);
-		assertEquals(lo,l2);
-				
-	}
-	
-
-	
-	
 	//-------------------------------------------------------------------------------------------
 		@Test
 		public void testLocalizacoesAdjacentesLivres() {
@@ -727,8 +636,8 @@ public class CampoTest {
 	@Test
 	public void testLocalizacoesAdjacentes4() {
 		
-		Campo c = new Campo(4,4);
-		Localizacao l = new Localizacao(0,3);
+		Campo c = new Campo(400,400);
+		Localizacao l = new Localizacao(0,399);
 		
 		List<Localizacao> lo = new LinkedList<Localizacao>();
 		lo = c.localizacoesAdjacentes(l);
@@ -743,8 +652,8 @@ public class CampoTest {
 	@Test
 	public void testLocalizacoesAdjacentes5() {
 		
-		Campo c = new Campo(4,4);
-		Localizacao l = new Localizacao(3,3);
+		Campo c = new Campo(400,400);
+		Localizacao l = new Localizacao(399,399);
 		
 		List<Localizacao> lo = new LinkedList<Localizacao>();
 		lo = c.localizacoesAdjacentes(l);
@@ -757,7 +666,7 @@ public class CampoTest {
 	@Test (expected = IllegalArgumentException.class)
 	public void testLocalizacoesAdjacentes6() {
 		
-		Campo c = new Campo(4,4);
+		Campo c = new Campo(400,400);
 		Localizacao l = new Localizacao(-1,0);
 		
 		List<Localizacao> lo = new LinkedList<Localizacao>();
@@ -778,7 +687,7 @@ public class CampoTest {
 	@Test
 	public void testGetProfundidade() {
 		int n = 500;
-		Campo c = new Campo(500, 100); 
+		Campo c = new Campo(31, 5); 
 		assertEquals(n ,c.getProfundidade());
 		
 	}
@@ -796,7 +705,7 @@ public class CampoTest {
 	@Test 
 	public void testGetProfundidade2() {
 		int n = 0;
-		Campo c = new Campo(0, 0);; 
+		Campo c = new Campo(0, 5);; 
 		assertEquals(n ,c.getProfundidade());
 		
 	}

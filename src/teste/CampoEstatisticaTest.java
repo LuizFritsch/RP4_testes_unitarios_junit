@@ -96,7 +96,7 @@ public class CampoEstatisticaTest {
 		//c.lugar(teste, 2, 1);
 		CampoEstatistica campoe = new CampoEstatistica();
 		System.out.println(campoe.getPopulationDetails(c) + "|");// Não pode receber campo apenas hendeiras de Animal
-		assertEquals(campoe.getPopulationDetails(c), "ol.Ovelha: 3 ol.LoboGuara: 3 ol.Campo: 3 ");// Não entendi pq tem
+		assertEquals(campoe.getPopulationDetails(c), "Ovelha: 3 LoboGuara: 3 ol.Campo: 3 ");// Não entendi pq tem
 																									// ol.Campo pois
 																									// isso não está
 																									// escrito no código
@@ -129,7 +129,7 @@ public class CampoEstatisticaTest {
 
 		CampoEstatistica campoe = new CampoEstatistica();
 		System.err.println(campoe.getPopulationDetails(c));
-		assertEquals(campoe.getPopulationDetails(c), "ol.Ovelha: 10000 ol.LoboGuara: 10000 ");
+		assertEquals(campoe.getPopulationDetails(c), "Ovelha: 10000 LoboGuara: 10000 ");
 
 	}
 	// -----------------------------------------------------------------------------------------------------------------------------------
