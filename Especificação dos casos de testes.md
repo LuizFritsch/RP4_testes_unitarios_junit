@@ -1760,4 +1760,176 @@
 | Resultado Esperado: 	| É esperado que o campo seja delimitado pelo tamanho passado para o construtor:IndexOutOfBoundsException.class) |
 | Resultado Obtido:  	| Teste passou    	|
 
+***  
+   
+| Test Case ID: CT66.1	| Objetivo: O teste deve verificar se  o método GetPopulationDetails, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(3,3) e tres instâncias de Ovelha	|
+| Entradas:             |    "Ovelha: 3 LoboGuara: 3 ol.Campo: 3     |
+| Resultado Esperado: 	| É esperado que o método retorne uma execeção: IllegalArgumentException.class) |
+| Resultado Obtido:  	| Teste passou    	|
+
+***  
+| Test Case ID: CT66.2	| Objetivo: O teste deve verificar se  o método GetPopulationDetails, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(10000,2) e 10000 instâncias de Ovelha e 10000 de loboGuara	|
+| Entradas:             | 10000 de cada classe, lobo e ovelha    |
+| Resultado Esperado: 	| É esperado que o método retorne:  "Ovelha: 10000 LoboGuara: 10000 ") |
+| Resultado Obtido:  	| Teste passou    	|
+
+***    
+
+| Test Case ID: CT67	| Objetivo: O teste deve verificar se  o método Redefine, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(10000,2) e 10000 instâncias de Ovelha e 10000 de loboGuara	|
+| Entradas:             |   3 objeto da classe ovelha    |
+| Resultado Esperado: 	| É esperado que o método retorne:  "Ovelha: 0") |
+| Resultado Obtido:  	| Teste passou    	|
+
+***  
+
+| Test Case ID: CT68.1	| Objetivo: O teste deve verificar se  o método IncrementaContador, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(3,3), instâncias de ovelha|
+| Entradas:             |  Uma instância da calsse ovelha    |
+| Resultado Esperado: 	| É esperado que o método retorne:  "Ovelha: 1") |
+| Resultado Obtido:  	| Teste passou    	|
+
+***  
+| Test Case ID: CT68.2	| Objetivo: O teste deve verificar se  o método IncrementaContador, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(3,3), instâncias de ovelha|
+| Entradas:             |  Uma instância da calsse ovelha    |
+| Resultado Esperado: 	| É esperado que o método retorne 4 instância da classe ovelha após, usar o getPopulationDetalis e chamar o incrementaContador |
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT68.2	| Objetivo: O teste deve verificar se  o método IncrementaContador,  esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(3,3), instâncias de ovelha|
+| Entradas:             |  Uma instância da calsse ovelha    |
+| Resultado Esperado: 	| É esperado que o método retorne 4 instância da calsse ovelha após, usar o incrementaContador e chamar o getPopulationDetalis |
+| Resultado Obtido:  	| Teste passou    	|
+
+***   
+
+| Test Case ID: CT69	| Objetivo: O teste deve verificar se  o método ContadorFinalizado, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100), instâncias de ovelha|
+| Entradas:             | 3 objectos da classe ovelha   |
+| Resultado Esperado: 	| É esperado que apos chamar o finalizar contador, o método getPopulationDetails retorne " " |
+| Resultado Obtido:  	| Teste passou    	|
+
+*** 
+
+| Test Case ID: CT70.1	| Objetivo: O teste deve verificar se  o método EhViavel, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	| RE01, RE02, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100), instâncias de ovelha|
+| Entradas:             | 3 objectos da classe ovelha   |
+| Resultado Esperado: 	| É esperado que o método retorne false |
+| Resultado Obtido:  	| Teste passou    	|
+
+*** 
+
+| Test Case ID: CT70.2	| Objetivo: O teste deve verificar se  o método EhViavel, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	| RE01, RE02, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100), instâncias de ovelha e loboGuara|
+| Entradas:             | 3 objectos da classe ovelha e um de loboGuara   |
+| Resultado Esperado: 	| É esperado que o método retorne true |
+| Resultado Obtido:  	| Teste passou    	|
+
+***   
+
+| Test Case ID: CT70.3	| Objetivo: O teste deve verificar se  o método EhViavel, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	| RE01, RE02, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100), instâncias de ovelha e loboGuara|
+| Entradas:             | um objectos da classe ovelha e um de loboGuara   |
+| Resultado Esperado: 	| É esperado que o método retorne true |
+| Resultado Obtido:  	| Teste passou    	|
+
+***  
+| Test Case ID: CT71.1	| Objetivo: O teste deve verificar se  o método hasH, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	| RE01, RE02, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100), instâncias de ovelha e loboGuara|
+| Entradas:             | um objectos da classe ovelha e um de loboGuara   |
+| Resultado Esperado: 	| É esperado que o método retorne as qauntidades: 1 para objeto ovelha e 1 para objeto lobo |
+| Resultado Obtido:  	| Teste passou    	|
+
+***  
+
+| Test Case ID: CT71.2	| Objetivo: O teste deve verificar se  o método hasH, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	| RE01, RE02, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100), instâncias de ovelha e loboGuara|
+| Entradas:             | um objectos da classe ovelha e um de loboGuara   |
+| Resultado Esperado: 	| É esperado que o método retorne as qauntidades: 1 para objeto ovelha e 1 para objeto lobo |
+| Resultado Obtido:  	| Teste passou    	|
+
+***   
+| Test Case ID: CT71.3	| Objetivo: O teste deve verificar se  o método hasH, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	| RE01, RE02, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100), instâncias de ovelha e loboGuara instância de outro objecto distindo de animal|
+| Entradas:             | um objectos da classe ovelha e um de loboGuara e outro objeto dsitinto da classe animal   |
+| Resultado Esperado: 	| É esperado que o método retorne uma execeção ou não aceite outros objecto que não seja de Animal|
+| Resultado Obtido:  	| Teste passou    	|
+
+***   
+
+| Test Case ID: CT71.3	| Objetivo: O teste deve verificar se  o método hasH, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	| RE01, RE02, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(1000000,2), instâncias de ovelha e loboGuara instância |  
+| Entradas:             | 1000000 de objectos da classe ovelha e 1000000 de objeto de loboGuara |
+| Resultado Esperado: 	| É esperado que o método retorne: 1000000 de lobos e 1000000 de ovelha|
+| Resultado Obtido:  	| Teste passou    	|
+
+***   
+ 
+| Test Case ID: CT72.1	| Objetivo: O teste deve verificar se  o método contadoresValidos, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Existir uma instância de campo, Campo(1000,1000), instância de campoEstatistica |  
+| Entradas:             | Instacia campoEstatistica |
+| Resultado Esperado: 	| É esperado que o método retorne: false para a variavél contadoresValidos |
+| Resultado Obtido:  	| Teste passou    	|
+
+***    
+ 
+| Test Case ID: CT72.2	| Objetivo: O teste deve verificar se  o método contadoresValidos, esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	| RE01, RE02, RE03, RE04     	|
+| Precondições:       	| Existir uma instância de campo, Campo(1000,1000), instância de campoEstatistica |  
+| Entradas:             | Instacia campoEstatistica |
+| Resultado Esperado: 	| É esperado que o método retorne: ture após chamar o getPopulationDetails |  
+| Resultado Obtido:  	| Teste passou    	|
+
 ***
