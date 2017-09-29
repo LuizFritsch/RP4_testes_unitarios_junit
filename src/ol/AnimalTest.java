@@ -6,7 +6,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 public class AnimalTest {
-	
+	//ok
 	@Test
 	public void estaVivoTest01() {
 		Campo x = new Campo(50,50);
@@ -14,7 +14,7 @@ public class AnimalTest {
 		Animal animalTest = new Ovelha(false, x, l);
 		assertTrue(animalTest.estaVivo());
 	}
-	
+	//ok
 	@Test
 	public void estaVivoTest02() {
 		Campo x = new Campo(50,50);
@@ -22,7 +22,7 @@ public class AnimalTest {
 		Animal animalTest = new Ovelha(true, x, l);
 		assertTrue(animalTest.estaVivo());
 	}
-	
+	//ok
 	@Test
 	public void getLocalizacaoTeste01() {
 		Campo x = new Campo(50,50);
@@ -30,7 +30,7 @@ public class AnimalTest {
 		Animal animalTest = new Ovelha(true, x, l);
 		assertEquals(animalTest.getLocalizacao(), l);
 	}
-	
+	//ok
 	@Test
 	public void getLocalizacaoTeste02() {
 		Campo x = new Campo(50,50);
@@ -39,7 +39,7 @@ public class AnimalTest {
 		Animal animalTest = new Ovelha(true, x, l1);
 		assertNotEquals(animalTest.getLocalizacao(), l2);
 	}
-	
+	//ok
 	@Test
 	public void setLocalizacaoTeste01() {
 		Campo x = new Campo(50,50);
@@ -49,6 +49,7 @@ public class AnimalTest {
 		animalTest.setLocalizacao(l2);
 		assertEquals(animalTest.getLocalizacao(), l2);
 	}
+	//ok
 	@Test (expected=IllegalArgumentException.class)
 	public void setLocalizacaoTeste02() {
 		Campo x = new Campo(50,50);
@@ -58,7 +59,7 @@ public class AnimalTest {
 		Animal animalTest2 = new Ovelha(true, x, l1);
 		
 	}
-	
+	//ok
 	@Test (expected=IllegalArgumentException.class)
 	public void setLocalizacaoTeste03() {
 		Campo x = new Campo(50,50);
@@ -69,7 +70,7 @@ public class AnimalTest {
 		
 	}
 	
-	
+	//ok
 	@Test (expected= IllegalArgumentException.class)
 	public void animalConstruct01() {
 		Campo x = new Campo(50,50);
@@ -77,7 +78,7 @@ public class AnimalTest {
 		Animal animalTest = new Ovelha(true, x, l1);
 
 	}
-	
+	//ok
 	@Test (expected= IllegalArgumentException.class)
 	public void animalConstruct02() {
 		Campo x = new Campo(50,50);
@@ -85,7 +86,7 @@ public class AnimalTest {
 		Animal animalTest = new Ovelha(true, x, l1);
 
 	}
-
+	//ok
 	@Test (expected= IllegalArgumentException.class)
 	public void animalConstruct03() {
 		Campo x = new Campo(50,50);
@@ -93,7 +94,7 @@ public class AnimalTest {
 		Animal animalTest = new Ovelha(true, x, l1);
 
 	}
-	
+	//ok
 	@Test 
 	public void setMorteTest01() {
 		Campo x = new Campo(50,50);
@@ -103,7 +104,7 @@ public class AnimalTest {
 		assertFalse(animalTest.estaVivo());
 
 	}
-	
+	//ok
 	@Test 
 	public void setMorteTest02() {
 		Campo x = new Campo(50,50);
@@ -113,7 +114,7 @@ public class AnimalTest {
 		assertNull(x.getObjectAt(l1));
 
 	}
-	
+	//ok
 	@Test (expected=IllegalArgumentException.class)
 	public void setMorteTest03() {
 		Campo x = new Campo(50,50);

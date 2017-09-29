@@ -10,6 +10,7 @@ public class ContadorTest {
 
 	//Como testa construtor de classe?
 	//---------------------------------------------------------------------------------------------------------------------------------
+	//ok
 	@Test
 	public void testContador() {
 		
@@ -23,34 +24,35 @@ public class ContadorTest {
 
 	//-----------------------------------------------------------------------------------------------------------------------------------
 	//Acaita qualquer coisa, esse é mesmo o esperdo destes metodos? Ou o conjunto de string é limitado?
+	//ok
 	@Test
 	public void testGetName() {
 		
 		Contador cont = new Contador("lobo");
 		assertEquals("lobo", cont.getName());
 	}
-	
+	//ok
 	@Test
 	public void testGetName1() {
 		
 		Contador cont = new Contador("");
 		assertNotEquals("lobo", cont.getName());
 	}
-	
+	//ok
 	@Test
 	public void testGetName2() {
 		
 		Contador cont = new Contador("Ovelha");
 		assertEquals("Ovelha", cont.getName());
 	}
-	
+	//ok
 	@Test
 	public void testGetName3() {
 		
 		Contador cont = new Contador("1.%£ + lobo");
 		assertEquals("1.%£ + lobo", cont.getName());
 	}
-	
+	//ok
 	@Test
 	public void testGetName4() {
 		
@@ -60,7 +62,7 @@ public class ContadorTest {
 	
 	
 	//-----------------------------------------------------------------------------------------------------------------------------------
-
+	//ok
 	@Test
 	public void testGetCount() {
 		
@@ -69,7 +71,7 @@ public class ContadorTest {
 		
 		
 	}
-	
+	//ok
 	@Test
 	public void testGetCount2() {
 		
@@ -81,6 +83,7 @@ public class ContadorTest {
 
 
 	//----------------------------------------------------------------------------------------------------------------------------------
+	//ok
 	@Test
 	public void testIncrement() {
 		
@@ -90,7 +93,7 @@ public class ContadorTest {
 		
 		
 	}
-	
+	//ok
 	@Test
 	public void testIncrement1() {
 		
@@ -103,7 +106,7 @@ public class ContadorTest {
 		
 		
 	}
-	
+	//ok
 	@Test
 	public void testIncrement3() {
 		
@@ -114,7 +117,7 @@ public class ContadorTest {
 	}
 	
 	//----------------------------------------------------------------------------------------------------------------------------------
-
+	//ok
 	@Test
 	public void testReset() {
 		Contador cont = new Contador("Ovelha");
@@ -125,7 +128,7 @@ public class ContadorTest {
 			assertEquals(0, cont.getCount());
 	}
 
-	
+	//ok
 	@Test
 	public void testReset1() {
 		Contador cont = new Contador("Ovelha");
