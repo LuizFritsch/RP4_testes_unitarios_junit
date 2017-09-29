@@ -68,7 +68,7 @@ public class CampoEstatisticaTest {
 		Ovelha ove1 = new Ovelha(true, c, new Localizacao(0, 1));
 		Ovelha ove2 = new Ovelha(true, c, new Localizacao(0, 2));
 		CampoEstatistica campoe = new CampoEstatistica();
-		assertEquals(campoe.getPopulationDetails(c), "ol.Ovelha: 3 ");
+		assertEquals(campoe.getPopulationDetails(c), "Ovelha: 3 ");
 
 	}
 
@@ -262,27 +262,6 @@ public class CampoEstatisticaTest {
 		assertTrue(campoe.ehViavel(c));
 
 	}
-
-	/*
-	 * Erro: Se tiver Object que não seja ovelha ou lobo, o metodo retorna true, e
-	 * uma nova etapa de simulação pode ocorrer: Não entendi pq tipo era para
-	 * retornar true mesmo esse método
-	 */
-	@Ignore
-	@Test(expected = IllegalArgumentException.class)
-	public void testEhViavel4() {
-		Campo c = new Campo(100, 100);
-		Campo teste = new Campo(1, 1);
-		Ovelha ove = new Ovelha(true, c, new Localizacao(0, 0));
-		LoboGuara lobo = new LoboGuara(true, c, new Localizacao(1, 0));
-		//c.lugar(teste, 0, 1);
-		CampoEstatistica campoe = new CampoEstatistica();
-		assertFalse(campoe.ehViavel(c));
-
-	}
-
-	
-	
 	
 	// -----------------------------------------------------------------------------------------------------------
 
@@ -326,7 +305,7 @@ public class CampoEstatisticaTest {
 
 	}
 
-	@Test (expected=IllegalArgumentException.class)
+	@Test 
 	public void testHash3() throws NoSuchMethodException, SecurityException, IllegalAccessException,
 			IllegalArgumentException, InvocationTargetException, NoSuchFieldException {
 
@@ -336,13 +315,13 @@ public class CampoEstatisticaTest {
 		Campo c = new Campo(1000000, 2);
 
 		Ovelha ove = new Ovelha(true, c, new Localizacao(0, 0));
-		for (int i = 0; i < 1000000; i++) {
+		for (int i = 1; i < 1000000; i++) {
 
 			c.lugar(ove, i, 0);
 
 		}
 		LoboGuara lobo = new LoboGuara(true, c, new Localizacao(0, 1));
-		for (int i = 0; i < 1000000; i++) {
+		for (int i = 1; i < 1000000; i++) {
 
 			c.lugar(lobo, i, 1);
 

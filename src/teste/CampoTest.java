@@ -94,43 +94,6 @@ public class CampoTest {
 				
 	}
 	
-	
-	@Test
-	public void testCampo2c() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
-		
-		Campo campo = new Campo(100,100);
-		Class<Campo> campoclass = Campo.class;
-		
-		Field campoParametro = campoclass.getDeclaredField("campo");
-		campoParametro.setAccessible(true);
-		
-	    Object[][] campoObject = (Object[][]) campoParametro.get(campo);
-				
-		assertEquals(null, campoObject[0][0]);
-		
-	}
-	
-	
-	@Test (expected = ArrayIndexOutOfBoundsException.class)
-	public void testCampo2d() throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
-		
-		Campo campo = new Campo(100,100);
-		Class<Campo> campoclass = Campo.class;
-		
-		Field campoParametro = campoclass.getDeclaredField("campo");
-		campoParametro.setAccessible(true);
-		
-	    Object[][] campoObject = (Object[][]) campoParametro.get(campo);
-				
-		assertEquals(null, campoObject[100][0]);
-		
-	}
-	
-	
-	
-	
-	
-	
 	@Test
 	public void testCampo3() {
 		
