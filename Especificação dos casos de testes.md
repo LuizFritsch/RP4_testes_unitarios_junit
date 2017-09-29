@@ -608,7 +608,7 @@
 
 ***
 
-| Test Case ID:  CT26.1     	| Objetivo: 	   Checar se é possível criar um rótulo de etapa com informações validas e invalidas.|
+| Test Case ID:  CT26.1     	| Objetivo: 	Testar o funcionamento do método MostrarStatus. Checar se é possível criar um rótulo de etapa com informações validas e invalidas.|
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE04     	|
@@ -619,7 +619,7 @@
 
 ***
 
-| Test Case ID:  CT26.2     	| Objetivo: 	   Checar se é possível criar um rótulo de etapa com informações validas e invalidas.|
+| Test Case ID:  CT26.2     	| Objetivo: Testar o funcionamento do método MostrarStatus. Checar se é possível criar um rótulo de etapa com informações validas e invalidas.|
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE04     	|
@@ -631,7 +631,7 @@
 
 ***
 
-| Test Case ID:  CT27.3     	| Objetivo: 	   Checar se é possível criar um rótulo de etapa com informações validas e invalidas.|
+| Test Case ID:  CT27.3     	| Objetivo: Testar o funcionamento do método MostrarStatus. Checar se é possível criar um rótulo de etapa com informações validas e invalidas.|
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01, RE04     	|
