@@ -13,5 +13,6 @@ public class Main {
 		
 		Simulador s1 = new Simulador(100,100);
 		s1.executaLongaSimulacao();
+		System.out.println("teste commit");
 	}
 }
