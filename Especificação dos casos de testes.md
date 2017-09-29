@@ -1237,4 +1237,527 @@
 | Precondições:       	| Criação de objeto LoboGuara |
 | Entrada               | Animal LoboGuara, idade igual 150 |				|
 | Resultado esperado    | O lobo esta vivo	|
-| Resultado Obtido:  	| teste passou |
+| Resultado Obtido:  	| teste passou |  
+  
+***  
+
+| Test Case ID: CT53.b   	| Objetivo: O teste deve verificar se o método getLargura esta funcionadno corretamente 	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE03         	|
+| Precondições:       	|   Existir uma instância de campo       	|
+| Entradas:             | 2^100000            |
+| Resultado Esperado: 	| Que o método consiga retornar 2^100000     	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+
+| Test Case ID: CT54.1   	| Objetivo: O teste deve verificar se o método getProfundidade esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE03         	|
+| Precondições:       	|    Existir uma instância de campo             	|
+| Entradas:             | Campo(31,5) entrada 500           |
+| Resultado Esperado: 	| É esperado que o teste não passe     	|
+| Resultado Obtido:  	| Teste falhou    	|
+
+
+***  
+| Test Case ID: CT54.2   	| Objetivo: O teste deve verificar se  o método getProfundidade esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE03         	|
+| Precondições:       	|    Existir uma instância de campo             	|
+| Entradas:             | Campo(1000,0), entrada 1000           |
+| Resultado Esperado: 	| É esperado que o teste  passe     	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+
+| Test Case ID: CT54.3   	| Objetivo: O teste deve verificar se  o método getProfundidade esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE03         	|
+| Precondições:       	|    Existir uma instância de campo             	|
+| Entradas:             | Campo(0,5) entrada 0           |
+| Resultado Esperado: 	| É esperado que o teste  passe     	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***   
+
+| Test Case ID: CT54.4   	| Objetivo: O teste deve verificar se  o método getProfundidade esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE03         	|
+| Precondições:       	|    Existir uma instância de campo             	|
+| Entradas:             | Campo(1000,1000) entrada 1000           |
+| Resultado Esperado: 	| É esperado que o teste  passe     	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+
+| Test Case ID: CT55.1   	| Objetivo: O teste deve verificar se  o método LocalizacoesAdjacentes esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(2,1)            	|
+| Entradas:             | Localizacao(0,0), entrada (0,0)           |
+| Resultado Esperado: 	| É esperado que o teste  passe     	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+| Test Case ID: CT55.2  	| Objetivo: O teste deve verificar se  o método LocalizacoesAdjacentes esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(2,2)            	|
+| Entradas:             | Localizacao(0,0), entrada (0,0)           |
+| Resultado Esperado: 	| É esperado que o teste  passe     	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+| Test Case ID: CT55.3  	| Objetivo: O teste deve verificar se  o método LocalizacoesAdjacentes esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(4,4)            	|
+| Entradas:             | Localizacao(1,1), entrada (1,1)           |
+| Resultado Esperado: 	| É esperado que o teste  passe     	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***   
+| Test Case ID: CT55.4  	| Objetivo: O teste deve verificar se  o método LocalizacoesAdjacentes esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(400,400)            	|
+| Entradas:             | Localizacao(0,399), entrada (0,399)           |
+| Resultado Esperado: 	| É esperado que o teste  passe     	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+*** 
+
+| Test Case ID: CT55.5 	| Objetivo: O teste deve verificar se  o método LocalizacoesAdjacentes esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(400,400)            	|
+| Entradas:             | Localizacao(399,399), entrada (399,399)           |
+| Resultado Esperado: 	| É esperado que o teste  passe     	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+*** 
+| Test Case ID: CT55.5 	| Objetivo: O teste deve verificar se  o método LocalizacoesAdjacentes esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(400,400)            	|
+| Entradas:             | Localizacao(-1,0), entrada (-1,0)           |
+| Resultado Esperado: 	| É esperado que o teste não passe     	|
+| Resultado Obtido:  	| Teste falhou    	|
+
+
+***  
+
+| Test Case ID: CT56.1  	| Objetivo: O teste deve verificar se  o método LocalizacaoAdjacenteLivre esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(100,100)            	|
+| Entradas:             | Localizacao(0,0), entrada (0,0)           |
+| Resultado Esperado: 	| É esperado que o teste  lance uma execeção: IllegalArgumentException.class   	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***   
+| Test Case ID: CT56.2  	| Objetivo: O teste deve verificar se  o método LocalizacaoAdjacenteLivre esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(100,100)            	|
+| Entradas:             | Localizacao(101,100), entrada (101,100)           |
+| Resultado Esperado: 	| É esperado que o teste  lance uma execeção: IllegalArgumentException.class   	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***    
+| Test Case ID: CT56.3  	| Objetivo: O teste deve verificar se  o método LocalizacaoAdjacenteLivre esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(100,100)            	|
+| Entradas:             | Localizacao(0,0), entrada (0,0)           |
+| Resultado Esperado: 	| É esperado que o teste  lance uma execeção: IllegalArgumentException.class   	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+| Test Case ID: CT56.4  	| Objetivo: O teste deve verificar se  o método LocalizacaoAdjacenteLivre esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(100,100)            	|
+| Entradas:             | Localizacao(0,0), entrada (0,0)           |
+| Resultado Esperado: 	| É esperado que o teste  lance uma execeção: NullPointerException.class  	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***   
+| Test Case ID: CT57.1  	| Objetivo: O teste deve verificar se  o método LocalizacoesAdjacentesLivres esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(100,100)            	|
+| Entradas:             | Localizacao(0,0), entrada (0,0)           |
+| Resultado Esperado: 	| É esperado que o teste retorne 0  	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+ 
+ | Test Case ID: CT57.2  	| Objetivo: O teste deve verificar se  o método LocalizacoesAdjacentesLivres esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(100,100), e 3 instancia de loboGuara no campo, proximo de (0,0)  	|
+| Entradas:             | Localizacao(0,0), entrada (0,0)           |
+| Resultado Esperado: 	| É esperado que o teste retorne 1  	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+ 
+ | Test Case ID: CT57.3  	| Objetivo: O teste deve verificar se  o método LocalizacoesAdjacentesLivres esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(100,100) e  3 instancia de loboGuara no campo, proximo de (0,0)           	|
+| Entradas:             | Localizacao(-1,0), entrada (-1,0)           |
+| Resultado Esperado: 	| É esperado que o teste lance uma execção: IllegalArgumentException.class 	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***   
+
+
+| Test Case ID: CT58.1 	| Objetivo: O teste deve verificar se  o método LocalizacaoAdjacenteRandomica esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(100,100) 	|
+| Entradas:             | Localizacao(0,1)           |
+| Resultado Esperado: 	| É esperado que o teste um object do tipo localizacao 	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***   
+| Test Case ID: CT58.2 	| Objetivo: O teste deve verificar se  o método LocalizacaoAdjacenteRandomica esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(100,100) 	|
+| Entradas:             | Localizacao(0,0)           |
+| Resultado Esperado: 	| É esperado que o teste retorne uma localizacao proxima de localizacao(0,0)	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***   
+| Test Case ID: CT58.3 	| Objetivo: O teste deve verificar se  o método LocalizacaoAdjacenteRandomica esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(100,100) 	|
+| Entradas:             | Localizacao(-1,0)           |
+| Resultado Esperado: 	| É esperado que o teste lance uma execeção:  IllegalArgumentException.class 	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+| Test Case ID: CT59.1 	| Objetivo: O teste deve verificar se  o método GetObjectAt esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(100,100) e Ovelha 	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste retorne uma ovelha	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***   
+    
+
+| Test Case ID: CT59.1 	| Objetivo: O teste deve verificar se  o método GetObjectAt esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Existir uma instância de campo, Campo(100,100)	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste null, já que não existe object no lugar	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+| Test Case ID: CT59.3 	| Objetivo: O teste deve verificar se  o método GetObjectAt esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)  e Ovelha	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste null, apos usar o método limpa	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+| Test Case ID: CT60. 	| Objetivo: O teste deve verificar se  o método GetObjectAtLocalizacao esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)  e Lobo	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste retorne uma instancia de LoboGura	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***   
+
+| Test Case ID: CT60.2 	| Objetivo: O teste deve verificar se  o método GetObjectAtLocalizacao esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)  e Ovelha	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste retorne uma instancia de Ovelha	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***   
+| Test Case ID: CT60.3 	| Objetivo: O teste deve verificar se  o método GetObjectAtLocalizacao esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)  e Ovelha	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste retorne null, apos usar o método limpar o campo	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+
+| Test Case ID: CT60.4	| Objetivo: O teste deve verificar se  o método GetObjectAtLocalizacao esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)  e Ovelha	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste retorne null, apos limpar a localizacao(50,50)	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+
+
+| Test Case ID: CT61.1	| Objetivo: O teste deve verificar se  o método LugarObjectLocalizacao esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,70)  e LoboGuara	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste retorne uma instancia de LoboGuara	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+
+
+| Test Case ID: CT61.2	| Objetivo: O teste deve verificar se  o método LugarObjectLocalizacao esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,300)  e LoboGuara	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste retorne uma execeção : IllegalArgumentException.class	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+
+| Test Case ID: CT61.3	| Objetivo: O teste deve verificar se  o método LugarObjectLocalizacao esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(10,10)  e LoboGuara	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste retorne uma execeção: Exception.class	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***        
+              
+| Test Case ID: CT62	| Objetivo: O teste deve verificar se  o método LugarObject esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(10,10)  e LoboGuara	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste retorne uma execeção: IllegalArgumentException.class	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***        
+| Test Case ID: CT63.1	| Objetivo: O teste deve verificar se  o método LimpaLocalizacao esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)  e LoboGuara	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste retorne null apos o campo ser limpo	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+
+| Test Case ID: CT63.2	| Objetivo: O teste deve verificar se  o método LimpaLocalizacao esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)  e Ovelha	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste retorne null apos o campo ser limpo	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***  
+
+| Test Case ID: CT63.3	| Objetivo: O teste deve verificar se  o método LimpaLocalizacao esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)  e LoboGuara	|
+| Entradas:             | Localizacao(-1,-50)           |
+| Resultado Esperado: 	| É esperado que o teste retorne uma execeção:  IllegalArgumentException.class 	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***   
+| Test Case ID: CT63.4	| Objetivo: O teste deve verificar se  o método LimpaLocalizacao esta funcionadno corretamente	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(590,500)  e LoboGuara	|
+| Entradas:             | Localizacao(590,501)           |
+| Resultado Esperado: 	| É esperado que o teste retorne uma execeção:  IndexOutOfBoundsException.class 	|
+| Resultado Obtido:  	| Teste passou    	|
+
+
+***   
+| Test Case ID: CT64.1	| Objetivo: O teste deve verificar se  o método Limpa esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)  e LoboGuara em Localizacao(50,50)	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste não retorne uma instacia de Animal	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***  
+| Test Case ID: CT64.2	| Objetivo: O teste deve verificar se  o método Limpa esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)  e LoboGuara em Localizacao(50,50)	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste não retorne o endereço de memoria do lobo que estava na posição	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***  
+| Test Case ID: CT64.3	| Objetivo: O teste deve verificar se  o método Limpa esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)  e Ovelha em Localizacao(50,50)	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste não retorne o endereço de memoria da Ovelha que estava na posição	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***  
+| Test Case ID: CT64.4	| Objetivo: O teste deve verificar se  o método Limpa esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)	|
+| Entradas:             | Localizacao(50,50)           |
+| Resultado Esperado: 	| É esperado que o teste não retorne null, mesmo ao limpar o campo null	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***             
+| Test Case ID: CT65.1	| Objetivo: O teste deve verificar se  o método Campo, construtor esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)	|
+| Entradas:             | Campo(100,100)          |
+| Resultado Esperado: 	| É esperado que as variaveis, larguraInt e profundidadeInt, tenha os valores passados para o construtor	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***    
+
+| Test Case ID: CT65.2	| Objetivo: O teste deve verificar se  o método Campo, construtor esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)	|
+| Entradas:             | 101, 101, campo(100,100)          |
+| Resultado Esperado: 	| É esperado que as variaveis, larguraInt e profundidadeInt, tenha os valores passados para o construtor	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***  
+| Test Case ID: CT65.3	| Objetivo: O teste deve verificar se  o método Campo, construtor esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(0,100)	|
+| Entradas:             | Campo(0,100)          |
+| Resultado Esperado: 	| É esperado que as variaveis, larguraInt e profundidadeInt, tenha os valores passados para o construtor	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***  
+
+| Test Case ID: CT65.4	| Objetivo: O teste deve verificar se  o método Campo, construtor esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(0,100)	|
+| Entradas:             | localizacao(61,21)         |
+| Resultado Esperado: 	| É esperado que as posiçõe seja criadas como null|
+| Resultado Obtido:  	| Teste passou    	|
+
+***   
+| Test Case ID: CT65.5	| Objetivo: O teste deve verificar se  o método Campo, construtor esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)	|
+| Entradas:             | localizacao(100,2100)         |
+| Resultado Esperado: 	| É esperado que o campo seja delimitado pelo tamanho passado para o construtor:IndexOutOfBoundsException.class) |
+| Resultado Obtido:  	| Teste passou    	|
+
+***  
+| Test Case ID: CT65.6	| Objetivo: O teste deve verificar se  o método Campo, construtor esta funcionadno corretamente	|
+|--------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Existir uma instância de campo, Campo(100,100)	|
+| Entradas:             | localizacao(-100,-2100)         |
+| Resultado Esperado: 	| É esperado que o campo seja delimitado pelo tamanho passado para o construtor:IndexOutOfBoundsException.class) |
+| Resultado Obtido:  	| Teste passou    	|
+
+***
