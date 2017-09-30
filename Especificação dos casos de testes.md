@@ -457,16 +457,6 @@
 | Resultado Esperado: 	|  O teste só deve contar os objetos que foram incrementados após redefinir o campo  |
 | Resultado Obtido:  	| teste passou |
 
-| Test Case ID:   CT15.3    	| Objetivo: O método verifica se após a execução do método Redefine o campo terá 0 objetos	|
-|---------------------	|-----------	|
-| Prioridade:         	|  baixa          	|
-| Rastreador:         	|       RE01 RE03, RE04     	|
-| Precondições:       	| O método GetPopulationDetails da mesma classe, deve estar implementado corretamente          	|
-| Entradas:             |  Deve ser criado 3 Ovelha e chamar o método Redefine    |
-| Resultado Esperado: 	| teste deve mostrar que não tem objetos no campo  |
-| Resultado Obtido:  	| teste passou|
-
-
 ***
 
 | Test Case ID:   CT16    	| Objetivo: O método verifica a execução do método contadorFinalizado 	|
