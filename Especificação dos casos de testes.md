@@ -2043,3 +2043,331 @@
 | Resultado Obtido:      |    teste passou    |
 
 ***
+
+| Test Case ID: CT 74.1  | Objetivo: Testar se o método GetRandom está gerando Double na faixa de valor pretendida	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Nenhuma        	|
+| Entradas:             |  Instanciar um número randômico double com possibilidades entre 0 e 1          |
+| Resultado Esperado: 	| algum numero entre entre 0 e 1	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 74.2  | Objetivo: Testar se o método GetRandom está gerando inteiros na faixa de valor pretendida	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Nenhuma        	|
+| Entradas:             |  Instanciar um número randômico inteiro com possibilidades entre 0 e 100          |
+| Resultado Esperado: 	| algum número inteiro entre entre 0 e 100	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 74.3  | Objetivo: Testar se o método GetRandom está gerando inteiros na faixa de valor pretendida	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Nenhuma        	|
+| Entradas:             | Instanciar um número randômico inteiro com possibilidade de 1         |
+| Resultado Esperado: 	|  0	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 74.4  | Objetivo: Testar se método GetRandom esta gerando números iguais |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Nenhuma        	|
+| Entradas:             | Executa duas vezes o método GetRandom e compara as duas saidas     |
+| Resultado Esperado: 	|  Não gerar o mesmo numero	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 75  | Objetivo: Testar se o método GetName está retornando algo alem de null	|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Nenhuma        	|
+| Entradas:             | Instanciar um random long        |
+| Resultado Esperado: 	|  não retornar null	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 76  | Objetivo: Testar o construtor da classe Randomizador |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Nenhuma        	|
+| Entradas:             | Instancia a classe    |
+| Resultado Esperado: 	|  O objeto gerado não ser null	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 77.1  | Objetivo: Testar se método Reset está funcionando corretamente |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Nenhuma        	|
+| Entradas:             | Randomizar um número inteiro, chamar o método reset e depois randomizar outro número inteiro. Após esses passos comparar se os números são iguais.  |
+| Resultado Esperado: 	|  Os números gerados não serem iguais	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 77.2  | Objetivo: Testar se método Reset está funcionando corretamente |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Nenhuma        	|
+| Entradas:             | Randomizar 100 números inteiros, chamar o método reset e depois randomizar outros 100 números inteiros. Após esses passos comparar se os números são iguais.  |
+| Resultado Esperado: 	|  Os números gerados não serem iguais	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 77.3  | Objetivo: Testar se método Reset está funcionando corretamente |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Nenhuma        	|
+| Entradas:             | Randomizar 1000 números inteiros, chamar o método reset e depois randomizar outros 1000 números inteiros. Após esses passos comparar se os números são iguais.  |
+| Resultado Esperado: 	|  Os números gerados não serem iguais	|
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 78.1  | Objetivo: Testar se construtor da classe SimuladorTela está funcionando corretamente |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Nenhuma        	|
+| Entradas:             | Criar um simulador com entradas (100,100)  |
+| Resultado Esperado: 	|  O objeto criado não ser null|
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 78.2  | Objetivo: Testar se construtor da classe SimuladorTela está definindo o tamanho corretamente |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Nenhuma        	|
+| Entradas:             | Criar um simulador com entradas (100,100), chamar o método getX e comparar com 100  |
+| Resultado Esperado: 	| O retorno do método getX ser igual a 100|
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 78.3  | Objetivo: Testar se construtor da classe SimuladorTela está definindo as dimensões da tela corretamente |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Criar um simulador com entradas (1,1)    	|
+| Entradas:             | Chamar o método getHeight e comparar com 1 |
+| Resultado Esperado: 	| A comparação ser igual |
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 78.4  | Objetivo: Testar se construtor da classe SimuladorTela está definindo as dimensões da tela corretamente |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Criar um simulador com entradas (780,1200)    	|
+| Entradas:             | Chamar o método getHeight e comparar com 780  |
+| Resultado Esperado: 	| A comparação ser igual |
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 78.5  | Objetivo: Testar se construtor da classe SimuladorTela está visível |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Criar um simulador com entradas (100,1953)    	|
+| Entradas:             | Chamar o método isVisible |
+| Resultado Esperado: 	| true |
+| Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 79.1  | Objetivo: Testar se o método setCor está funcionando corretamente|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    nenhuma  	|
+| Entradas:             |  Passar null e cor laranja como parametros no set.|
+| Resultado Esperado: 	| Não criar o objeto com parametro null |
+| Resultado Obtido:  	| Teste falhou   	|
+
+***
+
+| Test Case ID: CT 79.2  | Objetivo: Testar se o método setCor está funcionando corretamente|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Setar a cor das ovelhas como laranja.  	|
+| Entradas:             | Comparar a cor da ovelha com laranja.|
+| Resultado Esperado: 	| true|
+| Resultado Obtido:  	| Teste passou	|
+
+***
+
+| Test Case ID: CT 79.3  | Objetivo: Testar se o método setCor está funcionando corretamente|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Setar a cor das ovelhas como laranja e a cor dos lobos como azul  	|
+| Entradas:             | Comparar a cor da ovelha com laranja e do lobo com azul.|
+| Resultado Esperado: 	| true|
+| Resultado Obtido:  	| Teste passou  	|
+
+***
+
+| Test Case ID: CT 79.4  | Objetivo: Testar se o método setCor está funcionando corretamente|
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|    Criar a cor das ovelhas como laranja, a cor dos lobos como azul e depois setar a cor das ovelhas para azul 	|
+| Entradas:             | Comparar a cor da ovelha com azul e a cor do lobo com azul.|
+| Resultado Esperado: 	| true|
+| Resultado Obtido:  	| Teste falhou   	|
+
+***
+
+| Test Case ID: CT 80.1  | Objetivo: Testar se o método getCor está funcionando corretamente |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|   O setCor estar funcionando corretamente. Criar uma ovelha e setar a cor dela para laranja.	|
+| Entradas:             | Chamar o método getCor da ovelha e comparar com laranja|
+| Resultado Esperado: 	| true|
+| Resultado Obtido:  	| Teste passou  	|
+
+***
+
+| Test Case ID: CT 80.2  | Objetivo: Testar se o método getCor está funcionando corretamente |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|  Criar um campo(1,1) |
+| Entradas:             | Chamar o método getCor do campo vazio e comparar com Gray |
+| Resultado Esperado: 	| true   |
+| Resultado Obtido:  	| Teste passou  	|
+
+***
+
+| Test Case ID: CT 80.3  | Objetivo: Testar se o método getCor está funcionando corretamente |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|   O setCor estar funcionando corretamente. Criar um lobo e setar a cor dele para azul.	|
+| Entradas:             | Chamar o método getCor do lobo e comparar com azul|
+| Resultado Esperado: 	| true|
+| Resultado Obtido:  	| Teste passou  	|
+
+***
+
+| Test Case ID: CT 81  | Objetivo: Testar o funcionamento do método MostrarStatus. Checar se é possível criar um rótulo de etapa com informações validas e invalidas. |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|   O método deve tratar com thrwos as seguintes exceções: NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException. |
+| Entradas:             | Criar um rótulo vazio, chamar o método getText e comparar com “Populacao: ” |
+| Resultado Esperado: 	| True |
+| Resultado Obtido:  	| Teste passou  	|
+
+***
+
+| Test Case ID: CT 82.1  | Objetivo: Testar se o construtor, da classe interna de SimuladorTela, VisaoCampo está funcionando corretamente. |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|  |
+| Entradas:              	| Instanciar uma VisaoCampo (900,1000) e comparar se a largura do objeto instanciado é igual a 1000|
+| Resultado Esperado: 	| true|
+| Resultado Obtido:  	| Teste passou  	|
+
+***
+
+| Test Case ID: CT 82.2  | Objetivo: Testar se o construtor, da classe interna de SimuladorTela, VisaoCampo está funcionando corretamente. |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|  |
+| Entradas:              	| Instanciar uma VisaoCampo (900,1000) e comparar se a altura do objeto instanciado é igual a 1000|
+| Resultado Esperado: 	| true|
+| Resultado Obtido:  	| Teste passou  	|
+
+***
+
+| Test Case ID: CT 82.3  | Objetivo: Testar se o construtor, da classe interna de SimuladorTela, VisaoCampo está funcionando corretamente. |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|  |
+| Entradas:              	| Instanciar a classe  VisaoCampo com parametros (900,0) e outra vez com (0,900) e comparar se a largura da primeira vez é igual a 0 e se a altura da segunda vez é igual a 0 |
+| Resultado Esperado: 	| true|
+| Resultado Obtido:  	| Teste passou  	|
+
+***
+
+| Test Case ID: CT 82.4  | Objetivo: Testar se o construtor, da classe interna de SimuladorTela, VisaoCampo está funcionando corretamente. |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| nenhuma |
+| Entradas:              	| Instanciar a classe  VisaoCampo com parametros (-100,-100) |
+| Resultado Esperado: 	| O método não deveria aceitar parametros negativos |
+| Resultado Obtido:  	| Teste falhou  	|
+
+***
+
+| Test Case ID: CT 82.5  | Objetivo: Testar se o construtor, da classe interna de SimuladorTela, VisaoCampo está funcionando corretamente. Verifica se o atributo GRID_VIEW_SCALING_FACTOR retorna o valor correto, quando o objeto é criado |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|  Instanciar a classe  VisaoCampo com parametros (100,100) |
+| Entradas:              	| Comparar o atributo GRID_VIEW_SCALING_FACTOR com 6 |
+| Resultado Esperado: 	| true |
+| Resultado Obtido:  	| Teste passou 	|
+
+***
+
+| Test Case ID: CT 82.6  | Objetivo: Testar se o construtor, da classe interna de SimuladorTela, VisaoCampo está funcionando corretamente. Verifica se o atributo attributeXScale retorna o valor correto, quando o objeto é criado |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Nenhuma |
+| Entradas:              	| Comparar o atributo attributeXScale com 6 |
+| Resultado Esperado: 	| true |
+| Resultado Obtido:  	| Teste passou 	|
+
+***
+
+| Test Case ID: CT 82.7  | Objetivo: Testar a classe interna de SimuladorTela, VisaoCampo está funcionando corretamente. |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	|  Nenhuma |
+| Entradas:              	| Comparar se a altura do dimensionO é igual a 60 e a largura do dimensionO é igual a 600 |
+| Resultado Esperado: 	| true |
+| Resultado Obtido:  	| Teste passou 	|
+
+***
+
+| Test Case ID: CT 82.8  | Objetivo: Testar a classe interna de SimuladorTela, VisaoCampo está funcionando corretamente. |
+|---------------------	|-----------	|
+| Prioridade:         	|    Média     	|
+| Rastreador:         	|  RE01, RE03, RE04         	|
+| Precondições:       	| Nenhuma |
+| Entradas:              	| Compara se o attributeG retorna a cor correta|
+| Resultado Esperado: 	| true |
+| Resultado Obtido:  	| Teste passou 	|
