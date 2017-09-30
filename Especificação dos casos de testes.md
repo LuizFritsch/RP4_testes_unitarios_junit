@@ -125,6 +125,29 @@
 
 ***
 
+| Test Case ID: CT 5.3 | Objetivo: O teste deve verificar o uso do método equals. Deve-se criar duas localizações com parâmetros diferentes e compará-las|
+|---------------------    |-----------    |
+| Prioridade:             |  Média          |
+| Rastreador:             | RE04  |
+| Precondições:           |    Nenhuma         |
+| Entradas:             |  Localizacao(110,110)   Localizacao(10,10)        |
+| Resultado Esperado:     | false    |
+| Resultado Obtido:      |    teste passou    |
+
+***
+
+| Test Case ID: CT 5.4 | Objetivo: O teste deve verificar o uso do método equals. Deve-se criar duas Localizacões com parâmetros inválidos|
+|---------------------    |-----------    |
+| Prioridade:             |  Média          |
+| Rastreador:             | RE04  |
+| Precondições:           |    Nenhuma         |
+| Entradas:             |  Localizacao(-1,-1)   Localizacao(-1,-1)        |
+| Resultado Esperado:     | IllegalArgumentException    |
+| Resultado Obtido:      |    teste passou    |
+
+
+***
+
 | Test Case ID: CT06.1      	| Objetivo: 	O teste deve criar uma Localizacao com parâmetros validos e inválidos e verificar o uso do método getLinha |
 |---------------------	|-----------	|
 | Prioridade:         	|         baixa   	|
@@ -230,6 +253,29 @@
 | Resultado Esperado: 	|   IllegalArgumentException.class        	|
 | Resultado Obtido:  	| teste passou |
 
+***
+
+| Test Case ID: CT 8.4 | Objetivo: O teste deve criar uma Localizacao com parâmetros validos e verificar o uso do método HashCode|
+|---------------------    |-----------    |
+| Prioridade:             |  baixa          |
+| Rastreador:             | RE04  |
+| Precondições:           |    Nenhuma         |
+| Entradas:             |  Localizacao(10, 15),  Localizacao(10, 15)       |
+| Resultado Esperado:     | Os hashCode são diferentes    |
+| Resultado Obtido:      |    teste passou    |
+
+
+***
+
+| Test Case ID: CT 8.5 | Objetivo: O teste deve criar uma Localizacao com parâmetros validos e verificar o uso do método HashCode|
+|---------------------    |-----------    |
+| Prioridade:             |  baixa          |
+| Rastreador:             | RE04  |
+| Precondições:           |    Nenhuma         |
+| Entradas:             |  Localizacao(10, 15)       |
+| Resultado Esperado:     | O hashCode da Localizacao é diferente de null    |
+| Resultado Obtido:      |    teste passou    |
+
 
 ***
 
@@ -264,6 +310,27 @@
 | Resultado Esperado: 	|   O teste não retornar nenhuma exceção        	|
 | Resultado Obtido:  	| teste passou |
 
+***
+
+| Test Case ID: CT  9.4 | Objetivo: O teste deve criar um contador com parâmetros válidos e testar     a execução no método getName|
+|---------------------    |-----------    |
+| Prioridade:             |  Média          |
+| Rastreador:             | RE01, RE04  |
+| Precondições:           |    Nenhuma         |
+| Entradas:             |  Contador ("Lobo")        |
+| Resultado Esperado:     | O método deve retornar uma String “lobo”    |
+| Resultado Obtido:      |    teste passou    |
+
+***
+
+| Test Case ID: CT  9.5 | Objetivo: O teste deve criar um contador com parâmetros válidos porém apenas com (“   “) e testar     a execução no método getName|
+|---------------------    |-----------    |
+| Prioridade:             |  Média          |
+| Rastreador:             | RE01, RE04  |
+| Precondições:           |    Nenhuma         |
+| Entradas:             |  Contador ("   ")        |
+| Resultado Esperado:     | O método deve retornar uma String (“   ”)    |
+| Resultado Obtido:      |    teste passou    |
 
 ***
 
@@ -667,12 +734,12 @@
 
 ***
 
-| Test Case ID:  CT28.2    	| Objetivo: 	   O teste deve verificar se quando o animal é criado(teoricamente um recém nascido) ele inicialmente é setado como vivo.|
+| Test Case ID:  CT28.2    	| Objetivo: 	   O teste deve verificar se quando o animal é criado(teoricamente com idade ramdômica) ele inicialmente é setado como vivo.|
 |---------------------	|-----------	|
 | Prioridade:         	| Alta          	|
 | Rastreador:         	|       RE01,RE02,RE04     	|
 | Precondições:       	| Criação de objeto do tipo Campo, Localizacao e Ovelha     |
-| Entrada               | true, Campo, Localizacao |
+| Entrada               | false, Campo, Localizacao |
 | Resultado esperado    |true  |
 | Resultado Obtido:  	| teste passou |
 
@@ -748,6 +815,28 @@
 | Resultado esperado    | O método deve retornar uma exceção do tipo IllegalArgumentException  |
 | Resultado Obtido:  	| teste passou |
 
+***
+
+| Test Case ID: CT  31.2| Objetivo:     Verificar se o construtor da classe Animal aceita uma Localizacao com valores negativos |
+|---------------------    |-----------    |
+| Prioridade:             |  Média          |
+| Rastreador:             | RE01,RE02,RE04  |
+| Precondições:           |    Criação de objeto do tipo Campo, Localizacao(Essa localização é inválida)          |
+| Entradas:             |  O método cria Campo e Localizacao(esse é inválida) e animal         |
+| Resultado Esperado:     | O método deve retornar uma exceção do tipo IllegalArgumentException    |
+| Resultado Obtido:      |    teste passou    |
+
+
+***
+
+| Test Case ID: CT  31.3 | Objetivo: Verificar se o construtor da classe Animal aceita uma Localizacao com tamanho = tamanhoMaximo+1    |
+|---------------------    |-----------    |
+| Prioridade:             |  Média          |
+| Rastreador:             | RE01,RE02,RE04  |
+| Precondições:           |    Criação de objeto do tipo Campo, Localizacao(Essa localização é inválida)          |
+| Entradas:             |  O método cria Campo e Localizacao(esse é inválida) e animal         |
+| Resultado Esperado:     | O método deve retornar uma exceção do tipo IllegalArgumentException    |
+| Resultado Obtido:      |    teste passou    |
 
 ***
 
@@ -762,15 +851,25 @@
 
 ***
 
-| Test Case ID:  CT32.2     	| Objetivo:  Verificar se o método setMorte() altera o atributo vivo do animal para false    |
-|---------------------	|-----------	|
-| Prioridade:         	| Média        	|
-| Rastreador:         	|       RE01,RE02,RE04     	|
-| Precondições:       	| Criação de objeto do tipo Campo, Localizacao, Ovelha e o método getObjectAt() estar funcionando corretamente     |
-| Entrada               | O método cria a Ovelha  |
-| Resultado esperado    | O método getObjectAt(Localizacao) que recebe a Localizacao da Ovelha deve retornar null  |
-| Resultado Obtido:  	| teste passou |
+| Test Case ID: CT  32.2 | Objetivo: Verificar se o método setMorte da classe Animal remove o animal do campo    |
+|---------------------    |-----------    |
+| Prioridade:             |  Média          |
+| Rastreador:             | RE01,RE02,RE04  |
+| Precondições:           |    Criação de objeto do tipo Campo, Localizacao, Ovelha e o método getObjectAt() estar funcionando corretamente         |
+| Entradas:             |  O método cria a Ovelha         |
+| Resultado Esperado:     | O método getObjectAt(Localizacao) que recebe a Localizacao da Ovelha deve retornar null    |
+| Resultado Obtido:      |    teste passou    |
 
+***
+
+| Test Case ID: CT  32.3 | Objetivo: Verificar se é possível criar dois animais na mesma Localizacao    |
+|---------------------    |-----------    |
+| Prioridade:             |  Média          |
+| Rastreador:             | RE01,RE02,RE04  |
+| Precondições:           |    Criação de objeto do tipo Campo, Localizacao e 2 Ovelhas         |
+| Entradas:             |  O método cria as Ovelhas         |
+| Resultado Esperado:     | O método deve retornar uma exceção do tipo IllegalArgumentException    |
+| Resultado Obtido:      |    teste passou    |
 
 ***
 
@@ -1931,5 +2030,16 @@
 | Entradas:             | Instacia campoEstatistica |
 | Resultado Esperado: 	| É esperado que o método retorne: ture após chamar o getPopulationDetails |  
 | Resultado Obtido:  	| Teste passou    	|
+
+***
+
+| Test Case ID: CT 73 | Objetivo: O teste deve criar um contador com parâmetros válidos e verificar se a criação foi bem sucedida|
+|---------------------    |-----------    |
+| Prioridade:             |  Média          |
+| Rastreador:             | RE01, RE04  |
+| Precondições:           |    Nenhuma         |
+| Entradas:             |  Contador ("   ")        |
+| Resultado Esperado:     | O método não deve retornar “null”    |
+| Resultado Obtido:      |    teste passou    |
 
 ***
