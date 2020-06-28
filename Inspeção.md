@@ -103,7 +103,7 @@ Correção 6
 
 
 
-#Correções da inspeção das classes “SimuladorTela”, “Ovelha”, “Campo”, “CampoEstatistica”  
+# Correções da inspeção das classes “SimuladorTela”, “Ovelha”, “Campo”, “CampoEstatistica”  
 
 
 1.Erro encontrado por meio do Junit  
@@ -151,7 +151,7 @@ Correção 6
 
 
 
-#Correções da inspeção das classes “LoboGuara”  
+# Correções da inspeção das classes “LoboGuara”  
 
 1.Classe: ‘LoboGuara’  
 1.1 Método: ‘daALuz(List<LoboGuara> novosLobos)’  
