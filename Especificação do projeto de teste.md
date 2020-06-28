@@ -1,21 +1,31 @@
-#Simulador habitat natural - lobo guará e ovelha 
+# Simulador habitat natural - lobo guará e ovelha 
 
 | Versões                  ||  
 |-------------------------------|--------------------------------------------------------- ------------------|
-**Data: **  29/08/2017  -  22/09/2017     
-**Versão:  **   0.2   
-**Preparado por:  **  Iderli Souza  
-**Descrição da mudança:  **    Documento refatorado para melhor atender ao modelo da IEEE    
-         
-#1 Introdução     
-**1.2 Finalidade**  
+
+**Data:**  29/08/2017  -  22/09/2017     
+
+**Versão:**   0.2   
+
+**Preparado por:**  Iderli Souza  
+
+**Descrição da mudança:**    Documento refatorado para melhor atender ao modelo da IEEE    
+ 
+ 
+# 1 Introdução    
+
+**1.2 Finalidade** 
+
 O objetivo desta parte da especificação do teste é fornecer uma visão geral do que será testado no sistema.  
-**1.3 Documento de referência: ** MD.050 APPLICATION EXTENSIONS FUNCTIONAL DESIGN.  
-**1.4 Glossário: ** --  
 
-#Conjunto de Características  
+**1.3 Documento de referência:** MD.050 APPLICATION EXTENSIONS FUNCTIONAL DESIGN.  
 
-**Característica C01** Configuração do Sistema  
+**1.4 Glossário:** --  
+
+# Conjunto de Características  
+
+**Característica C01** Configuração do Sistema
+
 Objetivo: Testar o resultado da simulação entregue ao usuário.  
 Prioridade: Alta  
 Abordagem: Testes estruturais e particionamento de equivalência. 
@@ -79,7 +89,7 @@ Abordagem: Testes estruturais.
 |          C07        |       x      |        x        |       --       |    X    |
 
 
-#Requisitos do MD50  
+# Requisitos do MD50  
  RE01: Modela o comportamento de um subconjunto do mundo real com base em um
 modelo de software  
  RE02: Estima o comportamento de populações entre predadores e presas  
